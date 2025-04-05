@@ -46,12 +46,12 @@ namespace Player
 
         public void ShootPress()
         {
-            _weapon.ShootPress(transform.right);
+            _weapon.ShootPress(transform.position, transform.right);
         }
 
         public void ShootRelease()
         {
-            _weapon.ShootRelease(transform.right);
+            _weapon.ShootRelease(transform.position, transform.right);
         }
 
         public void Reload()

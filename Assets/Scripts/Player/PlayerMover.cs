@@ -5,7 +5,7 @@ using UnityEngine;
 namespace Player
 {
     [RequireComponent(typeof(Rigidbody2D))]
-    [RequireComponent(typeof(BoxCollider2D))]
+    [RequireComponent(typeof(Collider2D))]
     class PlayerMover : MonoBehaviour
     {
         [Header("Movement Settings")]

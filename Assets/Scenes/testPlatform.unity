@@ -263,6 +263,14 @@ PrefabInstance:
       propertyPath: m_Layer
       value: 8
       objectReference: {fileID: 0}
+    - target: {fileID: 2314416994544197569, guid: d1344ffece649394f9c837e8c53ca3bb, type: 3}
+      propertyPath: m_UseDelaunayMesh
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2314416994544197569, guid: d1344ffece649394f9c837e8c53ca3bb, type: 3}
+      propertyPath: m_CompositeOperation
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 2427307032660206814, guid: d1344ffece649394f9c837e8c53ca3bb, type: 3}
       propertyPath: m_Layer
       value: 0
