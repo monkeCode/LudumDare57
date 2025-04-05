@@ -1,12 +1,12 @@
 using UnityEngine;
 
-namespace Currency
+namespace GameResources
 {
-    public class CurrencySource: MonoBehaviour
+    public class MineralSource: MonoBehaviour
     {
         [field: SerializeField]private int Durability { get; set; } = 1;
-        [field: SerializeField] private int CurrencyCount { get; set; } = 1;
-        [field: SerializeField] private GameObject CurrencyItemPrefab { get; set; }
+        [field: SerializeField] private int MineralsCount { get; set; } = 1;
+        [field: SerializeField] private Mineral[] MineralPrefabs { get; set; }
 
         private void OnHit()
         {
@@ -19,9 +19,9 @@ namespace Currency
 
         private void Destroy()
         {
-            for (int i = 0; i < CurrencyCount; i++)
+            for (int i = 0; i < MineralsCount; i++)
             {
-                Instantiate(CurrencyItemPrefab, GetRandomPosition(transform.position), transform.rotation);   
+                Instantiate(MineralPrefabs[Random.Range(0, MineralPrefabs.Length)], GetRandomPosition(transform.position), transform.rotation);   
             }
             Destroy(gameObject);
         }

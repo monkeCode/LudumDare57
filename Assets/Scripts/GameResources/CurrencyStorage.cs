@@ -1,6 +1,6 @@
 using UnityEngine;
 
-namespace Currency
+namespace GameResources
 {
     public class CurrencyStorage: MonoBehaviour
     {

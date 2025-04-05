@@ -4,13 +4,16 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="0a9a3a54-15d7-46eb-8d53-e494bfb5ff9e" name="Changes" comment="Add currency storage">
-      <change afterPath="$PROJECT_DIR$/Assets/Scripts/Currency/CurrencyItem.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Scripts/Currency/CurrencyItem.cs.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Scripts/Currency/CurrencySource.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Scripts/Currency/CurrencySource.cs.meta" afterDir="false" />
+    <list default="true" id="0a9a3a54-15d7-46eb-8d53-e494bfb5ff9e" name="Changes" comment="Add currency source">
+      <change afterPath="$PROJECT_DIR$/Assets/Scripts/GameResources/Mineral.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/.idea.LudumDare57/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.LudumDare57/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Currency/CurrencyStorage.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Currency/CurrencyStorage.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Currency.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/GameResources.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Currency/CurrencyItem.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Currency/CurrencyItem.cs.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/GameResources/Mineral.cs.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Currency/CurrencySource.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/GameResources/MineralSource.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Currency/CurrencySource.cs.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/GameResources/MineralSource.cs.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Currency/CurrencyStorage.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/GameResources/CurrencyStorage.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Currency/CurrencyStorage.cs.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/GameResources/CurrencyStorage.cs.meta" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -41,6 +44,18 @@
   }
 }</component>
   <component name="HighlightingSettingsPerFile">
+    <setting file="mock://C:/Games/Unity/LudumDare57/Assets/Prefabs.meta" root0="SKIP_HIGHLIGHTING" />
+    <setting file="mock://C:/Games/Unity/LudumDare57/Assets/Prefabs.meta" root0="SKIP_HIGHLIGHTING" />
+    <setting file="mock://C:/Games/Unity/LudumDare57/Assets/Prefabs.meta" root0="SKIP_HIGHLIGHTING" />
+    <setting file="mock://C:/Games/Unity/LudumDare57/Assets/Prefabs.meta" root0="SKIP_HIGHLIGHTING" />
+    <setting file="mock://C:/Games/Unity/LudumDare57/Assets/Prefabs.meta" root0="SKIP_HIGHLIGHTING" />
+    <setting file="mock://C:/Games/Unity/LudumDare57/Assets/Prefabs.meta" root0="SKIP_HIGHLIGHTING" />
+    <setting file="mock://C:/Games/Unity/LudumDare57/Assets/Scripts/Currency/CurrencySource.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="mock://C:/Games/Unity/LudumDare57/Assets/Scripts/Currency/CurrencySource.cs.meta" root0="SKIP_HIGHLIGHTING" />
+    <setting file="mock://C:/Games/Unity/LudumDare57/Assets/Scripts/Currency/CurrencyStorage.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="mock://C:/Games/Unity/LudumDare57/Assets/Scripts/Currency/CurrencyStorage.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="mock://C:/Games/Unity/LudumDare57/Assets/Scripts/Currency/CurrencyStorage.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="mock://C:/Games/Unity/LudumDare57/Assets/Scripts/Currency/CurrencyStorage.cs.meta" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/UI/MainMenu/MainMenuController.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="mock://C:/Games/Unity/LudumDare57/ProjectSettings/EditorBuildSettings.asset" root0="SKIP_HIGHLIGHTING" />
     <setting file="mock://C:/Games/Unity/LudumDare57/ProjectSettings/EditorBuildSettings.asset" root0="SKIP_HIGHLIGHTING" />
@@ -115,7 +130,7 @@
       <option name="presentableId" value="Default" />
       <updated>1743847931798</updated>
       <workItem from="1743847932089" duration="782000" />
-      <workItem from="1743850402823" duration="2984000" />
+      <workItem from="1743850402823" duration="5083000" />
     </task>
     <task id="LOCAL-00001" summary="Add simple main and pause menu">
       <option name="closed" value="true" />
@@ -141,7 +156,15 @@
       <option name="project" value="LOCAL" />
       <updated>1743863739360</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="Add currency source">
+      <option name="closed" value="true" />
+      <created>1743864458921</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1743864458922</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -171,6 +194,7 @@
     <MESSAGE value="Add simple main and pause menu" />
     <MESSAGE value="Add simple main and pause menus" />
     <MESSAGE value="Add currency storage" />
-    <option name="LAST_COMMIT_MESSAGE" value="Add currency storage" />
+    <MESSAGE value="Add currency source" />
+    <option name="LAST_COMMIT_MESSAGE" value="Add currency source" />
   </component>
 </project>
