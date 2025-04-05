@@ -1,0 +1,124 @@
+Index: Assets/Scripts/Player/Player.cs
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.BaseRevisionTextPatchEP
+<+>using System;\r\nusing Interfaces;\r\nusing UnityEngine;\r\nusing UnityEngine.InputSystem;\r\n\r\nnamespace Player\r\n{\r\n    [RequireComponent(typeof(PlayerMover))]\r\n    class Player : MonoBehaviour, IDamageable, IStats\r\n    {\r\n\r\n        [Header(\"Stats\")]\r\n        [SerializeField] private uint _hp;\r\n        [SerializeField] private uint _maxHp;\r\n\r\n        [Header(\"Trash\")]\r\n        [SerializeField] WeaponHandler _weaponHandler;\r\n\r\n        private InputSystem_Actions _inputs;\r\n        private PlayerMover _mover;\r\n\r\n        public uint MaxHp { get => _maxHp; set => _maxHp = value; }\r\n        public uint Hp { get => _hp; set => _hp = Math.Clamp(value, 0, _maxHp); }\r\n\r\n        public static Player Instance { get; private set; }\r\n\r\n        public readonly PlayerInventory inventory = new();\r\n        \r\n\r\n        private void Awake()\r\n        {\r\n            if (Instance == null)\r\n                Instance = this;\r\n            else\r\n            {\r\n                Destroy(gameObject);\r\n            }\r\n\r\n            _inputs = new InputSystem_Actions();\r\n            _inputs.Player.Enable();\r\n\r\n            _mover = GetComponent<PlayerMover>();\r\n            _inputs.Player.Jump.started += ctx => _mover.Jump();\r\n            _inputs.Player.Jump.canceled += ctx => _mover.CutJump();\r\n        }\r\n\r\n        void OnEnable()\r\n        {\r\n            _inputs?.Player.Enable();\r\n        }\r\n\r\n        void OnDisable()\r\n        {\r\n            _inputs?.Player.Enable();\r\n        }\r\n\r\n        public void TakeDamage(uint damage)\r\n        {\r\n            Hp -= damage;\r\n            if (Hp == 0)\r\n                Die();\r\n        }\r\n\r\n        private void Die()\r\n        {\r\n            throw new NotImplementedException();\r\n        }\r\n\r\n        public void Kill()\r\n        {\r\n            Die();\r\n        }\r\n\r\n        public void Heal(uint heals)\r\n        {\r\n            Hp += heals;\r\n        }\r\n\r\n        private void Update()\r\n        {   \r\n            _mover.Move(_inputs.Player.Move.ReadValue<Vector2>().x);\r\n            _weaponHandler.UpdateRotation(Camera.main.ScreenToWorldPoint(Mouse.current.position.ReadValue()));\r\n        }\r\n    }\r\n\r\n}\r\n
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/Assets/Scripts/Player/Player.cs b/Assets/Scripts/Player/Player.cs
+--- a/Assets/Scripts/Player/Player.cs	(revision b098e30e87233257de67e15d00b3c6c37abbc71d)
++++ b/Assets/Scripts/Player/Player.cs	(date 1743867362974)
+@@ -1,4 +1,5 @@
+ using System;
++using GameResources;
+ using Interfaces;
+ using UnityEngine;
+ using UnityEngine.InputSystem;
+@@ -81,6 +82,14 @@
+             _mover.Move(_inputs.Player.Move.ReadValue<Vector2>().x);
+             _weaponHandler.UpdateRotation(Camera.main.ScreenToWorldPoint(Mouse.current.position.ReadValue()));
+         }
++
++        private void OnTriggerEnter2D(Collider2D other)
++        {
++            if (other.gameObject.TryGetComponent(out IMineral mineral))
++            {
++                inventory.TryPush(mineral);
++            }
++        }
+     }
+ 
+ }
+Index: Assets/Scripts/Player/PlayerInventory.cs
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.BaseRevisionTextPatchEP
+<+>using System.Collections;\r\nusing System.Collections.Generic;\r\nusing System.Linq;\r\nusing Interfaces;\r\n\r\nnamespace Player\r\n{\r\n    class PlayerInventory\r\n    {\r\n\r\n        private Stack<IMineral> _inventory;\r\n        public int Size;\r\n\r\n        public int Count => _inventory.Count;\r\n\r\n        public float Weight => _inventory.Sum(it => it.Size);\r\n\r\n        public bool Push(IMineral item)\r\n        {\r\n            if (_inventory.Count == Size)\r\n                return false;\r\n            _inventory.Push(item);\r\n            return true;\r\n        }\r\n\r\n        public IMineral Pop()\r\n        {\r\n            return _inventory.Pop();\r\n        }\r\n\r\n        public uint SellAllForMoney()\r\n        {\r\n            uint s = 0;\r\n            while (_inventory.Count > 0)\r\n                s += _inventory.Pop().Cost;\r\n\r\n            return s;\r\n        }\r\n\r\n    }\r\n}
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/Assets/Scripts/Player/PlayerInventory.cs b/Assets/Scripts/Player/PlayerInventory.cs
+--- a/Assets/Scripts/Player/PlayerInventory.cs	(revision b098e30e87233257de67e15d00b3c6c37abbc71d)
++++ b/Assets/Scripts/Player/PlayerInventory.cs	(date 1743867362974)
+@@ -15,7 +15,7 @@
+ 
+         public float Weight => _inventory.Sum(it => it.Size);
+ 
+-        public bool Push(IMineral item)
++        public bool TryPush(IMineral item)
+         {
+             if (_inventory.Count == Size)
+                 return false;
+Index: .idea/.idea.LudumDare57/.idea/workspace.xml
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.BaseRevisionTextPatchEP
+<+><?xml version=\"1.0\" encoding=\"UTF-8\"?>\r\n<project version=\"4\">\r\n  <component name=\"AutoImportSettings\">\r\n    <option name=\"autoReloadType\" value=\"SELECTIVE\" />\r\n  </component>\r\n  <component name=\"ChangeListManager\">\r\n    <list default=\"true\" id=\"0a9a3a54-15d7-46eb-8d53-e494bfb5ff9e\" name=\"Changes\" comment=\"Add currency source\">\r\n      <change afterPath=\"$PROJECT_DIR$/Assets/Scripts/GameResources/Mineral.cs\" afterDir=\"false\" />\r\n      <change beforePath=\"$PROJECT_DIR$/.idea/.idea.LudumDare57/.idea/workspace.xml\" beforeDir=\"false\" afterPath=\"$PROJECT_DIR$/.idea/.idea.LudumDare57/.idea/workspace.xml\" afterDir=\"false\" />\r\n      <change beforePath=\"$PROJECT_DIR$/Assets/Scripts/Currency.meta\" beforeDir=\"false\" afterPath=\"$PROJECT_DIR$/Assets/Scripts/GameResources.meta\" afterDir=\"false\" />\r\n      <change beforePath=\"$PROJECT_DIR$/Assets/Scripts/Currency/CurrencyItem.cs\" beforeDir=\"false\" />\r\n      <change beforePath=\"$PROJECT_DIR$/Assets/Scripts/Currency/CurrencyItem.cs.meta\" beforeDir=\"false\" afterPath=\"$PROJECT_DIR$/Assets/Scripts/GameResources/Mineral.cs.meta\" afterDir=\"false\" />\r\n      <change beforePath=\"$PROJECT_DIR$/Assets/Scripts/Currency/CurrencySource.cs\" beforeDir=\"false\" afterPath=\"$PROJECT_DIR$/Assets/Scripts/GameResources/MineralSource.cs\" afterDir=\"false\" />\r\n      <change beforePath=\"$PROJECT_DIR$/Assets/Scripts/Currency/CurrencySource.cs.meta\" beforeDir=\"false\" afterPath=\"$PROJECT_DIR$/Assets/Scripts/GameResources/MineralSource.cs.meta\" afterDir=\"false\" />\r\n      <change beforePath=\"$PROJECT_DIR$/Assets/Scripts/Currency/CurrencyStorage.cs\" beforeDir=\"false\" afterPath=\"$PROJECT_DIR$/Assets/Scripts/GameResources/CurrencyStorage.cs\" afterDir=\"false\" />\r\n      <change beforePath=\"$PROJECT_DIR$/Assets/Scripts/Currency/CurrencyStorage.cs.meta\" beforeDir=\"false\" afterPath=\"$PROJECT_DIR$/Assets/Scripts/GameResources/CurrencyStorage.cs.meta\" afterDir=\"false\" />\r\n    </list>\r\n    <option name=\"SHOW_DIALOG\" value=\"false\" />\r\n    <option name=\"HIGHLIGHT_CONFLICTS\" value=\"true\" />\r\n    <option name=\"HIGHLIGHT_NON_ACTIVE_CHANGELIST\" value=\"false\" />\r\n    <option name=\"LAST_RESOLUTION\" value=\"IGNORE\" />\r\n  </component>\r\n  <component name=\"Git.Settings\">\r\n    <option name=\"RECENT_BRANCH_BY_REPOSITORY\">\r\n      <map>\r\n        <entry key=\"$PROJECT_DIR$\" value=\"Menu\" />\r\n      </map>\r\n    </option>\r\n    <option name=\"RECENT_GIT_ROOT_PATH\" value=\"$PROJECT_DIR$\" />\r\n  </component>\r\n  <component name=\"GitHubPullRequestSearchHistory\">{\r\n  &quot;lastFilter&quot;: {\r\n    &quot;state&quot;: &quot;OPEN&quot;,\r\n    &quot;assignee&quot;: &quot;SergeyBirukov&quot;\r\n  }\r\n}</component>\r\n  <component name=\"GithubDefaultAccount\">\r\n    <option name=\"defaultAccountId\" value=\"536fb232-6160-4d89-9b11-eabf1a05427d\" />\r\n  </component>\r\n  <component name=\"GithubPullRequestsUISettings\">{\r\n  &quot;selectedUrlAndAccountId&quot;: {\r\n    &quot;url&quot;: &quot;git@github.com:monkeCode/LudumDare57.git&quot;,\r\n    &quot;accountId&quot;: &quot;536fb232-6160-4d89-9b11-eabf1a05427d&quot;\r\n  }\r\n}</component>\r\n  <component name=\"HighlightingSettingsPerFile\">\r\n    <setting file=\"mock://C:/Games/Unity/LudumDare57/Assets/Prefabs.meta\" root0=\"SKIP_HIGHLIGHTING\" />\r\n    <setting file=\"mock://C:/Games/Unity/LudumDare57/Assets/Prefabs.meta\" root0=\"SKIP_HIGHLIGHTING\" />\r\n    <setting file=\"mock://C:/Games/Unity/LudumDare57/Assets/Prefabs.meta\" root0=\"SKIP_HIGHLIGHTING\" />\r\n    <setting file=\"mock://C:/Games/Unity/LudumDare57/Assets/Prefabs.meta\" root0=\"SKIP_HIGHLIGHTING\" />\r\n    <setting file=\"mock://C:/Games/Unity/LudumDare57/Assets/Prefabs.meta\" root0=\"SKIP_HIGHLIGHTING\" />\r\n    <setting file=\"mock://C:/Games/Unity/LudumDare57/Assets/Prefabs.meta\" root0=\"SKIP_HIGHLIGHTING\" />\r\n    <setting file=\"mock://C:/Games/Unity/LudumDare57/Assets/Scripts/Currency/CurrencySource.cs\" root0=\"SKIP_HIGHLIGHTING\" />\r\n    <setting file=\"mock://C:/Games/Unity/LudumDare57/Assets/Scripts/Currency/CurrencySource.cs.meta\" root0=\"SKIP_HIGHLIGHTING\" />\r\n    <setting file=\"mock://C:/Games/Unity/LudumDare57/Assets/Scripts/Currency/CurrencyStorage.cs\" root0=\"SKIP_HIGHLIGHTING\" />\r\n    <setting file=\"mock://C:/Games/Unity/LudumDare57/Assets/Scripts/Currency/CurrencyStorage.cs\" root0=\"SKIP_HIGHLIGHTING\" />\r\n    <setting file=\"mock://C:/Games/Unity/LudumDare57/Assets/Scripts/Currency/CurrencyStorage.cs\" root0=\"SKIP_HIGHLIGHTING\" />\r\n    <setting file=\"mock://C:/Games/Unity/LudumDare57/Assets/Scripts/Currency/CurrencyStorage.cs.meta\" root0=\"SKIP_HIGHLIGHTING\" />\r\n    <setting file=\"file://$PROJECT_DIR$/Assets/Scripts/UI/MainMenu/MainMenuController.cs\" root0=\"FORCE_HIGHLIGHTING\" />\r\n    <setting file=\"mock://C:/Games/Unity/LudumDare57/ProjectSettings/EditorBuildSettings.asset\" root0=\"SKIP_HIGHLIGHTING\" />\r\n    <setting file=\"mock://C:/Games/Unity/LudumDare57/ProjectSettings/EditorBuildSettings.asset\" root0=\"SKIP_HIGHLIGHTING\" />\r\n    <setting file=\"mock://C:/Games/Unity/LudumDare57/ProjectSettings/ShaderGraphSettings.asset\" root0=\"SKIP_HIGHLIGHTING\" />\r\n  </component>\r\n  <component name=\"MetaFilesCheckinStateConfiguration\" checkMetaFiles=\"true\" />\r\n  <component name=\"ProjectColorInfo\">{\r\n  &quot;associatedIndex&quot;: 2\r\n}</component>\r\n  <component name=\"ProjectId\" id=\"2vJ0aGZcx7m84R8TCybqh9TvUBH\" />\r\n  <component name=\"ProjectViewState\">\r\n    <option name=\"hideEmptyMiddlePackages\" value=\"true\" />\r\n    <option name=\"showLibraryContents\" value=\"true\" />\r\n  </component>\r\n  <component name=\"PropertiesComponent\"><![CDATA[{\r\n  \"keyToString\": {\r\n    \"RunOnceActivity.ShowReadmeOnStart\": \"true\",\r\n    \"git-widget-placeholder\": \"currency\",\r\n    \"node.js.detected.package.eslint\": \"true\",\r\n    \"node.js.detected.package.tslint\": \"true\",\r\n    \"node.js.selected.package.eslint\": \"(autodetect)\",\r\n    \"node.js.selected.package.tslint\": \"(autodetect)\",\r\n    \"nodejs_package_manager_path\": \"npm\",\r\n    \"settings.editor.selected.configurable\": \"org.jetbrains.plugins.github.ui.GithubSettingsConfigurable\",\r\n    \"vue.rearranger.settings.migration\": \"true\"\r\n  }\r\n}]]></component>\r\n  <component name=\"RunManager\" selected=\"Attach to Unity Editor.Attach to Unity Editor\">\r\n    <configuration name=\"Start Unity\" type=\"RunUnityExe\" factoryName=\"Unity Executable\">\r\n      <option name=\"EXE_PATH\" value=\"C:\\Program Files\\Unity\\Hub\\Editor\\6000.0.45f1\\Editor\\Unity.exe\" />\r\n      <option name=\"PROGRAM_PARAMETERS\" value=\"-projectPath C:\\Games\\Unity\\LudumDare57 -debugCodeOptimization\" />\r\n      <option name=\"WORKING_DIRECTORY\" value=\"C:\\Games\\Unity\\LudumDare57\" />\r\n      <option name=\"PASS_PARENT_ENVS\" value=\"1\" />\r\n      <option name=\"USE_EXTERNAL_CONSOLE\" value=\"0\" />\r\n      <method v=\"2\" />\r\n    </configuration>\r\n    <configuration name=\"Unit Tests (batch mode)\" type=\"RunUnityExe\" factoryName=\"Unity Executable\">\r\n      <option name=\"EXE_PATH\" value=\"C:\\Program Files\\Unity\\Hub\\Editor\\6000.0.45f1\\Editor\\Unity.exe\" />\r\n      <option name=\"PROGRAM_PARAMETERS\" value=\"-runTests -batchmode -projectPath C:\\Games\\Unity\\LudumDare57 -testResults Logs/results.xml -logFile Logs/Editor.log -testPlatform EditMode -debugCodeOptimization\" />\r\n      <option name=\"WORKING_DIRECTORY\" value=\"C:\\Games\\Unity\\LudumDare57\" />\r\n      <option name=\"PASS_PARENT_ENVS\" value=\"1\" />\r\n      <option name=\"USE_EXTERNAL_CONSOLE\" value=\"0\" />\r\n      <method v=\"2\" />\r\n    </configuration>\r\n    <configuration name=\"Attach to Unity Editor &amp; Play\" type=\"UNITY_DEBUG_RUN_CONFIGURATION\" factoryName=\"UNITY_ATTACH_AND_PLAY\" show_console_on_std_err=\"false\" show_console_on_std_out=\"false\" port=\"50000\" address=\"localhost\">\r\n      <option name=\"allowRunningInParallel\" value=\"false\" />\r\n      <option name=\"listenPortForConnections\" value=\"false\" />\r\n      <option name=\"pid\" />\r\n      <option name=\"projectPathOnTarget\" />\r\n      <option name=\"selectedOptions\">\r\n        <list />\r\n      </option>\r\n      <method v=\"2\" />\r\n    </configuration>\r\n    <configuration name=\"Attach to Unity Editor\" type=\"UNITY_DEBUG_RUN_CONFIGURATION\" factoryName=\"Unity Debug\" show_console_on_std_err=\"false\" show_console_on_std_out=\"false\" port=\"50000\" address=\"localhost\">\r\n      <option name=\"allowRunningInParallel\" value=\"false\" />\r\n      <option name=\"listenPortForConnections\" value=\"false\" />\r\n      <option name=\"pid\" />\r\n      <option name=\"projectPathOnTarget\" />\r\n      <option name=\"selectedOptions\">\r\n        <list />\r\n      </option>\r\n      <method v=\"2\" />\r\n    </configuration>\r\n  </component>\r\n  <component name=\"SpellCheckerSettings\" RuntimeDictionaries=\"0\" Folders=\"0\" CustomDictionaries=\"0\" DefaultDictionary=\"application-level\" UseSingleDictionary=\"true\" transferred=\"true\" />\r\n  <component name=\"TaskManager\">\r\n    <task active=\"true\" id=\"Default\" summary=\"Default task\">\r\n      <changelist id=\"0a9a3a54-15d7-46eb-8d53-e494bfb5ff9e\" name=\"Changes\" comment=\"\" />\r\n      <created>1743847931798</created>\r\n      <option name=\"number\" value=\"Default\" />\r\n      <option name=\"presentableId\" value=\"Default\" />\r\n      <updated>1743847931798</updated>\r\n      <workItem from=\"1743847932089\" duration=\"782000\" />\r\n      <workItem from=\"1743850402823\" duration=\"5083000\" />\r\n    </task>\r\n    <task id=\"LOCAL-00001\" summary=\"Add simple main and pause menu\">\r\n      <option name=\"closed\" value=\"true\" />\r\n      <created>1743863142874</created>\r\n      <option name=\"number\" value=\"00001\" />\r\n      <option name=\"presentableId\" value=\"LOCAL-00001\" />\r\n      <option name=\"project\" value=\"LOCAL\" />\r\n      <updated>1743863142874</updated>\r\n    </task>\r\n    <task id=\"LOCAL-00002\" summary=\"Add simple main and pause menus\">\r\n      <option name=\"closed\" value=\"true\" />\r\n      <created>1743863198112</created>\r\n      <option name=\"number\" value=\"00002\" />\r\n      <option name=\"presentableId\" value=\"LOCAL-00002\" />\r\n      <option name=\"project\" value=\"LOCAL\" />\r\n      <updated>1743863198112</updated>\r\n    </task>\r\n    <task id=\"LOCAL-00003\" summary=\"Add currency storage\">\r\n      <option name=\"closed\" value=\"true\" />\r\n      <created>1743863739360</created>\r\n      <option name=\"number\" value=\"00003\" />\r\n      <option name=\"presentableId\" value=\"LOCAL-00003\" />\r\n      <option name=\"project\" value=\"LOCAL\" />\r\n      <updated>1743863739360</updated>\r\n    </task>\r\n    <task id=\"LOCAL-00004\" summary=\"Add currency source\">\r\n      <option name=\"closed\" value=\"true\" />\r\n      <created>1743864458921</created>\r\n      <option name=\"number\" value=\"00004\" />\r\n      <option name=\"presentableId\" value=\"LOCAL-00004\" />\r\n      <option name=\"project\" value=\"LOCAL\" />\r\n      <updated>1743864458922</updated>\r\n    </task>\r\n    <option name=\"localTasksCounter\" value=\"5\" />\r\n    <servers />\r\n  </component>\r\n  <component name=\"TypeScriptGeneratedFilesManager\">\r\n    <option name=\"version\" value=\"3\" />\r\n  </component>\r\n  <component name=\"UnityCheckinConfiguration\" checkUnsavedScenes=\"true\" />\r\n  <component name=\"UnityProjectConfiguration\" hasMinimizedUI=\"true\" />\r\n  <component name=\"UnityProjectDiscoverer\">\r\n    <option name=\"hasUnityReference\" value=\"true\" />\r\n    <option name=\"unityProject\" value=\"true\" />\r\n    <option name=\"unityProjectFolder\" value=\"true\" />\r\n  </component>\r\n  <component name=\"UnityUnitTestConfiguration\" currentTestLauncher=\"Both\" />\r\n  <component name=\"Vcs.Log.Tabs.Properties\">\r\n    <option name=\"TAB_STATES\">\r\n      <map>\r\n        <entry key=\"MAIN\">\r\n          <value>\r\n            <State />\r\n          </value>\r\n        </entry>\r\n      </map>\r\n    </option>\r\n  </component>\r\n  <component name=\"VcsManagerConfiguration\">\r\n    <option name=\"CLEAR_INITIAL_COMMIT_MESSAGE\" value=\"true\" />\r\n    <MESSAGE value=\"Add simple main and pause menu\" />\r\n    <MESSAGE value=\"Add simple main and pause menus\" />\r\n    <MESSAGE value=\"Add currency storage\" />\r\n    <MESSAGE value=\"Add currency source\" />\r\n    <option name=\"LAST_COMMIT_MESSAGE\" value=\"Add currency source\" />\r\n  </component>\r\n</project>
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/.idea/.idea.LudumDare57/.idea/workspace.xml b/.idea/.idea.LudumDare57/.idea/workspace.xml
+--- a/.idea/.idea.LudumDare57/.idea/workspace.xml	(revision b098e30e87233257de67e15d00b3c6c37abbc71d)
++++ b/.idea/.idea.LudumDare57/.idea/workspace.xml	(date 1743867362973)
+@@ -4,17 +4,7 @@
+     <option name="autoReloadType" value="SELECTIVE" />
+   </component>
+   <component name="ChangeListManager">
+-    <list default="true" id="0a9a3a54-15d7-46eb-8d53-e494bfb5ff9e" name="Changes" comment="Add currency source">
+-      <change afterPath="$PROJECT_DIR$/Assets/Scripts/GameResources/Mineral.cs" afterDir="false" />
+-      <change beforePath="$PROJECT_DIR$/.idea/.idea.LudumDare57/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.LudumDare57/.idea/workspace.xml" afterDir="false" />
+-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Currency.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/GameResources.meta" afterDir="false" />
+-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Currency/CurrencyItem.cs" beforeDir="false" />
+-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Currency/CurrencyItem.cs.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/GameResources/Mineral.cs.meta" afterDir="false" />
+-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Currency/CurrencySource.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/GameResources/MineralSource.cs" afterDir="false" />
+-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Currency/CurrencySource.cs.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/GameResources/MineralSource.cs.meta" afterDir="false" />
+-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Currency/CurrencyStorage.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/GameResources/CurrencyStorage.cs" afterDir="false" />
+-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Currency/CurrencyStorage.cs.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/GameResources/CurrencyStorage.cs.meta" afterDir="false" />
+-    </list>
++    <list default="true" id="0a9a3a54-15d7-46eb-8d53-e494bfb5ff9e" name="Changes" comment="implement IDamagable for MineralSource" />
+     <option name="SHOW_DIALOG" value="false" />
+     <option name="HIGHLIGHT_CONFLICTS" value="true" />
+     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+@@ -130,7 +120,7 @@
+       <option name="presentableId" value="Default" />
+       <updated>1743847931798</updated>
+       <workItem from="1743847932089" duration="782000" />
+-      <workItem from="1743850402823" duration="5083000" />
++      <workItem from="1743850402823" duration="5559000" />
+     </task>
+     <task id="LOCAL-00001" summary="Add simple main and pause menu">
+       <option name="closed" value="true" />
+@@ -164,7 +154,23 @@
+       <option name="project" value="LOCAL" />
+       <updated>1743864458922</updated>
+     </task>
+-    <option name="localTasksCounter" value="5" />
++    <task id="LOCAL-00005" summary="refactoring">
++      <option name="closed" value="true" />
++      <created>1743866581607</created>
++      <option name="number" value="00005" />
++      <option name="presentableId" value="LOCAL-00005" />
++      <option name="project" value="LOCAL" />
++      <updated>1743866581607</updated>
++    </task>
++    <task id="LOCAL-00006" summary="implement IDamagable for MineralSource">
++      <option name="closed" value="true" />
++      <created>1743866846195</created>
++      <option name="number" value="00006" />
++      <option name="presentableId" value="LOCAL-00006" />
++      <option name="project" value="LOCAL" />
++      <updated>1743866846195</updated>
++    </task>
++    <option name="localTasksCounter" value="7" />
+     <servers />
+   </component>
+   <component name="TypeScriptGeneratedFilesManager">
+@@ -195,6 +201,8 @@
+     <MESSAGE value="Add simple main and pause menus" />
+     <MESSAGE value="Add currency storage" />
+     <MESSAGE value="Add currency source" />
+-    <option name="LAST_COMMIT_MESSAGE" value="Add currency source" />
++    <MESSAGE value="refactoring" />
++    <MESSAGE value="implement IDamagable for MineralSource" />
++    <option name="LAST_COMMIT_MESSAGE" value="implement IDamagable for MineralSource" />
+   </component>
+ </project>
+\ No newline at end of file

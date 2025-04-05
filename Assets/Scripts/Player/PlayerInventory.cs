@@ -15,7 +15,7 @@ namespace Player
 
         public float CurrentWegiht => _inventory.Sum(it => it.Size);
 
-        public bool Push(IMineral item)
+        public bool TryPush(IMineral item)
         {
             if (CurrentWegiht + item.Size > MaxWeight)
                 return false;
