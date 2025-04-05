@@ -4,6 +4,7 @@ using UnityEngine;
 
 namespace Weapons
 {
+    [CreateAssetMenu(menuName ="Weapons/TestWeapon")]
     class BaseWeapon : ScriptableObject, IWeapon
     {
         [SerializeField] private float _shootSpeed;

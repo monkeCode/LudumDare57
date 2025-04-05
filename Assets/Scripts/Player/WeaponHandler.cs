@@ -1,4 +1,5 @@
 
+using System;
 using Unity.VisualScripting;
 using UnityEngine;
 using Weapons;
@@ -6,9 +7,9 @@ using Weapons;
 namespace Player
 {
     [RequireComponent(typeof(SpriteRenderer))]
-    class WeaponHandler:MonoBehaviour
+    class WeaponHandler : MonoBehaviour
     {
-        
+
         [SerializeField] private BaseWeapon _weapon;
 
         private SpriteRenderer _spriteRenderer;
@@ -17,7 +18,7 @@ namespace Player
         {
             _spriteRenderer = GetComponent<SpriteRenderer>();
 
-            if(_weapon != null)
+            if (_weapon != null)
             {
                 SwapWeapon(_weapon);
             }
@@ -26,9 +27,10 @@ namespace Player
         public void UpdateRotation(Vector2 trackPoint)
         {
             var dir = trackPoint - (Vector2)transform.position;
-            var angle = Vector2.Angle(Vector2.up, dir);
+            var angle = Mathf.Atan2(dir.y, dir.x) * Mathf.Rad2Deg;
 
-            transform.rotation = Quaternion.Euler(new Vector3(0,0, angle));
+            transform.rotation = Quaternion.Euler(new Vector3(0, 0, angle));
+            _spriteRenderer.flipY = dir.x < 0;
             Debug.DrawRay(transform.position, dir);
         }
 
@@ -38,7 +40,7 @@ namespace Player
 
             _weapon = newWeapon;
             _spriteRenderer.sprite = _weapon.Sprite;
-            
+
             return curWeapon;
         }
 
