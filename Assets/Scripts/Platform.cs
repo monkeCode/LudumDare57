@@ -1,11 +1,12 @@
 using System;
+using UnityEditor.Callbacks;
 using UnityEngine;
 
 public class Platform : MonoBehaviour
 {
-    public int currentHealth { get; private set; } = 50;
+    public int currentHealth = 50;
 
-    public int maxHealth { get; private set; } = 100;
+    public int maxHealth = 100;
 
     public static event Action<int> currentHealthChanged;
 
@@ -15,18 +16,22 @@ public class Platform : MonoBehaviour
 
     private bool isMoving = false;
 
+    private Rigidbody2D rb;
+
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
     {
-
+        rb = GetComponent<Rigidbody2D>();
     }
 
     // Update is called once per frame
-    void Update()
+    void FixedUpdate()
     {
         if (isMoving)
         {
-            transform.position -= new Vector3(0, speed, 0) * Time.deltaTime;
+            //transform.position -= new Vector3(0, speed, 0) * Time.deltaTime;
+            Vector2 movement = -transform.up * speed * Time.deltaTime;
+            rb.MovePosition(rb.position + movement);
         }
     }
 
@@ -64,6 +69,6 @@ public class Platform : MonoBehaviour
         {
             currentHealth = maxHealth;
         }
-        currentHealthChanged(currentHealth);
+        currentHealthChanged?.Invoke(currentHealth);
     }
 }

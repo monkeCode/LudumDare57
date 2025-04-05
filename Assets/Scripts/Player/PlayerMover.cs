@@ -12,7 +12,7 @@ namespace Player
         [SerializeField][Range(0, 10)] float _acceleration = 5f;
         [SerializeField][Range(0, 10)] float _flyAcceleration = 3f;
         [SerializeField][Range(0, 10)] float _maxSpeed = 7f;
-        
+
         [Header("Jump Settings")]
         [SerializeField][Range(0, 150)] float _jumpForce = 100f;
         [SerializeField][Range(0, 1)] float _jumpCutMultiplier = 0.5f;
@@ -20,17 +20,18 @@ namespace Player
         [SerializeField] LayerMask _groundLayer;
         [SerializeField] Transform _groundCheck;
         [SerializeField] bool _allowDoubleJump = false;
-        
+
         private Rigidbody2D _rb;
         private bool _isJumping;
         private bool _canDoubleJump;
         private float _moveInput;
 
-        public bool OnGround { 
-            get 
+        public bool OnGround
+        {
+            get
             {
                 return Physics2D.OverlapCircle(_groundCheck.position, _groundCheckRadius, _groundLayer);
-            } 
+            }
         }
 
         private void Start()
@@ -44,10 +45,10 @@ namespace Player
             float currentSpeed = _rb.linearVelocityX;
             float targetSpeed = _moveInput * _maxSpeed;
             float accel = OnGround ? _acceleration : _flyAcceleration;
-            
+
             float speedDiff = targetSpeed - currentSpeed;
             float movement = speedDiff * accel;
-            
+
             _rb.AddForce(movement * Vector2.right, ForceMode2D.Force);
         }
 
@@ -64,14 +65,14 @@ namespace Player
                 _canDoubleJump = false;
             }
         }
-        
+
         private void PerformJump()
         {
             _rb.linearVelocity = new Vector2(_rb.linearVelocityX, 0);
             _rb.AddForce(Vector2.up * _jumpForce, ForceMode2D.Impulse);
             _isJumping = true;
         }
-        
+
         public void CutJump()
         {
             if (_rb.linearVelocityY > 0 && _isJumping)
@@ -83,8 +84,8 @@ namespace Player
 
         private void FixedUpdate()
         {
-            
-            
+
+
             if (_rb.linearVelocityY < 0)
             {
                 _isJumping = false;
