@@ -1,4 +1,3 @@
-using System.Collections;
 using System.Collections.Generic;
 using System.Linq;
 using Interfaces;
@@ -9,16 +8,18 @@ namespace Player
     {
 
         private Stack<IMineral> _inventory;
-        public int Size;
+
+        public float MaxWeight {get;set;}
 
         public int Count => _inventory.Count;
 
-        public float Weight => _inventory.Sum(it => it.Size);
+        public float CurrentWegiht => _inventory.Sum(it => it.Size);
 
         public bool Push(IMineral item)
         {
-            if (_inventory.Count == Size)
+            if (CurrentWegiht + item.Size > MaxWeight)
                 return false;
+
             _inventory.Push(item);
             return true;
         }
