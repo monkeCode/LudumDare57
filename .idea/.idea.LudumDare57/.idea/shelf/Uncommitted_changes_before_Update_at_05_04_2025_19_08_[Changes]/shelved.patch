@@ -1,0 +1,63 @@
+Index: ProjectSettings/EditorBuildSettings.asset
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.BaseRevisionTextPatchEP
+<+>%YAML 1.1\r\n%TAG !u! tag:unity3d.com,2011:\r\n--- !u!1045 &1\r\nEditorBuildSettings:\r\n  m_ObjectHideFlags: 0\r\n  serializedVersion: 2\r\n  m_Scenes:\r\n  - enabled: 1\r\n    path: Assets/Scenes/SampleScene.unity\r\n    guid: 8c9cfa26abfee488c85f1582747f6a02\r\n  m_configObjects:\r\n    com.unity.input.settings.actions: {fileID: -944628639613478452, guid: 2bcd2660ca9b64942af0de543d8d7100, type: 3}\r\n  m_UseUCBPForAssetBundles: 0\r\n
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/ProjectSettings/EditorBuildSettings.asset b/ProjectSettings/EditorBuildSettings.asset
+--- a/ProjectSettings/EditorBuildSettings.asset	(revision 9fc19fc81f7c9f35d7029b342b723c5c51ca519f)
++++ b/ProjectSettings/EditorBuildSettings.asset	(date 1743852230933)
+@@ -8,6 +8,9 @@
+   - enabled: 1
+     path: Assets/Scenes/SampleScene.unity
+     guid: 8c9cfa26abfee488c85f1582747f6a02
++  - enabled: 1
++    path: Assets/Scenes/Main.unity
++    guid: f3a9f6f648364b24fa4a4d64df876f81
+   m_configObjects:
+     com.unity.input.settings.actions: {fileID: -944628639613478452, guid: 2bcd2660ca9b64942af0de543d8d7100, type: 3}
+   m_UseUCBPForAssetBundles: 0
+Index: Assets/Scripts/UI/MainMenu/MainMenu.cs
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/Assets/Scripts/UI/MainMenu/MainMenu.cs b/Assets/Scripts/UI/MainMenu/MainMenu.cs
+new file mode 100644
+--- /dev/null	(date 1743850646213)
++++ b/Assets/Scripts/UI/MainMenu/MainMenu.cs	(date 1743850646213)
+@@ -0,0 +1,18 @@
++using UnityEngine;
++using UnityEngine.SceneManagement;
++
++public class MainMenu : MonoBehaviour
++{ 
++    public string startScene = "PlayerDemo";
++    
++    public void StartGame()
++    {
++        SceneManager.LoadScene(startScene);
++    }
++
++    public void QuitGame()
++    {
++        Debug.Log("Quit");
++        Application.Quit();
++    }
++}
+\ No newline at end of file
+Index: Assets/Scripts/UI/MainMenu/MainMenu.cs.meta
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/Assets/Scripts/UI/MainMenu/MainMenu.cs.meta b/Assets/Scripts/UI/MainMenu/MainMenu.cs.meta
+new file mode 100644
+--- /dev/null	(date 1743850632603)
++++ b/Assets/Scripts/UI/MainMenu/MainMenu.cs.meta	(date 1743850632603)
+@@ -0,0 +1,3 @@
++fileFormatVersion: 2
++guid: ec1b79f487774e67b88ba88c99383127
++timeCreated: 1743850632
+\ No newline at end of file
