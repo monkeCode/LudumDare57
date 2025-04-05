@@ -29,9 +29,11 @@ public class Platform : MonoBehaviour
     {
         if (isMoving)
         {
-            //transform.position -= new Vector3(0, speed, 0) * Time.deltaTime;
-            Vector2 movement = -transform.up * speed * Time.deltaTime;
-            rb.MovePosition(rb.position + movement);
+            rb.linearVelocity = -transform.up * speed; // Более физически корректно
+        }
+        else
+        {
+            rb.linearVelocity = Vector2.zero;
         }
     }
 

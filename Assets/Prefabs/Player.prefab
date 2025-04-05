@@ -87,9 +87,9 @@ SpriteRenderer:
   m_AutoUVMaxDistance: 0.5
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
-  m_SortingLayerID: 0
-  m_SortingLayer: 0
-  m_SortingOrder: 5
+  m_SortingLayerID: 863510155
+  m_SortingLayer: 6
+  m_SortingOrder: 0
   m_Sprite: {fileID: 0}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
@@ -143,9 +143,9 @@ GameObject:
   - component: {fileID: 7860887919287497563}
   - component: {fileID: 8537066098734192933}
   - component: {fileID: 8757873024595219420}
-  - component: {fileID: 7078517535568544418}
   - component: {fileID: 4860846476500332060}
   - component: {fileID: 7932286070676918677}
+  - component: {fileID: 6447831855128354072}
   m_Layer: 0
   m_Name: Player
   m_TagString: Untagged
@@ -211,8 +211,8 @@ SpriteRenderer:
   m_AutoUVMaxDistance: 0.5
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
-  m_SortingLayerID: 0
-  m_SortingLayer: 0
+  m_SortingLayerID: -1600047379
+  m_SortingLayer: 5
   m_SortingOrder: 0
   m_Sprite: {fileID: -9095717837082945937, guid: 207ee8102dd4143d288186ef0be518ee, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
@@ -251,9 +251,48 @@ Rigidbody2D:
   m_Interpolate: 0
   m_SleepingMode: 1
   m_CollisionDetection: 0
-  m_Constraints: 0
---- !u!61 &7078517535568544418
-BoxCollider2D:
+  m_Constraints: 4
+--- !u!114 &4860846476500332060
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2626821414546438955}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: cdc99f897c80d0eddb2ad5c647787342, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _acceleration: 4.18
+  _flyAcceleration: 3
+  _maxSpeed: 7
+  _jumpForce: 4.5
+  _jumpCutMultiplier: 0.5
+  _groundCheckRadius: 0.1
+  _groundLayer:
+    serializedVersion: 2
+    m_Bits: 1280
+  _groundCheck: {fileID: 1310808705996792056}
+  _allowDoubleJump: 0
+--- !u!114 &7932286070676918677
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2626821414546438955}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9af2d55c76c392100949abefbd23f237, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _hp: 100
+  _maxHp: 100
+  _weaponHandler: {fileID: 4818838691821989157}
+  <MineralPrefab>k__BackingField: {fileID: 5974269870199454367, guid: bda2201620db5474198eff395a1e29d7, type: 3}
+--- !u!70 &6447831855128354072
+CapsuleCollider2D:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
@@ -287,53 +326,5 @@ BoxCollider2D:
   m_CompositeOperation: 0
   m_CompositeOrder: 0
   m_Offset: {x: 0, y: 0}
-  m_SpriteTilingProperty:
-    border: {x: 0, y: 0, z: 0, w: 0}
-    pivot: {x: 0.5, y: 0.5}
-    oldSize: {x: 1, y: 2}
-    newSize: {x: 1, y: 2}
-    adaptiveTilingThreshold: 0.5
-    drawMode: 0
-    adaptiveTiling: 0
-  m_AutoTiling: 0
   m_Size: {x: 1, y: 2}
-  m_EdgeRadius: 0
---- !u!114 &4860846476500332060
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2626821414546438955}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: cdc99f897c80d0eddb2ad5c647787342, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  _acceleration: 4.18
-  _flyAcceleration: 3
-  _maxSpeed: 7
-  _jumpForce: 4.5
-  _jumpCutMultiplier: 0.5
-  _groundCheckRadius: 0.1
-  _groundLayer:
-    serializedVersion: 2
-    m_Bits: 256
-  _groundCheck: {fileID: 1310808705996792056}
-  _allowDoubleJump: 0
---- !u!114 &7932286070676918677
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2626821414546438955}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 9af2d55c76c392100949abefbd23f237, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  _hp: 0
-  _maxHp: 0
-  _weaponHandler: {fileID: 4818838691821989157}
-  <MineralPrefab>k__BackingField: {fileID: 5974269870199454367, guid: bda2201620db5474198eff395a1e29d7, type: 3}
+  m_Direction: 0

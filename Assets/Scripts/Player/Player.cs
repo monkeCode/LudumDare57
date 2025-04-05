@@ -48,6 +48,10 @@ namespace Player
             _mover = GetComponent<PlayerMover>();
             _inputs.Player.Jump.started += ctx => _mover.Jump();
             _inputs.Player.Jump.canceled += ctx => _mover.CutJump();
+
+            _inputs.Player.Attack.started += ctx => _weaponHandler.ShootPress();
+            _inputs.Player.Attack.canceled += ctx => _weaponHandler.ShootRelease();
+            _inputs.Player.Reload.performed += ctx => _weaponHandler.Reload();
         }
 
         void OnEnable()
