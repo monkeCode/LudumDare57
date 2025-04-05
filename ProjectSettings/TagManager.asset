@@ -16,8 +16,8 @@ TagManager:
   - Ground
   - Bullet
   - Platform
-  - 
-  - 
+  - Player bullet
+  - Entity
   - 
   - 
   - 
@@ -44,9 +44,6 @@ TagManager:
   - name: background
     uniqueID: 417152497
     locked: 0
-  - name: bullet
-    uniqueID: 45781397
-    locked: 0
   - name: objects
     uniqueID: 2705015639
     locked: 0
@@ -58,6 +55,9 @@ TagManager:
     locked: 0
   - name: weapon
     uniqueID: 863510155
+    locked: 0
+  - name: bullet
+    uniqueID: 45781397
     locked: 0
   m_RenderingLayers:
   - Default

@@ -12,6 +12,11 @@ namespace Weapons
 
         public void SetDamage(uint damage) => _damage = damage;
 
+        void Start()
+        {
+            Destroy(gameObject, 10);
+        }
+
         void OnTriggerEnter2D(Collider2D other)
         {
             if (other.TryGetComponent<IDamageable>(out var damageable))

@@ -4,14 +4,14 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="0a9a3a54-15d7-46eb-8d53-e494bfb5ff9e" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/Assets/Scripts/UI/KeySelector.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Scripts/UI/KeySelector.cs.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Scripts/UI/MainMenu/MainMenuController.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Scripts/UI/MainMenu/MainMenuController.cs.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Scripts/UI/PauseMenu.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ProjectSettings/EditorBuildSettings.asset" beforeDir="false" afterPath="$PROJECT_DIR$/ProjectSettings/EditorBuildSettings.asset" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ProjectSettings/ShaderGraphSettings.asset" beforeDir="false" afterPath="$PROJECT_DIR$/ProjectSettings/ShaderGraphSettings.asset" afterDir="false" />
+    <list default="true" id="0a9a3a54-15d7-46eb-8d53-e494bfb5ff9e" name="Changes" comment="Add speed modifier">
+      <change beforePath="$PROJECT_DIR$/.idea/.idea.LudumDare57/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.LudumDare57/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/Minerals/Big mineral.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefabs/Minerals/Big mineral.prefab" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/Minerals/Medium mineral.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefabs/Minerals/Medium mineral.prefab" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/Minerals/Small Mineral.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefabs/Minerals/Small Mineral.prefab" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/Player.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefabs/Player.prefab" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/GameResources/Mineral.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/GameResources/Mineral.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Player/Player.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Player/Player.cs" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -19,6 +19,11 @@
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
   <component name="Git.Settings">
+    <option name="RECENT_BRANCH_BY_REPOSITORY">
+      <map>
+        <entry key="$PROJECT_DIR$" value="Menu" />
+      </map>
+    </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="GitHubPullRequestSearchHistory">{
@@ -27,6 +32,9 @@
     &quot;assignee&quot;: &quot;SergeyBirukov&quot;
   }
 }</component>
+  <component name="GithubDefaultAccount">
+    <option name="defaultAccountId" value="536fb232-6160-4d89-9b11-eabf1a05427d" />
+  </component>
   <component name="GithubPullRequestsUISettings">{
   &quot;selectedUrlAndAccountId&quot;: {
     &quot;url&quot;: &quot;git@github.com:monkeCode/LudumDare57.git&quot;,
@@ -34,8 +42,27 @@
   }
 }</component>
   <component name="HighlightingSettingsPerFile">
+    <setting file="mock://C:/Games/Unity/LudumDare57/Assets/Prefabs.meta" root0="SKIP_HIGHLIGHTING" />
+    <setting file="mock://C:/Games/Unity/LudumDare57/Assets/Prefabs.meta" root0="SKIP_HIGHLIGHTING" />
+    <setting file="mock://C:/Games/Unity/LudumDare57/Assets/Prefabs.meta" root0="SKIP_HIGHLIGHTING" />
+    <setting file="mock://C:/Games/Unity/LudumDare57/Assets/Prefabs.meta" root0="SKIP_HIGHLIGHTING" />
+    <setting file="mock://C:/Games/Unity/LudumDare57/Assets/Prefabs.meta" root0="SKIP_HIGHLIGHTING" />
+    <setting file="mock://C:/Games/Unity/LudumDare57/Assets/Prefabs.meta" root0="SKIP_HIGHLIGHTING" />
+    <setting file="mock://C:/Games/Unity/LudumDare57/Assets/Scripts/Currency/CurrencySource.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="mock://C:/Games/Unity/LudumDare57/Assets/Scripts/Currency/CurrencySource.cs.meta" root0="SKIP_HIGHLIGHTING" />
+    <setting file="mock://C:/Games/Unity/LudumDare57/Assets/Scripts/Currency/CurrencyStorage.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="mock://C:/Games/Unity/LudumDare57/Assets/Scripts/Currency/CurrencyStorage.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="mock://C:/Games/Unity/LudumDare57/Assets/Scripts/Currency/CurrencyStorage.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="mock://C:/Games/Unity/LudumDare57/Assets/Scripts/Currency/CurrencyStorage.cs.meta" root0="SKIP_HIGHLIGHTING" />
+    <setting file="mock://C:/Games/Unity/LudumDare57/Assets/Scripts/GameResources/Mineral.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="mock://C:/Games/Unity/LudumDare57/Assets/Scripts/GameResources/Mineral.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/UI/MainMenu/MainMenuController.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="mock://C:/Games/Unity/LudumDare57/Assets/Tiles/Platform/Tiles_pack/Tiles_pack/Tileset_6.png.meta" root0="SKIP_HIGHLIGHTING" />
+    <setting file="mock://C:/Games/Unity/LudumDare57/ProjectSettings/EditorBuildSettings.asset" root0="SKIP_HIGHLIGHTING" />
+    <setting file="mock://C:/Games/Unity/LudumDare57/ProjectSettings/EditorBuildSettings.asset" root0="SKIP_HIGHLIGHTING" />
     <setting file="mock://C:/Games/Unity/LudumDare57/ProjectSettings/ShaderGraphSettings.asset" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/844019a3a067481c8d9cb70c7a2ba4471df600/7a/c4b9a24b/GameObject.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/844019a3a067481c8d9cb70c7a2ba4471df600/da/ebf8b75a/Object.cs" root0="SKIP_HIGHLIGHTING" />
   </component>
   <component name="MetaFilesCheckinStateConfiguration" checkMetaFiles="true" />
   <component name="ProjectColorInfo">{
@@ -49,12 +76,13 @@
   <component name="PropertiesComponent">{
   &quot;keyToString&quot;: {
     &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;git-widget-placeholder&quot;: &quot;main&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;currency&quot;,
     &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
     &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
     &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
     &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
     &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;org.jetbrains.plugins.github.ui.GithubSettingsConfigurable&quot;,
     &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   }
 }</component>
@@ -105,8 +133,89 @@
       <option name="presentableId" value="Default" />
       <updated>1743847931798</updated>
       <workItem from="1743847932089" duration="782000" />
-      <workItem from="1743850402823" duration="1709000" />
+      <workItem from="1743850402823" duration="11852000" />
     </task>
+    <task id="LOCAL-00001" summary="Add simple main and pause menu">
+      <option name="closed" value="true" />
+      <created>1743863142874</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1743863142874</updated>
+    </task>
+    <task id="LOCAL-00002" summary="Add simple main and pause menus">
+      <option name="closed" value="true" />
+      <created>1743863198112</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1743863198112</updated>
+    </task>
+    <task id="LOCAL-00003" summary="Add currency storage">
+      <option name="closed" value="true" />
+      <created>1743863739360</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1743863739360</updated>
+    </task>
+    <task id="LOCAL-00004" summary="Add currency source">
+      <option name="closed" value="true" />
+      <created>1743864458921</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1743864458922</updated>
+    </task>
+    <task id="LOCAL-00005" summary="refactoring">
+      <option name="closed" value="true" />
+      <created>1743866581607</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1743866581607</updated>
+    </task>
+    <task id="LOCAL-00006" summary="implement IDamagable for MineralSource">
+      <option name="closed" value="true" />
+      <created>1743866846195</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1743866846195</updated>
+    </task>
+    <task id="LOCAL-00007" summary="Add mineral collecting">
+      <option name="closed" value="true" />
+      <created>1743867500101</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1743867500101</updated>
+    </task>
+    <task id="LOCAL-00008" summary="Add collectable minerals">
+      <option name="closed" value="true" />
+      <created>1743870872648</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1743870872648</updated>
+    </task>
+    <task id="LOCAL-00009" summary="Collect by key">
+      <option name="closed" value="true" />
+      <created>1743874731859</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1743874731859</updated>
+    </task>
+    <task id="LOCAL-00010" summary="Add speed modifier">
+      <option name="closed" value="true" />
+      <created>1743875171576</created>
+      <option name="number" value="00010" />
+      <option name="presentableId" value="LOCAL-00010" />
+      <option name="project" value="LOCAL" />
+      <updated>1743875171576</updated>
+    </task>
+    <option name="localTasksCounter" value="11" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -133,5 +242,16 @@
   </component>
   <component name="VcsManagerConfiguration">
     <option name="CLEAR_INITIAL_COMMIT_MESSAGE" value="true" />
+    <MESSAGE value="Add simple main and pause menu" />
+    <MESSAGE value="Add simple main and pause menus" />
+    <MESSAGE value="Add currency storage" />
+    <MESSAGE value="Add currency source" />
+    <MESSAGE value="refactoring" />
+    <MESSAGE value="implement IDamagable for MineralSource" />
+    <MESSAGE value="Add mineral collecting" />
+    <MESSAGE value="Add collectable minerals" />
+    <MESSAGE value="Collect by key" />
+    <MESSAGE value="Add speed modifier" />
+    <option name="LAST_COMMIT_MESSAGE" value="Add speed modifier" />
   </component>
 </project>

@@ -1,4 +1,5 @@
 using System;
+using GameResources;
 using Interfaces;
 using UnityEngine;
 using UnityEngine.InputSystem;
@@ -26,6 +27,11 @@ namespace Player
 
         public readonly PlayerInventory inventory = new();
         
+        [field: SerializeField] public Mineral MineralPrefab { get; set; }
+
+        private const float MinSpeedModifier = 0.2f;
+        public float SpeedModifier => Math.Max(MinSpeedModifier, 1 - inventory.CurrentWeight / inventory.MaxWeight);
+        
 
         private void Awake()
         {
@@ -42,6 +48,10 @@ namespace Player
             _mover = GetComponent<PlayerMover>();
             _inputs.Player.Jump.started += ctx => _mover.Jump();
             _inputs.Player.Jump.canceled += ctx => _mover.CutJump();
+
+            _inputs.Player.Attack.started += ctx => _weaponHandler.ShootPress();
+            _inputs.Player.Attack.canceled += ctx => _weaponHandler.ShootRelease();
+            _inputs.Player.Reload.performed += ctx => _weaponHandler.Reload();
         }
 
         void OnEnable()
@@ -76,10 +86,28 @@ namespace Player
             Hp += heals;
         }
 
+        public void DropMineral()
+        {
+            var mineral = inventory.Pop();
+            var instance = Instantiate(MineralPrefab, gameObject.transform.position, gameObject.transform.rotation);
+            instance.Cost = mineral.Cost;
+            instance.Size = mineral.Size;
+            instance.transform.localScale = new Vector3(mineral.Size, mineral.Size, 1);
+        }
+
         private void Update()
         {   
-            _mover.Move(_inputs.Player.Move.ReadValue<Vector2>().x);
+            _mover.Move(_inputs.Player.Move.ReadValue<Vector2>().x, SpeedModifier);
             _weaponHandler.UpdateRotation(Camera.main.ScreenToWorldPoint(Mouse.current.position.ReadValue()));
+            HandleInputs();
+        }
+
+        private void HandleInputs()
+        {
+            if (Input.GetKeyDown(KeyCode.Q))
+            {
+                DropMineral();
+            }
         }
     }
 

@@ -10,9 +10,16 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: cab66135755e4aa169a317da46dd1b13, type: 3}
-  m_Name: New Base Weapon
+  m_Name: Machine gun
   m_EditorClassIdentifier: 
-  _shootSpeed: 0
-  _damage: 0
-  _bullet: {fileID: 0}
+  _bulletSpeed: 300
+  _shootFreq: 10
+  _damage: 5
+  _bullet: {fileID: 6819654811208041759, guid: 1446355baf09fb6f1b347af132bc6e09, type: 3}
   _sprite: {fileID: -3391257396490946495, guid: 6d9d020d2326f7906b68de9015a67180, type: 3}
+  _magazineSize: 30
+  _reloadTime: 1
+  _shootMode: 1
+  _shootClip: {fileID: 0}
+  _reloadClip: {fileID: 0}
+  _spreadAngle: 10

@@ -1,26 +1,32 @@
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using Interfaces;
+using UnityEngine;
 
 namespace Player
 {
     class PlayerInventory
     {
 
-        private Stack<IMineral> _inventory;
+        private Stack<IMineral> _inventory = new();
 
-        public float MaxWeight {get;set;}
+        public float MaxWeight { get ;set; } = 30f;
 
         public int Count => _inventory.Count;
 
-        public float CurrentWegiht => _inventory.Sum(it => it.Size);
+        public float CurrentWeight => _inventory.Sum(it => it.Size);
 
-        public bool Push(IMineral item)
+        public bool TryPush(IMineral item)
         {
-            if (CurrentWegiht + item.Size > MaxWeight)
+            if (CurrentWeight + item.Size > MaxWeight)
+            {
+                Debug.Log($"Push failed: current weight: {CurrentWeight}, item width: {item.Size}, max weight: {MaxWeight}");
                 return false;
-
+            }
+                
             _inventory.Push(item);
+            Debug.Log($"Push success, current weight: {CurrentWeight}, max weight: {MaxWeight}");
             return true;
         }
 

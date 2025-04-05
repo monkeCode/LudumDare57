@@ -39,11 +39,11 @@ namespace Player
             _rb = GetComponent<Rigidbody2D>();
         }
 
-        public void Move(float direction)
+        public void Move(float direction, float speedModifier = 1)
         {
             _moveInput = direction;
             float currentSpeed = _rb.linearVelocityX;
-            float targetSpeed = _moveInput * _maxSpeed;
+            float targetSpeed = _moveInput * _maxSpeed * speedModifier;
             float accel = OnGround ? _acceleration : _flyAcceleration;
 
             float speedDiff = targetSpeed - currentSpeed;

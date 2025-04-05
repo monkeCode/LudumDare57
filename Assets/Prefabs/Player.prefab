@@ -290,6 +290,7 @@ MonoBehaviour:
   _hp: 100
   _maxHp: 100
   _weaponHandler: {fileID: 4818838691821989157}
+  <MineralPrefab>k__BackingField: {fileID: 5974269870199454367, guid: bda2201620db5474198eff395a1e29d7, type: 3}
 --- !u!70 &6447831855128354072
 CapsuleCollider2D:
   m_ObjectHideFlags: 0
