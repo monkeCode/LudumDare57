@@ -19,9 +19,8 @@ namespace Player
         [SerializeField][Range(0, 0.5f)] float _groundCheckRadius = 0.1f;
         [SerializeField] LayerMask _groundLayer;
         [SerializeField] Transform _groundCheck;
-        [SerializeField] bool _allowDoubleJump = true;
+        [SerializeField] bool _allowDoubleJump = false;
         
-        private InputSystem_Actions _input;
         private Rigidbody2D _rb;
         private bool _isJumping;
         private bool _canDoubleJump;
@@ -39,15 +38,7 @@ namespace Player
             _rb = GetComponent<Rigidbody2D>();
         }
 
-        internal void Init([NotNull] InputSystem_Actions mover)
-        {
-            _input = mover;
-            
-            _input.Player.Jump.started += ctx => Jump();
-            _input.Player.Jump.canceled += ctx => CutJump();
-        }
-
-        private void Move(float direction)
+        public void Move(float direction)
         {
             _moveInput = direction;
             float currentSpeed = _rb.linearVelocityX;
@@ -60,7 +51,7 @@ namespace Player
             _rb.AddForce(movement * Vector2.right, ForceMode2D.Force);
         }
 
-        private void Jump()
+        public void Jump()
         {
             if (OnGround)
             {
@@ -81,7 +72,7 @@ namespace Player
             _isJumping = true;
         }
         
-        private void CutJump()
+        public void CutJump()
         {
             if (_rb.linearVelocityY > 0 && _isJumping)
             {
@@ -92,8 +83,7 @@ namespace Player
 
         private void FixedUpdate()
         {
-            // Обработка движения
-            Move(_input.Player.Move.ReadValue<Vector2>().x);
+            
             
             if (_rb.linearVelocityY < 0)
             {
