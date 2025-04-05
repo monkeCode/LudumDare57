@@ -14,6 +14,8 @@ namespace Player
 
         private SpriteRenderer _spriteRenderer;
 
+        private bool press = false;
+
         private void Start()
         {
             _spriteRenderer = GetComponent<SpriteRenderer>();
@@ -46,17 +48,24 @@ namespace Player
 
         public void ShootPress()
         {
-            _weapon.ShootPress(transform.position, transform.right);
+            press = true;
         }
 
         public void ShootRelease()
         {
+            press = false;
             _weapon.ShootRelease(transform.position, transform.right);
         }
 
         public void Reload()
         {
             _weapon.Reload();
+        }
+
+        private void Update()
+        {
+            if(press)
+                _weapon.ShootPress(transform.position, transform.right);
         }
     }
 }
