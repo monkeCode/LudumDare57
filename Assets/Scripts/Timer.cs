@@ -6,9 +6,9 @@ public class Timer : MonoBehaviour
     public static Timer instance = null;
     public static bool platformRiding = false;
 
-    public static float timeForLooting = 60f;
+    public float timeForLooting = 60f;
 
-    public static float timeForFighting = 45f;
+    public float timeForFighting = 45f;
 
     private IEnumerator coroutine;
 
