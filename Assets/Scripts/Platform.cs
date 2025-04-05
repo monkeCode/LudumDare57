@@ -3,9 +3,11 @@ using UnityEngine;
 
 public class Platform : MonoBehaviour
 {
-    public int currentHealth = 50;
+    public int currentHealth { get; private set; } = 50;
 
-    public int maxHealth = 100;
+    public int maxHealth { get; private set; } = 100;
+
+    public static event Action<int> currentHealthChanged;
 
     public int repairAmount = 2;
 
@@ -62,5 +64,6 @@ public class Platform : MonoBehaviour
         {
             currentHealth = maxHealth;
         }
+        currentHealthChanged(currentHealth);
     }
 }
