@@ -14,8 +14,8 @@ TagManager:
   - Entity
   - Player
   - Ground
-  - 
-  - 
+  - Bullet
+  - Platform
   - 
   - 
   - 
@@ -40,6 +40,24 @@ TagManager:
   m_SortingLayers:
   - name: Default
     uniqueID: 0
+    locked: 0
+  - name: background
+    uniqueID: 417152497
+    locked: 0
+  - name: bullet
+    uniqueID: 45781397
+    locked: 0
+  - name: objects
+    uniqueID: 2705015639
+    locked: 0
+  - name: entity
+    uniqueID: 1878128517
+    locked: 0
+  - name: player
+    uniqueID: 2694919917
+    locked: 0
+  - name: weapon
+    uniqueID: 863510155
     locked: 0
   m_RenderingLayers:
   - Default
