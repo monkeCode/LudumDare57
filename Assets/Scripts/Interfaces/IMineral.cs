@@ -2,7 +2,7 @@ namespace Interfaces
 {
     interface IMineral
     {
-        float Size{get;}
+        float Size {get;}
         uint Cost {get;}
 
     }
