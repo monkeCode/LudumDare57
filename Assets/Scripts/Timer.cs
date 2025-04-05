@@ -20,11 +20,11 @@ public class Timer : MonoBehaviour
 
     private IEnumerator coroutine;
 
-    public float leftTime = 0;
+    public float leftTime { get; private set; } = 0;
 
-    public event Action<Stage> StageChanged;
+    public static event Action<Stage> StageChanged;
 
-    public Stage CurrentStage {get; private set;}
+    public static Stage CurrentStage { get; private set; } = Stage.Clill;
 
     void Start()
     {
@@ -45,6 +45,7 @@ public class Timer : MonoBehaviour
 
     private IEnumerator StartTimer(float timeChill, float timeFight)
     {
+        leftTime = timeChill;
         while (true)
         {
             yield return null;
@@ -58,9 +59,9 @@ public class Timer : MonoBehaviour
                     _ => throw new NotImplementedException()
                 };
 
-                StageChanged.Invoke(CurrentStage);
+                StageChanged?.Invoke(CurrentStage);
 
-                leftTime = CurrentStage==Stage.Fight?timeFight:timeChill;
+                leftTime = CurrentStage == Stage.Fight ? timeFight : timeChill;
             }
 
         }

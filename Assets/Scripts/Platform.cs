@@ -3,9 +3,17 @@ using UnityEngine;
 
 public class Platform : MonoBehaviour
 {
-    public int healthPoints = 100;
+    public int currentHealth { get; private set; } = 50;
+
+    public int maxHealth { get; private set; } = 100;
+
+    public static event Action<int> currentHealthChanged;
+
+    public int repairAmount = 2;
 
     public float speed = 5f;
+
+    private bool isMoving = false;
 
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
@@ -16,9 +24,46 @@ public class Platform : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if (Timer.platformRiding)
+        if (isMoving)
         {
             transform.position -= new Vector3(0, speed, 0) * Time.deltaTime;
         }
+    }
+
+    private void OnEnable()
+    {
+        Timer.StageChanged += HandleStageChanged;
+        RepairBox.PlatformRepaired += HandlePlatformRepaired;
+        HandleStageChanged(Timer.CurrentStage);
+    }
+
+    private void OnDisable()
+    {
+        Timer.StageChanged -= HandleStageChanged;
+        RepairBox.PlatformRepaired -= HandlePlatformRepaired;
+    }
+
+    private void HandleStageChanged(Stage newStage)
+    {
+        switch (newStage)
+        {
+            case Stage.Clill:
+                isMoving = false;
+                break;
+
+            case Stage.Fight:
+                isMoving = true;
+                break;
+        }
+    }
+
+    private void HandlePlatformRepaired()
+    {
+        currentHealth += repairAmount;
+        if (currentHealth > maxHealth)
+        {
+            currentHealth = maxHealth;
+        }
+        currentHealthChanged(currentHealth);
     }
 }
