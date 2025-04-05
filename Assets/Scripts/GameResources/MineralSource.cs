@@ -5,7 +5,7 @@ namespace GameResources
 {
     public class MineralSource: MonoBehaviour, IDamageable
     {
-        [field: SerializeField] private uint Durability { get; set; } = 1;
+        [field: SerializeField] private int Durability { get; set; } = 1;
         [field: SerializeField] private uint MineralsCount { get; set; } = 1;
         [field: SerializeField] private Mineral[] MineralPrefabs { get; set; }
 
@@ -18,7 +18,8 @@ namespace GameResources
 
         public void TakeDamage(uint damage)
         {
-            Durability -= damage;
+            Durability -= (int)damage;
+            Debug.Log(Durability);
             if (Durability <= 0)
             {
                 Kill();
