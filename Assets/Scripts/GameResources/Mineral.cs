@@ -5,7 +5,9 @@ namespace GameResources
 {
     public class Mineral: MonoBehaviour, IMineral
     {
-        public float Size { get; } = 1;
-        public uint Cost { get; } = 1;
+        [SerializeField] private float size = 1;
+        [SerializeField] private uint cost = 1;
+        public float Size  => size;
+        public uint Cost => cost;
     }
 }

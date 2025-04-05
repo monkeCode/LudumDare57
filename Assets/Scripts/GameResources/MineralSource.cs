@@ -9,9 +9,11 @@ namespace GameResources
         [field: SerializeField] private uint MineralsCount { get; set; } = 1;
         [field: SerializeField] private Mineral[] MineralPrefabs { get; set; }
 
+        [field: SerializeField] private float SpawnRadius { get; set; } = 0.5f; 
+
         private Vector2 GetRandomPosition(Vector2 startPosition)
         {
-            return new Vector2(startPosition.x + Random.Range(-5, 5), startPosition.y + Random.Range(-5, 5));  
+            return new Vector2(startPosition.x + Random.Range(-SpawnRadius, SpawnRadius), startPosition.y + Random.Range(-SpawnRadius, SpawnRadius));  
         }
 
         public void TakeDamage(uint damage)
