@@ -82,17 +82,6 @@ namespace Player
             _mover.Move(_inputs.Player.Move.ReadValue<Vector2>().x);
             _weaponHandler.UpdateRotation(Camera.main.ScreenToWorldPoint(Mouse.current.position.ReadValue()));
         }
-
-        private void OnTriggerEnter2D(Collider2D other)
-        {
-            if (other.gameObject.TryGetComponent(out Mineral mineral))
-            {
-                if (inventory.TryPush(mineral))
-                {
-                    Destroy(mineral.gameObject);
-                }
-            }
-        }
     }
 
 }

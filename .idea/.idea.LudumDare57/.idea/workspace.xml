@@ -4,10 +4,10 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="0a9a3a54-15d7-46eb-8d53-e494bfb5ff9e" name="Changes" comment="Add mineral collecting">
+    <list default="true" id="0a9a3a54-15d7-46eb-8d53-e494bfb5ff9e" name="Changes" comment="Add collectable minerals">
       <change beforePath="$PROJECT_DIR$/.idea/.idea.LudumDare57/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.LudumDare57/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Scripts/GameResources/Mineral.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/GameResources/Mineral.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Player/PlayerInventory.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Player/PlayerInventory.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Player/Player.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Player/Player.cs" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -51,12 +51,14 @@
     <setting file="mock://C:/Games/Unity/LudumDare57/Assets/Scripts/Currency/CurrencyStorage.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="mock://C:/Games/Unity/LudumDare57/Assets/Scripts/Currency/CurrencyStorage.cs.meta" root0="SKIP_HIGHLIGHTING" />
     <setting file="mock://C:/Games/Unity/LudumDare57/Assets/Scripts/GameResources/Mineral.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="mock://C:/Games/Unity/LudumDare57/Assets/Scripts/GameResources/Mineral.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/UI/MainMenu/MainMenuController.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="mock://C:/Games/Unity/LudumDare57/Assets/Tiles/Platform/Tiles_pack/Tiles_pack/Tileset_6.png.meta" root0="SKIP_HIGHLIGHTING" />
     <setting file="mock://C:/Games/Unity/LudumDare57/ProjectSettings/EditorBuildSettings.asset" root0="SKIP_HIGHLIGHTING" />
     <setting file="mock://C:/Games/Unity/LudumDare57/ProjectSettings/EditorBuildSettings.asset" root0="SKIP_HIGHLIGHTING" />
     <setting file="mock://C:/Games/Unity/LudumDare57/ProjectSettings/ShaderGraphSettings.asset" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/844019a3a067481c8d9cb70c7a2ba4471df600/7a/c4b9a24b/GameObject.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/844019a3a067481c8d9cb70c7a2ba4471df600/da/ebf8b75a/Object.cs" root0="SKIP_HIGHLIGHTING" />
   </component>
   <component name="MetaFilesCheckinStateConfiguration" checkMetaFiles="true" />
   <component name="ProjectColorInfo">{
@@ -127,7 +129,7 @@
       <option name="presentableId" value="Default" />
       <updated>1743847931798</updated>
       <workItem from="1743847932089" duration="782000" />
-      <workItem from="1743850402823" duration="8387000" />
+      <workItem from="1743850402823" duration="10547000" />
     </task>
     <task id="LOCAL-00001" summary="Add simple main and pause menu">
       <option name="closed" value="true" />
@@ -185,7 +187,15 @@
       <option name="project" value="LOCAL" />
       <updated>1743867500101</updated>
     </task>
-    <option name="localTasksCounter" value="8" />
+    <task id="LOCAL-00008" summary="Add collectable minerals">
+      <option name="closed" value="true" />
+      <created>1743870872648</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1743870872648</updated>
+    </task>
+    <option name="localTasksCounter" value="9" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -219,6 +229,7 @@
     <MESSAGE value="refactoring" />
     <MESSAGE value="implement IDamagable for MineralSource" />
     <MESSAGE value="Add mineral collecting" />
-    <option name="LAST_COMMIT_MESSAGE" value="Add mineral collecting" />
+    <MESSAGE value="Add collectable minerals" />
+    <option name="LAST_COMMIT_MESSAGE" value="Add collectable minerals" />
   </component>
 </project>
