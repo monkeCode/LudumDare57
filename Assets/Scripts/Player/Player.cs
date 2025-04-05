@@ -26,6 +26,9 @@ namespace Player
         public static Player Instance { get; private set; }
 
         public readonly PlayerInventory inventory = new();
+
+        private const float MinSpeedModifier = 0.2f;
+        public float SpeedModifier => Math.Max(MinSpeedModifier, 1 - inventory.CurrentWeight / inventory.MaxWeight);
         
 
         private void Awake()
@@ -79,7 +82,7 @@ namespace Player
 
         private void Update()
         {   
-            _mover.Move(_inputs.Player.Move.ReadValue<Vector2>().x);
+            _mover.Move(_inputs.Player.Move.ReadValue<Vector2>().x, SpeedModifier);
             _weaponHandler.UpdateRotation(Camera.main.ScreenToWorldPoint(Mouse.current.position.ReadValue()));
         }
     }

@@ -11,7 +11,7 @@ namespace Player
 
         private Stack<IMineral> _inventory = new();
 
-        public float MaxWeight { get ;set; } = 100f;
+        public float MaxWeight { get ;set; } = 30f;
 
         public int Count => _inventory.Count;
 
