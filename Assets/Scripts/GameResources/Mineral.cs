@@ -11,8 +11,17 @@ namespace GameResources
         [SerializeField] private uint cost = 1;
         [SerializeField] private bool isInteractable;
         [SerializeField] private Player.Player Player;
-        public float Size  => size;
-        public uint Cost => cost;
+        public float Size
+        {
+            get => size;
+            set => size = value;
+        }
+
+        public uint Cost
+        {
+            get => cost;
+            set => cost = value;
+        }
 
         private void Update()
         {

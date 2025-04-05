@@ -4,9 +4,14 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="0a9a3a54-15d7-46eb-8d53-e494bfb5ff9e" name="Changes" comment="Collect by key">
+    <list default="true" id="0a9a3a54-15d7-46eb-8d53-e494bfb5ff9e" name="Changes" comment="Add speed modifier">
+      <change beforePath="$PROJECT_DIR$/.idea/.idea.LudumDare57/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.LudumDare57/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/Minerals/Big mineral.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefabs/Minerals/Big mineral.prefab" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/Minerals/Medium mineral.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefabs/Minerals/Medium mineral.prefab" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/Minerals/Small Mineral.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefabs/Minerals/Small Mineral.prefab" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/Player.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefabs/Player.prefab" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/GameResources/Mineral.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/GameResources/Mineral.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Scripts/Player/Player.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Player/Player.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Player/PlayerMover.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Player/PlayerMover.cs" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -128,7 +133,7 @@
       <option name="presentableId" value="Default" />
       <updated>1743847931798</updated>
       <workItem from="1743847932089" duration="782000" />
-      <workItem from="1743850402823" duration="11125000" />
+      <workItem from="1743850402823" duration="11852000" />
     </task>
     <task id="LOCAL-00001" summary="Add simple main and pause menu">
       <option name="closed" value="true" />
@@ -202,7 +207,15 @@
       <option name="project" value="LOCAL" />
       <updated>1743874731859</updated>
     </task>
-    <option name="localTasksCounter" value="10" />
+    <task id="LOCAL-00010" summary="Add speed modifier">
+      <option name="closed" value="true" />
+      <created>1743875171576</created>
+      <option name="number" value="00010" />
+      <option name="presentableId" value="LOCAL-00010" />
+      <option name="project" value="LOCAL" />
+      <updated>1743875171576</updated>
+    </task>
+    <option name="localTasksCounter" value="11" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -238,6 +251,7 @@
     <MESSAGE value="Add mineral collecting" />
     <MESSAGE value="Add collectable minerals" />
     <MESSAGE value="Collect by key" />
-    <option name="LAST_COMMIT_MESSAGE" value="Collect by key" />
+    <MESSAGE value="Add speed modifier" />
+    <option name="LAST_COMMIT_MESSAGE" value="Add speed modifier" />
   </component>
 </project>

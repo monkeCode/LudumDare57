@@ -26,6 +26,8 @@ namespace Player
         public static Player Instance { get; private set; }
 
         public readonly PlayerInventory inventory = new();
+        
+        [field: SerializeField] public Mineral MineralPrefab { get; set; }
 
         private const float MinSpeedModifier = 0.2f;
         public float SpeedModifier => Math.Max(MinSpeedModifier, 1 - inventory.CurrentWeight / inventory.MaxWeight);
@@ -80,10 +82,28 @@ namespace Player
             Hp += heals;
         }
 
+        public void DropMineral()
+        {
+            var mineral = inventory.Pop();
+            var instance = Instantiate(MineralPrefab, gameObject.transform.position, gameObject.transform.rotation);
+            instance.Cost = mineral.Cost;
+            instance.Size = mineral.Size;
+            instance.transform.localScale = new Vector3(mineral.Size, mineral.Size, 1);
+        }
+
         private void Update()
         {   
             _mover.Move(_inputs.Player.Move.ReadValue<Vector2>().x, SpeedModifier);
             _weaponHandler.UpdateRotation(Camera.main.ScreenToWorldPoint(Mouse.current.position.ReadValue()));
+            HandleInputs();
+        }
+
+        private void HandleInputs()
+        {
+            if (Input.GetKeyDown(KeyCode.Q))
+            {
+                DropMineral();
+            }
         }
     }
 
