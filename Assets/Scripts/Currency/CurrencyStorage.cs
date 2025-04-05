@@ -4,7 +4,7 @@ namespace Currency
 {
     public class CurrencyStorage: MonoBehaviour
     {
-        private int CurrencyCount { get; set; }
+        [field: SerializeField] private int CurrencyCount { get; set; }
 
         public void AddCurrency(int amount)
         {
