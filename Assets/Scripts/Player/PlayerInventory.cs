@@ -11,7 +11,7 @@ namespace Player
 
         private Stack<IMineral> _inventory = new();
 
-        public float MaxWeight { get ;set; } = 30f;
+        public float MaxWeight { get; set; } = 30f;
 
         public int Count => _inventory.Count;
 
@@ -24,7 +24,7 @@ namespace Player
                 Debug.Log($"Push failed: current weight: {CurrentWeight}, item width: {item.Size}, max weight: {MaxWeight}");
                 return false;
             }
-                
+
             _inventory.Push(item);
             Debug.Log($"Push success, current weight: {CurrentWeight}, max weight: {MaxWeight}");
             return true;
