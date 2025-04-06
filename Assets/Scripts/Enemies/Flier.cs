@@ -1,5 +1,9 @@
+using System.Collections;
+using System.Collections.Generic;
 using Interfaces;
 using UnityEngine;
+using UnityEngine.AI;
+using UnityEngine.Serialization;
 
 namespace Enemies
 {
@@ -7,22 +11,34 @@ namespace Enemies
     {
         [SerializeField] private uint health = 50;
         [SerializeField] private uint damage = 5;
-        [SerializeField] private float attackRange = 10f;
+        [SerializeField] private float attackRange = 1f;
+        [SerializeField] private float engageRange = 10f;
         [SerializeField] private float attackDelay = 3f;
-        private float lastAttackTime; 
+        [SerializeField] private float engageDelay = 1f;
+        private float lastAttackTime;
+        private bool engaging;
         
         [SerializeField] private float speed = 5f;
+        [SerializeField] private float engageSpeed = 15f;
 
         [SerializeField] private float playerTargetChance = 70f;
         [SerializeField] private bool isPlayerTarget;
 
         private Rigidbody2D rb;
+        private NavMeshAgent navMeshAgent;
         private Transform targetTransform;
         private IDamageable targetDamageable;
+
+        private Vector2 flyAwayDirection;
 
         private void Start()
         {
             rb = GetComponent<Rigidbody2D>();
+            navMeshAgent = GetComponent<NavMeshAgent>();
+            navMeshAgent.updateRotation = false;
+            navMeshAgent.updateUpAxis = false;
+            navMeshAgent.speed = speed;
+            
             var value = Random.Range(0, 100);
             isPlayerTarget = value < playerTargetChance;
             var target = isPlayerTarget ? Player.Player.Instance.gameObject : Platform.Instance.gameObject;
@@ -32,62 +48,61 @@ namespace Enemies
 
         private void Update()
         {
+            if (!CanAttack())
+            {
+                FlyAway();    
+                return;
+            }
             Move();
-            Jump();
             Attack();
         }
         
         
         private void Move()
         {
-            if (NearTarget())
+            navMeshAgent.SetDestination(targetTransform.position);
+            if (NearTarget(engageRange) && !engaging)
             {
-                rb.linearVelocityX = 0;
-                return;
-            }
-            var difToTarget = transform.position.x - targetTransform.transform.position.x;
-            var direction = difToTarget > 0 ? -1f : 1f;
-            rb.linearVelocityX = direction * speed;
-            
-            FlipPosition(direction);
-        }
-
-        private void FlipPosition(float direction)
-        {
-            transform.localScale = new Vector2(direction, 1);
-        }
-
-        private void Jump()
-        {
-            if (OnGround && NearWall)
-            {
-                PerformJump();
+                engaging = true;
+                StartCoroutine(PerformEngage());
             }
         }
-        private void PerformJump()
-        {
-            rb.linearVelocity = new Vector2(rb.linearVelocityX, 0);
-            rb.AddForce(Vector2.up * jumpHeight, ForceMode2D.Impulse);
-        }
-    
-        private bool OnGround => Physics2D.OverlapCircle(groundCheck.position, groundCheckRadius, groundLayer);
-        private bool NearWall => Physics2D.OverlapCircle(wallCheck.position, groundCheckRadius, groundLayer);
 
-        private bool NearTarget()
+        private bool NearTarget(float distance)
         {
-            var difToTarget = transform.position.x - targetTransform.transform.position.x;
-            return Mathf.Abs(difToTarget) < attackRange;
+            var difToTarget = transform.position - targetTransform.transform.position;
+            return difToTarget.magnitude < distance;
         }
 
         public void Attack()
         {
-            if (!NearTarget() || !CanAttack())
+            if (!NearTarget(attackRange) || !CanAttack())
                 return;
             lastAttackTime = Time.time;
             targetDamageable.TakeDamage(damage);
+            engaging = false;
         }
         
-        public bool CanAttack() => Time.time - lastAttackTime > attackDelay;
+        IEnumerator PerformEngage()
+        {
+            var directionToTarget = transform.position - targetTransform.position;
+            flyAwayDirection = directionToTarget * -1;
+
+            navMeshAgent.speed = 0f;
+            
+            yield return new WaitForSeconds(engageDelay);
+            
+            navMeshAgent.speed = engageSpeed;
+        }
+
+        private void FlyAway()
+        {
+            navMeshAgent.speed = speed;
+            var normalized = flyAwayDirection.normalized * 10;
+            navMeshAgent.SetDestination(normalized);
+        }
+        
+        public bool CanAttack() => Time.time - lastAttackTime > attackDelay || Time.time < attackDelay;
         public void TakeDamage(uint damage)
         {
             health -= damage;
