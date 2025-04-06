@@ -1,9 +1,5 @@
 fileFormatVersion: 2
-<<<<<<<< HEAD:Assets/Prefabs/BOOOOOOOOOOOOOM.prefab.meta
-guid: bc37a2962d39fa7cbaa21bdb459198fa
-========
 guid: 33dab244624fc0a409af092af46d15a8
->>>>>>>> 135ed86 (Add turret 2):Assets/Prefabs/Turret2.prefab.meta
 PrefabImporter:
   externalObjects: {}
   userData: 
