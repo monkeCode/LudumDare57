@@ -17,6 +17,8 @@ namespace Player
         [Header("Trash")]
         [SerializeField] WeaponHandler _weaponHandler;
 
+        private Animator _animator;
+
         public WeaponHandler WeaponHandler => _weaponHandler;
         public InputSystem_Actions Inputs => _inputs;
         private InputSystem_Actions _inputs;
@@ -47,8 +49,11 @@ namespace Player
             _inputs = new InputSystem_Actions();
             _inputs.Player.Enable();
 
+            _animator = GetComponent<Animator>();
+
             _mover = GetComponent<PlayerMover>();
             _inputs.Player.Jump.started += ctx => _mover.Jump();
+            _inputs.Player.Jump.started += ctx => _animator.SetTrigger("jmp");
             _inputs.Player.Jump.canceled += ctx => _mover.CutJump();
 
             _inputs.Player.Attack.started += ctx => _weaponHandler.ShootPress();
@@ -100,8 +105,12 @@ namespace Player
         private void Update()
         {   
             _mover.Move(_inputs.Player.Move.ReadValue<Vector2>().x, SpeedModifier);
-            _weaponHandler.UpdateRotation(Camera.main.ScreenToWorldPoint(Mouse.current.position.ReadValue()));
+            _weaponHandler.UpdatePosition(Camera.main.ScreenToWorldPoint(Mouse.current.position.ReadValue()));
             HandleInputs();
+
+            _animator.SetBool("onGround", _mover.OnGround);
+            _animator.SetBool("run", _inputs.Player.Move.ReadValue<Vector2>().x != 0);
+            _animator.SetFloat("dy", _mover.GetVelocity().y);
         }
 
         private void HandleInputs()

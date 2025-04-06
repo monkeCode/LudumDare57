@@ -18,10 +18,13 @@ public class Platform : MonoBehaviour
 
     private Rigidbody2D rb;
 
+    AudioSource audioSource;
+
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
     {
         rb = GetComponent<Rigidbody2D>();
+        audioSource = GetComponent<AudioSource>();
     }
 
     // Update is called once per frame
@@ -30,10 +33,12 @@ public class Platform : MonoBehaviour
         if (isMoving)
         {
             rb.linearVelocity = -transform.up * speed; // Более физически корректно
+            audioSource.Play();
         }
         else
         {
             rb.linearVelocity = Vector2.zero;
+            audioSource.Stop();
         }
     }
 

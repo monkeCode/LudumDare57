@@ -22,9 +22,11 @@ namespace Player
         [SerializeField] bool _allowDoubleJump = false;
 
         private Rigidbody2D _rb;
+        private SpriteRenderer _sp;
         private bool _isJumping;
         private bool _canDoubleJump;
         private float _moveInput;
+
 
         public bool OnGround
         {
@@ -37,6 +39,7 @@ namespace Player
         private void Start()
         {
             _rb = GetComponent<Rigidbody2D>();
+            _sp = GetComponent<SpriteRenderer>();
         }
 
         public void Move(float direction, float speedModifier = 1)
@@ -48,7 +51,8 @@ namespace Player
 
             float speedDiff = targetSpeed - currentSpeed;
             float movement = speedDiff * accel;
-
+            if(direction != 0)
+                _sp.flipX = direction < 0;
             _rb.AddForce(movement * Vector2.right, ForceMode2D.Force);
         }
 
@@ -91,6 +95,8 @@ namespace Player
                 _isJumping = false;
             }
         }
+
+        public Vector2 GetVelocity() => _rb.linearVelocity;
 
         private void OnDrawGizmos()
         {

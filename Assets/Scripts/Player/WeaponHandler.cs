@@ -11,7 +11,11 @@ namespace Player
     {
 
         [SerializeField] private BaseWeapon _weapon;
+        [SerializeField] private float _offset;
+        [SerializeField] private float _time;
+        [SerializeField] private Transform _center;
 
+        private Vector2 trackPoint;
         private SpriteRenderer _spriteRenderer;
 
         private bool press = false;
@@ -26,13 +30,15 @@ namespace Player
             }
         }
 
-        public void UpdateRotation(Vector2 trackPoint)
+        public void UpdatePosition(Vector2 trackPoint)
         {
             var dir = trackPoint - (Vector2)transform.position;
             var angle = Mathf.Atan2(dir.y, dir.x) * Mathf.Rad2Deg;
 
             transform.rotation = Quaternion.Euler(new Vector3(0, 0, angle));
             _spriteRenderer.flipY = dir.x < 0;
+            this.trackPoint = (Vector2)_center.position + dir.normalized * _offset;
+
             Debug.DrawRay(transform.position, dir);
         }
 
@@ -66,6 +72,8 @@ namespace Player
         {
             if(press)
                 _weapon.ShootPress(transform.position, transform.right);
+
+            transform.position =  Vector2.Lerp(transform.position, trackPoint, _time);
         }
     }
 }
