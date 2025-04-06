@@ -13,15 +13,17 @@ MonoBehaviour:
   m_Name: Granade launcher
   m_EditorClassIdentifier: 
   <BaseName>k__BackingField: Grenade launcher
-  _bulletSpeed: 5
+  _bulletSpeed: 300
   _shootFreq: 1
   _damage: 20
   _bullet: {fileID: 6819654811208041759, guid: 22d5c5171362e4518ba1d7156b1c0689, type: 3}
-  _sprite: {fileID: 0}
-  _magazineSize: 0
-  _reloadTime: 0
+  _sprite: {fileID: -8870189833564908002, guid: 6d9d020d2326f7906b68de9015a67180, type: 3}
+  _magazineSize: 3
+  _reloadTime: 5
   _shootMode: 0
-  _shootClip: {fileID: 0}
-  _reloadClip: {fileID: 0}
+  _shootClip: {fileID: 8300000, guid: b953488ce9d38d4838eb6cf0e96fabaf, type: 3}
+  _reloadClipStart: {fileID: 8300000, guid: 1fbb27b90b497b6fea63d4d09e19b85c, type: 3}
+  _reloadClipEnd: {fileID: 8300000, guid: a97182bcb5800718d96ace5e017617c7, type: 3}
+  _noAmmoClip: {fileID: 8300000, guid: 5cbfe10a2cfe9c643aed4440f83bdf7a, type: 3}
   <Rarity>k__BackingField: 0
-  _spreadAngle: 2
+  _spreadAngle: 0

@@ -107,7 +107,9 @@ namespace Weapons
         [SerializeField] protected ShootMode _shootMode;
 
         [SerializeField] protected AudioClip _shootClip;
-        [SerializeField] protected AudioClip _reloadClip;
+        [SerializeField] protected AudioClip _reloadClipStart;
+        [SerializeField] protected AudioClip _reloadClipEnd;
+        [SerializeField] protected AudioClip _noAmmoClip;
 
         [field: SerializeField] public Rarity Rarity { get; protected set; }
 
@@ -145,13 +147,16 @@ namespace Weapons
             yield return new WaitForSeconds(ReloadTime);
             _currentAmmo = _magazineSize;
             _isReloading = false;
+            Player.Player.Instance.WeaponHandler.PlaySound(_reloadClipEnd);
         }
 
         public virtual void Reload()
         {
-            if (_isReloading)
+            if (_isReloading || _currentAmmo == MagazineSize)
                 return;
             _isReloading = true;
+
+            Player.Player.Instance.WeaponHandler.PlaySound(_reloadClipStart);
             Player.Player.Instance.StartCoroutine(ReloadCorutine());
         }
 
@@ -169,6 +174,10 @@ namespace Weapons
 
             _currentAmmo--;
             _lastShotTime = Time.time;
+
+            Player.Player.Instance.WeaponHandler.Drift();
+            Player.Player.Instance.WeaponHandler.PlaySound(_shootClip);
+
         }
 
         public bool CanShoot() => !_isReloading && _currentAmmo > 0 && Time.time - _lastShotTime > 1f / ShootFreq && !Shooted;
@@ -177,11 +186,12 @@ namespace Weapons
         {
             if (!CanShoot())
             {
+                if(_currentAmmo == 0)
+                    Player.Player.Instance.WeaponHandler.PlaySound(_noAmmoClip);
                 return;
             }
 
             Shoot(point, direction);
-
             if (ShootMode == ShootMode.Single)
                 Shooted = true;
             Debug.Log($"Shoot! Ammo: {_currentAmmo}/{_magazineSize}");

@@ -11,7 +11,7 @@ GameObject:
   - component: {fileID: 6369169408161873713}
   - component: {fileID: 532882963905512130}
   - component: {fileID: 4393742119647181300}
-  m_Layer: 0
+  m_Layer: 5
   m_Name: Panel
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -87,7 +87,7 @@ GameObject:
   - component: {fileID: 3000509812860541852}
   - component: {fileID: 163395382029655337}
   - component: {fileID: 4745375498863913667}
-  m_Layer: 0
+  m_Layer: 5
   m_Name: Weapon
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -242,7 +242,7 @@ GameObject:
   - component: {fileID: 8973767662215984768}
   - component: {fileID: 2124775561771537300}
   - component: {fileID: 2251664509316759777}
-  m_Layer: 0
+  m_Layer: 5
   m_Name: Canvas
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -345,7 +345,7 @@ GameObject:
   - component: {fileID: 5970744743489028277}
   - component: {fileID: 7379677673320779038}
   - component: {fileID: 1406090920889233043}
-  m_Layer: 0
+  m_Layer: 5
   m_Name: name text
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -480,7 +480,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1123986678389274351}
   - component: {fileID: 5681121611808740754}
-  m_Layer: 0
+  m_Layer: 5
   m_Name: sprit
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -543,8 +543,8 @@ SpriteRenderer:
   m_AutoUVMaxDistance: 0.5
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
-  m_SortingLayerID: 0
-  m_SortingLayer: 0
+  m_SortingLayerID: 863510155
+  m_SortingLayer: 5
   m_SortingOrder: 0
   m_Sprite: {fileID: 0}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
@@ -568,7 +568,7 @@ GameObject:
   - component: {fileID: 8154019806248521799}
   - component: {fileID: 592683308773176165}
   - component: {fileID: 8433799820458190286}
-  m_Layer: 0
+  m_Layer: 5
   m_Name: text
   m_TagString: Untagged
   m_Icon: {fileID: 0}

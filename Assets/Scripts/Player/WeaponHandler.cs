@@ -6,7 +6,7 @@ using Weapons;
 
 namespace Player
 {
-    [RequireComponent(typeof(SpriteRenderer))]
+    [RequireComponent(typeof(SpriteRenderer), typeof(AudioSource))]
     class WeaponHandler : MonoBehaviour
     {
 
@@ -18,11 +18,16 @@ namespace Player
         private Vector2 trackPoint;
         private SpriteRenderer _spriteRenderer;
 
+        private AudioSource source;
+
         private bool press = false;
+
+        public bool IsReloading => _weapon.IsReloading;
 
         private void Start()
         {
             _spriteRenderer = GetComponent<SpriteRenderer>();
+            source = GetComponent<AudioSource>();
 
             if (_weapon != null)
             {
@@ -68,6 +73,16 @@ namespace Player
             _weapon.Reload();
         }
 
+        public void Drift()
+        {
+            transform.position += -(Vector3)(trackPoint-(Vector2)_center.position) * 0.1f + Vector3.up * 0.1f;
+        }
+
+        public void PlaySound(AudioClip clip)
+        {
+            source.PlayOneShot(clip);
+        }
+
         private void Update()
         {
             if(press)
@@ -75,5 +90,6 @@ namespace Player
 
             transform.position =  Vector2.Lerp(transform.position, trackPoint, _time * Time.deltaTime);
         }
+
     }
 }

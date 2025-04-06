@@ -9,7 +9,6 @@ public class Grenade : Bullet
 {
     [SerializeField] private float _boomrange;
     [SerializeField] private float _boomTimer;
-    [SerializeField] private AudioClip _boomSound;
     [SerializeField] private GameObject _boomPrefab;
     [SerializeField] private LayerMask _boomLayer;
 
@@ -32,7 +31,7 @@ public class Grenade : Bullet
             }
         }
 
-        Instantiate(_boomPrefab);
+        Instantiate(_boomPrefab, transform.position, Quaternion.identity);
         Destroy(gameObject);
 
     }

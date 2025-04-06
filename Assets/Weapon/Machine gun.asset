@@ -21,7 +21,9 @@ MonoBehaviour:
   _magazineSize: 30
   _reloadTime: 1
   _shootMode: 1
-  _shootClip: {fileID: 0}
-  _reloadClip: {fileID: 0}
+  _shootClip: {fileID: 8300000, guid: 5a018b759641518d597bce173eadf328, type: 3}
+  _reloadClipStart: {fileID: 8300000, guid: 1fbb27b90b497b6fea63d4d09e19b85c, type: 3}
+  _reloadClipEnd: {fileID: 8300000, guid: a97182bcb5800718d96ace5e017617c7, type: 3}
+  _noAmmoClip: {fileID: 8300000, guid: b953488ce9d38d4838eb6cf0e96fabaf, type: 3}
   <Rarity>k__BackingField: 0
   _spreadAngle: 10
