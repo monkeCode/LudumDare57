@@ -20,7 +20,12 @@ public class Timer : MonoBehaviour
 
     private IEnumerator coroutine;
 
-    public float leftTime { get; private set; } = 0;
+    public static float leftTime { get; private set; } = 0;
+
+    public static float getLeftTime()
+    {
+        return leftTime;
+    }
 
     public static event Action<Stage> StageChanged;
 
