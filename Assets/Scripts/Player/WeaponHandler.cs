@@ -32,7 +32,7 @@ namespace Player
 
         public void UpdatePosition(Vector2 trackPoint)
         {
-            var dir = trackPoint - (Vector2)transform.position;
+            var dir = trackPoint - (Vector2)_center.position;
             var angle = Mathf.Atan2(dir.y, dir.x) * Mathf.Rad2Deg;
 
             transform.rotation = Quaternion.Euler(new Vector3(0, 0, angle));
@@ -73,7 +73,7 @@ namespace Player
             if(press)
                 _weapon.ShootPress(transform.position, transform.right);
 
-            transform.position =  Vector2.Lerp(transform.position, trackPoint, _time);
+            transform.position =  Vector2.Lerp(transform.position, trackPoint, _time * Time.deltaTime);
         }
     }
 }

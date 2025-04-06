@@ -35,7 +35,7 @@ namespace Weapons
 
         public void PlayerLoot()
         {
-            if(Vector2.Distance(transform.position, Player.Player.Instance.transform.position) > 1)
+            if(Vector2.Distance(transform.position, Player.Player.Instance.transform.position) > 2)
                 return;
             var weapon = Player.Player.Instance.WeaponHandler.SwapWeapon(_weapon);
             SetWeapon(weapon);
@@ -87,7 +87,7 @@ namespace Weapons
     private void GenerateGun()
     {
         var weapon = WeaponGenerator.Instance.GenerateWeapon(Rarity.Rare);
-        
+
         SetWeapon(weapon);
     }
 }
