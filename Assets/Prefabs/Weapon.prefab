@@ -467,7 +467,7 @@ MonoBehaviour:
   m_margin: {x: -0.92892313, y: 0, z: -0.94466925, w: 0.015744686}
   m_isUsingLegacyAnimationComponent: 0
   m_isVolumetricText: 0
-  m_hasFontAssetChanged: 0
+  m_hasFontAssetChanged: 1
   m_baseMaterial: {fileID: 0}
   m_maskOffset: {x: 0, y: 0, z: 0, w: 0}
 --- !u!1 &7402836602830670080
@@ -690,6 +690,6 @@ MonoBehaviour:
   m_margin: {x: 0, y: 0.39361167, z: -0.07921648, w: -0.75573504}
   m_isUsingLegacyAnimationComponent: 0
   m_isVolumetricText: 0
-  m_hasFontAssetChanged: 0
+  m_hasFontAssetChanged: 1
   m_baseMaterial: {fileID: 0}
   m_maskOffset: {x: 0, y: 0, z: 0, w: 0}

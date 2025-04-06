@@ -97,6 +97,10 @@ namespace Weapons
                     break;
             }
 
+            _cv.gameObject.SetActive(false);
+            StopCoroutine(Waiter());
+            _show = false;
+
         }
 
         void Start()

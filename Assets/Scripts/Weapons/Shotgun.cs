@@ -18,6 +18,9 @@ namespace Weapons
             }
             for(int i =0; i < bullets_count; i++)
                 Shoot(point, direction);
+                _currentAmmo+=1;
+            
+            _currentAmmo -= 1;
 
             if (ShootMode == ShootMode.Single)
                 Shooted = true;

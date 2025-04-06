@@ -12,7 +12,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 03a79be3747c0d0f094d1656199f2f52, type: 3}
   m_Name: Shotgun
   m_EditorClassIdentifier: 
-  <BaseName>k__BackingField: shotgun
+  <BaseName>k__BackingField: Shotgun
   _bulletSpeed: 300
   _shootFreq: 0.5
   _damage: 5
@@ -22,7 +22,9 @@ MonoBehaviour:
   _reloadTime: 2
   _shootMode: 4
   _shootClip: {fileID: 0}
-  _reloadClip: {fileID: 0}
+  _reloadClipStart: {fileID: 0}
+  _reloadClipEnd: {fileID: 0}
+  _noAmmoClip: {fileID: 0}
   <Rarity>k__BackingField: 0
   _spreadAngle: 25
   bullets_count: 5

@@ -12,7 +12,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: cab66135755e4aa169a317da46dd1b13, type: 3}
   m_Name: Pistol
   m_EditorClassIdentifier: 
-  <BaseName>k__BackingField: pistol
+  <BaseName>k__BackingField: Pistol
   _bulletSpeed: 350
   _shootFreq: 2
   _damage: 5
