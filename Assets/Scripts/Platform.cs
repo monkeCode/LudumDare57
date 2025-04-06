@@ -4,11 +4,11 @@ using UnityEngine;
 
 public class Platform : MonoBehaviour
 {
-    public int currentHealth = 50;
+    public float currentHealth = 50f;
 
-    public int maxHealth = 100;
+    public float maxHealth = 100f;
 
-    public static event Action<int> currentHealthChanged;
+    public static event Action<float> currentHealthChanged;
 
     public int repairAmount = 2;
 
