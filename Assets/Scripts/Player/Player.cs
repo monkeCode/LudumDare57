@@ -11,8 +11,8 @@ namespace Player
     {
 
         [Header("Stats")]
-        [SerializeField] private uint _hp;
-        [SerializeField] private uint _maxHp;
+        [SerializeField] private int _hp;
+        [SerializeField] private int _maxHp;
 
         [Header("Trash")]
         [SerializeField] WeaponHandler _weaponHandler;
@@ -20,8 +20,8 @@ namespace Player
         private InputSystem_Actions _inputs;
         private PlayerMover _mover;
 
-        public uint MaxHp { get => _maxHp; set => _maxHp = value; }
-        public uint Hp { get => _hp; set => _hp = Math.Clamp(value, 0, _maxHp); }
+        public int MaxHp { get => _maxHp; set => _maxHp = value; }
+        public int Hp { get => _hp; set => _hp = Math.Clamp(value, 0, _maxHp); }
 
         public static Player Instance { get; private set; }
 
@@ -66,7 +66,7 @@ namespace Player
 
         public void TakeDamage(uint damage)
         {
-            Hp -= damage;
+            Hp -= (int)damage;
             if (Hp == 0)
                 Die();
         }
@@ -83,7 +83,7 @@ namespace Player
 
         public void Heal(uint heals)
         {
-            Hp += heals;
+            Hp += (int)heals;
         }
 
         public void DropMineral()
