@@ -1,12 +1,13 @@
 using System;
 using System.Collections;
+using Core;
 using UnityEngine;
 
-public class RepairBox : MonoBehaviour
+public class RepairBox : MonoBehaviour, IInteractable
 {
     public static event Action PlatformRepaired;
 
-    private bool canRepair = true;
+    private bool _canRepair = true;
 
     AudioSource audioSource;
 
@@ -25,18 +26,17 @@ public class RepairBox : MonoBehaviour
         }
     }
 
-    private void OnTriggerStay2D(Collider2D other)
+
+    public void Interact()
     {
-        if (other.CompareTag("Player"))
+        if (_canRepair)
         {
-            if (canRepair && Input.GetKey(KeyCode.E))
+
+            PlatformRepaired?.Invoke();
+            StartCoroutine(RepairSuspend(0.2f));
+            if (!audioSource.isPlaying)
             {
-                PlatformRepaired?.Invoke();
-                StartCoroutine(RepairSuspend(0.2f));
-                if (!audioSource.isPlaying)
-                {
-                    audioSource.Play();
-                }
+                audioSource.Play();
             }
         }
     }
@@ -51,8 +51,8 @@ public class RepairBox : MonoBehaviour
 
     private IEnumerator RepairSuspend(float timeSuspend)
     {
-        canRepair = false;
+        _canRepair = false;
         yield return new WaitForSeconds(timeSuspend);
-        canRepair = true;
+        _canRepair = true;
     }
 }

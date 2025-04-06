@@ -1,0 +1,40 @@
+Index: Assets/Scripts/GameResources/MineralSellPoint.cs
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/Assets/Scripts/GameResources/MineralSellPoint.cs b/Assets/Scripts/GameResources/MineralSellPoint.cs
+new file mode 100644
+--- /dev/null	(date 1743936911661)
++++ b/Assets/Scripts/GameResources/MineralSellPoint.cs	(date 1743936911661)
+@@ -0,0 +1,15 @@
++using Core;
++
++namespace GameResources
++{
++    public class MineralSellPoint: IInteractable
++    {
++        private Player.Player Player;
++        private CurrencyStorage _currencyStorage;
++        
++        public void Interact()
++        {
++            Player.inventory.SellAllForMoney();
++        }
++    }
++}
+\ No newline at end of file
+Index: Assets/Scripts/GameResources/MineralSellPoint.cs.meta
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/Assets/Scripts/GameResources/MineralSellPoint.cs.meta b/Assets/Scripts/GameResources/MineralSellPoint.cs.meta
+new file mode 100644
+--- /dev/null	(date 1743936911662)
++++ b/Assets/Scripts/GameResources/MineralSellPoint.cs.meta	(date 1743936911662)
+@@ -0,0 +1,3 @@
++fileFormatVersion: 2
++guid: 062ff15cc4d84802a9484efcf6c0b805
++timeCreated: 1743936778
+\ No newline at end of file
