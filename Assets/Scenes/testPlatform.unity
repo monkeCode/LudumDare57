@@ -401,6 +401,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Player
       objectReference: {fileID: 0}
+    - target: {fileID: 2626821414546438955, guid: 2ce8a8e4f99f16a7d9158f320ee3565e, type: 3}
+      propertyPath: m_TagString
+      value: Player
+      objectReference: {fileID: 0}
     - target: {fileID: 7860887919287497563, guid: 2ce8a8e4f99f16a7d9158f320ee3565e, type: 3}
       propertyPath: m_LocalPosition.x
       value: 1.22
@@ -703,14 +707,6 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 6974108722689831357, guid: a8a33d2bbb7279746961eba3767bf1b7, type: 3}
-      propertyPath: m_Volume
-      value: 0.5
-      objectReference: {fileID: 0}
-    - target: {fileID: 6974108722689831357, guid: a8a33d2bbb7279746961eba3767bf1b7, type: 3}
-      propertyPath: OutputAudioMixerGroup
-      value: 
-      objectReference: {fileID: -4116238920815102266, guid: 924082c46c86b814e86c40436f326b12, type: 2}
     - target: {fileID: 7828102065613348783, guid: a8a33d2bbb7279746961eba3767bf1b7, type: 3}
       propertyPath: m_Name
       value: Platform

@@ -15,7 +15,6 @@ public class HealthBar : MonoBehaviour
 
     void Update()
     {
-        print(healthBar);
         healthBar.fillAmount = platform.currentHealth / platform.maxHealth;
     }
 }
