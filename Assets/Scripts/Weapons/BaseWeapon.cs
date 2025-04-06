@@ -1,6 +1,8 @@
 
+using System;
 using System.Collections;
 using Interfaces;
+using Unity.VisualScripting;
 using UnityEngine;
 
 namespace Weapons
@@ -14,6 +16,13 @@ namespace Weapons
         Charge,
         Shotgun
 
+    }
+
+    public enum Rarity
+    {
+        Common = 0,
+        Uncommon = 1,
+        Rare = 2
     }
 
     [CreateAssetMenu(menuName = "Weapons/Base")]
@@ -36,6 +45,8 @@ namespace Weapons
 
         [SerializeField] protected AudioClip _shootClip;
         [SerializeField] protected AudioClip _reloadClip;
+
+        [field:SerializeField] public Rarity Rarity {get;protected set;}
 
         public ShootMode ShootMode => _shootMode;
 
@@ -83,7 +94,7 @@ namespace Weapons
 
         protected void Shoot(Vector2 point, Vector2 direction)
         {
-            float spread = Random.Range(-_spreadAngle, _spreadAngle);
+            float spread = UnityEngine.Random.Range(-_spreadAngle, _spreadAngle);
             Quaternion spreadRotation = Quaternion.Euler(0, 0, spread);
             Vector2 spreadDirection = spreadRotation * direction;
 
@@ -123,6 +134,24 @@ namespace Weapons
         {
             _currentAmmo = MagazineSize;
             _lastShotTime = Time.time;
+        }
+
+        public virtual BaseWeapon GenerateCopy(Rarity rarity)
+        {
+            var copy = Instantiate(this);
+            return FillStats(rarity, copy);
+        }
+
+        protected BaseWeapon FillStats(Rarity rarity, BaseWeapon copy)
+        {
+            var incCoef = rarity - Rarity;
+            copy._magazineSize = (uint)Math.Clamp(copy._magazineSize * UnityEngine.Random.Range(-0.05f, 0.15f) * incCoef + copy._magazineSize, 1, 3000);
+            copy._bulletSpeed += copy._bulletSpeed * UnityEngine.Random.Range(-0.05f, 0.15f) * incCoef;
+            copy._damage = (uint)Math.Clamp(copy._damage * UnityEngine.Random.Range(-0.05f, 0.15f) * incCoef + copy._damage, 0, 3000);
+            copy._reloadTime += copy._reloadTime * UnityEngine.Random.Range(-0.15f, 0.05f) * incCoef;
+            copy._spreadAngle *= UnityEngine.Random.Range(0.95f, 1.05f);
+            copy.Rarity = rarity;
+            return copy;
         }
     }
 }

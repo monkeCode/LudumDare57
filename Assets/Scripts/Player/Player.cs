@@ -17,6 +17,8 @@ namespace Player
         [Header("Trash")]
         [SerializeField] WeaponHandler _weaponHandler;
 
+        public WeaponHandler WeaponHandler => _weaponHandler;
+        public InputSystem_Actions Inputs => _inputs;
         private InputSystem_Actions _inputs;
         private PlayerMover _mover;
 
