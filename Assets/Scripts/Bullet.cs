@@ -7,12 +7,12 @@ namespace Weapons
     [RequireComponent(typeof(Rigidbody2D))]
     public class Bullet : MonoBehaviour, IBullet
     {
-        [SerializeField] private float _force;
-        [SerializeField] private uint _damage;
+        [SerializeField] protected float _force;
+        [SerializeField] protected uint _damage;
 
         public void SetDamage(uint damage) => _damage = damage;
 
-        void Start()
+        protected virtual void Start()
         {
             Destroy(gameObject, 10);
         }

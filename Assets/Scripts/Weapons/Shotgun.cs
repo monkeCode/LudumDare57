@@ -9,7 +9,7 @@ namespace Weapons
     public class Shotgun : BaseWeapon
     {
         [SerializeField] private uint bullets_count;
-
+        public uint BulletsCount => bullets_count;
         public override void ShootPress(Vector2 point, Vector2 direction)
         {
             if (!CanShoot())

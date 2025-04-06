@@ -1,12 +1,61 @@
 
 using System;
 using System.Collections;
+using System.Collections.Generic;
 using Interfaces;
 using Unity.VisualScripting;
 using UnityEngine;
 
 namespace Weapons
 {
+
+    class WeaponNameGenerator
+    {
+
+        static readonly Dictionary<Rarity, int> prefixesCount = new(){
+        {Rarity.Common, 1},
+        {Rarity.Uncommon, 2},
+        {Rarity.Rare, 4},
+        };
+
+        public static string GenerateWeaponName(BaseWeapon weapon)
+        {
+            List<string> prefixes = new List<string>
+        {
+            "Killer", "Stinky", "Sparkly", "Fluffy", "Screaming",
+            "Forgotten", "Insane", "Greasy", "Lazy", "Moist", "Itchy",
+            "Loud", "Quiet", "Squeaky", "Hairy", "Rotten"
+        };
+
+
+            List<string> suffixes = new List<string>
+        {
+            "of Destruction", "of Infinite Stink", "of Victory (Maybe)", "of Unexpected Sneezes",
+            "of Falling Toast", "of Random Insults", "of Eternal Hiccups", "of Nighttime Snoring",
+            "of Lost Socks", "of Screaming Babies", "of Sudden Fishing", "of Delayed Trains"
+        };
+            string prefix = "";
+            for (int i = 0; i < UnityEngine.Random.Range(0, prefixesCount[weapon.Rarity]); i++)
+            {
+                prefix += prefixes[UnityEngine.Random.Range(0, prefixes.Count)] + " ";
+            }
+            string suffix = suffixes[UnityEngine.Random.Range(0, suffixes.Count)];
+            string name = weapon.BaseName;
+
+            // Sometimes add a "special" effect
+            if (UnityEngine.Random.value < 0.1)
+            {
+                List<string> specialEffects = new List<string>
+            {
+                " with pizza smell", " and chicken legs", ", but only on Tuesdays",
+                " +1 to clumsiness", " (Do not dishwasher)", " with auto-reload", " and glitter"
+            };
+                suffix += specialEffects[UnityEngine.Random.Range(0, specialEffects.Count)];
+            }
+
+            return $"{prefix.Trim()} {name.Trim()} {suffix.Trim()}";
+        }
+    }
 
     public enum ShootMode
     {
@@ -18,6 +67,7 @@ namespace Weapons
 
     }
 
+
     public enum Rarity
     {
         Common = 0,
@@ -28,6 +78,19 @@ namespace Weapons
     [CreateAssetMenu(menuName = "Weapons/Base")]
     public class BaseWeapon : ScriptableObject, IWeapon
     {
+        [field: SerializeField] public string BaseName { get; protected set; }
+        private string _name;
+        public string Name
+        {
+            get
+            {
+                if (string.IsNullOrEmpty(_name))
+                    return BaseName;
+                return _name;
+            }
+            protected set { _name = value; }
+        }
+
         [SerializeField] protected float _bulletSpeed;
         [SerializeField] protected float _shootFreq;
 
@@ -46,7 +109,7 @@ namespace Weapons
         [SerializeField] protected AudioClip _shootClip;
         [SerializeField] protected AudioClip _reloadClip;
 
-        [field:SerializeField] public Rarity Rarity {get;protected set;}
+        [field: SerializeField] public Rarity Rarity { get; protected set; }
 
         public ShootMode ShootMode => _shootMode;
 
@@ -136,6 +199,7 @@ namespace Weapons
             _lastShotTime = Time.time;
         }
 
+
         public virtual BaseWeapon GenerateCopy(Rarity rarity)
         {
             var copy = Instantiate(this);
@@ -151,6 +215,9 @@ namespace Weapons
             copy._reloadTime += copy._reloadTime * UnityEngine.Random.Range(-0.15f, 0.05f) * incCoef;
             copy._spreadAngle *= UnityEngine.Random.Range(0.95f, 1.05f);
             copy.Rarity = rarity;
+
+            copy.Name = WeaponNameGenerator.GenerateWeaponName(copy);
+
             return copy;
         }
     }

@@ -1,4 +1,8 @@
+using System;
+using System.Collections;
 using System.Diagnostics.CodeAnalysis;
+using System.Text;
+using TMPro;
 using Unity.VisualScripting;
 using UnityEngine;
 using UnityEngine.EventSystems;
@@ -20,17 +24,48 @@ namespace Weapons
 
         [SerializeField] private SpriteRenderer _sp;
         [SerializeField] private Light2D _light;
+        
+        [SerializeField] private Canvas _cv;
+        [SerializeField] private TextMeshProUGUI _text;
+        [SerializeField] private TextMeshProUGUI _name;
+        [SerializeField] private float _showAfterSecs;
 
+        private bool _show = false;
+
+        IEnumerator Waiter()
+        {
+            yield return new WaitForSeconds(_showAfterSecs);
+            if(!_show)
+                yield break;
+
+            _cv.gameObject.SetActive(true);
+            _text.text = GetText();
+            var color = _weapon.Rarity switch
+            {
+                Rarity.Common => "white",
+                Rarity.Uncommon => "green",
+                Rarity.Rare => "purple",
+                _ => throw new System.NotImplementedException()
+            };
+            _name.text = $"<color={color}>{_weapon.Name}</color>";
+        }
         public void OnPointerEnter(PointerEventData eventData)
         {
             Debug.Log("pointer enter");
             Player.Player.Instance.Inputs.Player.Interact.started += ctx => PlayerLoot();
+            if(_show)
+                return;
+            _show = true;
+            StartCoroutine(Waiter());
         }
 
         public void OnPointerExit(PointerEventData eventData)
         {
             Debug.Log("pointer exit");
             Player.Player.Instance.Inputs.Player.Interact.started -= ctx => PlayerLoot();
+            _cv.gameObject.SetActive(false);
+            StopCoroutine(Waiter());
+            _show = false;
         }
 
         public void PlayerLoot()
@@ -89,6 +124,21 @@ namespace Weapons
         var weapon = WeaponGenerator.Instance.GenerateWeapon(Rarity.Rare);
 
         SetWeapon(weapon);
+    }
+
+
+    private string GetText()
+    {
+        StringBuilder s= new StringBuilder();
+        if(_weapon is Shotgun sg)
+            s.Append($"<b>Damage</b>: {_weapon.Damage}x{sg.BulletsCount}\n");
+        else
+            s.Append($"<b>Damage</b>: {_weapon.Damage}\n");
+        s.Append($"<b>Rate</b>: {Math.Round(_weapon.ShootFreq, 2)}\n");
+        s.Append($"<b>Reload Time</b>: {Math.Round(_weapon.ReloadTime, 2)}\n");
+        s.Append($"<b>Ammo</b>: {_weapon.MagazineSize}\n");
+
+        return s.ToString();
     }
 }
 }
