@@ -4,9 +4,8 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="0a9a3a54-15d7-46eb-8d53-e494bfb5ff9e" name="Changes" comment="Add turret prefab with upgrades">
-      <change afterPath="$PROJECT_DIR$/Assets/Scripts/GameResources/MineralSellPoint.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Scripts/GameResources/MineralSellPoint.cs.meta" afterDir="false" />
+    <list default="true" id="0a9a3a54-15d7-46eb-8d53-e494bfb5ff9e" name="Changes" comment="Add mineral sell point">
+      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/Platform Variant.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefabs/Platform Variant.prefab" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -66,9 +65,13 @@
     <setting file="mock://C:/Games/Unity/LudumDare57/Assets/Scenes/TestScenes/MineralsDemo.unity" root0="SKIP_HIGHLIGHTING" />
     <setting file="mock://C:/Games/Unity/LudumDare57/Assets/Scenes/TestScenes/MineralsDemo.unity" root0="SKIP_HIGHLIGHTING" />
     <setting file="mock://C:/Games/Unity/LudumDare57/Assets/Scenes/TestScenes/MineralsDemo.unity" root0="SKIP_HIGHLIGHTING" />
+    <setting file="mock://C:/Games/Unity/LudumDare57/Assets/Scripts/Core/InteractionController.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="mock://C:/Games/Unity/LudumDare57/Assets/Scripts/Core/InteractionController.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/Core/InteractionController.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="mock://C:/Games/Unity/LudumDare57/Assets/Scripts/Core/InteractionController.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="mock://C:/Games/Unity/LudumDare57/Assets/Scripts/GameResources/Mineral.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="mock://C:/Games/Unity/LudumDare57/Assets/Scripts/GameResources/Mineral.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="mock://C:/Games/Unity/LudumDare57/Assets/Scripts/GameResources/MineralSellPoint.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="mock://C:/Games/Unity/LudumDare57/Assets/Scripts/Platform.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="mock://C:/Games/Unity/LudumDare57/Assets/Scripts/Platform.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="mock://C:/Games/Unity/LudumDare57/Assets/Scripts/Turret.cs" root0="SKIP_HIGHLIGHTING" />
@@ -266,7 +269,15 @@
       <option name="project" value="LOCAL" />
       <updated>1743929212951</updated>
     </task>
-    <option name="localTasksCounter" value="14" />
+    <task id="LOCAL-00014" summary="Add mineral sell point">
+      <option name="closed" value="true" />
+      <created>1743937258652</created>
+      <option name="number" value="00014" />
+      <option name="presentableId" value="LOCAL-00014" />
+      <option name="project" value="LOCAL" />
+      <updated>1743937258652</updated>
+    </task>
+    <option name="localTasksCounter" value="15" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -321,6 +332,7 @@
     <MESSAGE value="Move interaction to separate component" />
     <MESSAGE value="Add turret upgrades" />
     <MESSAGE value="Add turret prefab with upgrades" />
-    <option name="LAST_COMMIT_MESSAGE" value="Add turret prefab with upgrades" />
+    <MESSAGE value="Add mineral sell point" />
+    <option name="LAST_COMMIT_MESSAGE" value="Add mineral sell point" />
   </component>
 </project>

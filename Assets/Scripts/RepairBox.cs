@@ -1,41 +1,27 @@
 using System;
 using System.Collections;
+using Core;
 using UnityEngine;
 
-public class RepairBox : MonoBehaviour
+public class RepairBox : MonoBehaviour, IInteractable
 {
     public static event Action PlatformRepaired;
 
-    private bool canRepair = true;
+    private bool _canRepair = true;
 
-    // Start is called once before the first execution of Update after the MonoBehaviour is created
-    void Start()
+    public void Interact()
     {
-
-    }
-
-    // Update is called once per frame
-    void Update()
-    {
-
-    }
-
-    private void OnTriggerStay2D(Collider2D other)
-    {
-        //    if (other.CompareTag("Player")) 
-        //    {
-        if (canRepair && Input.GetKey(KeyCode.E))
+        if (_canRepair)
         {
             PlatformRepaired?.Invoke();
             StartCoroutine(RepairSuspend(0.2f));
         }
-        //    }
     }
 
     private IEnumerator RepairSuspend(float timeSuspend)
     {
-        canRepair = false;
+        _canRepair = false;
         yield return new WaitForSeconds(timeSuspend);
-        canRepair = true;
+        _canRepair = true;
     }
 }

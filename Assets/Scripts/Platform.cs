@@ -1,4 +1,5 @@
 using System;
+using GameResources;
 using UnityEditor.Callbacks;
 using UnityEngine;
 
@@ -18,7 +19,10 @@ public class Platform : MonoBehaviour
 
     private Rigidbody2D rb;
 
+    private CurrencyStorage _currencyStorage;
+
     AudioSource audioSource;
+    
 
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
@@ -71,7 +75,10 @@ public class Platform : MonoBehaviour
 
     private void HandlePlatformRepaired()
     {
+        if(!_currencyStorage.TrySpendCurrency(repairAmount)) return;
+
         currentHealth += repairAmount;
+        
         if (currentHealth > maxHealth)
         {
             currentHealth = maxHealth;
