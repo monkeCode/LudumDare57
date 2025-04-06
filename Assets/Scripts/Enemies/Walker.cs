@@ -5,41 +5,58 @@ namespace Enemies
 {
     public class Walker : MonoBehaviour, IDamageable
     {
+        [SerializeField] private uint damage = 5;
+        [SerializeField] private float attackRange = 1f;
+        [SerializeField] private float platformAttackRangeModifier = 7;
+        [SerializeField] private float attackDelay = 3f;
+        private float lastAttackTime; 
+        
         [SerializeField] private float speed = 5f;
-
         [SerializeField] private float jumpHeight;
         [SerializeField] private float groundCheckRadius = 0.1f;
+
+
         [SerializeField] private LayerMask groundLayer;
         [SerializeField] private Transform groundCheck;
         [SerializeField] private Transform wallCheck;
 
+        [SerializeField] private float playerTargetChance = 70f;
+        [SerializeField] private bool isPlayerTarget;
+
         private Rigidbody2D rb;
-        private Player.Player player;
-        private Platform platform; 
+        private Transform targetTransform;
+        private IDamageable targetDamageable;
 
         private void Start()
         {
             rb = GetComponent<Rigidbody2D>();
-            player = Player.Player.Instance;
-            platform = Platform.Instance;
+            var value = Random.Range(0, 100);
+            isPlayerTarget = value < playerTargetChance;
+            var target = isPlayerTarget ? Player.Player.Instance.gameObject : Platform.Instance.gameObject;
+            targetTransform = target.transform;
+            targetDamageable = target.GetComponent<IDamageable>();
+            if (!isPlayerTarget)
+                attackRange *= platformAttackRangeModifier;
+
         }
 
         private void Update()
         {
             Move();
             Jump();
+            Attack();
         }
         
         
         private void Move()
         {
-            var difToTarget = transform.position.x - player.transform.position.x;
-            var direction = difToTarget > 0 ? -1f : 1f;
-            if (Mathf.Abs(difToTarget) < 0.5)
+            if (NearTarget())
             {
                 rb.linearVelocityX = 0;
                 return;
             }
+            var difToTarget = transform.position.x - targetTransform.transform.position.x;
+            var direction = difToTarget > 0 ? -1f : 1f;
             rb.linearVelocityX = direction * speed;
             
             FlipPosition(direction);
@@ -66,10 +83,21 @@ namespace Enemies
         private bool OnGround => Physics2D.OverlapCircle(groundCheck.position, groundCheckRadius, groundLayer);
         private bool NearWall => Physics2D.OverlapCircle(wallCheck.position, groundCheckRadius, groundLayer);
 
+        private bool NearTarget()
+        {
+            var difToTarget = transform.position.x - targetTransform.transform.position.x;
+            return Mathf.Abs(difToTarget) < attackRange;
+        }
+
         public void Attack()
         {
-            throw new System.NotImplementedException();
+            if (!NearTarget() || !CanAttack())
+                return;
+            lastAttackTime = Time.time;
+            targetDamageable.TakeDamage(damage);
         }
+        
+        public bool CanAttack() => Time.time - lastAttackTime > attackDelay;
         public void TakeDamage(uint damage)
         {
             throw new System.NotImplementedException();

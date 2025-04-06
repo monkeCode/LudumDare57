@@ -1,9 +1,10 @@
 using System;
 using GameResources;
+using Interfaces;
 using UnityEditor.Callbacks;
 using UnityEngine;
 
-public class Platform : MonoBehaviour
+public class Platform : MonoBehaviour, IDamageable
 {
     public float currentHealth = 50f;
 
@@ -96,5 +97,20 @@ public class Platform : MonoBehaviour
             currentHealth = maxHealth;
         }
         currentHealthChanged?.Invoke(currentHealth);
+    }
+
+    public void TakeDamage(uint damage)
+    {
+        throw new NotImplementedException();
+    }
+
+    public void Heal(uint heals)
+    {
+        throw new NotImplementedException();
+    }
+
+    public void Kill()
+    {
+        throw new NotImplementedException();
     }
 }
