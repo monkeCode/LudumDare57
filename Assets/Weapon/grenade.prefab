@@ -169,7 +169,7 @@ MonoBehaviour:
   _damage: 10
   _boomrange: 2
   _boomTimer: 1
-  _boomPrefab: {fileID: 8355299529488773628, guid: bc37a2962d39fa7cbaa21bdb459198fa, type: 3}
+  _boomPrefab: {fileID: 8355299529488773628, guid: 33dab244624fc0a409af092af46d15a8, type: 3}
   _boomLayer:
     serializedVersion: 2
     m_Bits: 192
