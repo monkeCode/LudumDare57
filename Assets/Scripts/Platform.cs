@@ -18,6 +18,7 @@ public class Platform : MonoBehaviour
     private bool isMoving = false;
 
     private Rigidbody2D rb;
+    public static Platform Instance { get; private set; }
 
     private CurrencyStorage _currencyStorage;
 
@@ -25,6 +26,16 @@ public class Platform : MonoBehaviour
     
 
     // Start is called once before the first execution of Update after the MonoBehaviour is created
+    private void Awake()
+    {
+        if (Instance == null)
+            Instance = this;
+        else
+        {
+            Destroy(gameObject);
+        }
+    }
+
     void Start()
     {
         rb = GetComponent<Rigidbody2D>();
