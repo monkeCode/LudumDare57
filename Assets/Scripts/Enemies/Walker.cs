@@ -3,7 +3,7 @@ using UnityEngine;
 
 namespace Enemies
 {
-    public class Walker : MonoBehaviour, IDamageable
+    public class Walker : MonoBehaviour, IEnemy
     {
         [SerializeField] private uint health = 50;
         [SerializeField] private uint damage = 5;
