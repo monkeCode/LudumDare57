@@ -7,6 +7,7 @@ namespace Core
     {
         private IInteractable _interactable;
         [CanBeNull] public Canvas uiTip;
+        [SerializeField] public KeyCode interactKey = KeyCode.E;
     
         private bool isInteractable;
 
@@ -17,7 +18,7 @@ namespace Core
 
         private void Update()
         {
-            if (Input.GetKeyDown(KeyCode.E) && isInteractable)
+            if (Input.GetKeyDown(interactKey) && isInteractable)
             {
                 _interactable.Interact();
             }
