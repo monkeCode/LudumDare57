@@ -142,10 +142,6 @@ PrefabInstance:
       propertyPath: m_Camera
       value: 
       objectReference: {fileID: 2034015425}
-    - target: {fileID: 2250412996402546607, guid: 2251eb5906bd6504a9e590289f5b6776, type: 3}
-      propertyPath: m_RenderMode
-      value: 0
-      objectReference: {fileID: 0}
     - target: {fileID: 4173290687169420821, guid: 2251eb5906bd6504a9e590289f5b6776, type: 3}
       propertyPath: platform
       value: 
@@ -157,14 +153,6 @@ PrefabInstance:
     - target: {fileID: 5363196589185766743, guid: 2251eb5906bd6504a9e590289f5b6776, type: 3}
       propertyPath: m_Name
       value: GameplayUICanvas
-      objectReference: {fileID: 0}
-    - target: {fileID: 5481639352948124316, guid: 2251eb5906bd6504a9e590289f5b6776, type: 3}
-      propertyPath: m_UiScaleMode
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 5481639352948124316, guid: 2251eb5906bd6504a9e590289f5b6776, type: 3}
-      propertyPath: m_ScreenMatchMode
-      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 6763335422757351925, guid: 2251eb5906bd6504a9e590289f5b6776, type: 3}
       propertyPath: m_Pivot.x
@@ -366,6 +354,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Player
       objectReference: {fileID: 0}
+    - target: {fileID: 2626821414546438955, guid: 2ce8a8e4f99f16a7d9158f320ee3565e, type: 3}
+      propertyPath: m_TagString
+      value: Player
+      objectReference: {fileID: 0}
     - target: {fileID: 7860887919287497563, guid: 2ce8a8e4f99f16a7d9158f320ee3565e, type: 3}
       propertyPath: m_LocalPosition.x
       value: 1.22
@@ -495,6 +487,7 @@ GameObject:
   - component: {fileID: 2034015425}
   - component: {fileID: 2034015424}
   - component: {fileID: 2034015427}
+  - component: {fileID: 2034015428}
   m_Layer: 0
   m_Name: Main Camera
   m_TagString: MainCamera

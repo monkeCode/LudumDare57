@@ -1,4 +1,5 @@
 using System;
+using GameResources;
 using UnityEditor.Callbacks;
 using UnityEngine;
 
@@ -18,13 +19,17 @@ public class Platform : MonoBehaviour
 
     private Rigidbody2D rb;
 
+    private CurrencyStorage _currencyStorage;
+
     AudioSource audioSource;
+    
 
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
     {
         rb = GetComponent<Rigidbody2D>();
         audioSource = GetComponent<AudioSource>();
+        _currencyStorage = FindFirstObjectByType<CurrencyStorage>();
     }
 
     // Update is called once per frame
@@ -33,12 +38,10 @@ public class Platform : MonoBehaviour
         if (isMoving)
         {
             rb.linearVelocity = -transform.up * speed; // Более физически корректно
-            audioSource.Play();
         }
         else
         {
             rb.linearVelocity = Vector2.zero;
-            audioSource.Stop();
         }
     }
 
@@ -61,17 +64,22 @@ public class Platform : MonoBehaviour
         {
             case Stage.Clill:
                 isMoving = false;
+                audioSource.Stop();
                 break;
 
             case Stage.Fight:
                 isMoving = true;
+                audioSource.Play();
                 break;
         }
     }
 
     private void HandlePlatformRepaired()
     {
+        if(currentHealth >= maxHealth || !_currencyStorage.TrySpendCurrency(repairAmount)) return;
+
         currentHealth += repairAmount;
+        
         if (currentHealth > maxHealth)
         {
             currentHealth = maxHealth;

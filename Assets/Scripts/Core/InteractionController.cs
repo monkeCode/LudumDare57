@@ -1,3 +1,4 @@
+using JetBrains.Annotations;
 using UnityEngine;
 
 namespace Core
@@ -5,6 +6,8 @@ namespace Core
     public class InteractionController: MonoBehaviour
     {
         private IInteractable _interactable;
+        [CanBeNull] public Canvas uiTip;
+        [SerializeField] public KeyCode interactKey = KeyCode.E;
     
         private bool isInteractable;
 
@@ -15,7 +18,7 @@ namespace Core
 
         private void Update()
         {
-            if (Input.GetKeyDown(KeyCode.E) && isInteractable)
+            if (Input.GetKeyDown(interactKey) && isInteractable)
             {
                 _interactable.Interact();
             }
@@ -26,6 +29,7 @@ namespace Core
             if (other.gameObject.TryGetComponent(out Player.Player _))
             {
                 isInteractable = true;
+                if (uiTip != null) uiTip.enabled = true;
             }
         }
 
@@ -34,6 +38,7 @@ namespace Core
             if (other.gameObject.TryGetComponent(out Player.Player _))
             {
                 isInteractable = false;
+                if (uiTip != null) uiTip.enabled = false;
             }
         }
     }
