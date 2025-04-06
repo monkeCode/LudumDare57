@@ -4,13 +4,11 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="0a9a3a54-15d7-46eb-8d53-e494bfb5ff9e" name="Changes" comment="Add speed modifier">
-      <change afterPath="$PROJECT_DIR$/Assets/Scripts/Core.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Scripts/Core/IInteractable.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Scripts/Core/IInteractable.cs.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Scripts/Core/InteractionController.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Scripts/Core/InteractionController.cs.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/GameResources/Mineral.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/GameResources/Mineral.cs" afterDir="false" />
+    <list default="true" id="0a9a3a54-15d7-46eb-8d53-e494bfb5ff9e" name="Changes" comment="Move interaction to separate component">
+      <change afterPath="$PROJECT_DIR$/Assets/Scripts/TurretUpgradeRequest.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Scripts/TurretUpgradeRequest.cs.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/.idea.LudumDare57/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.LudumDare57/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Turret.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Turret.cs" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -20,7 +18,7 @@
   <component name="Git.Settings">
     <option name="RECENT_BRANCH_BY_REPOSITORY">
       <map>
-        <entry key="$PROJECT_DIR$" value="currency" />
+        <entry key="$PROJECT_DIR$" value="main" />
       </map>
     </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
@@ -41,6 +39,7 @@
   }
 }</component>
   <component name="HighlightingSettingsPerFile">
+    <setting file="mock://C:/Games/Unity/LudumDare57/Assets/Prefabs/Minerals/Small Mineral.prefab" root0="SKIP_HIGHLIGHTING" />
     <setting file="mock://C:/Games/Unity/LudumDare57/Assets/Prefabs/Player.prefab" root0="SKIP_HIGHLIGHTING" />
     <setting file="mock://C:/Games/Unity/LudumDare57/Assets/Prefabs/Player.prefab" root0="SKIP_HIGHLIGHTING" />
     <setting file="mock://C:/Games/Unity/LudumDare57/Assets/Prefabs/Player.prefab" root0="SKIP_HIGHLIGHTING" />
@@ -70,12 +69,14 @@
     <setting file="mock://C:/Games/Unity/LudumDare57/Assets/Scenes/TestScenes/MineralsDemo.unity" root0="SKIP_HIGHLIGHTING" />
     <setting file="mock://C:/Games/Unity/LudumDare57/Assets/Scenes/TestScenes/MineralsDemo.unity" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/Core/InteractionController.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="mock://C:/Games/Unity/LudumDare57/Assets/Scripts/GameResources/Mineral.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="mock://C:/Games/Unity/LudumDare57/Assets/Scripts/GameResources/Mineral.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="mock://C:/Games/Unity/LudumDare57/Assets/Scripts/Platform.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="mock://C:/Games/Unity/LudumDare57/Assets/Scripts/Platform.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/UI/MainMenu/MainMenuController.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/844019a3a067481c8d9cb70c7a2ba4471df600/7a/c4b9a24b/GameObject.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/844019a3a067481c8d9cb70c7a2ba4471df600/af/4cb2c1d5/SerializeField.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/844019a3a067481c8d9cb70c7a2ba4471df600/da/ebf8b75a/Object.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/844019a3a067481c8d9cb70c7a2ba4471df600/da/ebf8b75a/Object.cs" root0="FORCE_HIGHLIGHTING" />
   </component>
   <component name="MetaFilesCheckinStateConfiguration" checkMetaFiles="true" />
   <component name="ProjectColorInfo">{
@@ -89,7 +90,7 @@
   <component name="PropertiesComponent"><![CDATA[{
   "keyToString": {
     "RunOnceActivity.ShowReadmeOnStart": "true",
-    "git-widget-placeholder": "main",
+    "git-widget-placeholder": "turrets-upgrades",
     "node.js.detected.package.eslint": "true",
     "node.js.detected.package.tslint": "true",
     "node.js.selected.package.eslint": "(autodetect)",
@@ -147,7 +148,7 @@
       <updated>1743847931798</updated>
       <workItem from="1743847932089" duration="782000" />
       <workItem from="1743850402823" duration="11852000" />
-      <workItem from="1743925224193" duration="733000" />
+      <workItem from="1743925224193" duration="2616000" />
     </task>
     <task id="LOCAL-00001" summary="Add simple main and pause menu">
       <option name="closed" value="true" />
@@ -229,7 +230,15 @@
       <option name="project" value="LOCAL" />
       <updated>1743875171576</updated>
     </task>
-    <option name="localTasksCounter" value="11" />
+    <task id="LOCAL-00011" summary="Move interaction to separate component">
+      <option name="closed" value="true" />
+      <created>1743926212264</created>
+      <option name="number" value="00011" />
+      <option name="presentableId" value="LOCAL-00011" />
+      <option name="project" value="LOCAL" />
+      <updated>1743926212264</updated>
+    </task>
+    <option name="localTasksCounter" value="12" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -281,6 +290,7 @@
     <MESSAGE value="Add collectable minerals" />
     <MESSAGE value="Collect by key" />
     <MESSAGE value="Add speed modifier" />
-    <option name="LAST_COMMIT_MESSAGE" value="Add speed modifier" />
+    <MESSAGE value="Move interaction to separate component" />
+    <option name="LAST_COMMIT_MESSAGE" value="Move interaction to separate component" />
   </component>
 </project>

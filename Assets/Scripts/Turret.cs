@@ -1,22 +1,40 @@
 using System.Collections;
 using System.Linq;
+using Core;
+using GameResources;
 using UnityEngine;
+using UnityEngine.Serialization;
 using Weapons;
 
 
-public class Turret : MonoBehaviour
+public class Turret : MonoBehaviour, IInteractable
 {
     [Header("Gun References")]
     [SerializeField] private Transform _rightGun;
     [SerializeField] private Transform _leftGun;
     [SerializeField] private GameObject _projectilePrefab;
 
+    [FormerlySerializedAs("_rotationSpeed")]
     [Header("Combat Settings")]
-    [SerializeField] private float _rotationSpeed = 5f;
-    [SerializeField] private float _shootFreq = 1f;
-    [SerializeField] private uint _damage = 10;
-    [SerializeField] [Range(0,100)] private float _radius = 10f;
-    [SerializeField] private float _projectileSpeed = 10f;
+    [SerializeField] private float _baseRotationSpeed = 5f;
+    [SerializeField] private float _rotationSpeedMultiplier = 1f; 
+    private float RotationSpeed => _baseRotationSpeed * _rotationSpeedMultiplier;
+    
+    [SerializeField] private float _baseShootFreq = 1f;
+    [SerializeField] private float _shootFreqMultiplier = 1f;
+    private float ShootFreq => _baseShootFreq * _shootFreqMultiplier;
+    
+    [SerializeField] private uint _baseDamage = 10;
+    [SerializeField] private float _damageMultiplier = 1f;
+    private uint Damage => (uint)(_baseDamage * _damageMultiplier);
+    
+    [SerializeField] [Range(0,100)] private float _baseRadius = 10f;
+    [SerializeField] private float _radiusMultiplier = 1f;
+    private float Radius => _baseRadius * _radiusMultiplier;
+    
+    [SerializeField] private float _baseProjectileSpeed = 10f;
+    [SerializeField] private float _projectileSpeedMultiplier = 1f;
+    private float ProjectileSpeed => _baseProjectileSpeed * _projectileSpeedMultiplier;
 
     [Header("Targeting Settings")]
     [SerializeField] private LayerMask _entityLayer;
@@ -25,10 +43,47 @@ public class Turret : MonoBehaviour
     private Transform _target;
     private Coroutine _shootingCoroutine;
     private Coroutine _targetingCoroutine;
+    private CurrencyStorage _currencyStorage;
+    
+    public bool TryUpgrade(TurretUpgradeRequest upgradeRequest)
+    {
+        if(!_currencyStorage.TrySpendCurrency(upgradeRequest.Price))
+            return false;
+
+        _rotationSpeedMultiplier += upgradeRequest.RotationSpeedChangeInPercentage / 100;
+        _shootFreqMultiplier += upgradeRequest.ShootFreqChangeInPercentage / 100;
+        _damageMultiplier += upgradeRequest.DamageChangeInPercentage / 100;
+        _radiusMultiplier += upgradeRequest.RadiusChangeInPercentage / 100;
+        _projectileSpeedMultiplier += upgradeRequest.ProjectileSpeedChangeInPercentage / 100;
+        return true;
+    }
+
+    public void Interact()
+    {
+        var upgradeRequest = GetNextUpgrade();
+        if (TryUpgrade(upgradeRequest))
+        {
+            Debug.Log("Upgrade successful");
+        }
+        Debug.Log("Upgrade failed");
+    }
+
+    private TurretUpgradeRequest GetNextUpgrade()
+    {
+        return new TurretUpgradeRequest
+        {
+            Price = 10,
+            DamageChangeInPercentage = 10,
+            ProjectileSpeedChangeInPercentage = 10,
+            RadiusChangeInPercentage = 10,
+            RotationSpeedChangeInPercentage = 10,
+            ShootFreqChangeInPercentage = 10
+        };
+    }
 
     private void SearchTarget()
     {
-        var targets = Physics2D.OverlapCircleAll(transform.position, _radius, _entityLayer);
+        var targets = Physics2D.OverlapCircleAll(transform.position, Radius, _entityLayer);
         if(targets.Length == 0)
         {
             _target = null;
@@ -54,7 +109,7 @@ public class Turret : MonoBehaviour
         transform.rotation = Quaternion.Slerp(
             transform.rotation, 
             targetRotation, 
-            _rotationSpeed * Time.deltaTime);
+            RotationSpeed * Time.deltaTime);
     }
 
     void Shoot(Vector2 pos)
@@ -70,13 +125,13 @@ public class Turret : MonoBehaviour
         var rb = projectile.GetComponent<Rigidbody2D>();
         if (rb != null)
         {
-            rb.linearVelocity = direction * _projectileSpeed;
+            rb.linearVelocity = direction * ProjectileSpeed;
         }
 
         var projectileScript = projectile.GetComponent<Bullet>();
         if (projectileScript != null)
         {
-            projectileScript.SetDamage(_damage);
+            projectileScript.SetDamage(Damage);
         }
     }
 
@@ -86,9 +141,9 @@ public class Turret : MonoBehaviour
         {
             if (_target != null)
             {
-                yield return new WaitForSeconds(1f / _shootFreq / 2);
+                yield return new WaitForSeconds(1f / ShootFreq / 2);
                 Shoot(_rightGun.position);
-                yield return new WaitForSeconds(1f / _shootFreq / 2);
+                yield return new WaitForSeconds(1f / ShootFreq / 2);
                 Shoot(_leftGun.position);
             }
             else
@@ -111,6 +166,7 @@ public class Turret : MonoBehaviour
     {
         _shootingCoroutine = StartCoroutine(ShootCoroutine());
         _targetingCoroutine = StartCoroutine(TargetSearchCoroutine());
+        _currencyStorage = FindFirstObjectByType<CurrencyStorage>();
     }
 
     void Update()
@@ -118,7 +174,7 @@ public class Turret : MonoBehaviour
         if(_target == null) return;
 
         // Check if target moved out of range
-        if (Vector2.Distance(_target.position, transform.position) > _radius)
+        if (Vector2.Distance(_target.position, transform.position) > Radius)
         {
             _target = null;
             return;
@@ -136,7 +192,7 @@ public class Turret : MonoBehaviour
     void OnDrawGizmos()
     {
         Gizmos.color = Color.red;
-        Gizmos.DrawWireSphere(transform.position, _radius);
+        Gizmos.DrawWireSphere(transform.position, Radius);
         
         if (_target != null)
         {
