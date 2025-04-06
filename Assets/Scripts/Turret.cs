@@ -43,11 +43,14 @@ public class Turret : MonoBehaviour, IInteractable
 
     [SerializeField] private AudioClip _shootSound;
 
+    [SerializeField] private AudioClip _upgradeClip;
+
     private Transform _target;
     private Coroutine _shootingCoroutine;
     private Coroutine _targetingCoroutine;
     private CurrencyStorage _currencyStorage;
     private AudioSource _audio;
+
     public bool TryUpgrade(TurretUpgradeRequest upgradeRequest)
     {
         if(!_currencyStorage.TrySpendCurrency(upgradeRequest.Price))
