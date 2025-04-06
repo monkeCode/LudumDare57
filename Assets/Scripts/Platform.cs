@@ -1,9 +1,10 @@
 using System;
 using GameResources;
+using Interfaces;
 using UnityEditor.Callbacks;
 using UnityEngine;
 
-public class Platform : MonoBehaviour
+public class Platform : MonoBehaviour, IDamageable
 {
     public float currentHealth = 50f;
 
@@ -18,6 +19,7 @@ public class Platform : MonoBehaviour
     private bool isMoving = false;
 
     private Rigidbody2D rb;
+    public static Platform Instance { get; private set; }
 
     private CurrencyStorage _currencyStorage;
 
@@ -25,6 +27,16 @@ public class Platform : MonoBehaviour
     
 
     // Start is called once before the first execution of Update after the MonoBehaviour is created
+    private void Awake()
+    {
+        if (Instance == null)
+            Instance = this;
+        else
+        {
+            Destroy(gameObject);
+        }
+    }
+
     void Start()
     {
         rb = GetComponent<Rigidbody2D>();
@@ -85,5 +97,20 @@ public class Platform : MonoBehaviour
             currentHealth = maxHealth;
         }
         currentHealthChanged?.Invoke(currentHealth);
+    }
+
+    public void TakeDamage(uint damage)
+    {
+        throw new NotImplementedException();
+    }
+
+    public void Heal(uint heals)
+    {
+        throw new NotImplementedException();
+    }
+
+    public void Kill()
+    {
+        throw new NotImplementedException();
     }
 }

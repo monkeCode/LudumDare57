@@ -179,15 +179,17 @@ namespace Weapons
             Player.Player.Instance.WeaponHandler.PlaySound(_shootClip);
 
         }
-
         public bool CanShoot() => !_isReloading && _currentAmmo > 0 && Time.time - _lastShotTime > 1f / ShootFreq && !Shooted;
 
         public virtual void ShootPress(Vector2 point, Vector2 direction)
         {
             if (!CanShoot())
             {
-                if(_currentAmmo == 0)
+                if(_currentAmmo == 0 && !Shooted)
+                {
+                    Shooted = true;
                     Player.Player.Instance.WeaponHandler.PlaySound(_noAmmoClip);
+                }
                 return;
             }
 
