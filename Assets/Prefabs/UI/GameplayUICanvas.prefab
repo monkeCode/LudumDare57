@@ -136,53 +136,6 @@ MonoBehaviour:
   m_hasFontAssetChanged: 0
   m_baseMaterial: {fileID: 0}
   m_maskOffset: {x: 0, y: 0, z: 0, w: 0}
---- !u!1 &792141216953165440
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 2961953246848455902}
-  - component: {fileID: 2146710611786607855}
-  m_Layer: 0
-  m_Name: MineralsPlayer
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!4 &2961953246848455902
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 792141216953165440}
-  serializedVersion: 2
-  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 104.66602, y: -94.299675, z: 3.1247659}
-  m_LocalScale: {x: 2.0447283, y: 2.0447283, z: 2.0447283}
-  m_ConstrainProportionsScale: 0
-  m_Children:
-  - {fileID: 7208056694187970564}
-  - {fileID: 4063108415311594629}
-  m_Father: {fileID: 6763335422757351925}
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &2146710611786607855
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 792141216953165440}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 8f01516648ac34845abc663e2f2108c8, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  mineralsText: {fileID: 6216732993637469188}
 --- !u!1 &1284936608352684943
 GameObject:
   m_ObjectHideFlags: 0
@@ -380,11 +333,62 @@ RectTransform:
   - {fileID: 212725388669969376}
   m_Father: {fileID: 6763335422757351925}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0.5, y: 0.5}
-  m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 26.01, y: 430.16}
-  m_SizeDelta: {x: 1972.027, y: 219.3}
-  m_Pivot: {x: 0.5, y: 0.5}
+  m_AnchorMin: {x: 0.5, y: 1}
+  m_AnchorMax: {x: 0.5, y: 1}
+  m_AnchoredPosition: {x: 26.00998, y: -78.19}
+  m_SizeDelta: {x: 1972.027, y: 219.29999}
+  m_Pivot: {x: 0.5, y: 1}
+--- !u!1 &5172488740453391863
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 6245315708411125149}
+  - component: {fileID: 4341605757680140668}
+  m_Layer: 5
+  m_Name: MineralsPlayer
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!224 &6245315708411125149
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5172488740453391863}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 3.1247659}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children:
+  - {fileID: 7208056694187970564}
+  - {fileID: 4063108415311594629}
+  m_Father: {fileID: 6763335422757351925}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 0, y: 0}
+  m_AnchorMax: {x: 0, y: 0}
+  m_AnchoredPosition: {x: 57.792786, y: 67.22168}
+  m_SizeDelta: {x: 388.09888, y: 103.58606}
+  m_Pivot: {x: 0, y: 0}
+--- !u!114 &4341605757680140668
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5172488740453391863}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8f01516648ac34845abc663e2f2108c8, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  mineralsText: {fileID: 0}
 --- !u!1 &5363196589185766743
 GameObject:
   m_ObjectHideFlags: 0
@@ -418,7 +422,7 @@ RectTransform:
   m_Children:
   - {fileID: 5437108565783013114}
   - {fileID: 8928566280735531925}
-  - {fileID: 2961953246848455902}
+  - {fileID: 6245315708411125149}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
@@ -514,16 +518,16 @@ RectTransform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 6568327015717981822}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalScale: {x: 2.0447283, y: 2.0447283, z: 2.0447283}
   m_ConstrainProportionsScale: 0
   m_Children: []
-  m_Father: {fileID: 2961953246848455902}
+  m_Father: {fileID: 6245315708411125149}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -370.1476, y: -199.55609}
+  m_AnchoredPosition: {x: 55.972595, y: -3.352356}
   m_SizeDelta: {x: 135.0565, y: 47.381}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!222 &8728224801331730514
@@ -733,11 +737,11 @@ RectTransform:
   - {fileID: 9023550722131147392}
   m_Father: {fileID: 6763335422757351925}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0.5, y: 0.5}
-  m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -638, y: -416}
-  m_SizeDelta: {x: 297.34302, y: 97.42401}
-  m_Pivot: {x: 0.5, y: 0.5}
+  m_AnchorMin: {x: 0, y: 0}
+  m_AnchorMax: {x: 0, y: 0}
+  m_AnchoredPosition: {x: 173.32849, y: 153.28809}
+  m_SizeDelta: {x: 297.34302, y: 97.42407}
+  m_Pivot: {x: 0, y: 0}
 --- !u!114 &2415349357769033741
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -776,16 +780,16 @@ RectTransform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 8745501779226078871}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalScale: {x: 2.0447283, y: 2.0447283, z: 2.0447283}
   m_ConstrainProportionsScale: 0
   m_Children: []
-  m_Father: {fileID: 2961953246848455902}
+  m_Father: {fileID: 6245315708411125149}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -471.7, y: -187.5}
+  m_AnchoredPosition: {x: -151.67438, y: 21.299042}
   m_SizeDelta: {x: 41.448, y: 29.8269}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!222 &1856916119311136614
