@@ -7,6 +7,7 @@ using UnityEngine.Serialization;
 using Weapons;
 
 
+[RequireComponent(typeof(AudioSource))]
 public class Turret : MonoBehaviour, IInteractable
 {
     [Header("Gun References")]
@@ -40,11 +41,13 @@ public class Turret : MonoBehaviour, IInteractable
     [SerializeField] private LayerMask _entityLayer;
     [SerializeField] private float _targetRefreshRate = 0.5f;
 
+    [SerializeField] private AudioClip _shootSound;
+
     private Transform _target;
     private Coroutine _shootingCoroutine;
     private Coroutine _targetingCoroutine;
     private CurrencyStorage _currencyStorage;
-    
+    private AudioSource _audio;
     public bool TryUpgrade(TurretUpgradeRequest upgradeRequest)
     {
         if(!_currencyStorage.TrySpendCurrency(upgradeRequest.Price))
@@ -134,6 +137,8 @@ public class Turret : MonoBehaviour, IInteractable
         {
             projectileScript.SetDamage(Damage);
         }
+
+        _audio.PlayOneShot(_shootSound);
     }
 
     IEnumerator ShootCoroutine()
@@ -168,6 +173,7 @@ public class Turret : MonoBehaviour, IInteractable
         _shootingCoroutine = StartCoroutine(ShootCoroutine());
         _targetingCoroutine = StartCoroutine(TargetSearchCoroutine());
         _currencyStorage = FindFirstObjectByType<CurrencyStorage>();
+        _audio = GetComponent<AudioSource>();
     }
 
     void Update()
