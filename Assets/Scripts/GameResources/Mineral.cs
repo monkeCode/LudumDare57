@@ -1,11 +1,12 @@
 
 using System;
+using Core;
 using Interfaces;
 using UnityEngine;
 
 namespace GameResources
 {
-    public class Mineral: MonoBehaviour, IMineral
+    public class Mineral: MonoBehaviour, IMineral, IInteractable
     {
         [SerializeField] private float size = 1;
         [SerializeField] private uint cost = 1;
@@ -17,34 +18,22 @@ namespace GameResources
             set => size = value;
         }
 
+        private void Start()
+        {
+            Player = FindFirstObjectByType<Player.Player>();
+        }
+
         public uint Cost
         {
             get => cost;
             set => cost = value;
         }
 
-        private void Update()
+        public void Interact()
         {
-            if (Input.GetKeyDown(KeyCode.E) && isInteractable && Player.inventory.TryPush(this))
+            if (Player.inventory.TryPush(this))
             {
                 Destroy(gameObject);
-            }
-        }
-
-        private void OnTriggerEnter2D(Collider2D other)
-        {
-            if (other.gameObject.TryGetComponent(out Player.Player player))
-            {
-                isInteractable = true;
-                Player = player;
-            }
-        }
-
-        private void OnTriggerExit2D(Collider2D other)
-        {
-            if (other.gameObject.TryGetComponent(out Player.Player player))
-            {
-                isInteractable = false;
             }
         }
     }

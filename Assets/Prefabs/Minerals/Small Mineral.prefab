@@ -12,6 +12,7 @@ GameObject:
   - component: {fileID: 3253009132991337111}
   - component: {fileID: 4320661897842996522}
   - component: {fileID: 5974269870199454367}
+  - component: {fileID: 1398556692568220412}
   m_Layer: 0
   m_Name: Small Mineral
   m_TagString: Untagged
@@ -141,3 +142,15 @@ MonoBehaviour:
   cost: 1
   isInteractable: 0
   Player: {fileID: 0}
+--- !u!114 &1398556692568220412
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2781330430593963599}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 73d2eb7f604f464ebb0f9c75cb3bad94, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
