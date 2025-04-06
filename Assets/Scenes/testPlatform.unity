@@ -385,7 +385,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   platformRiding: 0
   timeForLooting: 4
-  timeForFighting: 45
+  timeForFighting: 4
 --- !u!4 &1747582037
 Transform:
   m_ObjectHideFlags: 0
