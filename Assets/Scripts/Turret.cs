@@ -64,6 +64,7 @@ public class Turret : MonoBehaviour, IInteractable
         if (TryUpgrade(upgradeRequest))
         {
             Debug.Log("Upgrade successful");
+            return;
         }
         Debug.Log("Upgrade failed");
     }
