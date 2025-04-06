@@ -20,10 +20,7 @@ public class RepairBox : MonoBehaviour, IInteractable
     // Update is called once per frame
     void Update()
     {
-        if (!Input.GetKey(KeyCode.E))
-        {
-            audioSource.Stop();
-        }
+
     }
 
 
@@ -38,14 +35,6 @@ public class RepairBox : MonoBehaviour, IInteractable
             {
                 audioSource.Play();
             }
-        }
-    }
-
-    private void OnTriggerExit2D(Collider2D collision)
-    {
-        if (collision.CompareTag("Player"))
-        {
-            audioSource.Stop();
         }
     }
 
