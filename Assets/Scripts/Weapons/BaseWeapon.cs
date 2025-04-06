@@ -179,6 +179,7 @@ namespace Weapons
             _currentAmmo--;
             _lastShotTime = Time.time;
             OnShoot.Invoke();
+            Debug.Log("OnShoot");
 
             Player.Player.Instance.WeaponHandler.Drift();
             Player.Player.Instance.WeaponHandler.PlaySound(_shootClip);

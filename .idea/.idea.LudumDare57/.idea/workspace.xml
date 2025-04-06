@@ -5,7 +5,8 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="0a9a3a54-15d7-46eb-8d53-e494bfb5ff9e" name="Changes" comment="Fix shotgun">
-      <change beforePath="$PROJECT_DIR$/Assets/Scenes/TestScenes/WeaponUiDemo.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/TestScenes/WeaponUiDemo.unity" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/.idea.LudumDare57/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.LudumDare57/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/UI/GameplayUI/Ammo.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/UI/GameplayUI/Ammo.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Scripts/Weapons/BaseWeapon.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Weapons/BaseWeapon.cs" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -37,23 +38,37 @@
   }
 }</component>
   <component name="HighlightingSettingsPerFile">
+    <setting file="mock://C:/Games/Unity/LudumDare57/Assets/Prefabs/Minerals/Small Mineral.prefab" root0="SKIP_HIGHLIGHTING" />
+    <setting file="mock://C:/Games/Unity/LudumDare57/Assets/Prefabs/Minerals/Small Mineral.prefab" root0="SKIP_HIGHLIGHTING" />
+    <setting file="mock://C:/Games/Unity/LudumDare57/Assets/Prefabs/UI/GameplayUICanvas.prefab" root0="SKIP_HIGHLIGHTING" />
+    <setting file="mock://C:/Games/Unity/LudumDare57/Assets/Prefabs/UI/GameplayUICanvas.prefab" root0="SKIP_HIGHLIGHTING" />
+    <setting file="mock://C:/Games/Unity/LudumDare57/Assets/Prefabs/UI/GameplayUICanvas.prefab" root0="SKIP_HIGHLIGHTING" />
+    <setting file="mock://C:/Games/Unity/LudumDare57/Assets/Prefabs/UI/GameplayUICanvas.prefab" root0="SKIP_HIGHLIGHTING" />
+    <setting file="mock://C:/Games/Unity/LudumDare57/Assets/Scenes/testPlatform.unity" root0="SKIP_HIGHLIGHTING" />
+    <setting file="mock://C:/Games/Unity/LudumDare57/Assets/Scenes/testPlatform.unity" root0="SKIP_HIGHLIGHTING" />
+    <setting file="mock://C:/Games/Unity/LudumDare57/Assets/Scenes/testPlatform.unity" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/Core/InteractionController.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="mock://C:/Games/Unity/LudumDare57/Assets/Scripts/GameResources/MineralSellPoint.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="mock://C:/Games/Unity/LudumDare57/Assets/Scripts/Enemies/IEnemy.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/Enemies/Walker.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="mock://C:/Games/Unity/LudumDare57/Assets/Scripts/Player/WeaponHandler.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="mock://C:/Games/Unity/LudumDare57/Assets/Scripts/Player/WeaponHandler.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="mock://C:/Games/Unity/LudumDare57/Assets/Scripts/Player/WeaponHandler.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="mock://C:/Games/Unity/LudumDare57/Assets/Scripts/Player/WeaponHandler.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="mock://C:/Games/Unity/LudumDare57/Assets/Scripts/Player/WeaponHandler.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/TurretUpgradeRequest.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="mock://C:/Games/Unity/LudumDare57/Assets/Scripts/UI/GameplayUI/Ammo.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="mock://C:/Games/Unity/LudumDare57/Assets/Scripts/UI/GameplayUI/Ammo.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="mock://C:/Games/Unity/LudumDare57/Assets/Scripts/UI/GameplayUI/Ammo.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/UI/MainMenu/MainMenuController.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="mock://C:/Games/Unity/LudumDare57/Assets/Scripts/Weapons/BaseWeapon.cs" root0="SKIP_HIGHLIGHTING" />
-    <setting file="mock://C:/Games/Unity/LudumDare57/Assets/Sprites/2D Health &amp; Ammo Pickups v6.2/32px/ammo-pistol 32px.png.meta" root0="SKIP_HIGHLIGHTING" />
-    <setting file="mock://C:/Games/Unity/LudumDare57/Assets/Sprites/2D Health &amp; Ammo Pickups v6.2/32px/ammo-pistol 32px.png.meta" root0="SKIP_HIGHLIGHTING" />
-    <setting file="mock://C:/Games/Unity/LudumDare57/Assets/Sprites/2D Health &amp; Ammo Pickups v6.2/32px/ammo-pistol-alt 32px.png.meta" root0="SKIP_HIGHLIGHTING" />
-    <setting file="mock://C:/Games/Unity/LudumDare57/Assets/Sprites/2D Health &amp; Ammo Pickups v6.2/preview.jpg.meta" root0="SKIP_HIGHLIGHTING" />
-    <setting file="mock://C:/Games/Unity/LudumDare57/Assets/Sprites/Explosions pack/explosion-1-a/Sprites/explosion-1.png.meta" root0="SKIP_HIGHLIGHTING" />
-    <setting file="mock://C:/Games/Unity/LudumDare57/Assets/Sprites/Explosions pack/explosion-1-a/Sprites/explosion-1.png.meta" root0="SKIP_HIGHLIGHTING" />
-    <setting file="mock://C:/Games/Unity/LudumDare57/Assets/Sprites/Explosions pack/explosion-1-a/Sprites/explosion-3.png.meta" root0="SKIP_HIGHLIGHTING" />
-    <setting file="mock://C:/Games/Unity/LudumDare57/Assets/Sprites/Explosions pack/explosion-1-b/Sprites/explosion-1-b-1.png.meta" root0="SKIP_HIGHLIGHTING" />
-    <setting file="mock://C:/Games/Unity/LudumDare57/Assets/Sprites/Explosions pack/explosion-1-b/Sprites/explosion-1-b-3.png.meta" root0="SKIP_HIGHLIGHTING" />
-    <setting file="mock://C:/Games/Unity/LudumDare57/Assets/Sprites/Explosions pack/explosion-1-b/Sprites/explosion-1-b-4.png.meta" root0="SKIP_HIGHLIGHTING" />
-    <setting file="mock://C:/Games/Unity/LudumDare57/Assets/Sprites/Explosions pack/explosion-1-b/Sprites/explosion-1-b-5.png.meta" root0="SKIP_HIGHLIGHTING" />
-    <setting file="mock://C:/Games/Unity/LudumDare57/Assets/Sprites/Explosions pack/explosion-1-b/Sprites/explosion-1-b-5.png.meta" root0="SKIP_HIGHLIGHTING" />
+    <setting file="mock://C:/Games/Unity/LudumDare57/Assets/Scripts/Weapons/BaseWeapon.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="mock://C:/Games/Unity/LudumDare57/Assets/Scripts/Weapons/BaseWeapon.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="mock://C:/Games/Unity/LudumDare57/Assets/Scripts/Weapons/BaseWeapon.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="mock://C:/Games/Unity/LudumDare57/Assets/Scripts/Weapons/BaseWeapon.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="mock://C:/Games/Unity/LudumDare57/Assets/TextMesh Pro/Resources/Fonts &amp; Materials/LiberationSans SDF - Fallback.asset" root0="SKIP_HIGHLIGHTING" />
+    <setting file="mock://C:/Games/Unity/LudumDare57/Assets/playeranim/Player controller.controller" root0="SKIP_HIGHLIGHTING" />
+    <setting file="mock://C:/Games/Unity/LudumDare57/Assets/playeranim/Player controller.controller" root0="SKIP_HIGHLIGHTING" />
+    <setting file="mock://C:/Games/Unity/LudumDare57/Assets/playeranim/fall.anim" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/844019a3a067481c8d9cb70c7a2ba4471df600/7a/c4b9a24b/GameObject.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/844019a3a067481c8d9cb70c7a2ba4471df600/af/4cb2c1d5/SerializeField.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/844019a3a067481c8d9cb70c7a2ba4471df600/da/ebf8b75a/Object.cs" root0="FORCE_HIGHLIGHTING" />
@@ -67,19 +82,19 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;git-widget-placeholder&quot;: &quot;main&quot;,
-    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
-    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
-    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
-    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
-    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
-    &quot;settings.editor.selected.configurable&quot;: &quot;org.jetbrains.plugins.github.ui.GithubSettingsConfigurable&quot;,
-    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "git-widget-placeholder": "UI",
+    "node.js.detected.package.eslint": "true",
+    "node.js.detected.package.tslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.tslint": "(autodetect)",
+    "nodejs_package_manager_path": "npm",
+    "settings.editor.selected.configurable": "org.jetbrains.plugins.github.ui.GithubSettingsConfigurable",
+    "vue.rearranger.settings.migration": "true"
   }
-}</component>
+}]]></component>
   <component name="RunManager" selected="Attach to Unity Editor.Attach to Unity Editor">
     <configuration name="Start Unity" type="RunUnityExe" factoryName="Unity Executable">
       <option name="EXE_PATH" value="C:\Program Files\Unity\Hub\Editor\6000.0.45f1\Editor\Unity.exe" />
@@ -259,7 +274,23 @@
       <option name="project" value="LOCAL" />
       <updated>1743938455231</updated>
     </task>
-    <option name="localTasksCounter" value="17" />
+    <task id="LOCAL-00017" summary="Add ammo to UI">
+      <option name="closed" value="true" />
+      <created>1743954879761</created>
+      <option name="number" value="00017" />
+      <option name="presentableId" value="LOCAL-00017" />
+      <option name="project" value="LOCAL" />
+      <updated>1743954879761</updated>
+    </task>
+    <task id="LOCAL-00018" summary="fix">
+      <option name="closed" value="true" />
+      <created>1743954907064</created>
+      <option name="number" value="00018" />
+      <option name="presentableId" value="LOCAL-00018" />
+      <option name="project" value="LOCAL" />
+      <updated>1743954907064</updated>
+    </task>
+    <option name="localTasksCounter" value="19" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">

@@ -1,5 +1,6 @@
 using TMPro;
 using UnityEngine;
+using Weapons;
 
 namespace UI.GameplayUI
 {
@@ -7,17 +8,19 @@ namespace UI.GameplayUI
     {
         private Player.Player _player;
         [SerializeField] private TextMeshProUGUI ammoText;
+        private BaseWeapon currentWeapon;
         
         private void Start()
         {
             _player = FindFirstObjectByType<Player.Player>();
-            _player.WeaponHandler.weapon.OnShoot.AddListener(OnShootHandler);
-            _player.WeaponHandler.weapon.OnReloaded.AddListener(OnReloadedHandler);
+            currentWeapon = _player.WeaponHandler.weapon;
+            AddHandlers(currentWeapon);
             _player.WeaponHandler.OnSwapWeapon.AddListener(OnSwapWeaponHandler);
         }
 
         private void OnShootHandler()
         {
+            Debug.Log("On shoot handler");
             UpdateText();
         }
 
@@ -27,8 +30,23 @@ namespace UI.GameplayUI
         }
 
         private void OnSwapWeaponHandler()
-        {
+        { 
+            RemoveHandlers(currentWeapon);
+            currentWeapon = _player.WeaponHandler.weapon;
+            AddHandlers(currentWeapon);
             UpdateText();
+        }
+
+        private void RemoveHandlers(BaseWeapon baseWeapon)
+        {
+            baseWeapon.OnShoot.RemoveListener(OnShootHandler);
+            baseWeapon.OnReloaded.RemoveListener(OnReloadedHandler);
+        }
+
+        private void AddHandlers(BaseWeapon baseWeapon)
+        {
+            baseWeapon.OnShoot.AddListener(OnShootHandler);
+            baseWeapon.OnReloaded.AddListener(OnReloadedHandler);
         }
 
         private void UpdateText()
