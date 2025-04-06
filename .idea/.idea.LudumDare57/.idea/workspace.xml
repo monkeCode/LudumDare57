@@ -5,7 +5,103 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="0a9a3a54-15d7-46eb-8d53-e494bfb5ff9e" name="Changes" comment="Fixes">
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Enemies/Walker.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Enemies/Walker.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Scripts/UI/GameplayUI/Ammo.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Scripts/UI/GameplayUI/Ammo.cs.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/.idea.LudumDare57/.idea/shelf/Uncommitted_changes_before_rebase__Changes_1.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/.idea.LudumDare57/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.LudumDare57/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/UI/GameplayUICanvas.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefabs/UI/GameplayUICanvas.prefab" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Platform.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Platform.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Player/WeaponHandler.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Player/WeaponHandler.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Weapons/BaseWeapon.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Weapons/BaseWeapon.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Sprites/Explosions pack/explosion-1-a/Sprites/explosion-1.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Sprites/Explosions pack/explosion-1-a/Sprites/explosion-1.png.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Sprites/Explosions pack/explosion-1-a/Sprites/explosion-2.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Sprites/Explosions pack/explosion-1-a/Sprites/explosion-2.png.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Sprites/Explosions pack/explosion-1-a/Sprites/explosion-3.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Sprites/Explosions pack/explosion-1-a/Sprites/explosion-3.png.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Sprites/Explosions pack/explosion-1-a/Sprites/explosion-4.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Sprites/Explosions pack/explosion-1-a/Sprites/explosion-4.png.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Sprites/Explosions pack/explosion-1-a/Sprites/explosion-5.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Sprites/Explosions pack/explosion-1-a/Sprites/explosion-5.png.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Sprites/Explosions pack/explosion-1-a/Sprites/explosion-6.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Sprites/Explosions pack/explosion-1-a/Sprites/explosion-6.png.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Sprites/Explosions pack/explosion-1-a/Sprites/explosion-7.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Sprites/Explosions pack/explosion-1-a/Sprites/explosion-7.png.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Sprites/Explosions pack/explosion-1-a/Sprites/explosion-8.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Sprites/Explosions pack/explosion-1-a/Sprites/explosion-8.png.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Sprites/Explosions pack/explosion-1-a/preview.gif.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Sprites/Explosions pack/explosion-1-a/preview.gif.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Sprites/Explosions pack/explosion-1-a/spritesheet.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Sprites/Explosions pack/explosion-1-a/spritesheet.png.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Sprites/Explosions pack/explosion-1-b/Preview.gif.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Sprites/Explosions pack/explosion-1-b/Preview.gif.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Sprites/Explosions pack/explosion-1-b/Sprites/explosion-1-b-1.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Sprites/Explosions pack/explosion-1-b/Sprites/explosion-1-b-1.png.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Sprites/Explosions pack/explosion-1-b/Sprites/explosion-1-b-2.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Sprites/Explosions pack/explosion-1-b/Sprites/explosion-1-b-2.png.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Sprites/Explosions pack/explosion-1-b/Sprites/explosion-1-b-3.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Sprites/Explosions pack/explosion-1-b/Sprites/explosion-1-b-3.png.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Sprites/Explosions pack/explosion-1-b/Sprites/explosion-1-b-4.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Sprites/Explosions pack/explosion-1-b/Sprites/explosion-1-b-4.png.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Sprites/Explosions pack/explosion-1-b/Sprites/explosion-1-b-5.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Sprites/Explosions pack/explosion-1-b/Sprites/explosion-1-b-5.png.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Sprites/Explosions pack/explosion-1-b/Sprites/explosion-1-b-6.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Sprites/Explosions pack/explosion-1-b/Sprites/explosion-1-b-6.png.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Sprites/Explosions pack/explosion-1-b/Sprites/explosion-1-b-7.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Sprites/Explosions pack/explosion-1-b/Sprites/explosion-1-b-7.png.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Sprites/Explosions pack/explosion-1-b/Sprites/explosion-1-b-8.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Sprites/Explosions pack/explosion-1-b/Sprites/explosion-1-b-8.png.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Sprites/Explosions pack/explosion-1-b/spritesheet.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Sprites/Explosions pack/explosion-1-b/spritesheet.png.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Sprites/Explosions pack/explosion-1-c/Preview.gif.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Sprites/Explosions pack/explosion-1-c/Preview.gif.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Sprites/Explosions pack/explosion-1-c/Sprites/explosion-c1.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Sprites/Explosions pack/explosion-1-c/Sprites/explosion-c1.png.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Sprites/Explosions pack/explosion-1-c/Sprites/explosion-c10.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Sprites/Explosions pack/explosion-1-c/Sprites/explosion-c10.png.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Sprites/Explosions pack/explosion-1-c/Sprites/explosion-c2.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Sprites/Explosions pack/explosion-1-c/Sprites/explosion-c2.png.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Sprites/Explosions pack/explosion-1-c/Sprites/explosion-c3.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Sprites/Explosions pack/explosion-1-c/Sprites/explosion-c3.png.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Sprites/Explosions pack/explosion-1-c/Sprites/explosion-c4.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Sprites/Explosions pack/explosion-1-c/Sprites/explosion-c4.png.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Sprites/Explosions pack/explosion-1-c/Sprites/explosion-c5.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Sprites/Explosions pack/explosion-1-c/Sprites/explosion-c5.png.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Sprites/Explosions pack/explosion-1-c/Sprites/explosion-c6.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Sprites/Explosions pack/explosion-1-c/Sprites/explosion-c6.png.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Sprites/Explosions pack/explosion-1-c/Sprites/explosion-c7.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Sprites/Explosions pack/explosion-1-c/Sprites/explosion-c7.png.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Sprites/Explosions pack/explosion-1-c/Sprites/explosion-c8.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Sprites/Explosions pack/explosion-1-c/Sprites/explosion-c8.png.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Sprites/Explosions pack/explosion-1-c/Sprites/explosion-c9.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Sprites/Explosions pack/explosion-1-c/Sprites/explosion-c9.png.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Sprites/Explosions pack/explosion-1-c/spritesheet.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Sprites/Explosions pack/explosion-1-c/spritesheet.png.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Sprites/Explosions pack/explosion-1-d/Preview.gif.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Sprites/Explosions pack/explosion-1-d/Preview.gif.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Sprites/Explosions pack/explosion-1-d/Sprites/explosion-d1.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Sprites/Explosions pack/explosion-1-d/Sprites/explosion-d1.png.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Sprites/Explosions pack/explosion-1-d/Sprites/explosion-d10.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Sprites/Explosions pack/explosion-1-d/Sprites/explosion-d10.png.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Sprites/Explosions pack/explosion-1-d/Sprites/explosion-d11.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Sprites/Explosions pack/explosion-1-d/Sprites/explosion-d11.png.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Sprites/Explosions pack/explosion-1-d/Sprites/explosion-d12.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Sprites/Explosions pack/explosion-1-d/Sprites/explosion-d12.png.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Sprites/Explosions pack/explosion-1-d/Sprites/explosion-d2.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Sprites/Explosions pack/explosion-1-d/Sprites/explosion-d2.png.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Sprites/Explosions pack/explosion-1-d/Sprites/explosion-d3.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Sprites/Explosions pack/explosion-1-d/Sprites/explosion-d3.png.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Sprites/Explosions pack/explosion-1-d/Sprites/explosion-d4.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Sprites/Explosions pack/explosion-1-d/Sprites/explosion-d4.png.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Sprites/Explosions pack/explosion-1-d/Sprites/explosion-d5.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Sprites/Explosions pack/explosion-1-d/Sprites/explosion-d5.png.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Sprites/Explosions pack/explosion-1-d/Sprites/explosion-d6.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Sprites/Explosions pack/explosion-1-d/Sprites/explosion-d6.png.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Sprites/Explosions pack/explosion-1-d/Sprites/explosion-d7.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Sprites/Explosions pack/explosion-1-d/Sprites/explosion-d7.png.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Sprites/Explosions pack/explosion-1-d/Sprites/explosion-d8.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Sprites/Explosions pack/explosion-1-d/Sprites/explosion-d8.png.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Sprites/Explosions pack/explosion-1-d/Sprites/explosion-d9.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Sprites/Explosions pack/explosion-1-d/Sprites/explosion-d9.png.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Sprites/Explosions pack/explosion-1-d/spritsheet.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Sprites/Explosions pack/explosion-1-d/spritsheet.png.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Sprites/Explosions pack/explosion-1-e/Preview.gif.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Sprites/Explosions pack/explosion-1-e/Preview.gif.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Sprites/Explosions pack/explosion-1-e/Sprites/explosion-e1.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Sprites/Explosions pack/explosion-1-e/Sprites/explosion-e1.png.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Sprites/Explosions pack/explosion-1-e/Sprites/explosion-e10.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Sprites/Explosions pack/explosion-1-e/Sprites/explosion-e10.png.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Sprites/Explosions pack/explosion-1-e/Sprites/explosion-e11.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Sprites/Explosions pack/explosion-1-e/Sprites/explosion-e11.png.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Sprites/Explosions pack/explosion-1-e/Sprites/explosion-e12.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Sprites/Explosions pack/explosion-1-e/Sprites/explosion-e12.png.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Sprites/Explosions pack/explosion-1-e/Sprites/explosion-e13.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Sprites/Explosions pack/explosion-1-e/Sprites/explosion-e13.png.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Sprites/Explosions pack/explosion-1-e/Sprites/explosion-e14.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Sprites/Explosions pack/explosion-1-e/Sprites/explosion-e14.png.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Sprites/Explosions pack/explosion-1-e/Sprites/explosion-e15.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Sprites/Explosions pack/explosion-1-e/Sprites/explosion-e15.png.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Sprites/Explosions pack/explosion-1-e/Sprites/explosion-e16.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Sprites/Explosions pack/explosion-1-e/Sprites/explosion-e16.png.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Sprites/Explosions pack/explosion-1-e/Sprites/explosion-e17.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Sprites/Explosions pack/explosion-1-e/Sprites/explosion-e17.png.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Sprites/Explosions pack/explosion-1-e/Sprites/explosion-e18.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Sprites/Explosions pack/explosion-1-e/Sprites/explosion-e18.png.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Sprites/Explosions pack/explosion-1-e/Sprites/explosion-e19.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Sprites/Explosions pack/explosion-1-e/Sprites/explosion-e19.png.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Sprites/Explosions pack/explosion-1-e/Sprites/explosion-e2.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Sprites/Explosions pack/explosion-1-e/Sprites/explosion-e2.png.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Sprites/Explosions pack/explosion-1-e/Sprites/explosion-e20.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Sprites/Explosions pack/explosion-1-e/Sprites/explosion-e20.png.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Sprites/Explosions pack/explosion-1-e/Sprites/explosion-e21.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Sprites/Explosions pack/explosion-1-e/Sprites/explosion-e21.png.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Sprites/Explosions pack/explosion-1-e/Sprites/explosion-e22.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Sprites/Explosions pack/explosion-1-e/Sprites/explosion-e22.png.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Sprites/Explosions pack/explosion-1-e/Sprites/explosion-e3.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Sprites/Explosions pack/explosion-1-e/Sprites/explosion-e3.png.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Sprites/Explosions pack/explosion-1-e/Sprites/explosion-e4.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Sprites/Explosions pack/explosion-1-e/Sprites/explosion-e4.png.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Sprites/Explosions pack/explosion-1-e/Sprites/explosion-e5.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Sprites/Explosions pack/explosion-1-e/Sprites/explosion-e5.png.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Sprites/Explosions pack/explosion-1-e/Sprites/explosion-e6.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Sprites/Explosions pack/explosion-1-e/Sprites/explosion-e6.png.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Sprites/Explosions pack/explosion-1-e/Sprites/explosion-e7.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Sprites/Explosions pack/explosion-1-e/Sprites/explosion-e7.png.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Sprites/Explosions pack/explosion-1-e/Sprites/explosion-e8.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Sprites/Explosions pack/explosion-1-e/Sprites/explosion-e8.png.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Sprites/Explosions pack/explosion-1-e/Sprites/explosion-e9.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Sprites/Explosions pack/explosion-1-e/Sprites/explosion-e9.png.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Sprites/Explosions pack/explosion-1-e/explosion-5.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Sprites/Explosions pack/explosion-1-e/explosion-5.png.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Sprites/Explosions pack/explosion-1-f/Preview.gif.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Sprites/Explosions pack/explosion-1-f/Preview.gif.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Sprites/Explosions pack/explosion-1-f/Sprites.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Sprites/Explosions pack/explosion-1-f/Sprites.png.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Sprites/Explosions pack/explosion-1-f/Sprites/explosion-f1.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Sprites/Explosions pack/explosion-1-f/Sprites/explosion-f1.png.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Sprites/Explosions pack/explosion-1-f/Sprites/explosion-f2.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Sprites/Explosions pack/explosion-1-f/Sprites/explosion-f2.png.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Sprites/Explosions pack/explosion-1-f/Sprites/explosion-f3.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Sprites/Explosions pack/explosion-1-f/Sprites/explosion-f3.png.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Sprites/Explosions pack/explosion-1-f/Sprites/explosion-f4.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Sprites/Explosions pack/explosion-1-f/Sprites/explosion-f4.png.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Sprites/Explosions pack/explosion-1-f/Sprites/explosion-f5.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Sprites/Explosions pack/explosion-1-f/Sprites/explosion-f5.png.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Sprites/Explosions pack/explosion-1-f/Sprites/explosion-f6.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Sprites/Explosions pack/explosion-1-f/Sprites/explosion-f6.png.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Sprites/Explosions pack/explosion-1-f/Sprites/explosion-f7.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Sprites/Explosions pack/explosion-1-f/Sprites/explosion-f7.png.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Sprites/Explosions pack/explosion-1-f/Sprites/explosion-f8.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Sprites/Explosions pack/explosion-1-f/Sprites/explosion-f8.png.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Sprites/Explosions pack/explosion-1-g/Preview.gif.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Sprites/Explosions pack/explosion-1-g/Preview.gif.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Sprites/Explosions pack/explosion-1-g/Sprites/frame1.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Sprites/Explosions pack/explosion-1-g/Sprites/frame1.png.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Sprites/Explosions pack/explosion-1-g/Sprites/frame2.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Sprites/Explosions pack/explosion-1-g/Sprites/frame2.png.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Sprites/Explosions pack/explosion-1-g/Sprites/frame3.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Sprites/Explosions pack/explosion-1-g/Sprites/frame3.png.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Sprites/Explosions pack/explosion-1-g/Sprites/frame4.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Sprites/Explosions pack/explosion-1-g/Sprites/frame4.png.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Sprites/Explosions pack/explosion-1-g/Sprites/frame5.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Sprites/Explosions pack/explosion-1-g/Sprites/frame5.png.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Sprites/Explosions pack/explosion-1-g/Sprites/frame6.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Sprites/Explosions pack/explosion-1-g/Sprites/frame6.png.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Sprites/Explosions pack/explosion-1-g/Sprites/frame7.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Sprites/Explosions pack/explosion-1-g/Sprites/frame7.png.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/TextMesh Pro/Resources/Fonts &amp; Materials/LiberationSans SDF - Fallback.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/TextMesh Pro/Resources/Fonts &amp; Materials/LiberationSans SDF - Fallback.asset" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -36,10 +132,16 @@
   }
 }</component>
   <component name="HighlightingSettingsPerFile">
-    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/5a41d6b7189842eca409fd0b1c3e3dcf17bf78/9e/dc952431/UInt32.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/Core/InteractionController.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Assets/Scripts/Enemies/Walker.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/TurretUpgradeRequest.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/UI/MainMenu/MainMenuController.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="mock://C:/Games/Unity/LudumDare57/Assets/Sprites/Explosions pack/explosion-1-a/Sprites/explosion-1.png.meta" root0="SKIP_HIGHLIGHTING" />
+    <setting file="mock://C:/Games/Unity/LudumDare57/Assets/Sprites/Explosions pack/explosion-1-a/Sprites/explosion-3.png.meta" root0="SKIP_HIGHLIGHTING" />
+    <setting file="mock://C:/Games/Unity/LudumDare57/Assets/Sprites/Explosions pack/explosion-1-b/Sprites/explosion-1-b-4.png.meta" root0="SKIP_HIGHLIGHTING" />
+    <setting file="mock://C:/Games/Unity/LudumDare57/Assets/Sprites/Explosions pack/explosion-1-b/Sprites/explosion-1-b-5.png.meta" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/844019a3a067481c8d9cb70c7a2ba4471df600/7a/c4b9a24b/GameObject.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/844019a3a067481c8d9cb70c7a2ba4471df600/af/4cb2c1d5/SerializeField.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/844019a3a067481c8d9cb70c7a2ba4471df600/da/ebf8b75a/Object.cs" root0="FORCE_HIGHLIGHTING" />
   </component>
   <component name="MetaFilesCheckinStateConfiguration" checkMetaFiles="true" />
   <component name="ProjectColorInfo">{
@@ -50,19 +152,19 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;git-widget-placeholder&quot;: &quot;turrets-upgrades&quot;,
-    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
-    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
-    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
-    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
-    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
-    &quot;settings.editor.selected.configurable&quot;: &quot;org.jetbrains.plugins.github.ui.GithubSettingsConfigurable&quot;,
-    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "git-widget-placeholder": "main",
+    "node.js.detected.package.eslint": "true",
+    "node.js.detected.package.tslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.tslint": "(autodetect)",
+    "nodejs_package_manager_path": "npm",
+    "settings.editor.selected.configurable": "org.jetbrains.plugins.github.ui.GithubSettingsConfigurable",
+    "vue.rearranger.settings.migration": "true"
   }
-}</component>
+}]]></component>
   <component name="RunManager" selected="Attach to Unity Editor.Attach to Unity Editor">
     <configuration name="Start Unity" type="RunUnityExe" factoryName="Unity Executable">
       <option name="EXE_PATH" value="C:\Program Files\Unity\Hub\Editor\6000.0.45f1\Editor\Unity.exe" />
@@ -112,6 +214,7 @@
       <workItem from="1743847932089" duration="782000" />
       <workItem from="1743850402823" duration="11852000" />
       <workItem from="1743925224193" duration="4930000" />
+      <workItem from="1743947639540" duration="2050000" />
     </task>
     <task id="LOCAL-00001" summary="Add simple main and pause menu">
       <option name="closed" value="true" />
@@ -256,15 +359,6 @@
   </component>
   <component name="UnityUnitTestConfiguration" currentTestLauncher="Both" />
   <component name="Vcs.Log.Tabs.Properties">
-    <option name="TAB_STATES">
-      <map>
-        <entry key="MAIN">
-          <value>
-            <State />
-          </value>
-        </entry>
-      </map>
-    </option>
     <option name="RECENT_FILTERS">
       <map>
         <entry key="Branch">
@@ -276,6 +370,15 @@
                 </option>
               </RecentGroup>
             </list>
+          </value>
+        </entry>
+      </map>
+    </option>
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
           </value>
         </entry>
       </map>

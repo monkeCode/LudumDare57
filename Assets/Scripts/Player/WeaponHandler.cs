@@ -2,6 +2,8 @@
 using System;
 using Unity.VisualScripting;
 using UnityEngine;
+using UnityEngine.Events;
+using UnityEngine.Serialization;
 using Weapons;
 
 namespace Player
@@ -10,13 +12,14 @@ namespace Player
     class WeaponHandler : MonoBehaviour
     {
 
-        [SerializeField] private BaseWeapon _weapon;
+        [SerializeField] public BaseWeapon weapon;
         [SerializeField] private float _offset;
         [SerializeField] private float _time;
         [SerializeField] private Transform _center;
 
         private Vector2 trackPoint;
         private SpriteRenderer _spriteRenderer;
+        public UnityEvent OnSwapWeapon = new();
 
         private AudioSource source;
 
@@ -29,9 +32,9 @@ namespace Player
             _spriteRenderer = GetComponent<SpriteRenderer>();
             source = GetComponent<AudioSource>();
 
-            if (_weapon != null)
+            if (weapon != null)
             {
-                SwapWeapon(_weapon);
+                SwapWeapon(weapon);
             }
         }
 
@@ -49,11 +52,12 @@ namespace Player
 
         public BaseWeapon SwapWeapon(BaseWeapon newWeapon)
         {
-            var curWeapon = _weapon;
+            var curWeapon = weapon;
 
-            _weapon = newWeapon;
-            _spriteRenderer.sprite = _weapon.Sprite;
-
+            weapon = newWeapon;
+            _spriteRenderer.sprite = weapon.Sprite;
+            
+            OnSwapWeapon.Invoke();
             return curWeapon;
         }
 
@@ -65,12 +69,12 @@ namespace Player
         public void ShootRelease()
         {
             press = false;
-            _weapon.ShootRelease(transform.position, transform.right);
+            weapon.ShootRelease(transform.position, transform.right);
         }
 
         public void Reload()
         {
-            _weapon.Reload();
+            weapon.Reload();
         }
 
         public void Drift()
@@ -86,7 +90,7 @@ namespace Player
         private void Update()
         {
             if(press)
-                _weapon.ShootPress(transform.position, transform.right);
+                weapon.ShootPress(transform.position, transform.right);
 
             transform.position =  Vector2.Lerp(transform.position, trackPoint, _time * Time.deltaTime);
         }

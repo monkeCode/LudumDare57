@@ -23,7 +23,7 @@ public class Platform : MonoBehaviour, IDamageable
 
     private CurrencyStorage _currencyStorage;
 
-    AudioSource audioSource;
+    [SerializeField] AudioSource audioSource;
     
 
     // Start is called once before the first execution of Update after the MonoBehaviour is created

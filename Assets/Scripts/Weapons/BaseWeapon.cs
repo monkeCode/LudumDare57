@@ -3,8 +3,8 @@ using System;
 using System.Collections;
 using System.Collections.Generic;
 using Interfaces;
-using Unity.VisualScripting;
 using UnityEngine;
+using UnityEngine.Events;
 
 namespace Weapons
 {
@@ -112,6 +112,8 @@ namespace Weapons
         [SerializeField] protected AudioClip _noAmmoClip;
 
         [field: SerializeField] public Rarity Rarity { get; protected set; }
+        public UnityEvent OnShoot = new();
+        public UnityEvent OnReloaded = new();
 
         public ShootMode ShootMode => _shootMode;
 
@@ -147,6 +149,7 @@ namespace Weapons
             yield return new WaitForSeconds(ReloadTime);
             _currentAmmo = _magazineSize;
             _isReloading = false;
+            OnReloaded.Invoke();
             Player.Player.Instance.WeaponHandler.PlaySound(_reloadClipEnd);
         }
 
@@ -174,6 +177,7 @@ namespace Weapons
 
             _currentAmmo--;
             _lastShotTime = Time.time;
+            OnShoot.Invoke();
 
             Player.Player.Instance.WeaponHandler.Drift();
             Player.Player.Instance.WeaponHandler.PlaySound(_shootClip);
