@@ -25,7 +25,7 @@ namespace Player
 
         private bool press = false;
 
-        public bool IsReloading => _weapon.IsReloading;
+        public bool IsReloading => weapon.IsReloading;
 
         private void Start()
         {
