@@ -5,6 +5,7 @@ namespace Enemies
 {
     public class Walker : MonoBehaviour, IDamageable
     {
+        [SerializeField] private uint health = 50;
         [SerializeField] private uint damage = 5;
         [SerializeField] private float attackRange = 1f;
         [SerializeField] private float platformAttackRangeModifier = 7;
@@ -100,7 +101,9 @@ namespace Enemies
         public bool CanAttack() => Time.time - lastAttackTime > attackDelay;
         public void TakeDamage(uint damage)
         {
-            throw new System.NotImplementedException();
+            health -= damage;
+            if (health <= 0)
+                Kill();
         }
 
         public void Heal(uint heals)
@@ -110,7 +113,7 @@ namespace Enemies
 
         public void Kill()
         {
-            throw new System.NotImplementedException();
+            Destroy(gameObject);
         }
     }
 }

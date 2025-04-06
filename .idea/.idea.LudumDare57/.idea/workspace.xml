@@ -5,12 +5,7 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="0a9a3a54-15d7-46eb-8d53-e494bfb5ff9e" name="Changes" comment="Fixes">
-      <change beforePath="$PROJECT_DIR$/.idea/.idea.LudumDare57/.idea/shelf/Uncommitted_changes_before_Merge_at_06_04_2025_15_55__Changes_.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.LudumDare57/.idea/shelf/Uncommitted_changes_before_Merge_at_06_04_2025_15_55__Changes_.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/.idea.LudumDare57/.idea/shelf/Uncommitted_changes_before_rebase__Changes_1.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.LudumDare57/.idea/shelf/Uncommitted_changes_before_rebase__Changes_1.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/.idea.LudumDare57/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.LudumDare57/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scenes/Enemies.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/Enemies.unity" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Scripts/Enemies/Walker.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Enemies/Walker.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Platform.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Platform.cs" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
