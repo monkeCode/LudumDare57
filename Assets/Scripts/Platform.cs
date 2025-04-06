@@ -29,6 +29,7 @@ public class Platform : MonoBehaviour
     {
         rb = GetComponent<Rigidbody2D>();
         audioSource = GetComponent<AudioSource>();
+        _currencyStorage = FindFirstObjectByType<CurrencyStorage>();
     }
 
     // Update is called once per frame
@@ -75,7 +76,7 @@ public class Platform : MonoBehaviour
 
     private void HandlePlatformRepaired()
     {
-        if(!_currencyStorage.TrySpendCurrency(repairAmount)) return;
+        if(currentHealth >= maxHealth || !_currencyStorage.TrySpendCurrency(repairAmount)) return;
 
         currentHealth += repairAmount;
         
