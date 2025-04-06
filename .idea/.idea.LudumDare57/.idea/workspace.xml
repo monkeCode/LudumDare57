@@ -5,12 +5,7 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="0a9a3a54-15d7-46eb-8d53-e494bfb5ff9e" name="Changes" comment="Fixes">
-      <change afterPath="$PROJECT_DIR$/Assets/Scripts/Weapons/TurretBuildingZone.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Scripts/Weapons/TurretBuildingZone.cs.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/.idea.LudumDare57/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.LudumDare57/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scenes/TestScenes/TurretUpgradeDemo.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/TestScenes/TurretUpgradeDemo.unity" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Core/InteractionController.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Core/InteractionController.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/TextMesh Pro/Fonts/PublicPixel SDF.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/TextMesh Pro/Fonts/PublicPixel SDF.asset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Enemies/Walker.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Enemies/Walker.cs" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -41,64 +36,10 @@
   }
 }</component>
   <component name="HighlightingSettingsPerFile">
-    <setting file="mock://C:/Games/Unity/LudumDare57/Assets/Prefabs/Minerals/Small Mineral.prefab" root0="SKIP_HIGHLIGHTING" />
-    <setting file="mock://C:/Games/Unity/LudumDare57/Assets/Prefabs/Platform.prefab" root0="SKIP_HIGHLIGHTING" />
-    <setting file="mock://C:/Games/Unity/LudumDare57/Assets/Prefabs/Player.prefab" root0="SKIP_HIGHLIGHTING" />
-    <setting file="mock://C:/Games/Unity/LudumDare57/Assets/Prefabs/Player.prefab" root0="SKIP_HIGHLIGHTING" />
-    <setting file="mock://C:/Games/Unity/LudumDare57/Assets/Prefabs/Player.prefab" root0="SKIP_HIGHLIGHTING" />
-    <setting file="mock://C:/Games/Unity/LudumDare57/Assets/Prefabs/Player.prefab" root0="SKIP_HIGHLIGHTING" />
-    <setting file="mock://C:/Games/Unity/LudumDare57/Assets/Prefabs/Player.prefab" root0="SKIP_HIGHLIGHTING" />
-    <setting file="mock://C:/Games/Unity/LudumDare57/Assets/Prefabs/Player.prefab" root0="SKIP_HIGHLIGHTING" />
-    <setting file="mock://C:/Games/Unity/LudumDare57/Assets/Prefabs/Player.prefab" root0="SKIP_HIGHLIGHTING" />
-    <setting file="mock://C:/Games/Unity/LudumDare57/Assets/Prefabs/Player.prefab" root0="SKIP_HIGHLIGHTING" />
-    <setting file="mock://C:/Games/Unity/LudumDare57/Assets/Prefabs/Player.prefab" root0="SKIP_HIGHLIGHTING" />
-    <setting file="mock://C:/Games/Unity/LudumDare57/Assets/Prefabs/Player.prefab" root0="SKIP_HIGHLIGHTING" />
-    <setting file="mock://C:/Games/Unity/LudumDare57/Assets/Prefabs/Player.prefab" root0="SKIP_HIGHLIGHTING" />
-    <setting file="mock://C:/Games/Unity/LudumDare57/Assets/Prefabs/Player.prefab" root0="SKIP_HIGHLIGHTING" />
-    <setting file="mock://C:/Games/Unity/LudumDare57/Assets/Prefabs/Player.prefab" root0="SKIP_HIGHLIGHTING" />
-    <setting file="mock://C:/Games/Unity/LudumDare57/Assets/Prefabs/Player.prefab" root0="SKIP_HIGHLIGHTING" />
-    <setting file="mock://C:/Games/Unity/LudumDare57/Assets/Prefabs/Player.prefab" root0="SKIP_HIGHLIGHTING" />
-    <setting file="mock://C:/Games/Unity/LudumDare57/Assets/Prefabs/Player.prefab" root0="SKIP_HIGHLIGHTING" />
-    <setting file="mock://C:/Games/Unity/LudumDare57/Assets/Prefabs/Player.prefab" root0="SKIP_HIGHLIGHTING" />
-    <setting file="mock://C:/Games/Unity/LudumDare57/Assets/Prefabs/Player.prefab" root0="SKIP_HIGHLIGHTING" />
-    <setting file="mock://C:/Games/Unity/LudumDare57/Assets/Prefabs/Player.prefab" root0="SKIP_HIGHLIGHTING" />
-    <setting file="mock://C:/Games/Unity/LudumDare57/Assets/Prefabs/Player.prefab" root0="SKIP_HIGHLIGHTING" />
-    <setting file="mock://C:/Games/Unity/LudumDare57/Assets/Prefabs/Player.prefab" root0="SKIP_HIGHLIGHTING" />
-    <setting file="mock://C:/Games/Unity/LudumDare57/Assets/Prefabs/Player.prefab" root0="SKIP_HIGHLIGHTING" />
-    <setting file="mock://C:/Games/Unity/LudumDare57/Assets/Prefabs/Player.prefab" root0="SKIP_HIGHLIGHTING" />
-    <setting file="mock://C:/Games/Unity/LudumDare57/Assets/Prefabs/Player.prefab" root0="SKIP_HIGHLIGHTING" />
-    <setting file="mock://C:/Games/Unity/LudumDare57/Assets/Scenes/TestScenes/MineralsDemo.unity" root0="SKIP_HIGHLIGHTING" />
-    <setting file="mock://C:/Games/Unity/LudumDare57/Assets/Scenes/TestScenes/MineralsDemo.unity" root0="SKIP_HIGHLIGHTING" />
-    <setting file="mock://C:/Games/Unity/LudumDare57/Assets/Scenes/TestScenes/MineralsDemo.unity" root0="SKIP_HIGHLIGHTING" />
-    <setting file="mock://C:/Games/Unity/LudumDare57/Assets/Scenes/TestScenes/MineralsDemo.unity" root0="SKIP_HIGHLIGHTING" />
-    <setting file="mock://C:/Games/Unity/LudumDare57/Assets/Scripts/Core/InteractionController.cs" root0="SKIP_HIGHLIGHTING" />
-    <setting file="mock://C:/Games/Unity/LudumDare57/Assets/Scripts/Core/InteractionController.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/5a41d6b7189842eca409fd0b1c3e3dcf17bf78/9e/dc952431/UInt32.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/Core/InteractionController.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="mock://C:/Games/Unity/LudumDare57/Assets/Scripts/Core/InteractionController.cs" root0="SKIP_HIGHLIGHTING" />
-    <setting file="mock://C:/Games/Unity/LudumDare57/Assets/Scripts/GameResources/Mineral.cs" root0="SKIP_HIGHLIGHTING" />
-    <setting file="mock://C:/Games/Unity/LudumDare57/Assets/Scripts/GameResources/Mineral.cs" root0="SKIP_HIGHLIGHTING" />
-    <setting file="mock://C:/Games/Unity/LudumDare57/Assets/Scripts/GameResources/MineralSellPoint.cs" root0="SKIP_HIGHLIGHTING" />
-    <setting file="mock://C:/Games/Unity/LudumDare57/Assets/Scripts/Platform.cs" root0="SKIP_HIGHLIGHTING" />
-    <setting file="mock://C:/Games/Unity/LudumDare57/Assets/Scripts/Platform.cs" root0="SKIP_HIGHLIGHTING" />
-    <setting file="mock://C:/Games/Unity/LudumDare57/Assets/Scripts/Platform.cs" root0="SKIP_HIGHLIGHTING" />
-    <setting file="mock://C:/Games/Unity/LudumDare57/Assets/Scripts/Turret.cs" root0="SKIP_HIGHLIGHTING" />
-    <setting file="mock://C:/Games/Unity/LudumDare57/Assets/Scripts/Turret.cs" root0="SKIP_HIGHLIGHTING" />
-    <setting file="mock://C:/Games/Unity/LudumDare57/Assets/Scripts/Turret.cs" root0="SKIP_HIGHLIGHTING" />
-    <setting file="mock://C:/Games/Unity/LudumDare57/Assets/Scripts/Turret.cs" root0="SKIP_HIGHLIGHTING" />
-    <setting file="mock://C:/Games/Unity/LudumDare57/Assets/Scripts/Turret.cs" root0="SKIP_HIGHLIGHTING" />
-    <setting file="mock://C:/Games/Unity/LudumDare57/Assets/Scripts/Turret.cs" root0="SKIP_HIGHLIGHTING" />
-    <setting file="mock://C:/Games/Unity/LudumDare57/Assets/Scripts/Turret.cs" root0="SKIP_HIGHLIGHTING" />
-    <setting file="mock://C:/Games/Unity/LudumDare57/Assets/Scripts/Turret.cs" root0="SKIP_HIGHLIGHTING" />
-    <setting file="mock://C:/Games/Unity/LudumDare57/Assets/Scripts/Turret.cs" root0="SKIP_HIGHLIGHTING" />
-    <setting file="mock://C:/Games/Unity/LudumDare57/Assets/Scripts/Turret.cs" root0="SKIP_HIGHLIGHTING" />
-    <setting file="mock://C:/Games/Unity/LudumDare57/Assets/Scripts/TurretUpgradeRequest.cs" root0="SKIP_HIGHLIGHTING" />
-    <setting file="mock://C:/Games/Unity/LudumDare57/Assets/Scripts/TurretUpgradeRequest.cs" root0="SKIP_HIGHLIGHTING" />
-    <setting file="mock://C:/Games/Unity/LudumDare57/Assets/Scripts/TurretUpgradeRequest.cs" root0="SKIP_HIGHLIGHTING" />
-    <setting file="mock://C:/Games/Unity/LudumDare57/Assets/Scripts/TurretUpgradeRequest.cs.meta" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/Enemies/Walker.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/UI/MainMenu/MainMenuController.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/844019a3a067481c8d9cb70c7a2ba4471df600/7a/c4b9a24b/GameObject.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/844019a3a067481c8d9cb70c7a2ba4471df600/af/4cb2c1d5/SerializeField.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/844019a3a067481c8d9cb70c7a2ba4471df600/da/ebf8b75a/Object.cs" root0="FORCE_HIGHLIGHTING" />
   </component>
   <component name="MetaFilesCheckinStateConfiguration" checkMetaFiles="true" />
   <component name="ProjectColorInfo">{
@@ -315,6 +256,15 @@
   </component>
   <component name="UnityUnitTestConfiguration" currentTestLauncher="Both" />
   <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
     <option name="RECENT_FILTERS">
       <map>
         <entry key="Branch">
@@ -326,15 +276,6 @@
                 </option>
               </RecentGroup>
             </list>
-          </value>
-        </entry>
-      </map>
-    </option>
-    <option name="TAB_STATES">
-      <map>
-        <entry key="MAIN">
-          <value>
-            <State />
           </value>
         </entry>
       </map>

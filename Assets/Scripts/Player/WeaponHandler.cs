@@ -24,6 +24,8 @@ namespace Player
 
         public bool IsReloading => _weapon.IsReloading;
 
+        public BaseWeapon Weapon => _weapon;
+
         private void Start()
         {
             _spriteRenderer = GetComponent<SpriteRenderer>();
