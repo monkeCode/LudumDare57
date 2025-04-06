@@ -1,3 +1,4 @@
+using JetBrains.Annotations;
 using UnityEngine;
 
 namespace Core
@@ -5,6 +6,7 @@ namespace Core
     public class InteractionController: MonoBehaviour
     {
         private IInteractable _interactable;
+        [CanBeNull] public Canvas uiTip;
     
         private bool isInteractable;
 
@@ -26,6 +28,7 @@ namespace Core
             if (other.gameObject.TryGetComponent(out Player.Player _))
             {
                 isInteractable = true;
+                if (uiTip != null) uiTip.enabled = true;
             }
         }
 
@@ -34,6 +37,7 @@ namespace Core
             if (other.gameObject.TryGetComponent(out Player.Player _))
             {
                 isInteractable = false;
+                if (uiTip != null) uiTip.enabled = false;
             }
         }
     }
