@@ -209,6 +209,7 @@ namespace Weapons
         {
             _currentAmmo = MagazineSize;
             _lastShotTime = Time.time;
+            _isReloading = false;
         }
 
 

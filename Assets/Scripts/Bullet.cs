@@ -26,8 +26,8 @@ namespace Weapons
                 {
                     rb.AddForce((other.transform.position - transform.position).normalized * _force);
                 }
-                Destroy(gameObject);
             }
+            Destroy(gameObject);
         }
     }
 }

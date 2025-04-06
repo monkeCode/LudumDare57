@@ -13,7 +13,7 @@ GameObject:
   - component: {fileID: 2886450034529169273}
   - component: {fileID: 6083921032856484311}
   - component: {fileID: 6875710627065457326}
-  m_Layer: 11
+  m_Layer: 0
   m_Name: grenade
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -51,7 +51,7 @@ Rigidbody2D:
   m_LinearDamping: 0
   m_AngularDamping: 0.05
   m_GravityScale: 1
-  m_Material: {fileID: 0}
+  m_Material: {fileID: 6200000, guid: e7a24172bbc244e67835e344f438d2ba, type: 2}
   m_IncludeLayers:
     serializedVersion: 2
     m_Bits: 0
@@ -165,9 +165,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: be15a15e100cd325ba1db7711645f7dd, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _force: 300
+  _force: 600
   _damage: 10
-  _boomrange: 2
+  _boomrange: 3
   _boomTimer: 1
   _boomPrefab: {fileID: 8355299529488773628, guid: 33dab244624fc0a409af092af46d15a8, type: 3}
   _boomLayer:

@@ -101,16 +101,19 @@ public class Platform : MonoBehaviour, IDamageable
 
     public void TakeDamage(uint damage)
     {
-        throw new NotImplementedException();
+        currentHealth -= damage;
+        currentHealth = Math.Clamp(currentHealth, 0, maxHealth);
+        currentHealthChanged?.Invoke(currentHealth);
     }
 
     public void Heal(uint heals)
     {
-        throw new NotImplementedException();
+        currentHealth += heals;
+        currentHealth = Math.Clamp(currentHealth, 0, maxHealth);
+        currentHealthChanged?.Invoke(currentHealth);
     }
-
     public void Kill()
     {
-        throw new NotImplementedException();
+        
     }
 }

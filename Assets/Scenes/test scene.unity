@@ -519,6 +519,10 @@ PrefabInstance:
       value: GameplayUICanvas
       objectReference: {fileID: 0}
     - target: {fileID: 6245315708411125149, guid: 2251eb5906bd6504a9e590289f5b6776, type: 3}
+      propertyPath: m_AnchoredPosition.x
+      value: 57.792725
+      objectReference: {fileID: 0}
+    - target: {fileID: 6245315708411125149, guid: 2251eb5906bd6504a9e590289f5b6776, type: 3}
       propertyPath: m_AnchoredPosition.y
       value: -1.0664062
       objectReference: {fileID: 0}
@@ -830,6 +834,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Weapon
       objectReference: {fileID: 0}
+    - target: {fileID: 3000509812860541852, guid: 5e95dfd31a3c9c8b29fd44ede1ed30bc, type: 3}
+      propertyPath: _weapon
+      value: 
+      objectReference: {fileID: 11400000, guid: 63fb1173afb6d8aaea2cb29d92f4e6af, type: 2}
     - target: {fileID: 5681121611808740754, guid: 5e95dfd31a3c9c8b29fd44ede1ed30bc, type: 3}
       propertyPath: m_SortingLayer
       value: 5

@@ -3,16 +3,16 @@ using System.Collections;
 using System.Diagnostics.CodeAnalysis;
 using System.Text;
 using TMPro;
-using Unity.VisualScripting;
 using UnityEngine;
 using UnityEngine.EventSystems;
 using UnityEngine.Rendering.Universal;
 
 namespace Weapons
 {
+    [RequireComponent(typeof(AudioSource))]
     class WorldWeapon : MonoBehaviour, IPointerEnterHandler, IPointerExitHandler
     {
-        
+
         [Header("amimation")]
         [SerializeField] private float amplitude = 0.2f;
         [SerializeField] private float speed = 1f;
@@ -24,18 +24,19 @@ namespace Weapons
 
         [SerializeField] private SpriteRenderer _sp;
         [SerializeField] private Light2D _light;
-        
+
         [SerializeField] private Canvas _cv;
         [SerializeField] private TextMeshProUGUI _text;
         [SerializeField] private TextMeshProUGUI _name;
         [SerializeField] private float _showAfterSecs;
+        [SerializeField] private AudioClip _swapSound;
 
         private bool _show = false;
 
         IEnumerator Waiter()
         {
             yield return new WaitForSeconds(_showAfterSecs);
-            if(!_show)
+            if (!_show)
                 yield break;
 
             _cv.gameObject.SetActive(true);
@@ -53,7 +54,7 @@ namespace Weapons
         {
             Debug.Log("pointer enter");
             Player.Player.Instance.Inputs.Player.Interact.started += ctx => PlayerLoot();
-            if(_show)
+            if (_show)
                 return;
             _show = true;
             StartCoroutine(Waiter());
@@ -70,11 +71,12 @@ namespace Weapons
 
         public void PlayerLoot()
         {
-            if(Vector2.Distance(transform.position, Player.Player.Instance.transform.position) > 2)
+            if (Vector2.Distance(transform.position, Player.Player.Instance.transform.position) > 2)
                 return;
             var weapon = Player.Player.Instance.WeaponHandler.SwapWeapon(_weapon);
             SetWeapon(weapon);
             Debug.Log("PlayerLoot");
+            GetComponent<AudioSource>().PlayOneShot(_swapSound);
         }
 
         public void SetWeapon([NotNull] BaseWeapon weapon)
@@ -112,7 +114,7 @@ namespace Weapons
 
         void Update()
         {
-            
+
             Vector3 basePosition = transform.position;
 
             float newY = basePosition.y + Mathf.Sin(Time.time * speed) * amplitude;
@@ -122,27 +124,27 @@ namespace Weapons
         }
 
 
-    [ContextMenu("Generate gun")]
-    private void GenerateGun()
-    {
-        var weapon = WeaponGenerator.Instance.GenerateWeapon(Rarity.Rare);
+        [ContextMenu("Generate gun")]
+        private void GenerateGun()
+        {
+            var weapon = WeaponGenerator.Instance.GenerateWeapon(Rarity.Rare);
 
-        SetWeapon(weapon);
+            SetWeapon(weapon);
+        }
+
+
+        private string GetText()
+        {
+            StringBuilder s = new StringBuilder();
+            if (_weapon is Shotgun sg)
+                s.Append($"<b>Damage</b>: {_weapon.Damage}x{sg.BulletsCount}\n");
+            else
+                s.Append($"<b>Damage</b>: {_weapon.Damage}\n");
+            s.Append($"<b>Rate</b>: {Math.Round(_weapon.ShootFreq, 2)}\n");
+            s.Append($"<b>Reload Time</b>: {Math.Round(_weapon.ReloadTime, 2)}\n");
+            s.Append($"<b>Ammo</b>: {_weapon.MagazineSize}\n");
+
+            return s.ToString();
+        }
     }
-
-
-    private string GetText()
-    {
-        StringBuilder s= new StringBuilder();
-        if(_weapon is Shotgun sg)
-            s.Append($"<b>Damage</b>: {_weapon.Damage}x{sg.BulletsCount}\n");
-        else
-            s.Append($"<b>Damage</b>: {_weapon.Damage}\n");
-        s.Append($"<b>Rate</b>: {Math.Round(_weapon.ShootFreq, 2)}\n");
-        s.Append($"<b>Reload Time</b>: {Math.Round(_weapon.ReloadTime, 2)}\n");
-        s.Append($"<b>Ammo</b>: {_weapon.MagazineSize}\n");
-
-        return s.ToString();
-    }
-}
 }

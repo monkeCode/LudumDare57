@@ -26,7 +26,7 @@ public class RepairBox : MonoBehaviour, IInteractable
 
     public void Interact()
     {
-        if (_canRepair)
+        if (_canRepair && Platform.Instance.currentHealth < Platform.Instance.maxHealth)
         {
 
             PlatformRepaired?.Invoke();
