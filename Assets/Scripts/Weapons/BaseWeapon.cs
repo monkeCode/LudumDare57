@@ -165,6 +165,7 @@ namespace Weapons
 
         protected void Shoot(Vector2 point, Vector2 direction)
         {
+            if(_currentAmmo == 0) return;
             float spread = UnityEngine.Random.Range(-_spreadAngle, _spreadAngle);
             Quaternion spreadRotation = Quaternion.Euler(0, 0, spread);
             Vector2 spreadDirection = spreadRotation * direction;

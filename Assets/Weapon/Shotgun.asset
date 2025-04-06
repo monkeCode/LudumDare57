@@ -18,11 +18,17 @@ MonoBehaviour:
   _damage: 5
   _bullet: {fileID: 6819654811208041759, guid: 1446355baf09fb6f1b347af132bc6e09, type: 3}
   _sprite: {fileID: 868422998263619930, guid: 6d9d020d2326f7906b68de9015a67180, type: 3}
-  _magazineSize: 1
+  _magazineSize: 3
   _reloadTime: 2
   _shootMode: 4
   _shootClip: {fileID: 0}
   _reloadClip: {fileID: 0}
   <Rarity>k__BackingField: 0
+  OnShoot:
+    m_PersistentCalls:
+      m_Calls: []
+  OnReloaded:
+    m_PersistentCalls:
+      m_Calls: []
   _spreadAngle: 25
   bullets_count: 5
