@@ -142,10 +142,6 @@ PrefabInstance:
       propertyPath: m_Camera
       value: 
       objectReference: {fileID: 2034015425}
-    - target: {fileID: 2250412996402546607, guid: 2251eb5906bd6504a9e590289f5b6776, type: 3}
-      propertyPath: m_RenderMode
-      value: 0
-      objectReference: {fileID: 0}
     - target: {fileID: 4173290687169420821, guid: 2251eb5906bd6504a9e590289f5b6776, type: 3}
       propertyPath: platform
       value: 
@@ -157,14 +153,6 @@ PrefabInstance:
     - target: {fileID: 5363196589185766743, guid: 2251eb5906bd6504a9e590289f5b6776, type: 3}
       propertyPath: m_Name
       value: GameplayUICanvas
-      objectReference: {fileID: 0}
-    - target: {fileID: 5481639352948124316, guid: 2251eb5906bd6504a9e590289f5b6776, type: 3}
-      propertyPath: m_UiScaleMode
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 5481639352948124316, guid: 2251eb5906bd6504a9e590289f5b6776, type: 3}
-      propertyPath: m_ScreenMatchMode
-      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 6763335422757351925, guid: 2251eb5906bd6504a9e590289f5b6776, type: 3}
       propertyPath: m_Pivot.x
@@ -715,6 +703,14 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 6974108722689831357, guid: a8a33d2bbb7279746961eba3767bf1b7, type: 3}
+      propertyPath: m_Volume
+      value: 0.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 6974108722689831357, guid: a8a33d2bbb7279746961eba3767bf1b7, type: 3}
+      propertyPath: OutputAudioMixerGroup
+      value: 
+      objectReference: {fileID: -4116238920815102266, guid: 924082c46c86b814e86c40436f326b12, type: 2}
     - target: {fileID: 7828102065613348783, guid: a8a33d2bbb7279746961eba3767bf1b7, type: 3}
       propertyPath: m_Name
       value: Platform

@@ -33,12 +33,10 @@ public class Platform : MonoBehaviour
         if (isMoving)
         {
             rb.linearVelocity = -transform.up * speed; // Более физически корректно
-            audioSource.Play();
         }
         else
         {
             rb.linearVelocity = Vector2.zero;
-            audioSource.Stop();
         }
     }
 
@@ -61,10 +59,12 @@ public class Platform : MonoBehaviour
         {
             case Stage.Clill:
                 isMoving = false;
+                audioSource.Stop();
                 break;
 
             case Stage.Fight:
                 isMoving = true;
+                audioSource.Play();
                 break;
         }
     }

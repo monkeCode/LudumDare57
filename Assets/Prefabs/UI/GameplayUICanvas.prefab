@@ -388,7 +388,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 8f01516648ac34845abc663e2f2108c8, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  mineralsText: {fileID: 0}
+  mineralsText: {fileID: 6216732993637469188}
 --- !u!1 &5363196589185766743
 GameObject:
   m_ObjectHideFlags: 0
@@ -439,7 +439,7 @@ Canvas:
   m_GameObject: {fileID: 5363196589185766743}
   m_Enabled: 1
   serializedVersion: 3
-  m_RenderMode: 1
+  m_RenderMode: 0
   m_Camera: {fileID: 0}
   m_PlaneDistance: 100
   m_PixelPerfect: 0
