@@ -60,7 +60,7 @@ public class Platform : MonoBehaviour, IDamageable
     // Update is called once per frame
     void FixedUpdate()
     {
-        if (GameManager.Instance.CurrentStage == Stage.Fight)
+        if (isMoving)
             MoveToPosition();
         if (currentHealth <= 0 && !dying)
         {
@@ -75,6 +75,7 @@ public class Platform : MonoBehaviour, IDamageable
             case Stage.Clill:
                 isMoving = false;
                 audioSource?.Stop();
+                isMoving = false;
                 break;
 
             case Stage.Fight:
@@ -89,6 +90,7 @@ public class Platform : MonoBehaviour, IDamageable
                     speed = (GameManager.Instance.StagePoints[GameManager.Instance.CountStage].y - transform.position.y) / Timer.instance.timeForFighting;
                 }
                 audioSource?.Play();
+                isMoving = true;
                 break;
         }
     }
