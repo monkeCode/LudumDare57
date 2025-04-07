@@ -33,6 +33,8 @@ public class Platform : MonoBehaviour, IDamageable
 
     bool dying = false;
 
+    bool start = true;
+
 
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     private void Awake()
@@ -77,7 +79,15 @@ public class Platform : MonoBehaviour, IDamageable
 
             case Stage.Fight:
                 isMoving = true;
-                speed = (GameManager.Instance.StagePoints[GameManager.Instance.CountStage].y - transform.position.y) / Timer.instance.timeForFighting;
+                if (start)
+                {
+                    speed = (GameManager.Instance.StagePoints[GameManager.Instance.CountStage].y - transform.position.y) / Timer.instance.timeIntial;
+                    start = false;
+                }
+                else
+                {
+                    speed = (GameManager.Instance.StagePoints[GameManager.Instance.CountStage].y - transform.position.y) / Timer.instance.timeForFighting;
+                }
                 audioSource?.Play();
                 break;
         }
