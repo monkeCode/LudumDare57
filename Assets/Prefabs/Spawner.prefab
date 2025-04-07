@@ -45,7 +45,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ba9290506bab43e9090c57b5d3159c3e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _spawnRange: 2
+  _spawnRange: 5
+  _groundMask:
+    serializedVersion: 2
+    m_Bits: 256
 --- !u!58 &7451771602236195539
 CircleCollider2D:
   m_ObjectHideFlags: 0
@@ -81,4 +84,4 @@ CircleCollider2D:
   m_CompositeOperation: 0
   m_CompositeOrder: 0
   m_Offset: {x: 0, y: 0}
-  m_Radius: 5
+  m_Radius: 10

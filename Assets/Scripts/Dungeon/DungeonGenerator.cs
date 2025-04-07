@@ -15,7 +15,7 @@ public class DungeonGenerator : MonoBehaviour
     
     [Header("Player starting position")]
     public int startPosX = 0;
-    public int startPosY = 30;
+    public int startPosY = 0;
     
     [Header("Tunnels options")]
     [SerializeField] private int connectionCount = 15;

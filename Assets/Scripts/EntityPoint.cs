@@ -8,6 +8,7 @@ public class EntityPoint : MonoBehaviour
 
     private DungeonEntities _entities;
     [SerializeField] private float _spawnRange;
+    [SerializeField] private LayerMask _groundMask;
 
     void OnTriggerEnter2D(Collider2D collision)
     {
@@ -35,7 +36,7 @@ public class EntityPoint : MonoBehaviour
         {
             Vector2 randomPosition = (Vector2)transform.position + Random.insideUnitCircle * _spawnRange;
 
-            Collider2D[] colliders = Physics2D.OverlapCircleAll(randomPosition, 0.5f, LayerMask.GetMask("Ground"));
+            Collider2D[] colliders = Physics2D.OverlapCircleAll(randomPosition, 2f, _groundMask);
             if (colliders.Length == 0)
             {
                 return randomPosition;

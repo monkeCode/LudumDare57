@@ -1,13 +1,15 @@
 using System.Collections.Generic;
 using Dungeon;
+using NavMeshPlus.Components;
 using UnityEngine;
+using UnityEngine.UI;
 
 public class GameManager : MonoBehaviour
 {
     [SerializeField] private GeneratorStage[] stages;
 
     [SerializeField] private DungeonViewGenerator dungeonViewGenerator;
-
+    [SerializeField] private NavMeshSurface _surface;
     [SerializeField] private EntityPoint point;
     [SerializeField] List<DungeonEntities> dungeonEntities;
 
@@ -32,6 +34,9 @@ public class GameManager : MonoBehaviour
     void Start()
     {
         var places = dungeonViewGenerator.GenerateDungeon();
+        //TODO: nav mesh
+        _surface.BuildNavMesh();
+        
         for(int s = 0; s < places.Count; s++)
         {
             foreach(var p in places[s])

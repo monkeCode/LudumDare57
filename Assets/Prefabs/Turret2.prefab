@@ -338,7 +338,7 @@ MonoBehaviour:
   _projectileSpeedMultiplier: 1
   _entityLayer:
     serializedVersion: 2
-    m_Bits: 128
+    m_Bits: 64
   _targetRefreshRate: 0.5
   _shootSound: {fileID: 8300000, guid: ae7af787ee4e9bbe78026fa39c6d2fc2, type: 3}
   _upgradable: {fileID: 7249623146458022189}

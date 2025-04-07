@@ -31,7 +31,7 @@ public class Timer : MonoBehaviour
 
     public Stage CurrentStage { get; private set; } = Stage.Clill;
 
-    void Start()
+    void Awake()
     {
         if (instance == null)
         {
