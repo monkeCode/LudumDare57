@@ -12,6 +12,8 @@ namespace Enemies
         [SerializeField] private float platformAttackRangeModifier = 7;
         [SerializeField] private float attackDelay = 3f;
         [SerializeField] private float swingTime = 0.5f;
+        
+        private bool isDead = false;
         private bool isAttiackng;
         private float lastAttackTime; 
         
@@ -28,6 +30,7 @@ namespace Enemies
         [SerializeField] private float playerTargetChance = 70f;
         [SerializeField] private bool isPlayerTarget;
 
+        [SerializeField] private Animator animator;
         private Rigidbody2D rb;
         private Transform targetTransform;
         private IDamageable targetDamageable;
@@ -47,7 +50,7 @@ namespace Enemies
 
         private void Update()
         {
-            if (isAttiackng)
+            if (isAttiackng || isDead)
                 return;
             Move();
             Jump();
@@ -107,6 +110,7 @@ namespace Enemies
 
         private IEnumerator PerformAttack()
         {
+            animator.SetTrigger("Attack");
             yield return new WaitForSeconds(swingTime);
             if (NearTarget())
                 targetDamageable.TakeDamage(damage);
@@ -128,6 +132,17 @@ namespace Enemies
 
         public void Kill()
         {
+            if (isDead)
+                return;
+            StartCoroutine(KillCoroutine());
+        }
+
+        private IEnumerator KillCoroutine()
+        {
+            animator.SetTrigger("Dead");
+            rb.constraints = RigidbodyConstraints2D.FreezeRotation | RigidbodyConstraints2D.FreezePositionX;
+            isDead = true;
+            yield return new WaitForSeconds(5);
             Destroy(gameObject);
         }
     }
