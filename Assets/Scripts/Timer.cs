@@ -20,16 +20,16 @@ public class Timer : MonoBehaviour
 
     private IEnumerator coroutine;
 
-    public static float leftTime { get; private set; } = 0;
+    public float leftTime { get; private set; } = 0;
 
-    public static float getLeftTime()
+    public float getLeftTime()
     {
         return leftTime;
     }
 
-    public static event Action<Stage> StageChanged;
+    public event Action<Stage> StageChanged;
 
-    public static Stage CurrentStage { get; private set; } = Stage.Clill;
+    public Stage CurrentStage { get; private set; } = Stage.Clill;
 
     void Start()
     {

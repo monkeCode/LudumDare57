@@ -1,4 +1,6 @@
 using System.Collections.Generic;
+using System.Linq;
+using Unity.VisualScripting;
 using UnityEngine;
 using UnityEngine.Tilemaps;
 using Weapons;
@@ -20,12 +22,8 @@ namespace Dungeon
         [SerializeField] private GameObject mineral;
         [SerializeField] private GameObject weapon;
 
-        private readonly List<GameObject> equipment = new();
+        public readonly List<List<GameObject>> equipment = new();
 
-        public void Start()
-        {
-            GenerateDungeon();
-        }
 
         public void Update()
         {
@@ -36,25 +34,29 @@ namespace Dungeon
             }
         }
 
-        private void GenerateDungeon()
+        public List<List<GameObject>> GenerateDungeon()
         {
             tilemap.ClearAllTiles();
-            foreach (var o in equipment)
+            foreach (var o in equipment.SelectMany(i => i))
                 Destroy(o);
 
             int offsetY = 0;
             foreach(GeneratorStage stage in GameManager.Instance.Stages)
             {
-                DungeonCellType[,] result = GeterateSide(new Vector2Int(_platformWidth/2+1, offsetY), stage);
+                (var result, var stageItems) = GeterateSide(new Vector2Int(_platformWidth/2+1, offsetY), stage);
                 GeterateSide(new Vector2Int(_platformWidth/2+1, offsetY), stage, true);
 
-                offsetY += result.GetLength(1);
+                offsetY -= result.GetLength(1);
+                equipment.Add(stageItems);
             }
+
+            return equipment;
         }
 
-        private DungeonCellType[,] GeterateSide(Vector2Int offset, GeneratorStage stage, bool mirrored = false)
+        private (DungeonCellType[,], List<GameObject>) GeterateSide(Vector2Int offset, GeneratorStage stage, bool mirrored = false)
         {
             var result = dungeonProvider.GenerateCave();
+            var stageList = new List<GameObject>();
 
             for (var x = 0; x < result.GetLength(0); x++)
             {
@@ -79,7 +81,7 @@ namespace Dungeon
                 else
                     sp = new Vector2(mineralSpawnPoint.x + offset.x, mineralSpawnPoint.y + offset.y);
 
-                equipment.Add(Instantiate(mineral, sp, Quaternion.identity));
+                stageList.Add(Instantiate(mineral, sp, Quaternion.identity));
             }
 
             foreach (var weaponSpawnPoint in dungeonProvider.GetWeaponSpawnPoints(stage.WeaponsCount))
@@ -92,11 +94,11 @@ namespace Dungeon
 
                 var weaponObject = Instantiate(weapon, sp, Quaternion.identity);
                 weaponObject.GetComponent<WorldWeapon>().GenerateGun(stage.WeaponRarity);
-                equipment.Add(weaponObject);
+                stageList.Add(weaponObject);
 
             }
 
-            return result;
+            return (result, stageList);
         }
     }
 }
