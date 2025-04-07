@@ -16,6 +16,7 @@ namespace Enemies
         [SerializeField] private float attackDelay = 3f;
         [SerializeField] private float engageDelay = 1f;
         private float currentDelay;
+        private bool isDead;
         private bool engaging;
         
         [SerializeField] private float speed = 5f;
@@ -23,7 +24,7 @@ namespace Enemies
 
         [SerializeField] private float playerTargetChance = 70f;
         [SerializeField] private bool isPlayerTarget;
-
+        [SerializeField] private Animator animator;
         private Rigidbody2D rb;
         private NavMeshAgent navMeshAgent;
         private Transform targetTransform;
@@ -48,6 +49,8 @@ namespace Enemies
 
         private void Update()
         {
+            if (isDead)
+                return;
             currentDelay -= Time.deltaTime;
             if (!CanAttack())
             {
@@ -116,6 +119,17 @@ namespace Enemies
 
         public void Kill()
         {
+            if (isDead)
+                return;
+            StartCoroutine(KillCoroutine());
+        }
+
+        private IEnumerator KillCoroutine()
+        {
+            animator.SetTrigger("Dead");
+            rb.constraints = RigidbodyConstraints2D.FreezeAll;
+            isDead = true;
+            yield return new WaitForSeconds(5);
             Destroy(gameObject);
         }
     }
