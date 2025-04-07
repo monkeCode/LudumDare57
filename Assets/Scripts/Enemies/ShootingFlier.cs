@@ -89,6 +89,7 @@ namespace Enemies
 
         private IEnumerator Shoot()
         {
+            navMeshAgent.SetDestination(transform.position);
             yield return new WaitForSeconds(swingDelay);
             isAttacking = false;
             var direction = targetTransform.position - transform.position;
