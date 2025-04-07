@@ -14,7 +14,7 @@ namespace Player
         [SerializeField][Range(0, 10)] float _maxSpeed = 7f;
 
         [Header("Jump Settings")]
-        [SerializeField][Range(0, 150)] float _jumpForce = 100f;
+        [SerializeField][Range(0, 20)] float _jumpForce = 10f;
         [SerializeField][Range(0, 1)] float _jumpCutMultiplier = 0.5f;
         [SerializeField][Range(0, 0.5f)] float _groundCheckRadius = 0.1f;
         [SerializeField] LayerMask _groundLayer;

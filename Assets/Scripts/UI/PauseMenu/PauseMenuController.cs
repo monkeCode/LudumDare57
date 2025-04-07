@@ -1,15 +1,21 @@
 using UnityEngine;
 using UnityEngine.SceneManagement;
+using UnityEngine.UIElements;
 
 namespace UI.PauseMenu
 {
     public class PauseMenuController : MonoBehaviour
     {
+        [SerializeField] private Slider sfxSlider;
+        [SerializeField] private Slider soundSlider;
+
         public GameObject pauseMenuCanvas;
 
         public static PauseMenuController Instance { get; private set; }
 
         public bool Paused => pauseMenuCanvas.activeSelf;
+
+        
 
         void Awake()
         {
@@ -58,6 +64,16 @@ namespace UI.PauseMenu
         public void ToMainMenu()
         {
             SceneManager.LoadScene("MainMenu");
+        }
+
+        public void SoundChanged()
+        {
+
+        }
+
+        public void SfxChanged()
+        {
+            
         }
     }
 }
