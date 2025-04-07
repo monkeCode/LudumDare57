@@ -21,6 +21,8 @@ public class Platform : MonoBehaviour, IDamageable
 
     private Rigidbody2D rb;
     public static Platform Instance { get; private set; }
+    
+    public GameObject PlatformRespawnPoint;
 
     AudioSource audioSource;
 
