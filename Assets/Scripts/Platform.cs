@@ -23,8 +23,6 @@ public class Platform : MonoBehaviour, IDamageable
 
     AudioSource audioSource;
 
-    public int currentFloor = 0;
-
 
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     private void Awake()
@@ -51,6 +49,7 @@ public class Platform : MonoBehaviour, IDamageable
 
     private void OnEnable()
     {
+        print($"timer instaance{Timer.instance}");
         Timer.instance.StageChanged += HandleStageChanged;
         RepairBox.PlatformRepaired += HandlePlatformRepaired;
         HandleStageChanged(Timer.instance.CurrentStage);
@@ -69,12 +68,11 @@ public class Platform : MonoBehaviour, IDamageable
             case Stage.Clill:
                 isMoving = false;
                 audioSource?.Stop();
-                currentFloor += 1;
                 break;
 
             case Stage.Fight:
                 isMoving = true;
-                StartCoroutine(MoveToPosition(GameManager.Instance.StagePoints[currentFloor], Timer.instance.timeForFighting));
+                StartCoroutine(MoveToPosition(GameManager.Instance.StagePoints[GameManager.Instance.CountStage], Timer.instance.timeForFighting));
                 audioSource.Play();
                 break;
         }
@@ -118,17 +116,18 @@ public class Platform : MonoBehaviour, IDamageable
 
     IEnumerator MoveToPosition(Vector3 targetPos, float time)
     {
-        Vector3 startPos = transform.position;
+        Vector3 startPos = rb.position;
         float elapsed = 0f;
 
         while (elapsed < time)
         {
-            transform.position = Vector3.Lerp(startPos, targetPos, elapsed / time);
+            print($"ahahahahahahahahah{targetPos}");
+            rb.MovePosition(Vector3.Lerp(startPos, targetPos, elapsed / time));
             elapsed += Time.deltaTime;
             yield return null;
         }
 
-        transform.position = targetPos;
+        rb.MovePosition(targetPos);
     }
 
     IEnumerator EndGame()
