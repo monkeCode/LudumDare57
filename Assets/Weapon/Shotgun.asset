@@ -13,18 +13,18 @@ MonoBehaviour:
   m_Name: Shotgun
   m_EditorClassIdentifier: 
   <BaseName>k__BackingField: Shotgun
-  _bulletSpeed: 300
+  _bulletSpeed: 350
   _shootFreq: 0.5
-  _damage: 5
+  _damage: 20
   _bullet: {fileID: 6819654811208041759, guid: 1446355baf09fb6f1b347af132bc6e09, type: 3}
   _sprite: {fileID: 868422998263619930, guid: 6d9d020d2326f7906b68de9015a67180, type: 3}
   _magazineSize: 5
   _reloadTime: 2
   _shootMode: 4
-  _shootClip: {fileID: 0}
-  _reloadClipStart: {fileID: 0}
-  _reloadClipEnd: {fileID: 0}
-  _noAmmoClip: {fileID: 0}
+  _shootClip: {fileID: 8300000, guid: 5a018b759641518d597bce173eadf328, type: 3}
+  _reloadClipStart: {fileID: 8300000, guid: 1fbb27b90b497b6fea63d4d09e19b85c, type: 3}
+  _reloadClipEnd: {fileID: 8300000, guid: a97182bcb5800718d96ace5e017617c7, type: 3}
+  _noAmmoClip: {fileID: 8300000, guid: b953488ce9d38d4838eb6cf0e96fabaf, type: 3}
   <Rarity>k__BackingField: 0
   _spreadAngle: 25
   bullets_count: 5
