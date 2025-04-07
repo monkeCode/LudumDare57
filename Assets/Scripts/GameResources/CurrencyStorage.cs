@@ -18,6 +18,9 @@ namespace GameResources
 
         public void AddCurrency(int amount)
         {
+            if(amount == 0)
+                return;
+                
             CurrencyCount += amount;
             GameObject moneyUIInstance = Instantiate(moneyUIPrefab, _player.transform);
             moneyUIInstance.transform.GetChild(0).GetComponent<TextMeshPro>().text = $"+{amount}";

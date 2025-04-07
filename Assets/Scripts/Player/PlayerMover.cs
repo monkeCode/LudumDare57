@@ -88,8 +88,6 @@ namespace Player
 
         private void FixedUpdate()
         {
-
-
             if (_rb.linearVelocityY < 0)
             {
                 _isJumping = false;

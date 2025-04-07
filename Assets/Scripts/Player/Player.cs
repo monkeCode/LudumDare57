@@ -3,11 +3,12 @@ using GameResources;
 using Interfaces;
 using UnityEngine;
 using UnityEngine.InputSystem;
+using UnityEngine.Rendering.Universal;
 
 namespace Player
 {
     [RequireComponent(typeof(PlayerMover))]
-    class Player : MonoBehaviour, IDamageable, IStats
+    class Player : PausedBehavour, IDamageable, IStats
     {
 
         [Header("Stats")]
@@ -35,7 +36,6 @@ namespace Player
 
         private const float MinSpeedModifier = 0.2f;
         public float SpeedModifier => Math.Max(MinSpeedModifier, 1 - inventory.CurrentWeight / inventory.MaxWeight);
-        
 
         private void Awake()
         {
@@ -102,10 +102,11 @@ namespace Player
             // instance.transform.localScale = new Vector3(mineral.Size, mineral.Size, 1);
         }
 
-        private void Update()
+        protected override void InnerUpdate()
         {   
             _mover.Move(_inputs.Player.Move.ReadValue<Vector2>().x, SpeedModifier);
-            _weaponHandler.UpdatePosition(Camera.main.ScreenToWorldPoint(Mouse.current.position.ReadValue()));
+            var look_dir = Camera.main.ScreenToWorldPoint(Mouse.current.position.ReadValue());
+            _weaponHandler.UpdatePosition(look_dir);
             HandleInputs();
 
             _animator.SetBool("onGround", _mover.OnGround);

@@ -7,7 +7,7 @@ using Weapons;
 namespace Player
 {
     [RequireComponent(typeof(SpriteRenderer), typeof(AudioSource))]
-    class WeaponHandler : MonoBehaviour
+    class WeaponHandler : PausedBehavour
     {
 
         [SerializeField] private BaseWeapon _weapon;
@@ -85,7 +85,7 @@ namespace Player
             source.PlayOneShot(clip);
         }
 
-        private void Update()
+        protected override void InnerUpdate()
         {
             if(press)
                 _weapon.ShootPress(transform.position, transform.right);
