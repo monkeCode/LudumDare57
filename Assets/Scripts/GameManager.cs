@@ -78,7 +78,7 @@ public class GameManager : MonoBehaviour
         }
         else if (stage == Stage.Fight)
         {
-            StartCoroutine(SpawnEntities(Timer.instance.timeForFighting, FightStages[Math.Clamp(CountStage-1,0,10)]));
+            StartCoroutine(SpawnEntities(Timer.instance.timeForFighting, FightStages[Math.Clamp(CountStage-1,0,stages.Length-1)]));
         }
     }
 

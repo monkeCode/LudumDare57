@@ -144,7 +144,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   size: 1
-  cost: 1
+  cost: 10
   isInteractable: 0
   Player: {fileID: 0}
 --- !u!114 &1398556692568220412

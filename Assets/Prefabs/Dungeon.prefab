@@ -75,9 +75,9 @@ MonoBehaviour:
   startPosX: 0
   startPosY: 30
   connectionCount: 10
-  tunnelRadius: 3.9
+  tunnelRadius: 2.5
   alternateTunnelChance: 0.2
-  alternateTunnelMaxLength: 3
+  alternateTunnelMaxLength: 2
   maxAngleToConnect: 30
 --- !u!114 &4113203989951216550
 MonoBehaviour:
