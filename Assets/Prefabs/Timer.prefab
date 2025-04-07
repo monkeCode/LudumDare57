@@ -48,7 +48,9 @@ MonoBehaviour:
   platformRiding: 0
   timeForLooting: 4
   timeForFighting: 45
+  timeIntial: 2
   elapsedTime: 0
+  lenStages: 3
 --- !u!82 &92935937012218608
 AudioSource:
   m_ObjectHideFlags: 0
@@ -64,7 +66,7 @@ AudioSource:
   m_PlayOnAwake: 1
   m_Volume: 0
   m_Pitch: 1
-  Loop: 0
+  Loop: 1
   Mute: 0
   Spatialize: 0
   SpatializePostEffects: 0

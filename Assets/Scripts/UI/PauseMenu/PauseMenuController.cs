@@ -73,7 +73,7 @@ namespace UI.PauseMenu
 
         public void SoundChanged()
         {
-            float volume = sfxSlider.value > 0.01f ? 20f * Mathf.Log10(sfxSlider.value) : -80f;
+            float volume = soundSlider.value > 0.01f ? 20f * Mathf.Log10(soundSlider.value) : -80f;
             _mixer.SetFloat("music", volume);
         }
 
