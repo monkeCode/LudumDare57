@@ -625,7 +625,7 @@ MonoBehaviour:
     rid: 7437354102278848581
   m_ShadowCastingSource: 2
   m_ShadowMesh:
-    m_Mesh: {fileID: 564876134}
+    m_Mesh: {fileID: 800373183}
     m_LocalBounds:
       m_Center: {x: 0, y: 0, z: 0}
       m_Extent: {x: 0, y: 0, z: 0}
@@ -743,7 +743,7 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
---- !u!43 &564876134
+--- !u!43 &800373183
 Mesh:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -1289,7 +1289,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 7860887919287497563, guid: 2ce8a8e4f99f16a7d9158f320ee3565e, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 0.87
+      value: 30
       objectReference: {fileID: 0}
     - target: {fileID: 7860887919287497563, guid: 2ce8a8e4f99f16a7d9158f320ee3565e, type: 3}
       propertyPath: m_LocalPosition.z
@@ -1358,7 +1358,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1006974246891123820, guid: a8a33d2bbb7279746961eba3767bf1b7, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 0
+      value: 30
       objectReference: {fileID: 0}
     - target: {fileID: 1006974246891123820, guid: a8a33d2bbb7279746961eba3767bf1b7, type: 3}
       propertyPath: m_LocalPosition.z
@@ -1531,10 +1531,6 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 0}
     m_Modifications:
-    - target: {fileID: 1894912949993336585, guid: bb181ecff868f89ebb97da9e24d1ee62, type: 3}
-      propertyPath: orthographic size
-      value: 5
-      objectReference: {fileID: 0}
     - target: {fileID: 2525697522324612418, guid: bb181ecff868f89ebb97da9e24d1ee62, type: 3}
       propertyPath: _follow
       value: 
@@ -1565,7 +1561,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 7164225581612645828, guid: bb181ecff868f89ebb97da9e24d1ee62, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 0
+      value: 33.3
       objectReference: {fileID: 0}
     - target: {fileID: 7164225581612645828, guid: bb181ecff868f89ebb97da9e24d1ee62, type: 3}
       propertyPath: m_LocalPosition.z
@@ -1755,20 +1751,44 @@ PrefabInstance:
       value: 3
       objectReference: {fileID: 0}
     - target: {fileID: 8253540889581264914, guid: 69930a1a270287347a06164f16cff0ab, type: 3}
+      propertyPath: stages.Array.data[0].WeaponsCount
+      value: 8
+      objectReference: {fileID: 0}
+    - target: {fileID: 8253540889581264914, guid: 69930a1a270287347a06164f16cff0ab, type: 3}
+      propertyPath: stages.Array.data[1].WeaponsCount
+      value: 8
+      objectReference: {fileID: 0}
+    - target: {fileID: 8253540889581264914, guid: 69930a1a270287347a06164f16cff0ab, type: 3}
+      propertyPath: stages.Array.data[2].WeaponsCount
+      value: 8
+      objectReference: {fileID: 0}
+    - target: {fileID: 8253540889581264914, guid: 69930a1a270287347a06164f16cff0ab, type: 3}
+      propertyPath: stages.Array.data[0].MineralsCount
+      value: 20
+      objectReference: {fileID: 0}
+    - target: {fileID: 8253540889581264914, guid: 69930a1a270287347a06164f16cff0ab, type: 3}
+      propertyPath: stages.Array.data[1].MineralsCount
+      value: 20
+      objectReference: {fileID: 0}
+    - target: {fileID: 8253540889581264914, guid: 69930a1a270287347a06164f16cff0ab, type: 3}
+      propertyPath: stages.Array.data[2].MineralsCount
+      value: 20
+      objectReference: {fileID: 0}
+    - target: {fileID: 8253540889581264914, guid: 69930a1a270287347a06164f16cff0ab, type: 3}
       propertyPath: <FightStages>k__BackingField.Array.size
       value: 2
       objectReference: {fileID: 0}
     - target: {fileID: 8253540889581264914, guid: 69930a1a270287347a06164f16cff0ab, type: 3}
       propertyPath: dungeonEntities.Array.data[0].entities.Array.size
-      value: 3
+      value: 2
       objectReference: {fileID: 0}
     - target: {fileID: 8253540889581264914, guid: 69930a1a270287347a06164f16cff0ab, type: 3}
       propertyPath: dungeonEntities.Array.data[1].entities.Array.size
-      value: 3
+      value: 2
       objectReference: {fileID: 0}
     - target: {fileID: 8253540889581264914, guid: 69930a1a270287347a06164f16cff0ab, type: 3}
       propertyPath: dungeonEntities.Array.data[2].entities.Array.size
-      value: 3
+      value: 2
       objectReference: {fileID: 0}
     - target: {fileID: 8253540889581264914, guid: 69930a1a270287347a06164f16cff0ab, type: 3}
       propertyPath: dungeonEntities.Array.data[0].entities.Array.data[0].entity
@@ -1777,7 +1797,7 @@ PrefabInstance:
     - target: {fileID: 8253540889581264914, guid: 69930a1a270287347a06164f16cff0ab, type: 3}
       propertyPath: dungeonEntities.Array.data[0].entities.Array.data[1].entity
       value: 
-      objectReference: {fileID: 8156286706078324215, guid: 9a219283b4851a8dca080e6c8dab6ab8, type: 3}
+      objectReference: {fileID: 3407279644793651471, guid: a3070d711fbad0e8ca091355d489d97b, type: 3}
     - target: {fileID: 8253540889581264914, guid: 69930a1a270287347a06164f16cff0ab, type: 3}
       propertyPath: dungeonEntities.Array.data[0].entities.Array.data[2].entity
       value: 
@@ -1785,7 +1805,7 @@ PrefabInstance:
     - target: {fileID: 8253540889581264914, guid: 69930a1a270287347a06164f16cff0ab, type: 3}
       propertyPath: dungeonEntities.Array.data[1].entities.Array.data[0].entity
       value: 
-      objectReference: {fileID: 3407279644793651471, guid: a3070d711fbad0e8ca091355d489d97b, type: 3}
+      objectReference: {fileID: 2510532243733549023, guid: 684c44f80bbe55de7aa519ebea9b69f6, type: 3}
     - target: {fileID: 8253540889581264914, guid: 69930a1a270287347a06164f16cff0ab, type: 3}
       propertyPath: dungeonEntities.Array.data[1].entities.Array.data[1].entity
       value: 
@@ -1809,6 +1829,14 @@ PrefabInstance:
     - target: {fileID: 8253540889581264914, guid: 69930a1a270287347a06164f16cff0ab, type: 3}
       propertyPath: <FightStages>k__BackingField.Array.data[0].entities.Array.size
       value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 8253540889581264914, guid: 69930a1a270287347a06164f16cff0ab, type: 3}
+      propertyPath: <FightStages>k__BackingField.Array.data[1].entities.Array.size
+      value: 4
+      objectReference: {fileID: 0}
+    - target: {fileID: 8253540889581264914, guid: 69930a1a270287347a06164f16cff0ab, type: 3}
+      propertyPath: <FightStages>k__BackingField.Array.data[2].entities.Array.size
+      value: 4
       objectReference: {fileID: 0}
     - target: {fileID: 8253540889581264914, guid: 69930a1a270287347a06164f16cff0ab, type: 3}
       propertyPath: dungeonEntities.Array.data[0].entities.Array.data[0].maxCountPoint
@@ -1883,6 +1911,38 @@ PrefabInstance:
       value: 3
       objectReference: {fileID: 0}
     - target: {fileID: 8253540889581264914, guid: 69930a1a270287347a06164f16cff0ab, type: 3}
+      propertyPath: <FightStages>k__BackingField.Array.data[1].entities.Array.data[0].count
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 8253540889581264914, guid: 69930a1a270287347a06164f16cff0ab, type: 3}
+      propertyPath: <FightStages>k__BackingField.Array.data[1].entities.Array.data[1].count
+      value: 5
+      objectReference: {fileID: 0}
+    - target: {fileID: 8253540889581264914, guid: 69930a1a270287347a06164f16cff0ab, type: 3}
+      propertyPath: <FightStages>k__BackingField.Array.data[1].entities.Array.data[2].count
+      value: 5
+      objectReference: {fileID: 0}
+    - target: {fileID: 8253540889581264914, guid: 69930a1a270287347a06164f16cff0ab, type: 3}
+      propertyPath: <FightStages>k__BackingField.Array.data[1].entities.Array.data[3].count
+      value: 5
+      objectReference: {fileID: 0}
+    - target: {fileID: 8253540889581264914, guid: 69930a1a270287347a06164f16cff0ab, type: 3}
+      propertyPath: <FightStages>k__BackingField.Array.data[2].entities.Array.data[0].count
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 8253540889581264914, guid: 69930a1a270287347a06164f16cff0ab, type: 3}
+      propertyPath: <FightStages>k__BackingField.Array.data[2].entities.Array.data[1].count
+      value: 5
+      objectReference: {fileID: 0}
+    - target: {fileID: 8253540889581264914, guid: 69930a1a270287347a06164f16cff0ab, type: 3}
+      propertyPath: <FightStages>k__BackingField.Array.data[2].entities.Array.data[2].count
+      value: 5
+      objectReference: {fileID: 0}
+    - target: {fileID: 8253540889581264914, guid: 69930a1a270287347a06164f16cff0ab, type: 3}
+      propertyPath: <FightStages>k__BackingField.Array.data[2].entities.Array.data[3].count
+      value: 5
+      objectReference: {fileID: 0}
+    - target: {fileID: 8253540889581264914, guid: 69930a1a270287347a06164f16cff0ab, type: 3}
       propertyPath: <FightStages>k__BackingField.Array.data[0].entities.Array.data[0].entity
       value: 
       objectReference: {fileID: 7594072819204984069, guid: b7e519829f3791d43961b6555e9816c6, type: 3}
@@ -1892,6 +1952,38 @@ PrefabInstance:
       objectReference: {fileID: 7594072819204984069, guid: b7e519829f3791d43961b6555e9816c6, type: 3}
     - target: {fileID: 8253540889581264914, guid: 69930a1a270287347a06164f16cff0ab, type: 3}
       propertyPath: <FightStages>k__BackingField.Array.data[0].entities.Array.data[2].entity
+      value: 
+      objectReference: {fileID: 172052261745782221, guid: f6568b796fe23e44ca27b0d7e0c6b94b, type: 3}
+    - target: {fileID: 8253540889581264914, guid: 69930a1a270287347a06164f16cff0ab, type: 3}
+      propertyPath: <FightStages>k__BackingField.Array.data[1].entities.Array.data[0].entity
+      value: 
+      objectReference: {fileID: 7594072819204984069, guid: b7e519829f3791d43961b6555e9816c6, type: 3}
+    - target: {fileID: 8253540889581264914, guid: 69930a1a270287347a06164f16cff0ab, type: 3}
+      propertyPath: <FightStages>k__BackingField.Array.data[1].entities.Array.data[1].entity
+      value: 
+      objectReference: {fileID: 172052261745782221, guid: f6568b796fe23e44ca27b0d7e0c6b94b, type: 3}
+    - target: {fileID: 8253540889581264914, guid: 69930a1a270287347a06164f16cff0ab, type: 3}
+      propertyPath: <FightStages>k__BackingField.Array.data[1].entities.Array.data[2].entity
+      value: 
+      objectReference: {fileID: 7594072819204984069, guid: b7e519829f3791d43961b6555e9816c6, type: 3}
+    - target: {fileID: 8253540889581264914, guid: 69930a1a270287347a06164f16cff0ab, type: 3}
+      propertyPath: <FightStages>k__BackingField.Array.data[1].entities.Array.data[3].entity
+      value: 
+      objectReference: {fileID: 172052261745782221, guid: f6568b796fe23e44ca27b0d7e0c6b94b, type: 3}
+    - target: {fileID: 8253540889581264914, guid: 69930a1a270287347a06164f16cff0ab, type: 3}
+      propertyPath: <FightStages>k__BackingField.Array.data[2].entities.Array.data[0].entity
+      value: 
+      objectReference: {fileID: 7594072819204984069, guid: b7e519829f3791d43961b6555e9816c6, type: 3}
+    - target: {fileID: 8253540889581264914, guid: 69930a1a270287347a06164f16cff0ab, type: 3}
+      propertyPath: <FightStages>k__BackingField.Array.data[2].entities.Array.data[1].entity
+      value: 
+      objectReference: {fileID: 172052261745782221, guid: f6568b796fe23e44ca27b0d7e0c6b94b, type: 3}
+    - target: {fileID: 8253540889581264914, guid: 69930a1a270287347a06164f16cff0ab, type: 3}
+      propertyPath: <FightStages>k__BackingField.Array.data[2].entities.Array.data[2].entity
+      value: 
+      objectReference: {fileID: 7594072819204984069, guid: b7e519829f3791d43961b6555e9816c6, type: 3}
+    - target: {fileID: 8253540889581264914, guid: 69930a1a270287347a06164f16cff0ab, type: 3}
+      propertyPath: <FightStages>k__BackingField.Array.data[2].entities.Array.data[3].entity
       value: 
       objectReference: {fileID: 172052261745782221, guid: f6568b796fe23e44ca27b0d7e0c6b94b, type: 3}
     m_RemovedComponents: []

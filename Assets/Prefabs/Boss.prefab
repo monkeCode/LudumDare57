@@ -107,10 +107,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b24599f191e6118088b53cd48611942a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  <Hp>k__BackingField: 10000
-  <MaxHp>k__BackingField: 10000
+  <Hp>k__BackingField: 1000
+  <MaxHp>k__BackingField: 1000
   <speed>k__BackingField: 25
-  <Damage>k__BackingField: 5
+  <Damage>k__BackingField: 20
   <DamageRadius>k__BackingField: 4
   <TargetRadius>k__BackingField: 16
   _atkCooldown: 1
