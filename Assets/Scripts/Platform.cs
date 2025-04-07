@@ -5,6 +5,7 @@ using Interfaces;
 using UnityEditor.Callbacks;
 using UnityEngine;
 using UnityEngine.SceneManagement;
+using UnityEngine.UI;
 
 public class Platform : MonoBehaviour, IDamageable
 {
@@ -22,6 +23,11 @@ public class Platform : MonoBehaviour, IDamageable
     public static Platform Instance { get; private set; }
 
     AudioSource audioSource;
+
+    public Image fadePanel;
+    public float fadeDuration = 2.0f;
+
+    bool dying = false;
 
 
     // Start is called once before the first execution of Update after the MonoBehaviour is created
@@ -44,7 +50,10 @@ public class Platform : MonoBehaviour, IDamageable
     // Update is called once per frame
     void FixedUpdate()
     {
-
+        if (currentHealth <= 0 && !dying)
+        {
+            Die();
+        }
     }
 
     private void OnEnable()
@@ -111,7 +120,9 @@ public class Platform : MonoBehaviour, IDamageable
 
     public void Die()
     {
-
+        dying = true;
+        StopAllCoroutines();
+        StartCoroutine(FadeIn());
     }
 
     IEnumerator MoveToPosition(Vector3 targetPos, float time)
@@ -130,9 +141,21 @@ public class Platform : MonoBehaviour, IDamageable
         rb.MovePosition(targetPos);
     }
 
-    IEnumerator EndGame()
+    IEnumerator FadeIn()
     {
-        yield return new WaitForSeconds(2f);
-        //SceneManager.LoadScene();
+        float elapsed = 0;
+        Color color = fadePanel.color;
+
+        while (elapsed < fadeDuration)
+        {
+            color.a = Mathf.Lerp(0, 1, elapsed / fadeDuration);
+            fadePanel.color = color;
+            elapsed += Time.deltaTime;
+            yield return null;
+        }
+        print(color);
+        color.a = 1;
+        fadePanel.color = color;
+        SceneManager.LoadScene("GameOver");
     }
 }
