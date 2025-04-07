@@ -116,6 +116,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   uiTip: {fileID: 4175662238685382957}
+  interactKey: 101
 --- !u!61 &6544310371841903326
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -244,7 +245,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4326712215561246489, guid: d7b888cf7da81874381493a260753944, type: 3}
       propertyPath: m_AnchoredPosition.y
-      value: 1
+      value: 2
       objectReference: {fileID: 0}
     - target: {fileID: 4326712215561246489, guid: d7b888cf7da81874381493a260753944, type: 3}
       propertyPath: m_LocalEulerAnglesHint.x

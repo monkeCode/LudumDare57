@@ -267,6 +267,19 @@ TextureImporter:
     ignorePlatformSupport: 0
     androidETC2FallbackOverride: 0
     forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: WebGL
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
   spriteSheet:
     serializedVersion: 2
     sprites:
@@ -1559,7 +1572,65 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      Trash Monster-Sprite V2_0: 5742072001356106478
+      Trash Monster-Sprite V2_1: -3005822450826255596
+      Trash Monster-Sprite V2_10: -4571457872316059111
+      Trash Monster-Sprite V2_11: 1759199169532836054
+      Trash Monster-Sprite V2_12: -8301286192596962242
+      Trash Monster-Sprite V2_13: 7259040005948369654
+      Trash Monster-Sprite V2_14: 5038030528740463192
+      Trash Monster-Sprite V2_15: 2231484257037177649
+      Trash Monster-Sprite V2_16: -3288364585731231241
+      Trash Monster-Sprite V2_17: -3556346864552770167
+      Trash Monster-Sprite V2_18: -2507512727593788704
+      Trash Monster-Sprite V2_19: 4569493960603119071
+      Trash Monster-Sprite V2_2: -9147158780996836457
+      Trash Monster-Sprite V2_20: -8040337594415865063
+      Trash Monster-Sprite V2_21: 429832972332682847
+      Trash Monster-Sprite V2_22: -6274299373408037163
+      Trash Monster-Sprite V2_23: 6508638891608584484
+      Trash Monster-Sprite V2_24: 8521147452738339456
+      Trash Monster-Sprite V2_25: 2579327947072916058
+      Trash Monster-Sprite V2_26: -931145815947685200
+      Trash Monster-Sprite V2_27: 948589811564807138
+      Trash Monster-Sprite V2_28: -682170873541988926
+      Trash Monster-Sprite V2_29: 7564436008419365444
+      Trash Monster-Sprite V2_3: -8795130593700416083
+      Trash Monster-Sprite V2_30: 2179630208813925617
+      Trash Monster-Sprite V2_31: -7975691277994203976
+      Trash Monster-Sprite V2_32: 7459400388986864786
+      Trash Monster-Sprite V2_33: 1348112867752210725
+      Trash Monster-Sprite V2_34: -234150826139178492
+      Trash Monster-Sprite V2_35: 4520257167615064325
+      Trash Monster-Sprite V2_36: 601910657075937803
+      Trash Monster-Sprite V2_37: 2634849669478123357
+      Trash Monster-Sprite V2_38: 693947724031055446
+      Trash Monster-Sprite V2_39: 1039097528007180569
+      Trash Monster-Sprite V2_4: -6005938156702286707
+      Trash Monster-Sprite V2_40: 1462837298722670402
+      Trash Monster-Sprite V2_41: -1302331802734539451
+      Trash Monster-Sprite V2_42: -7756938736725922271
+      Trash Monster-Sprite V2_43: 4606718871218136863
+      Trash Monster-Sprite V2_44: -6902908549525507997
+      Trash Monster-Sprite V2_45: 3673815609162214550
+      Trash Monster-Sprite V2_46: -1147950378309722355
+      Trash Monster-Sprite V2_47: 6231212261605836866
+      Trash Monster-Sprite V2_48: -1784426530732297966
+      Trash Monster-Sprite V2_49: 7632588521064153952
+      Trash Monster-Sprite V2_5: -1932780468206783855
+      Trash Monster-Sprite V2_50: 2987779538599726912
+      Trash Monster-Sprite V2_51: 2519264591184928259
+      Trash Monster-Sprite V2_52: 6373633243633575703
+      Trash Monster-Sprite V2_53: -6369798116391997061
+      Trash Monster-Sprite V2_54: 5916162364732643896
+      Trash Monster-Sprite V2_55: -2793804501687631205
+      Trash Monster-Sprite V2_56: -1587276414844695270
+      Trash Monster-Sprite V2_57: 495773132633794307
+      Trash Monster-Sprite V2_6: 7027739379772901269
+      Trash Monster-Sprite V2_7: -8976689733345691258
+      Trash Monster-Sprite V2_8: 8218901123263041731
+      Trash Monster-Sprite V2_9: 5571296989962608292
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

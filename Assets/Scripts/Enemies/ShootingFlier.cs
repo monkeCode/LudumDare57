@@ -10,7 +10,7 @@ namespace Enemies
 {
     public class ShootingFlier : MonoBehaviour, IEnemy
     {
-        [SerializeField] private uint health = 50;
+        [SerializeField] private int health = 50;
         [SerializeField] private uint damage = 5;
         [SerializeField] private float bulletSpeed = 20f;
         [SerializeField] private float attackRange = 20f;
@@ -99,7 +99,7 @@ namespace Enemies
         public bool CanAttack() => currentDelay < 0;
         public void TakeDamage(uint damage)
         {
-            health -= damage;
+            health -= (int) damage;
             if (health <= 0)
                 Kill();
         }

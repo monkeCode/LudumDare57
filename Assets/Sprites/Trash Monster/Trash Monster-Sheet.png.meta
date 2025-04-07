@@ -267,6 +267,19 @@ TextureImporter:
     ignorePlatformSupport: 0
     androidETC2FallbackOverride: 0
     forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: WebGL
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
   spriteSheet:
     serializedVersion: 2
     sprites:
@@ -1559,7 +1572,65 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      Trash Monster-Sheet_0: 1619746199584205844
+      Trash Monster-Sheet_1: -858445045634702268
+      Trash Monster-Sheet_10: 6406006648838267865
+      Trash Monster-Sheet_11: 3292755047701630404
+      Trash Monster-Sheet_12: 3925859368146729213
+      Trash Monster-Sheet_13: -9075876489982181253
+      Trash Monster-Sheet_14: 2141361488093561946
+      Trash Monster-Sheet_15: 7584282281104670515
+      Trash Monster-Sheet_16: -5721756389143901131
+      Trash Monster-Sheet_17: 3204240186622390491
+      Trash Monster-Sheet_18: -7459873360448415825
+      Trash Monster-Sheet_19: 1147420921981936998
+      Trash Monster-Sheet_2: 8327002269591237919
+      Trash Monster-Sheet_20: -6084919855117603509
+      Trash Monster-Sheet_21: 8385569165816945694
+      Trash Monster-Sheet_22: -386198057237175963
+      Trash Monster-Sheet_23: -6149456769474730521
+      Trash Monster-Sheet_24: 1290155429515013217
+      Trash Monster-Sheet_25: -6086498547796811184
+      Trash Monster-Sheet_26: 2756514706587127271
+      Trash Monster-Sheet_27: 2703264103299943770
+      Trash Monster-Sheet_28: -4820935746787455032
+      Trash Monster-Sheet_29: 4573566387173265041
+      Trash Monster-Sheet_3: -5794889640869811367
+      Trash Monster-Sheet_30: -1428736095920426186
+      Trash Monster-Sheet_31: -5076742305879369077
+      Trash Monster-Sheet_32: 5056395151513966807
+      Trash Monster-Sheet_33: -6498332625860952402
+      Trash Monster-Sheet_34: -324036092911663113
+      Trash Monster-Sheet_35: 327875127824450559
+      Trash Monster-Sheet_36: 1674165203817740752
+      Trash Monster-Sheet_37: 3806914241205236685
+      Trash Monster-Sheet_38: -9002760005326686451
+      Trash Monster-Sheet_39: -8726080463863489383
+      Trash Monster-Sheet_4: 4196906722733497072
+      Trash Monster-Sheet_40: 4896924633830003605
+      Trash Monster-Sheet_41: 675695582268809868
+      Trash Monster-Sheet_42: 8284384252379756119
+      Trash Monster-Sheet_43: -8670104252573831496
+      Trash Monster-Sheet_44: -622302086080663995
+      Trash Monster-Sheet_45: -9042219079549194709
+      Trash Monster-Sheet_46: 1997781196354967835
+      Trash Monster-Sheet_47: -2806325635389429299
+      Trash Monster-Sheet_48: -1959860184471211880
+      Trash Monster-Sheet_49: 607613494748058357
+      Trash Monster-Sheet_5: -4219153625115922866
+      Trash Monster-Sheet_50: -7480706919844304564
+      Trash Monster-Sheet_51: 8999205959307985748
+      Trash Monster-Sheet_52: 8631152072781761867
+      Trash Monster-Sheet_53: 2632556141591727304
+      Trash Monster-Sheet_54: -9137534799581051203
+      Trash Monster-Sheet_55: 5669805010110045097
+      Trash Monster-Sheet_56: -3680433412749635362
+      Trash Monster-Sheet_57: -6892686611595325926
+      Trash Monster-Sheet_6: 8651594942452368212
+      Trash Monster-Sheet_7: 7937185616952546690
+      Trash Monster-Sheet_8: 484386733812488004
+      Trash Monster-Sheet_9: -5263645885242336878
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

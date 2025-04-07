@@ -9,7 +9,7 @@ namespace Enemies
 {
     public class Flier : MonoBehaviour, IEnemy
     {
-        [SerializeField] private uint health = 50;
+        [SerializeField] private int health = 50;
         [SerializeField] private uint damage = 5;
         [SerializeField] private float attackRange = 1f;
         [SerializeField] private float engageRange = 10f;
@@ -106,7 +106,7 @@ namespace Enemies
         public bool CanAttack() => currentDelay < 0;
         public void TakeDamage(uint damage)
         {
-            health -= damage;
+            health -= (int) damage;
             if (health <= 0)
                 Kill();
         }

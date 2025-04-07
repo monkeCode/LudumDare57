@@ -5,7 +5,7 @@ namespace Enemies
 {
     public class Walker : MonoBehaviour, IEnemy
     {
-        [SerializeField] private uint health = 50;
+        [SerializeField] private int health = 50;
         [SerializeField] private uint damage = 5;
         [SerializeField] private float attackRange = 1f;
         [SerializeField] private float platformAttackRangeModifier = 7;
@@ -101,7 +101,7 @@ namespace Enemies
         public bool CanAttack() => Time.time - lastAttackTime > attackDelay;
         public void TakeDamage(uint damage)
         {
-            health -= damage;
+            health -= (int)damage;
             if (health <= 0)
                 Kill();
         }

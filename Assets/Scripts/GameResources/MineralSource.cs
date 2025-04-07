@@ -3,6 +3,7 @@ using UnityEngine;
 
 namespace GameResources
 {
+    [RequireComponent(typeof(AudioSource))]
     public class MineralSource: MonoBehaviour, IDamageable
     {
         [field: SerializeField] private int Durability { get; set; } = 1;
@@ -35,7 +36,10 @@ namespace GameResources
             {
                 Instantiate(MineralPrefabs[Random.Range(0, MineralPrefabs.Length)], GetRandomPosition(transform.position), transform.rotation);   
             }
-            Destroy(gameObject);
+            GetComponent<AudioSource>().Play();
+            GetComponent<SpriteRenderer>().enabled = false;
+            GetComponent<Collider2D>().enabled = false;
+            Destroy(gameObject, 5);
         }
     }
 }
