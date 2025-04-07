@@ -16,6 +16,8 @@ public class GameManager : MonoBehaviour
     [SerializeField] private EntityPoint point;
     [SerializeField] List<DungeonEntities> dungeonEntities;
 
+    [SerializeField] private GameObject _mrB0SS;
+
     private List<Vector2> _stagePoints;
     public IReadOnlyList<Vector2> StagePoints => _stagePoints;
 
@@ -82,5 +84,8 @@ public class GameManager : MonoBehaviour
         }
     }
 
-
+    public void SpawnB0SSYeah()
+    {
+        Instantiate(_mrB0SS, Platform.Instance.transform.position + Vector3.up * 20, Quaternion.identity);
+    }
 }
