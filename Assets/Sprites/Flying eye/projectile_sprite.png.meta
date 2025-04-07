@@ -185,10 +185,10 @@ TextureImporter:
       name: projectile_sprite_0
       rect:
         serializedVersion: 2
-        x: 156
-        y: 15
-        width: 23
-        height: 21
+        x: 0
+        y: 0
+        width: 48
+        height: 48
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -207,10 +207,10 @@ TextureImporter:
       name: projectile_sprite_1
       rect:
         serializedVersion: 2
-        x: 206
-        y: 30
-        width: 6
-        height: 8
+        x: 48
+        y: 0
+        width: 48
+        height: 48
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -229,10 +229,10 @@ TextureImporter:
       name: projectile_sprite_2
       rect:
         serializedVersion: 2
-        x: 214
-        y: 30
-        width: 6
-        height: 9
+        x: 96
+        y: 0
+        width: 48
+        height: 48
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -251,10 +251,10 @@ TextureImporter:
       name: projectile_sprite_3
       rect:
         serializedVersion: 2
-        x: 218
-        y: 27
-        width: 11
-        height: 13
+        x: 144
+        y: 0
+        width: 48
+        height: 48
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -273,10 +273,10 @@ TextureImporter:
       name: projectile_sprite_4
       rect:
         serializedVersion: 2
-        x: 251
-        y: 30
-        width: 16
-        height: 14
+        x: 192
+        y: 0
+        width: 48
+        height: 48
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -295,10 +295,10 @@ TextureImporter:
       name: projectile_sprite_5
       rect:
         serializedVersion: 2
-        x: 264
-        y: 28
-        width: 6
-        height: 6
+        x: 240
+        y: 0
+        width: 48
+        height: 48
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -317,10 +317,10 @@ TextureImporter:
       name: projectile_sprite_6
       rect:
         serializedVersion: 2
-        x: 269
-        y: 34
-        width: 8
-        height: 9
+        x: 288
+        y: 0
+        width: 48
+        height: 48
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -339,10 +339,10 @@ TextureImporter:
       name: projectile_sprite_7
       rect:
         serializedVersion: 2
-        x: 271
-        y: 28
-        width: 10
-        height: 7
+        x: 336
+        y: 0
+        width: 48
+        height: 48
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -357,363 +357,11 @@ TextureImporter:
       indices: 
       edges: []
       weights: []
-    - serializedVersion: 2
-      name: projectile_sprite_8
-      rect:
-        serializedVersion: 2
-        x: 291
-        y: 2
-        width: 91
-        height: 46
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: 9c0cbf8c35edb0890800000000000000
-      internalID: -7490649103765094199
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: projectile_sprite_9
-      rect:
-        serializedVersion: 2
-        x: 15
-        y: 15
-        width: 18
-        height: 18
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: 26990efa7d4864860800000000000000
-      internalID: 7513839090217818466
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: projectile_sprite_10
-      rect:
-        serializedVersion: 2
-        x: 63
-        y: 15
-        width: 18
-        height: 18
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: c16522707ca458690800000000000000
-      internalID: -7600586577439205860
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: projectile_sprite_11
-      rect:
-        serializedVersion: 2
-        x: 111
-        y: 15
-        width: 18
-        height: 18
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: f5665235ca0c705e0800000000000000
-      internalID: -1943372867825211809
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: projectile_sprite_12
-      rect:
-        serializedVersion: 2
-        x: 199
-        y: 22
-        width: 11
-        height: 11
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: f93c37b01dbd23150800000000000000
-      internalID: 5850980556794479519
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: projectile_sprite_13
-      rect:
-        serializedVersion: 2
-        x: 203
-        y: 10
-        width: 17
-        height: 13
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: 244fe43a612ded960800000000000000
-      internalID: 7628765813483172930
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: projectile_sprite_14
-      rect:
-        serializedVersion: 2
-        x: 211
-        y: 21
-        width: 6
-        height: 7
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: 4645e2ca1a2c13900800000000000000
-      internalID: 662524619834414180
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: projectile_sprite_15
-      rect:
-        serializedVersion: 2
-        x: 223
-        y: 21
-        width: 8
-        height: 6
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: 9dd63b05c383ef270800000000000000
-      internalID: 8286122196111420889
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: projectile_sprite_16
-      rect:
-        serializedVersion: 2
-        x: 243
-        y: 23
-        width: 8
-        height: 9
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: f34cc1059f22b60d0800000000000000
-      internalID: -3428608237126237121
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: projectile_sprite_17
-      rect:
-        serializedVersion: 2
-        x: 256
-        y: 16
-        width: 6
-        height: 10
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: 5907fb37766775800800000000000000
-      internalID: 601079261972885653
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: projectile_sprite_18
-      rect:
-        serializedVersion: 2
-        x: 268
-        y: 11
-        width: 14
-        height: 14
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: 88a9d86cc5bf53e70800000000000000
-      internalID: 9094451398431316616
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: projectile_sprite_19
-      rect:
-        serializedVersion: 2
-        x: 288
-        y: 23
-        width: 8
-        height: 8
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: 6808bb602facb1ea0800000000000000
-      internalID: -5900899745895055226
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: projectile_sprite_20
-      rect:
-        serializedVersion: 2
-        x: 218
-        y: 14
-        width: 7
-        height: 7
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: c326ad367a3aa6ba0800000000000000
-      internalID: -6094879206362422724
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: projectile_sprite_21
-      rect:
-        serializedVersion: 2
-        x: 246
-        y: 8
-        width: 9
-        height: 8
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: bc30e1b1fc2cce870800000000000000
-      internalID: 8713553573824037835
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: projectile_sprite_22
-      rect:
-        serializedVersion: 2
-        x: 258
-        y: 6
-        width: 8
-        height: 7
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: 4daf9ef91e6863b50800000000000000
-      internalID: 6572589009802492628
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: projectile_sprite_23
-      rect:
-        serializedVersion: 2
-        x: 305
-        y: 3
-        width: 6
-        height: 6
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: 63e69bceb6c753e10800000000000000
-      internalID: 2176782797878423094
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
     outline: []
     customData: 
     physicsShape: []
     bones: []
-    spriteID: 
+    spriteID: d269a711d5ceac8488101428c65dfd50
     internalID: 0
     vertices: []
     indices: 
@@ -725,28 +373,12 @@ TextureImporter:
     nameFileIdTable:
       projectile_sprite_0: -952785642901035298
       projectile_sprite_1: 73689268883652835
-      projectile_sprite_10: -7600586577439205860
-      projectile_sprite_11: -1943372867825211809
-      projectile_sprite_12: 5850980556794479519
-      projectile_sprite_13: 7628765813483172930
-      projectile_sprite_14: 662524619834414180
-      projectile_sprite_15: 8286122196111420889
-      projectile_sprite_16: -3428608237126237121
-      projectile_sprite_17: 601079261972885653
-      projectile_sprite_18: 9094451398431316616
-      projectile_sprite_19: -5900899745895055226
       projectile_sprite_2: -2915541089322675369
-      projectile_sprite_20: -6094879206362422724
-      projectile_sprite_21: 8713553573824037835
-      projectile_sprite_22: 6572589009802492628
-      projectile_sprite_23: 2176782797878423094
       projectile_sprite_3: -2093828346452907103
       projectile_sprite_4: -9158773422439805446
       projectile_sprite_5: 934616741007681554
       projectile_sprite_6: 5134469537059547514
       projectile_sprite_7: 7910117887760401193
-      projectile_sprite_8: -7490649103765094199
-      projectile_sprite_9: 7513839090217818466
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

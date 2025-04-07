@@ -114,6 +114,7 @@ MonoBehaviour:
   engageSpeed: 30
   playerTargetChance: 70
   isPlayerTarget: 0
+  animator: {fileID: 7100729932793286057}
 --- !u!195 &1262495118850489307
 NavMeshAgent:
   m_ObjectHideFlags: 0
