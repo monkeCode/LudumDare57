@@ -23,7 +23,6 @@ public class Platform : MonoBehaviour, IDamageable
 
     AudioSource audioSource;
 
-
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     private void Awake()
     {
@@ -37,6 +36,10 @@ public class Platform : MonoBehaviour, IDamageable
 
     void Start()
     {
+        print($"timer instaance{Timer.instance}");
+        Timer.instance.StageChanged += HandleStageChanged;
+        RepairBox.PlatformRepaired += HandlePlatformRepaired;
+        HandleStageChanged(Timer.instance.CurrentStage);
         rb = GetComponent<Rigidbody2D>();
         audioSource = GetComponent<AudioSource>();
     }
@@ -44,21 +47,8 @@ public class Platform : MonoBehaviour, IDamageable
     // Update is called once per frame
     void FixedUpdate()
     {
-
-    }
-
-    private void OnEnable()
-    {
-        print($"timer instaance{Timer.instance}");
-        Timer.instance.StageChanged += HandleStageChanged;
-        RepairBox.PlatformRepaired += HandlePlatformRepaired;
-        HandleStageChanged(Timer.instance.CurrentStage);
-    }
-
-    private void OnDisable()
-    {
-        Timer.instance.StageChanged -= HandleStageChanged;
-        RepairBox.PlatformRepaired -= HandlePlatformRepaired;
+        if(GameManager.Instance.CurrentStage == Stage.Fight)
+            MoveToPosition();
     }
 
     private void HandleStageChanged(Stage newStage)
@@ -72,7 +62,7 @@ public class Platform : MonoBehaviour, IDamageable
 
             case Stage.Fight:
                 isMoving = true;
-                StartCoroutine(MoveToPosition(GameManager.Instance.StagePoints[GameManager.Instance.CountStage], Timer.instance.timeForFighting));
+                speed = (GameManager.Instance.StagePoints[GameManager.Instance.CountStage].y - transform.position.y)/Timer.instance.timeForFighting;
                 audioSource.Play();
                 break;
         }
@@ -114,20 +104,12 @@ public class Platform : MonoBehaviour, IDamageable
 
     }
 
-    IEnumerator MoveToPosition(Vector3 targetPos, float time)
+    
+    void MoveToPosition()
     {
-        Vector3 startPos = rb.position;
-        float elapsed = 0f;
-
-        while (elapsed < time)
-        {
-            print($"ahahahahahahahahah{targetPos}");
-            rb.MovePosition(Vector3.Lerp(startPos, targetPos, elapsed / time));
-            elapsed += Time.deltaTime;
-            yield return null;
-        }
-
-        rb.MovePosition(targetPos);
+        var npos = transform.position;
+        npos.y += speed * Time.deltaTime;
+        rb.MovePosition(npos);
     }
 
     IEnumerator EndGame()
