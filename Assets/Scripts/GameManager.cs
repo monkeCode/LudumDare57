@@ -14,7 +14,7 @@ public class GameManager : MonoBehaviour
     [SerializeField] List<DungeonEntities> dungeonEntities;
 
     private List<Transform> _stagePoints;
-    public IReadOnlyList<Transform> ShagePoints => _stagePoints;
+    public IReadOnlyList<Transform> StagePoints => _stagePoints;
 
     public GeneratorStage[] Stages => stages;
     [field: SerializeField] public FightStage[] FightStages { get; private set; }
@@ -39,10 +39,10 @@ public class GameManager : MonoBehaviour
         var places = dungeonViewGenerator.GenerateDungeon();
         //TODO: nav mesh
         _surface.BuildNavMesh();
-        
-        for(int s = 0; s < places.Count; s++)
+
+        for (int s = 0; s < places.Count; s++)
         {
-            foreach(var p in places[s])
+            foreach (var p in places[s])
             {
                 var o = Instantiate(point, p.transform.position, Quaternion.identity);
                 o.SetEntities(dungeonEntities[s]);

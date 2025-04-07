@@ -2,19 +2,25 @@ using System;
 using System.Collections;
 using Core;
 using UnityEngine;
+using GameResources;
 
 public class RepairBox : MonoBehaviour, IInteractable
 {
-    public static event Action PlatformRepaired;
+    public static event Action<int> PlatformRepaired;
 
     private bool _canRepair = true;
 
     AudioSource audioSource;
 
+    public int repairAmount = 2;
+
+    private CurrencyStorage _currencyStorage;
+
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
     {
         audioSource = GetComponent<AudioSource>();
+        _currencyStorage = FindFirstObjectByType<CurrencyStorage>();
     }
 
     // Update is called once per frame
@@ -26,10 +32,10 @@ public class RepairBox : MonoBehaviour, IInteractable
 
     public void Interact()
     {
-        if (_canRepair && Platform.Instance.currentHealth < Platform.Instance.maxHealth)
+        if (_canRepair && Platform.Instance.currentHealth < Platform.Instance.maxHealth && _currencyStorage.TrySpendCurrency(repairAmount))
         {
 
-            PlatformRepaired?.Invoke();
+            PlatformRepaired?.Invoke(repairAmount);
             StartCoroutine(RepairSuspend(0.2f));
             if (!audioSource.isPlaying)
             {
