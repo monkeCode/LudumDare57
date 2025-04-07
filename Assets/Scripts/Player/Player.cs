@@ -25,6 +25,9 @@ namespace Player
         private PlayerMover _mover;
         private Platform _platform;
         private GameObject _respawnPoint;
+        
+        private AudioSource source;
+        [SerializeField] private AudioClip _deathSound;
 
         public int MaxHp { get => _maxHp; set => _maxHp = value; }
         public int Hp { get => _hp; set => _hp = Math.Clamp(value, 0, _maxHp); }
@@ -62,6 +65,7 @@ namespace Player
 
             _platform = FindFirstObjectByType<Platform>();
             _respawnPoint = _platform.PlatformRespawnPoint;
+            source = GetComponent<AudioSource>();
         }
 
         void OnEnable()
