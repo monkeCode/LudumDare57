@@ -45,3 +45,4 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   <CurrencyCount>k__BackingField: 0
+  moneyUIPrefab: {fileID: 1613577874608061336, guid: 3ab69d6d9bd1fe24ea562107b50c5d1f, type: 3}
