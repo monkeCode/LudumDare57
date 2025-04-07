@@ -13,6 +13,9 @@ public class GameManager : MonoBehaviour
     [SerializeField] private EntityPoint point;
     [SerializeField] List<DungeonEntities> dungeonEntities;
 
+    private List<Transform> _stagePoints;
+    public IReadOnlyList<Transform> ShagePoints => _stagePoints;
+
     public GeneratorStage[] Stages => stages;
     [field: SerializeField] public FightStage[] FightStages { get; private set; }
 

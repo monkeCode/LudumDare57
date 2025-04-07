@@ -43,7 +43,7 @@ namespace Dungeon
             int offsetY = 0;
             foreach(GeneratorStage stage in GameManager.Instance.Stages)
             {
-                (var result, var stageItems) = GeterateSide(new Vector2Int(_platformWidth/2+1, offsetY), stage);
+                (var result, var stageItems) = GeterateSide(new Vector2Int(_platformWidth/2, offsetY), stage);
                 GeterateSide(new Vector2Int(_platformWidth/2+1, offsetY), stage, true);
 
                 offsetY -= result.GetLength(1);
