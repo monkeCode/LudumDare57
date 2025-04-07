@@ -450,7 +450,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ec1b79f487774e67b88ba88c99383127, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  startScene: Main
+  startScene: GeneratorRoomTest
 --- !u!114 &5737695388980040977
 MonoBehaviour:
   m_ObjectHideFlags: 0

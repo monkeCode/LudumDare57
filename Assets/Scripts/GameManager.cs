@@ -1,4 +1,5 @@
 using System.Collections.Generic;
+using System.Linq;
 using Dungeon;
 using NavMeshPlus.Components;
 using UnityEngine;
@@ -36,6 +37,7 @@ public class GameManager : MonoBehaviour
 
     void Start()
     {
+        Timer.instance.StageChanged += IncrementStage;
         var places = dungeonViewGenerator.GenerateDungeon();
         _stagePoints = dungeonViewGenerator.starts;
         foreach(var v in _stagePoints)
@@ -55,20 +57,11 @@ public class GameManager : MonoBehaviour
 
     void IncrementStage(Stage stage)
     {
-        if (stage == Stage.Clill)
+        if (stage == Stage.Clill && CountStage < stages.Length)
         {
             CountStage += 1;
         }
     }
 
-    void OnEnable()
-    {
-        Timer.instance.StageChanged += IncrementStage;
-    }
-
-    void OnDisable()
-    {
-        Timer.instance.StageChanged -= IncrementStage;
-    }
 
 }

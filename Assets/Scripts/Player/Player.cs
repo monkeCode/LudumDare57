@@ -3,7 +3,6 @@ using GameResources;
 using Interfaces;
 using UnityEngine;
 using UnityEngine.InputSystem;
-using UnityEngine.Rendering.Universal;
 
 namespace Player
 {
@@ -24,6 +23,11 @@ namespace Player
         public InputSystem_Actions Inputs => _inputs;
         private InputSystem_Actions _inputs;
         private PlayerMover _mover;
+        private Platform _platform;
+        private GameObject _respawnPoint;
+        
+        private AudioSource source;
+        [SerializeField] private AudioClip _deathSound;
 
         public int MaxHp { get => _maxHp; set => _maxHp = value; }
         public int Hp { get => _hp; set => _hp = Math.Clamp(value, 0, _maxHp); }
@@ -36,7 +40,6 @@ namespace Player
 
         private const float MinSpeedModifier = 0.2f;
         public float SpeedModifier => Math.Max(MinSpeedModifier, 1 - inventory.CurrentWeight / inventory.MaxWeight);
-
         private void Awake()
         {
             if (Instance == null)
@@ -59,6 +62,10 @@ namespace Player
             _inputs.Player.Attack.started += ctx => _weaponHandler.ShootPress();
             _inputs.Player.Attack.canceled += ctx => _weaponHandler.ShootRelease();
             _inputs.Player.Reload.performed += ctx => _weaponHandler.Reload();
+
+            _platform = FindFirstObjectByType<Platform>();
+            _respawnPoint = _platform.PlatformRespawnPoint;
+            source = GetComponent<AudioSource>();
         }
 
         void OnEnable()
@@ -80,7 +87,9 @@ namespace Player
 
         private void Die()
         {
-            throw new NotImplementedException();
+            ResetHealth();
+            Respawn();
+            _platform.TakeDamage((uint)_platform.maxHealth/10);
         }
 
         public void Kill()
@@ -120,6 +129,16 @@ namespace Player
             {
                 DropMineral();
             }
+        }
+
+        private void ResetHealth()
+        {
+            Hp = MaxHp;
+        }
+
+        private void Respawn()
+        {
+            gameObject.transform.position = _respawnPoint.transform.position;
         }
     }
 

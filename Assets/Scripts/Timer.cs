@@ -22,6 +22,8 @@ public class Timer : MonoBehaviour
 
     public float leftTime { get; private set; } = 0;
 
+    public float elapsedTime;
+
     public float getLeftTime()
     {
         return leftTime;
@@ -42,7 +44,7 @@ public class Timer : MonoBehaviour
             Destroy(gameObject);
         }
 
-        DontDestroyOnLoad(gameObject);
+        //DontDestroyOnLoad(gameObject);
 
         coroutine = StartTimer(timeForLooting, timeForFighting);
         StartCoroutine(coroutine);
@@ -51,10 +53,12 @@ public class Timer : MonoBehaviour
     private IEnumerator StartTimer(float timeChill, float timeFight)
     {
         leftTime = timeChill;
+        elapsedTime = 0;
         while (true)
         {
             yield return null;
             leftTime -= Time.deltaTime;
+            elapsedTime += Time.deltaTime;
             if (leftTime < 0)
             {
                 CurrentStage = CurrentStage switch
