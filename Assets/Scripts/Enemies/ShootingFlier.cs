@@ -15,6 +15,8 @@ namespace Enemies
         [SerializeField] private float bulletSpeed = 20f;
         [SerializeField] private float attackRange = 20f;
         [SerializeField] private float attackDelay = 3f;
+        [SerializeField] private float swingDelay = 0.5f;
+        private bool isAttacking;
         private float currentDelay;
 
         [SerializeField] private Bullet bullet;
@@ -49,6 +51,10 @@ namespace Enemies
         private void Update()
         {
             currentDelay -= Time.deltaTime;
+            
+            if (isAttacking)
+                return;
+            
             if (!CanAttack())
             {
                 FlyAway();    
@@ -76,12 +82,15 @@ namespace Enemies
                 return;
             currentDelay = attackDelay;
             flyAwayDirection = Random.insideUnitCircle.normalized;
+            isAttacking = true;
 
-            Shoot();
+            StartCoroutine(Shoot());
         }
 
-        private void Shoot()
+        private IEnumerator Shoot()
         {
+            yield return new WaitForSeconds(swingDelay);
+            isAttacking = false;
             var direction = targetTransform.position - transform.position;
             var bullet = Instantiate(this.bullet, transform.position, Quaternion.Euler(new Vector3(0, 0, Mathf.Atan2(direction.y, direction.x) * Mathf.Rad2Deg)))
                 .GetComponent<Bullet>();
@@ -89,7 +98,7 @@ namespace Enemies
             bullet.SetDamage(damage);
             bullet.GetComponent<Rigidbody2D>().AddForce(direction.normalized * bulletSpeed);
         }
-        
+
 
         private void FlyAway()
         {
