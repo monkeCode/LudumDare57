@@ -132,6 +132,13 @@ namespace Weapons
             SetWeapon(weapon);
         }
 
+        public void GenerateGun(Rarity rarity)
+        {
+            var weapon = WeaponGenerator.Instance.GenerateWeapon(rarity);
+
+            SetWeapon(weapon);
+        }
+
 
         private string GetText()
         {
