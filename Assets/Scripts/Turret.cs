@@ -3,6 +3,7 @@ using System.Linq;
 using Core;
 using GameResources;
 using UnityEngine;
+using UnityEngine.Rendering.Universal;
 using UnityEngine.Serialization;
 using Weapons;
 
@@ -42,6 +43,9 @@ public class Turret : MonoBehaviour, IInteractable
     [SerializeField] private float _targetRefreshRate = 0.5f;
 
     [SerializeField] private AudioClip _shootSound;
+    [SerializeField] private Highlighter highlighter;
+    
+    private bool _highlighted;
 
     private Transform _target;
     private Coroutine _shootingCoroutine;
@@ -60,6 +64,7 @@ public class Turret : MonoBehaviour, IInteractable
         _damageMultiplier += upgradeRequest.DamageChangeInPercentage / 100;
         _radiusMultiplier += upgradeRequest.RadiusChangeInPercentage / 100;
         _projectileSpeedMultiplier += upgradeRequest.ProjectileSpeedChangeInPercentage / 100;
+        highlighter.Highlight();
         return true;
     }
 

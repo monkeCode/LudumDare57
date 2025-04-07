@@ -1,8 +1,7 @@
 using System;
 using System.Collections;
-using GameResources;
+using Core;
 using Interfaces;
-using UnityEditor.Callbacks;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 using UnityEngine.UI;
@@ -28,6 +27,8 @@ public class Platform : MonoBehaviour, IDamageable
 
     public Image fadePanel;
     public float fadeDuration = 2.0f;
+
+    [SerializeField] private Highlighter _repairHighlighter;
 
     bool dying = false;
 
@@ -92,6 +93,7 @@ public class Platform : MonoBehaviour, IDamageable
             currentHealth = maxHealth;
         }
         currentHealthChanged?.Invoke(currentHealth);
+        _repairHighlighter.Highlight();
     }
 
     public void TakeDamage(uint damage)
