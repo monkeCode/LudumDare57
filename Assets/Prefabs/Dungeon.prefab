@@ -53,6 +53,7 @@ MonoBehaviour:
   _platformWidth: 18
   mineral: {fileID: 3934818155276542990, guid: 47536d162097738498f32aa3b23cb159, type: 3}
   weapon: {fileID: 850123044489913324, guid: 5e95dfd31a3c9c8b29fd44ede1ed30bc, type: 3}
+  starts: []
 --- !u!114 &4251612137546650656
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -72,7 +73,7 @@ MonoBehaviour:
   minRoomHeight: 5
   maxRoomHeight: 20
   startPosX: 0
-  startPosY: 40
+  startPosY: 30
   connectionCount: 10
   tunnelRadius: 3.9
   alternateTunnelChance: 0.2

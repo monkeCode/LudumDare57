@@ -67,13 +67,13 @@ public class Platform : MonoBehaviour, IDamageable
         {
             case Stage.Clill:
                 isMoving = false;
-                audioSource.Stop();
+                audioSource?.Stop();
                 currentFloor += 1;
                 break;
 
             case Stage.Fight:
                 isMoving = true;
-                StartCoroutine(MoveToPosition(GameManager.Instance.StagePoints[currentFloor].position, Timer.instance.timeForFighting));
+                StartCoroutine(MoveToPosition(GameManager.Instance.StagePoints[currentFloor], Timer.instance.timeForFighting));
                 audioSource.Play();
                 break;
         }
