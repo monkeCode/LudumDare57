@@ -47,7 +47,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6acb5650989243bce811442fb41f1302, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _weapon: {fileID: 11400000, guid: b601d8a7263508647a4539c63495cc80, type: 2}
+  _weapon: {fileID: 11400000, guid: 4f3c246ff668c04cb874eb8136b6c8b9, type: 2}
   _offset: 1
   _time: 10
   _center: {fileID: 4208946602118802734}

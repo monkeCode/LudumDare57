@@ -12,6 +12,7 @@ public class EntityPoint : MonoBehaviour
 
     void OnTriggerEnter2D(Collider2D collision)
     {
+        //Debug.Log(_generated);
         if (_generated)
             return;
 
@@ -36,7 +37,7 @@ public class EntityPoint : MonoBehaviour
         {
             Vector2 randomPosition = (Vector2)transform.position + Random.insideUnitCircle * _spawnRange;
 
-            Collider2D[] colliders = Physics2D.OverlapCircleAll(randomPosition, 2f, _groundMask);
+            Collider2D[] colliders = Physics2D.OverlapCircleAll(randomPosition, 5f, _groundMask);
             if (colliders.Length == 0)
             {
                 return randomPosition;

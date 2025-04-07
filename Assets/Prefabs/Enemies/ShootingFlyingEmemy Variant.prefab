@@ -56,6 +56,10 @@ PrefabInstance:
       propertyPath: isPlayerTarget
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 5502718562380806182, guid: f6568b796fe23e44ca27b0d7e0c6b94b, type: 3}
+      propertyPath: playerTargetChance
+      value: 100
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []

@@ -35,7 +35,7 @@ public class Timer : MonoBehaviour
 
     public event Action<Stage> StageChanged;
 
-    public Stage CurrentStage { get; private set; } = Stage.Fight;
+    public Stage CurrentStage { get; private set; } = Stage.Clill;
 
     void Awake()
     {
@@ -50,13 +50,19 @@ public class Timer : MonoBehaviour
 
         //DontDestroyOnLoad(gameObject);
 
+    }
+
+    IEnumerator Start()
+    {
+        yield return new WaitForSeconds(0.5f);
+
         coroutine = StartTimer(timeForLooting, timeForFighting);
         StartCoroutine(coroutine);
     }
 
     private IEnumerator StartTimer(float timeChill, float timeFight)
     {
-        leftTime = timeIntial;
+        leftTime = timeChill;
         elapsedTime = 0;
         while (true)
         {

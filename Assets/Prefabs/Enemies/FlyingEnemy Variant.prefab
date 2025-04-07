@@ -52,6 +52,10 @@ PrefabInstance:
       propertyPath: isPlayerTarget
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 7543835245861220175, guid: b7e519829f3791d43961b6555e9816c6, type: 3}
+      propertyPath: playerTargetChance
+      value: 100
+      objectReference: {fileID: 0}
     - target: {fileID: 7594072819204984069, guid: b7e519829f3791d43961b6555e9816c6, type: 3}
       propertyPath: m_Name
       value: FlyingEnemy Variant

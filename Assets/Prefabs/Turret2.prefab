@@ -331,7 +331,7 @@ MonoBehaviour:
   _rotationSpeedMultiplier: 1
   _baseShootFreq: 1
   _shootFreqMultiplier: 1
-  _baseDamage: 10
+  _baseDamage: 7
   _damageMultiplier: 1
   _baseRadius: 10
   _radiusMultiplier: 1

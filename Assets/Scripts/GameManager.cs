@@ -27,7 +27,7 @@ public class GameManager : MonoBehaviour
     public static GameManager Instance { get; private set; }
 
     public Stage CurrentStage => Timer.instance.CurrentStage;
-    public int CountStage { get; private set; }
+    public int CountStage { get; private set; } = 1;
 
     void Awake()
     {

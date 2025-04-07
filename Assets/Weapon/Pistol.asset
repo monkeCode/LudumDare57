@@ -14,12 +14,12 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   <BaseName>k__BackingField: Pistol
   _bulletSpeed: 350
-  _shootFreq: 2
+  _shootFreq: 5
   _damage: 60
   _bullet: {fileID: 6819654811208041759, guid: 1446355baf09fb6f1b347af132bc6e09, type: 3}
   _sprite: {fileID: -3753849593638114588, guid: 6d9d020d2326f7906b68de9015a67180, type: 3}
   _magazineSize: 7
-  _reloadTime: 1
+  _reloadTime: 0.5
   _shootMode: 0
   _shootClip: {fileID: 8300000, guid: 3d4588219c8a5748080e6641964bdfeb, type: 3}
   _reloadClipStart: {fileID: 8300000, guid: d372bc171301191ceae027b0a2a1f145, type: 3}

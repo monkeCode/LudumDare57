@@ -12,6 +12,10 @@ PrefabInstance:
       propertyPath: isPlayerTarget
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 681427351318097784, guid: 31c99ff5122b56246bf4d517117a79fe, type: 3}
+      propertyPath: playerTargetChance
+      value: 100
+      objectReference: {fileID: 0}
     - target: {fileID: 4056900960672792291, guid: 31c99ff5122b56246bf4d517117a79fe, type: 3}
       propertyPath: m_Name
       value: WalkingEnemy Variant

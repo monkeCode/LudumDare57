@@ -52,7 +52,7 @@ public class Platform : MonoBehaviour, IDamageable
         print($"timer instaance{Timer.instance}");
         Timer.instance.StageChanged += HandleStageChanged;
         RepairBox.PlatformRepaired += HandlePlatformRepaired;
-        HandleStageChanged(Timer.instance.CurrentStage);
+        //HandleStageChanged(Timer.instance.CurrentStage);
         rb = GetComponent<Rigidbody2D>();
         audioSource = GetComponent<AudioSource>();
         fadePanel.SetActive(false);
@@ -81,15 +81,7 @@ public class Platform : MonoBehaviour, IDamageable
 
             case Stage.Fight:
                 isMoving = true;
-                if (start)
-                {
-                    speed = (GameManager.Instance.StagePoints[GameManager.Instance.CountStage].y - transform.position.y) / Timer.instance.timeIntial;
-                    start = false;
-                }
-                else
-                {
-                    speed = (GameManager.Instance.StagePoints[GameManager.Instance.CountStage].y - transform.position.y) / Timer.instance.timeForFighting;
-                }
+                speed = (GameManager.Instance.StagePoints[GameManager.Instance.CountStage].y - transform.position.y) / Timer.instance.timeForFighting;
                 audioSource?.Play();
                 isMoving = true;
                 break;

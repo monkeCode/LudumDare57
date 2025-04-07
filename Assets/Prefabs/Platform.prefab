@@ -1380,8 +1380,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 78c0bcd3e56024c42b34d52deeafca94, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  currentHealth: 100
-  maxHealth: 100
+  currentHealth: 200
+  maxHealth: 200
   speed: 5
   PlatformRespawnPoint: {fileID: 0}
   fadePanel: {fileID: 6276157859302792790}
