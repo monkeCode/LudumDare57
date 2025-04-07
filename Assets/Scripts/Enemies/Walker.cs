@@ -1,3 +1,4 @@
+using System.Collections;
 using Interfaces;
 using UnityEngine;
 
@@ -10,6 +11,8 @@ namespace Enemies
         [SerializeField] private float attackRange = 1f;
         [SerializeField] private float platformAttackRangeModifier = 7;
         [SerializeField] private float attackDelay = 3f;
+        [SerializeField] private float swingTime = 0.5f;
+        private bool isAttiackng;
         private float lastAttackTime; 
         
         [SerializeField] private float speed = 5f;
@@ -18,6 +21,7 @@ namespace Enemies
 
 
         [SerializeField] private LayerMask groundLayer;
+        [SerializeField] private LayerMask wallLayer;
         [SerializeField] private Transform groundCheck;
         [SerializeField] private Transform wallCheck;
 
@@ -43,6 +47,8 @@ namespace Enemies
 
         private void Update()
         {
+            if (isAttiackng)
+                return;
             Move();
             Jump();
             Attack();
@@ -82,7 +88,7 @@ namespace Enemies
         }
     
         private bool OnGround => Physics2D.OverlapCircle(groundCheck.position, groundCheckRadius, groundLayer);
-        private bool NearWall => Physics2D.OverlapCircle(wallCheck.position, groundCheckRadius, groundLayer);
+        private bool NearWall => Physics2D.OverlapCircle(wallCheck.position, groundCheckRadius, wallLayer);
 
         private bool NearTarget()
         {
@@ -94,8 +100,17 @@ namespace Enemies
         {
             if (!NearTarget() || !CanAttack())
                 return;
+            isAttiackng = true;
             lastAttackTime = Time.time;
-            targetDamageable.TakeDamage(damage);
+            StartCoroutine(PerformAttack());
+        }
+
+        private IEnumerator PerformAttack()
+        {
+            yield return new WaitForSeconds(swingTime);
+            if (NearTarget())
+                targetDamageable.TakeDamage(damage);
+            isAttiackng = false;
         }
         
         public bool CanAttack() => Time.time - lastAttackTime > attackDelay;
