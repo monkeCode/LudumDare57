@@ -528,6 +528,30 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 7720756559053680546}
     m_Modifications:
+    - target: {fileID: 3377221115671931131, guid: d7b888cf7da81874381493a260753944, type: 3}
+      propertyPath: m_text
+      value: E to upgrade
+      objectReference: {fileID: 0}
+    - target: {fileID: 3377221115671931131, guid: d7b888cf7da81874381493a260753944, type: 3}
+      propertyPath: m_margin.x
+      value: -7.5344286
+      objectReference: {fileID: 0}
+    - target: {fileID: 3377221115671931131, guid: d7b888cf7da81874381493a260753944, type: 3}
+      propertyPath: m_margin.z
+      value: -7.8848696
+      objectReference: {fileID: 0}
+    - target: {fileID: 3377221115671931131, guid: d7b888cf7da81874381493a260753944, type: 3}
+      propertyPath: m_fontAsset
+      value: 
+      objectReference: {fileID: 11400000, guid: ebf9faed15f442b489957b33178e19be, type: 2}
+    - target: {fileID: 3377221115671931131, guid: d7b888cf7da81874381493a260753944, type: 3}
+      propertyPath: m_sharedMaterial
+      value: 
+      objectReference: {fileID: 3523624712186838523, guid: ebf9faed15f442b489957b33178e19be, type: 2}
+    - target: {fileID: 3377221115671931131, guid: d7b888cf7da81874381493a260753944, type: 3}
+      propertyPath: m_hasFontAssetChanged
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 4020424477141972622, guid: d7b888cf7da81874381493a260753944, type: 3}
       propertyPath: m_Name
       value: InteractionTip

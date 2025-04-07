@@ -1,14 +1,26 @@
+using TMPro;
 using UnityEngine;
 
 namespace GameResources
 {
-    public class CurrencyStorage: MonoBehaviour
+    public class CurrencyStorage : MonoBehaviour
     {
         [field: SerializeField] private int CurrencyCount { get; set; }
+
+        public GameObject moneyUIPrefab;
+
+        private Player.Player _player;
+
+        void Start()
+        {
+            _player = FindFirstObjectByType<Player.Player>();
+        }
 
         public void AddCurrency(int amount)
         {
             CurrencyCount += amount;
+            GameObject moneyUIInstance = Instantiate(moneyUIPrefab, _player.transform);
+            moneyUIInstance.transform.GetChild(0).GetComponent<TextMeshPro>().text = $"+{amount}";
         }
 
         public int GetCount()
@@ -20,6 +32,8 @@ namespace GameResources
         {
             if (amount > CurrencyCount) return false;
             CurrencyCount -= amount;
+            GameObject moneyUIInstance = Instantiate(moneyUIPrefab, _player.transform);
+            moneyUIInstance.transform.GetChild(0).GetComponent<TextMeshPro>().text = $"-{amount}";
             return true;
         }
     }
