@@ -1329,6 +1329,7 @@ GameObject:
   - component: {fileID: 123484795315834796}
   - component: {fileID: 6475368925847402546}
   - component: {fileID: 5951542870404931173}
+  - component: {fileID: 6327988656238604228}
   m_Layer: 0
   m_Name: Platform
   m_TagString: Untagged
@@ -1382,8 +1383,37 @@ MonoBehaviour:
   currentHealth: 100
   maxHealth: 100
   speed: 5
-  fadePanel: {fileID: 7228245680968572067}
+  PlatformRespawnPoint: {fileID: 0}
+  fadePanel: {fileID: 6276157859302792790}
   fadeDuration: 2
+  _repairHighlighter: {fileID: 0}
+--- !u!50 &6327988656238604228
+Rigidbody2D:
+  serializedVersion: 5
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6984177165440754799}
+  m_BodyType: 0
+  m_Simulated: 1
+  m_UseFullKinematicContacts: 0
+  m_UseAutoMass: 0
+  m_Mass: 1
+  m_LinearDamping: 0
+  m_AngularDamping: 0.05
+  m_GravityScale: 1
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_Interpolate: 0
+  m_SleepingMode: 1
+  m_CollisionDetection: 0
+  m_Constraints: 0
 --- !u!1001 &3654974744532462783
 PrefabInstance:
   m_ObjectHideFlags: 0

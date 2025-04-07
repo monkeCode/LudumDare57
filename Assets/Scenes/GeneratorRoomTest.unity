@@ -538,7 +538,7 @@ MonoBehaviour:
     rid: 7437354102278848581
   m_ShadowCastingSource: 2
   m_ShadowMesh:
-    m_Mesh: {fileID: 370276449}
+    m_Mesh: {fileID: 475957600}
     m_LocalBounds:
       m_Center: {x: 0, y: 0, z: 0}
       m_Extent: {x: 0, y: 0, z: 0}
@@ -558,7 +558,18 @@ MonoBehaviour:
     - rid: 7437354102278848581
       type: {class: ShadowShape2DProvider_Collider2D, ns: UnityEngine.Rendering.Universal, asm: Unity.RenderPipelines.Universal.2D.Runtime}
       data: 
---- !u!43 &370276449
+--- !u!114 &375035739 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 1356135103275681318, guid: 217614f5f347cd0fabb1457fc99e0618, type: 3}
+  m_PrefabInstance: {fileID: 6163148076335592125}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e04976799df50f54ba128eff723155a7, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!43 &475957600
 Mesh:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -723,17 +734,6 @@ Mesh:
     offset: 0
     size: 0
     path: 
---- !u!114 &375035739 stripped
-MonoBehaviour:
-  m_CorrespondingSourceObject: {fileID: 1356135103275681318, guid: 217614f5f347cd0fabb1457fc99e0618, type: 3}
-  m_PrefabInstance: {fileID: 6163148076335592125}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: e04976799df50f54ba128eff723155a7, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!1 &899141006
 GameObject:
   m_ObjectHideFlags: 0
@@ -1254,6 +1254,26 @@ PrefabInstance:
       propertyPath: _follow
       value: 
       objectReference: {fileID: 2039102636}
+    - target: {fileID: 4219060912081774041, guid: bb181ecff868f89ebb97da9e24d1ee62, type: 3}
+      propertyPath: m_LocalScale.x
+      value: 7.905867
+      objectReference: {fileID: 0}
+    - target: {fileID: 4219060912081774041, guid: bb181ecff868f89ebb97da9e24d1ee62, type: 3}
+      propertyPath: m_LocalScale.y
+      value: 4.2607365
+      objectReference: {fileID: 0}
+    - target: {fileID: 4219060912081774041, guid: bb181ecff868f89ebb97da9e24d1ee62, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 0.0234
+      objectReference: {fileID: 0}
+    - target: {fileID: 4219060912081774041, guid: bb181ecff868f89ebb97da9e24d1ee62, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0.1371
+      objectReference: {fileID: 0}
+    - target: {fileID: 6965749201078541503, guid: bb181ecff868f89ebb97da9e24d1ee62, type: 3}
+      propertyPath: m_Sprite
+      value: 
+      objectReference: {fileID: -4431494890709657585, guid: 511670707ded9c14c8e0285d1b104630, type: 3}
     - target: {fileID: 7164225581612645828, guid: bb181ecff868f89ebb97da9e24d1ee62, type: 3}
       propertyPath: m_LocalPosition.x
       value: 0
