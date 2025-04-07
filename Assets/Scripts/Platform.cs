@@ -4,6 +4,7 @@ using GameResources;
 using Interfaces;
 using UnityEditor.Callbacks;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class Platform : MonoBehaviour, IDamageable
 {
@@ -73,7 +74,7 @@ public class Platform : MonoBehaviour, IDamageable
 
             case Stage.Fight:
                 isMoving = true;
-                StartCoroutine(MoveToPosition(GameManager.Instance.StagePoints[currentFloor].position, Timer.instance.timeForFighting));
+                StartCoroutine(MoveToPosition(new Vector3(0, 34, 0), Timer.instance.timeForFighting));
                 audioSource.Play();
                 break;
         }
@@ -107,6 +108,11 @@ public class Platform : MonoBehaviour, IDamageable
     }
     public void Kill()
     {
+        Die();
+    }
+
+    public void Die()
+    {
 
     }
 
@@ -123,5 +129,11 @@ public class Platform : MonoBehaviour, IDamageable
         }
 
         transform.position = targetPos;
+    }
+
+    IEnumerator EndGame()
+    {
+        yield return new WaitForSeconds(2f);
+        //SceneManager.LoadScene();
     }
 }
