@@ -20,7 +20,7 @@ public class Platform : MonoBehaviour, IDamageable
 
     private Rigidbody2D rb;
     public static Platform Instance { get; private set; }
-    
+
     public GameObject PlatformRespawnPoint;
 
     AudioSource audioSource;
@@ -57,7 +57,7 @@ public class Platform : MonoBehaviour, IDamageable
     // Update is called once per frame
     void FixedUpdate()
     {
-        if(GameManager.Instance.CurrentStage == Stage.Fight)
+        if (GameManager.Instance.CurrentStage == Stage.Fight)
             MoveToPosition();
         if (currentHealth <= 0 && !dying)
         {
@@ -76,7 +76,7 @@ public class Platform : MonoBehaviour, IDamageable
 
             case Stage.Fight:
                 isMoving = true;
-                speed = (GameManager.Instance.StagePoints[GameManager.Instance.CountStage].y - transform.position.y)/Timer.instance.timeForFighting;
+                speed = (GameManager.Instance.StagePoints[GameManager.Instance.CountStage].y - transform.position.y) / Timer.instance.timeForFighting;
                 audioSource.Play();
                 break;
         }
@@ -118,10 +118,11 @@ public class Platform : MonoBehaviour, IDamageable
     {
         dying = true;
         StopAllCoroutines();
+        Timer.instance.GetComponent<AudioSource>().Stop();
         StartCoroutine(FadeIn());
     }
 
-    
+
     void MoveToPosition()
     {
         var npos = transform.position;
