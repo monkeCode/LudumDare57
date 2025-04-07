@@ -14,6 +14,6 @@ public class TimerUI : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        timerText.text = $"00:{Mathf.FloorToInt(Timer.getLeftTime()):00}";
+        timerText.text = $"00:{Mathf.FloorToInt(Timer.instance.getLeftTime()):00}";
     }
 }

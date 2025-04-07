@@ -59,14 +59,14 @@ public class Platform : MonoBehaviour, IDamageable
 
     private void OnEnable()
     {
-        Timer.StageChanged += HandleStageChanged;
+        Timer.instance.StageChanged += HandleStageChanged;
         RepairBox.PlatformRepaired += HandlePlatformRepaired;
-        HandleStageChanged(Timer.CurrentStage);
+        HandleStageChanged(Timer.instance.CurrentStage);
     }
 
     private void OnDisable()
     {
-        Timer.StageChanged -= HandleStageChanged;
+        Timer.instance.StageChanged -= HandleStageChanged;
         RepairBox.PlatformRepaired -= HandlePlatformRepaired;
     }
 
