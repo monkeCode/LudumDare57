@@ -252,7 +252,7 @@ MonoBehaviour:
   engageDelay: 1
   speed: 5
   engageSpeed: 30
-  playerTargetChance: 70
+  playerTargetChance: 100
   isPlayerTarget: 0
 --- !u!50 &31609705
 Rigidbody2D:
@@ -956,6 +956,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 285248266364916773, guid: a8a33d2bbb7279746961eba3767bf1b7, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 1006974246891123820, guid: a8a33d2bbb7279746961eba3767bf1b7, type: 3}
       propertyPath: m_LocalPosition.x
       value: -0.17000002
@@ -1003,6 +1007,10 @@ PrefabInstance:
     - target: {fileID: 7828102065613348783, guid: a8a33d2bbb7279746961eba3767bf1b7, type: 3}
       propertyPath: m_Name
       value: Platform Variant
+      objectReference: {fileID: 0}
+    - target: {fileID: 8348032380526163736, guid: a8a33d2bbb7279746961eba3767bf1b7, type: 3}
+      propertyPath: m_IsActive
+      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []

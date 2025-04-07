@@ -86,8 +86,7 @@ namespace Enemies
         
         IEnumerator PerformEngage()
         {
-            var directionToTarget = transform.position - targetTransform.position;
-            flyAwayDirection = directionToTarget * -1;
+            flyAwayDirection = Random.insideUnitCircle.normalized;
 
             navMeshAgent.speed = 0f;
             
@@ -99,8 +98,7 @@ namespace Enemies
         private void FlyAway()
         {
             navMeshAgent.speed = speed;
-            var normalized = flyAwayDirection.normalized * 10;
-            navMeshAgent.SetDestination(normalized);
+            navMeshAgent.SetDestination((Vector2)targetTransform.position + flyAwayDirection * (engageRange * 5));
         }
         
         public bool CanAttack() => currentDelay < 0;
