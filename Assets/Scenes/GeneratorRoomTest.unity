@@ -534,7 +534,7 @@ MonoBehaviour:
     rid: 7437354102278848581
   m_ShadowCastingSource: 2
   m_ShadowMesh:
-    m_Mesh: {fileID: 755731405}
+    m_Mesh: {fileID: 823134164}
     m_LocalBounds:
       m_Center: {x: 0, y: 0, z: 0}
       m_Extent: {x: 0, y: 0, z: 0}
@@ -565,7 +565,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e04976799df50f54ba128eff723155a7, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
---- !u!43 &755731405
+--- !u!43 &823134164
 Mesh:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -829,6 +829,10 @@ PrefabInstance:
     - target: {fileID: 6245315708411125149, guid: 2251eb5906bd6504a9e590289f5b6776, type: 3}
       propertyPath: m_AnchoredPosition.x
       value: 57.792725
+      objectReference: {fileID: 0}
+    - target: {fileID: 6245315708411125149, guid: 2251eb5906bd6504a9e590289f5b6776, type: 3}
+      propertyPath: m_AnchoredPosition.y
+      value: -1.0664368
       objectReference: {fileID: 0}
     - target: {fileID: 6763335422757351925, guid: 2251eb5906bd6504a9e590289f5b6776, type: 3}
       propertyPath: m_Pivot.x
@@ -1200,7 +1204,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6834188036635469221, guid: a8a33d2bbb7279746961eba3767bf1b7, type: 3}
       propertyPath: currentHealth
-      value: 0
+      value: 50
       objectReference: {fileID: 0}
     - target: {fileID: 7828102065613348783, guid: a8a33d2bbb7279746961eba3767bf1b7, type: 3}
       propertyPath: m_Name
