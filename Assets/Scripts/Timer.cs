@@ -58,7 +58,6 @@ public class Timer : MonoBehaviour
     {
         leftTime = timeIntial;
         elapsedTime = 0;
-        int numberStages = 0;
         while (true)
         {
             yield return null;
@@ -73,18 +72,17 @@ public class Timer : MonoBehaviour
                     _ => throw new NotImplementedException()
                 };
 
-                StageChanged?.Invoke(CurrentStage);
 
                 if (CurrentStage == Stage.Fight)
                 {
-                    numberStages += 1;
-                    if (numberStages >= lenStages)
+                    if (GameManager.Instance.CountStage >= 3)
                     {
                         leftTime = 0;
                         break;
                     }
                 }
 
+                StageChanged?.Invoke(CurrentStage);
                 leftTime = CurrentStage == Stage.Fight ? timeFight : timeChill;
             }
 

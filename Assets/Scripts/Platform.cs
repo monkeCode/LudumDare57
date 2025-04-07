@@ -6,6 +6,7 @@ using UnityEngine;
 using UnityEngine.SceneManagement;
 using UnityEngine.UI;
 
+[RequireComponent(typeof(Rigidbody2D))]
 public class Platform : MonoBehaviour, IDamageable
 {
     public float currentHealth = 50f;
@@ -77,7 +78,7 @@ public class Platform : MonoBehaviour, IDamageable
             case Stage.Fight:
                 isMoving = true;
                 speed = (GameManager.Instance.StagePoints[GameManager.Instance.CountStage].y - transform.position.y) / Timer.instance.timeForFighting;
-                audioSource.Play();
+                audioSource?.Play();
                 break;
         }
     }
