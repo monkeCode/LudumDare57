@@ -244,12 +244,16 @@ MonoBehaviour:
   attackRange: 1
   platformAttackRangeModifier: 8
   attackDelay: 3
+  swingTime: 0.5
   speed: 5
   jumpHeight: 8
   groundCheckRadius: 0.1
   groundLayer:
     serializedVersion: 2
     m_Bits: 1280
+  wallLayer:
+    serializedVersion: 2
+    m_Bits: 256
   groundCheck: {fileID: 4036260759353966648}
   wallCheck: {fileID: 3537959708345296903}
   playerTargetChance: 100
