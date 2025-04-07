@@ -1704,10 +1704,6 @@ PrefabInstance:
       propertyPath: m_Name
       value: ShootingFlyingEmemy
       objectReference: {fileID: 0}
-    - target: {fileID: 172052261745782221, guid: f6568b796fe23e44ca27b0d7e0c6b94b, type: 3}
-      propertyPath: m_IsActive
-      value: 1
-      objectReference: {fileID: 0}
     - target: {fileID: 1433244544376654646, guid: f6568b796fe23e44ca27b0d7e0c6b94b, type: 3}
       propertyPath: m_LocalPosition.x
       value: 11.8
@@ -1747,14 +1743,6 @@ PrefabInstance:
     - target: {fileID: 1433244544376654646, guid: f6568b796fe23e44ca27b0d7e0c6b94b, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 5502718562380806182, guid: f6568b796fe23e44ca27b0d7e0c6b94b, type: 3}
-      propertyPath: swingDelay
-      value: 0.5
-      objectReference: {fileID: 0}
-    - target: {fileID: 5502718562380806182, guid: f6568b796fe23e44ca27b0d7e0c6b94b, type: 3}
-      propertyPath: playerTargetChance
-      value: 70
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
