@@ -25,6 +25,7 @@ public class DungeonProvider : MonoBehaviour
             var x = Random.Range(0, caveWidth);
             var y = Random.Range(0, caveHeight);
             
+            
             if (cave[x, y] != DungeonCellType.Empty)
                 continue;
 
