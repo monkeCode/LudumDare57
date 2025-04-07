@@ -54,3 +54,9 @@ MonoBehaviour:
   - WeaponRarity: 2
     WeaponsCount: 3
     MineralsCount: 10
+  dungeonViewGenerator: {fileID: 0}
+  _surface: {fileID: 0}
+  point: {fileID: 0}
+  dungeonEntities: []
+  _mrB0SS: {fileID: 1073328259862754027, guid: e0dcc6aef39b4006688a04b481be23b1, type: 3}
+  <FightStages>k__BackingField: []

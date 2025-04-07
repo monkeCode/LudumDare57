@@ -78,6 +78,7 @@ public class Timer : MonoBehaviour
                     if (GameManager.Instance.CountStage >= 3)
                     {
                         leftTime = 0;
+                        GameManager.Instance.SpawnB0SSYeah();
                         break;
                     }
                 }

@@ -1,9 +1,11 @@
 using System.Collections;
 using Enemies;
 using Interfaces;
+using UnityEditor.ShaderGraph.Internal;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 
+[RequireComponent(typeof(AudioSource))]
 public class Boss : MonoBehaviour, IEnemy
 {
     enum BossState
@@ -25,6 +27,9 @@ public class Boss : MonoBehaviour, IEnemy
 
     private Transform _target;
     private Animator _animator;
+
+    [SerializeField] private float _atkCooldown;
+    private float _atkTime;
 
     [Header("Teleport")]
     [SerializeField] public float _tpProbability;
@@ -56,6 +61,10 @@ public class Boss : MonoBehaviour, IEnemy
     private Transform _platformTransform;
 
     private bool _abilityStarted;
+    private AudioSource _sourse;
+
+    [SerializeField] private AudioClip _swordSound;
+    [SerializeField] private AudioClip _spellSound;
 
     void Start()
     {
@@ -63,6 +72,7 @@ public class Boss : MonoBehaviour, IEnemy
         _animator = GetComponent<Animator>();
         _playerTransform = Player.Player.Instance.transform;
         _platformTransform = Platform.Instance.transform;
+        _sourse = GetComponent<AudioSource>();
         _state = BossState.Idle;
         Hp = MaxHp;
         _lastTeleportTime = Time.time;
@@ -84,6 +94,11 @@ public class Boss : MonoBehaviour, IEnemy
 
     void Atk()
     {
+        if((_atkTime + _atkCooldown) > Time.time)
+            {
+                _abilityPerformed = true;
+            }
+
         float distance = Vector2.Distance(transform.position, _target.position);
         if (distance > DamageRadius * 3)
         {
@@ -93,11 +108,10 @@ public class Boss : MonoBehaviour, IEnemy
         {
             MoveTo(_target.position);
         }
-        else if (!_abilityStarted)
+        else
         {
             _abilityStarted = true;
             _animator.SetTrigger("Attack");
-            _state = BossState.Idle;
         }
     }
 
@@ -107,7 +121,15 @@ public class Boss : MonoBehaviour, IEnemy
         foreach (var target in hitTargets)
         {
             target.GetComponent<IDamageable>().TakeDamage((uint)Damage);
+            if(target.TryGetComponent(out Rigidbody2D rbt))
+            {
+                var force = (target.transform.position - transform.position).normalized * 600;
+                force.y = 500;
+                rbt.AddForce(force);
+            }
         }
+        _sourse.PlayOneShot(_swordSound);
+        _atkTime = Time.time;
         _abilityPerformed = true;
     }
 
@@ -124,6 +146,7 @@ public class Boss : MonoBehaviour, IEnemy
         }
         _target = _platformTransform;
         transform.position = teleportPosition;
+        _sourse.PlayOneShot(_spellSound);
         _abilityPerformed = true;
     }
 
@@ -161,6 +184,7 @@ public class Boss : MonoBehaviour, IEnemy
             Vector2 spawnPos = transform.position + (Vector3)Random.insideUnitCircle * 4f;
             Instantiate(BallPrefab, spawnPos, Quaternion.identity).target = _target;
         }
+        _sourse.PlayOneShot(_spellSound);
         _abilityPerformed = true;
     }
 

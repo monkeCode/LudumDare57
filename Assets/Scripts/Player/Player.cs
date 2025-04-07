@@ -51,6 +51,7 @@ namespace Player
 
             _inputs = new InputSystem_Actions();
             _inputs.Player.Enable();
+            _inputs.UI.Enable();
 
             _animator = GetComponent<Animator>();
 
