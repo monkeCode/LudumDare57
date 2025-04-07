@@ -25,7 +25,7 @@ namespace Player
         private PlayerMover _mover;
         private Platform _platform;
         private GameObject _respawnPoint;
-        
+
         private AudioSource source;
         [SerializeField] private AudioClip _deathSound;
 
@@ -35,7 +35,7 @@ namespace Player
         public static Player Instance { get; private set; }
 
         public readonly PlayerInventory inventory = new();
-        
+
         [field: SerializeField] public Mineral MineralPrefab { get; set; }
 
         private const float MinSpeedModifier = 0.2f;
@@ -88,9 +88,10 @@ namespace Player
 
         private void Die()
         {
-            ResetHealth();
+            source.PlayOneShot(_deathSound);
             Respawn();
-            _platform.TakeDamage((uint)_platform.maxHealth/10);
+            ResetHealth();
+            _platform.TakeDamage((uint)_platform.maxHealth / 10);
         }
 
         public void Kill()
@@ -113,7 +114,7 @@ namespace Player
         }
 
         protected override void InnerUpdate()
-        {   
+        {
             _mover.Move(_inputs.Player.Move.ReadValue<Vector2>().x, SpeedModifier);
             var look_dir = Camera.main.ScreenToWorldPoint(Mouse.current.position.ReadValue());
             _weaponHandler.UpdatePosition(look_dir);
