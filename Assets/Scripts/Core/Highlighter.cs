@@ -12,6 +12,7 @@ namespace Core
         [SerializeField] private Light2D light;
         [SerializeField] private float highlightTimeInSeconds = 0.4f;
         [SerializeField] private float tickTimeInSeconds = 0.05f;
+        [SerializeField] private ParticleSystem particles;
 
         private void Start()
         {
@@ -21,6 +22,7 @@ namespace Core
         public void Highlight()
         {
             StartCoroutine(HighlightUpgradeCoroutine());
+            particles.Play();
         }
         
         private IEnumerator HighlightUpgradeCoroutine()

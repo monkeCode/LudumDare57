@@ -1035,6 +1035,10 @@ PrefabInstance:
       propertyPath: _highlighter
       value: 
       objectReference: {fileID: 9200383090353200835}
+    - target: {fileID: 5951542870404931173, guid: d1344ffece649394f9c837e8c53ca3bb, type: 3}
+      propertyPath: _repairHighlighter
+      value: 
+      objectReference: {fileID: 9200383090353200835}
     - target: {fileID: 6400904934232665189, guid: d1344ffece649394f9c837e8c53ca3bb, type: 3}
       propertyPath: m_Layer
       value: 10
@@ -1869,6 +1873,22 @@ PrefabInstance:
     - target: {fileID: 2437996784904504700, guid: b4eb08d4edbd14043ab73750cf1cc487, type: 3}
       propertyPath: m_LocalBounds.m_Extent.y
       value: 3.1109
+      objectReference: {fileID: 0}
+    - target: {fileID: 4777950665166574210, guid: b4eb08d4edbd14043ab73750cf1cc487, type: 3}
+      propertyPath: looping
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4777950665166574210, guid: b4eb08d4edbd14043ab73750cf1cc487, type: 3}
+      propertyPath: ShapeModule.donutRadius
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 4777950665166574210, guid: b4eb08d4edbd14043ab73750cf1cc487, type: 3}
+      propertyPath: ShapeModule.radius.value
+      value: 5
+      objectReference: {fileID: 0}
+    - target: {fileID: 4777950665166574210, guid: b4eb08d4edbd14043ab73750cf1cc487, type: 3}
+      propertyPath: EmissionModule.m_Bursts.Array.data[0].countCurve.scalar
+      value: 20
       objectReference: {fileID: 0}
     - target: {fileID: 6347781487024426379, guid: b4eb08d4edbd14043ab73750cf1cc487, type: 3}
       propertyPath: m_LocalPosition.x
