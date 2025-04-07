@@ -1,5 +1,36 @@
 %YAML 1.1
 %TAG !u! tag:unity3d.com,2011:
+--- !u!1 &7079381812890221556
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 9120958061046381635}
+  m_Layer: 10
+  m_Name: RespawnPoint
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &9120958061046381635
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7079381812890221556}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0.35, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 1006974246891123820}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &8342708980740189771
 GameObject:
   m_ObjectHideFlags: 0
@@ -1039,6 +1070,10 @@ PrefabInstance:
       propertyPath: _repairHighlighter
       value: 
       objectReference: {fileID: 9200383090353200835}
+    - target: {fileID: 5951542870404931173, guid: d1344ffece649394f9c837e8c53ca3bb, type: 3}
+      propertyPath: PlatformRespawnPoint
+      value: 
+      objectReference: {fileID: 7079381812890221556}
     - target: {fileID: 6400904934232665189, guid: d1344ffece649394f9c837e8c53ca3bb, type: 3}
       propertyPath: m_Layer
       value: 10
@@ -1072,6 +1107,9 @@ PrefabInstance:
     - targetCorrespondingSourceObject: {fileID: 123484795315834796, guid: d1344ffece649394f9c837e8c53ca3bb, type: 3}
       insertIndex: -1
       addedObject: {fileID: 2977850103389709960}
+    - targetCorrespondingSourceObject: {fileID: 123484795315834796, guid: d1344ffece649394f9c837e8c53ca3bb, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 9120958061046381635}
     m_AddedComponents:
     - targetCorrespondingSourceObject: {fileID: 6984177165440754799, guid: d1344ffece649394f9c837e8c53ca3bb, type: 3}
       insertIndex: -1

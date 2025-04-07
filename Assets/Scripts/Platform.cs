@@ -26,7 +26,7 @@ public class Platform : MonoBehaviour, IDamageable
 
     AudioSource audioSource;
 
-    public Image fadePanel;
+    public GameObject fadePanel;
     public float fadeDuration = 2.0f;
 
     [SerializeField] private Highlighter _repairHighlighter;
@@ -55,6 +55,7 @@ public class Platform : MonoBehaviour, IDamageable
         HandleStageChanged(Timer.instance.CurrentStage);
         rb = GetComponent<Rigidbody2D>();
         audioSource = GetComponent<AudioSource>();
+        fadePanel.SetActive(false);
     }
 
     // Update is called once per frame
@@ -132,6 +133,7 @@ public class Platform : MonoBehaviour, IDamageable
         dying = true;
         StopAllCoroutines();
         Timer.instance.GetComponent<AudioSource>().Stop();
+        fadePanel.SetActive(true);
         StartCoroutine(FadeIn());
     }
 
@@ -146,18 +148,19 @@ public class Platform : MonoBehaviour, IDamageable
     IEnumerator FadeIn()
     {
         float elapsed = 0;
-        Color color = fadePanel.color;
+        Image fadeImage = fadePanel.GetComponent<Image>();
+        Color color = fadeImage.color;
 
         while (elapsed < fadeDuration)
         {
             color.a = Mathf.Lerp(0, 1, elapsed / fadeDuration);
-            fadePanel.color = color;
+            fadeImage.color = color;
             elapsed += Time.deltaTime;
             yield return null;
         }
         print(color);
         color.a = 1;
-        fadePanel.color = color;
+        fadeImage.color = color;
         SceneManager.LoadScene("GameOver");
     }
 }
