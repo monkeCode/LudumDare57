@@ -159,13 +159,13 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   health: 50
-  damage: 5
-  bulletSpeed: 350
+  damage: 15
+  bulletSpeed: 500
   attackRange: 10
-  attackDelay: 5
+  attackDelay: 3
   swingDelay: 0.5
   bullet: {fileID: 8355087405290628131, guid: d4e70d4fec451fb4ab1ebf75ed199ace, type: 3}
-  speed: 5
+  speed: 7
   playerTargetChance: 70
   isPlayerTarget: 0
   animator: {fileID: 401817757119641965}

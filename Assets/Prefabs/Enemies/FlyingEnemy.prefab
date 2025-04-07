@@ -105,12 +105,12 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   health: 50
-  damage: 5
+  damage: 10
   attackRange: 1
-  engageRange: 5
-  attackDelay: 5
+  engageRange: 4
+  attackDelay: 3
   engageDelay: 1
-  speed: 5
+  speed: 7
   engageSpeed: 30
   playerTargetChance: 70
   isPlayerTarget: 0
