@@ -1,0 +1,3224 @@
+fileFormatVersion: 2
+guid: 77eaeddbc96724fb499b67c691f3a328
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: 4552054323822679361
+    second: eJzyda_0
+  - first:
+      213: -6949931692566186416
+    second: eJzyda_1
+  - first:
+      213: 2754449055506273110
+    second: eJzyda_2
+  - first:
+      213: -8539663770661927619
+    second: eJzyda_3
+  - first:
+      213: -7547505814186221997
+    second: eJzyda_4
+  - first:
+      213: 7005171215861774547
+    second: eJzyda_5
+  - first:
+      213: 1865817804293945924
+    second: eJzyda_6
+  - first:
+      213: 6581213839801762611
+    second: eJzyda_7
+  - first:
+      213: -2004627034913905121
+    second: eJzyda_8
+  - first:
+      213: 1561973786906999263
+    second: eJzyda_9
+  - first:
+      213: -8767808404076291546
+    second: eJzyda_10
+  - first:
+      213: -6049679864164541900
+    second: eJzyda_11
+  - first:
+      213: 4572226124825196657
+    second: eJzyda_12
+  - first:
+      213: -4470048928384721524
+    second: eJzyda_13
+  - first:
+      213: -4402003570701138068
+    second: eJzyda_14
+  - first:
+      213: -6705697377953382940
+    second: eJzyda_15
+  - first:
+      213: -3326594382033501725
+    second: eJzyda_16
+  - first:
+      213: -8131916043365758031
+    second: eJzyda_17
+  - first:
+      213: 7604435510436482119
+    second: eJzyda_18
+  - first:
+      213: -3106514601257134153
+    second: eJzyda_19
+  - first:
+      213: -714080700807235667
+    second: eJzyda_20
+  - first:
+      213: 341885530991506348
+    second: eJzyda_21
+  - first:
+      213: 2590549246851241636
+    second: eJzyda_22
+  - first:
+      213: 778454932283362151
+    second: eJzyda_23
+  - first:
+      213: 2936565670512626089
+    second: eJzyda_24
+  - first:
+      213: 6963771844612275421
+    second: eJzyda_25
+  - first:
+      213: -783100200509552758
+    second: eJzyda_26
+  - first:
+      213: 9066519710849671041
+    second: eJzyda_27
+  - first:
+      213: -1804840926326584578
+    second: eJzyda_28
+  - first:
+      213: 2008807966961172314
+    second: eJzyda_29
+  - first:
+      213: 4130987497449564116
+    second: eJzyda_30
+  - first:
+      213: -3256154059525847293
+    second: eJzyda_31
+  - first:
+      213: 8497799844155459861
+    second: eJzyda_32
+  - first:
+      213: -1227436073124050331
+    second: eJzyda_33
+  - first:
+      213: 6486661080256937881
+    second: eJzyda_34
+  - first:
+      213: 5483253781748951810
+    second: eJzyda_35
+  - first:
+      213: -7219220033206852129
+    second: eJzyda_36
+  - first:
+      213: -2055573025344926110
+    second: eJzyda_37
+  - first:
+      213: -3797978800272835604
+    second: eJzyda_38
+  - first:
+      213: 3797440737158880137
+    second: eJzyda_39
+  - first:
+      213: 7963817093724032803
+    second: eJzyda_40
+  - first:
+      213: -7689116464524326318
+    second: eJzyda_41
+  - first:
+      213: -3434520434614274387
+    second: eJzyda_42
+  - first:
+      213: 401015849472766516
+    second: eJzyda_43
+  - first:
+      213: -8382094567442131729
+    second: eJzyda_44
+  - first:
+      213: -5706650449532323304
+    second: eJzyda_45
+  - first:
+      213: 8771049699447716020
+    second: eJzyda_46
+  - first:
+      213: -4681222711581737796
+    second: eJzyda_47
+  - first:
+      213: 1348803380763956859
+    second: eJzyda_48
+  - first:
+      213: 5350453021735803176
+    second: eJzyda_49
+  - first:
+      213: 2815391502924756773
+    second: eJzyda_50
+  - first:
+      213: -5838319271464479346
+    second: eJzyda_51
+  - first:
+      213: -7981363136065669210
+    second: eJzyda_52
+  - first:
+      213: -3763833265854207928
+    second: eJzyda_53
+  - first:
+      213: -8401858268877777746
+    second: eJzyda_54
+  - first:
+      213: -5038115676710639359
+    second: eJzyda_55
+  - first:
+      213: 4954237993205148883
+    second: eJzyda_56
+  - first:
+      213: -1714399908324998718
+    second: eJzyda_57
+  - first:
+      213: -8363117316460384810
+    second: eJzyda_58
+  - first:
+      213: -4726707343282620263
+    second: eJzyda_59
+  - first:
+      213: -3844082150250161389
+    second: eJzyda_60
+  - first:
+      213: -2514394338209293882
+    second: eJzyda_61
+  - first:
+      213: -1448864874888029576
+    second: eJzyda_62
+  - first:
+      213: -6532320786703780421
+    second: eJzyda_63
+  - first:
+      213: 3835985794857030712
+    second: eJzyda_64
+  - first:
+      213: 1868842672557187066
+    second: eJzyda_65
+  - first:
+      213: 3240719272577163325
+    second: eJzyda_66
+  - first:
+      213: -1814980172566586545
+    second: eJzyda_67
+  - first:
+      213: -1060236872861427816
+    second: eJzyda_68
+  - first:
+      213: 8220964107387593400
+    second: eJzyda_69
+  - first:
+      213: -2526400820133416724
+    second: eJzyda_70
+  - first:
+      213: 2500482540172446963
+    second: eJzyda_71
+  - first:
+      213: 6935125136827628903
+    second: eJzyda_72
+  - first:
+      213: -3760240086143917508
+    second: eJzyda_73
+  - first:
+      213: -1363154290916663922
+    second: eJzyda_74
+  - first:
+      213: -4876441064078889403
+    second: eJzyda_75
+  - first:
+      213: -8435552268207538745
+    second: eJzyda_76
+  - first:
+      213: -6435084742280195825
+    second: eJzyda_77
+  - first:
+      213: -2632697976595817340
+    second: eJzyda_78
+  - first:
+      213: -2302064592179076314
+    second: eJzyda_79
+  - first:
+      213: 5278998827717285507
+    second: eJzyda_80
+  - first:
+      213: -176848877315955812
+    second: eJzyda_81
+  - first:
+      213: 8563038440760777638
+    second: eJzyda_82
+  - first:
+      213: 1992995476632218171
+    second: eJzyda_83
+  - first:
+      213: 2150050838446689222
+    second: eJzyda_84
+  - first:
+      213: 5994616500125186284
+    second: eJzyda_85
+  - first:
+      213: 3367854416225337596
+    second: eJzyda_86
+  - first:
+      213: 1168203093912882106
+    second: eJzyda_87
+  - first:
+      213: 4076541549085651579
+    second: eJzyda_88
+  - first:
+      213: -4261976432989400937
+    second: eJzyda_89
+  - first:
+      213: 606763666064671926
+    second: eJzyda_90
+  - first:
+      213: -5218230264397791298
+    second: eJzyda_91
+  - first:
+      213: -1508620222950547811
+    second: eJzyda_92
+  - first:
+      213: 466439751045657124
+    second: eJzyda_93
+  - first:
+      213: -8665276233683426016
+    second: eJzyda_94
+  - first:
+      213: 5974557999825184455
+    second: eJzyda_95
+  - first:
+      213: 2509638478332948512
+    second: eJzyda_96
+  - first:
+      213: -1588242909312170757
+    second: eJzyda_97
+  - first:
+      213: 8336945918659815316
+    second: eJzyda_98
+  - first:
+      213: -4230864757237501851
+    second: eJzyda_99
+  - first:
+      213: -6485564032638149115
+    second: eJzyda_100
+  - first:
+      213: -8127882029044193933
+    second: eJzyda_101
+  - first:
+      213: -4306585671039967443
+    second: eJzyda_102
+  - first:
+      213: 9050066078232764126
+    second: eJzyda_103
+  - first:
+      213: -6538522506693774319
+    second: eJzyda_104
+  - first:
+      213: 8196719858297745604
+    second: eJzyda_105
+  - first:
+      213: 7341628424550478316
+    second: eJzyda_106
+  - first:
+      213: 8629573922646855085
+    second: eJzyda_107
+  - first:
+      213: 1940609277374514943
+    second: eJzyda_108
+  - first:
+      213: 1163095177023408614
+    second: eJzyda_109
+  - first:
+      213: -3139199840271988187
+    second: eJzyda_110
+  - first:
+      213: -3058263171580499365
+    second: eJzyda_111
+  - first:
+      213: -770660936853692688
+    second: eJzyda_112
+  - first:
+      213: 4424136434359369274
+    second: eJzyda_113
+  - first:
+      213: 7517422004834459975
+    second: eJzyda_114
+  - first:
+      213: -3253442009460793445
+    second: eJzyda_115
+  - first:
+      213: 169080831735377138
+    second: eJzyda_116
+  - first:
+      213: 1102036171934716557
+    second: eJzyda_117
+  - first:
+      213: -3197008819246332811
+    second: eJzyda_118
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 0
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 64
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 4
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: 4
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: WebGL
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: eJzyda_0
+      rect:
+        serializedVersion: 2
+        x: 38
+        y: 1228
+        width: 74
+        height: 86
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1455bb92a452c2f30800000000000000
+      internalID: 4552054323822679361
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: eJzyda_1
+      rect:
+        serializedVersion: 2
+        x: 146
+        y: 1228
+        width: 74
+        height: 86
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 056fc5ba2f1ec8f90800000000000000
+      internalID: -6949931692566186416
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: eJzyda_2
+      rect:
+        serializedVersion: 2
+        x: 254
+        y: 1228
+        width: 74
+        height: 86
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6539c5182d4c93620800000000000000
+      internalID: 2754449055506273110
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: eJzyda_3
+      rect:
+        serializedVersion: 2
+        x: 362
+        y: 1228
+        width: 74
+        height: 86
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d354c60bb050d7980800000000000000
+      internalID: -8539663770661927619
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: eJzyda_4
+      rect:
+        serializedVersion: 2
+        x: 470
+        y: 1228
+        width: 74
+        height: 86
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 35e1c3d437fd14790800000000000000
+      internalID: -7547505814186221997
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: eJzyda_5
+      rect:
+        serializedVersion: 2
+        x: 578
+        y: 1228
+        width: 74
+        height: 86
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3d87b381b1e573160800000000000000
+      internalID: 7005171215861774547
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: eJzyda_6
+      rect:
+        serializedVersion: 2
+        x: 698
+        y: 1231
+        width: 74
+        height: 86
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 44a3a805867b4e910800000000000000
+      internalID: 1865817804293945924
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: eJzyda_7
+      rect:
+        serializedVersion: 2
+        x: 806
+        y: 1231
+        width: 74
+        height: 86
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 333c4485e1b255b50800000000000000
+      internalID: 6581213839801762611
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: eJzyda_8
+      rect:
+        serializedVersion: 2
+        x: 914
+        y: 1231
+        width: 74
+        height: 86
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f16efcc25522e24e0800000000000000
+      internalID: -2004627034913905121
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: eJzyda_9
+      rect:
+        serializedVersion: 2
+        x: 1022
+        y: 1231
+        width: 74
+        height: 86
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: fd9301d22ee3da510800000000000000
+      internalID: 1561973786906999263
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: eJzyda_10
+      rect:
+        serializedVersion: 2
+        x: 1130
+        y: 1231
+        width: 74
+        height: 86
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 62a1958d5bc725680800000000000000
+      internalID: -8767808404076291546
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: eJzyda_11
+      rect:
+        serializedVersion: 2
+        x: 1238
+        y: 1231
+        width: 74
+        height: 86
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 43a93a357383b0ca0800000000000000
+      internalID: -6049679864164541900
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: eJzyda_12
+      rect:
+        serializedVersion: 2
+        x: 38
+        y: 1120
+        width: 74
+        height: 86
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 17877f29f6fc37f30800000000000000
+      internalID: 4572226124825196657
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: eJzyda_13
+      rect:
+        serializedVersion: 2
+        x: 146
+        y: 1120
+        width: 74
+        height: 86
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c8d5307de2237f1c0800000000000000
+      internalID: -4470048928384721524
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: eJzyda_14
+      rect:
+        serializedVersion: 2
+        x: 254
+        y: 1120
+        width: 74
+        height: 86
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c678b544311f8e2c0800000000000000
+      internalID: -4402003570701138068
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: eJzyda_15
+      rect:
+        serializedVersion: 2
+        x: 362
+        y: 1120
+        width: 74
+        height: 86
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4edf1d753c390f2a0800000000000000
+      internalID: -6705697377953382940
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: eJzyda_16
+      rect:
+        serializedVersion: 2
+        x: 470
+        y: 1120
+        width: 74
+        height: 86
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3e1451bd80095d1d0800000000000000
+      internalID: -3326594382033501725
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: eJzyda_17
+      rect:
+        serializedVersion: 2
+        x: 578
+        y: 1120
+        width: 74
+        height: 86
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1bb42eb7171a52f80800000000000000
+      internalID: -8131916043365758031
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: eJzyda_18
+      rect:
+        serializedVersion: 2
+        x: 698
+        y: 1123
+        width: 74
+        height: 86
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 74ccee48ec1688960800000000000000
+      internalID: 7604435510436482119
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: eJzyda_19
+      rect:
+        serializedVersion: 2
+        x: 806
+        y: 1123
+        width: 74
+        height: 86
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7b7118edd6173e4d0800000000000000
+      internalID: -3106514601257134153
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: eJzyda_20
+      rect:
+        serializedVersion: 2
+        x: 914
+        y: 1123
+        width: 74
+        height: 86
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: da73c6fc2631716f0800000000000000
+      internalID: -714080700807235667
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: eJzyda_21
+      rect:
+        serializedVersion: 2
+        x: 1022
+        y: 1123
+        width: 74
+        height: 86
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ca3389c341f9eb400800000000000000
+      internalID: 341885530991506348
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: eJzyda_22
+      rect:
+        serializedVersion: 2
+        x: 1130
+        y: 1123
+        width: 74
+        height: 86
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4a659bf80da73f320800000000000000
+      internalID: 2590549246851241636
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: eJzyda_23
+      rect:
+        serializedVersion: 2
+        x: 1238
+        y: 1123
+        width: 74
+        height: 86
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 76b8660f2a0adca00800000000000000
+      internalID: 778454932283362151
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: eJzyda_24
+      rect:
+        serializedVersion: 2
+        x: 38
+        y: 1012
+        width: 74
+        height: 86
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9a903823be6c0c820800000000000000
+      internalID: 2936565670512626089
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: eJzyda_25
+      rect:
+        serializedVersion: 2
+        x: 146
+        y: 1012
+        width: 74
+        height: 86
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ddc3bf6d89944a060800000000000000
+      internalID: 6963771844612275421
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: eJzyda_26
+      rect:
+        serializedVersion: 2
+        x: 254
+        y: 1012
+        width: 74
+        height: 86
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a874715448ed125f0800000000000000
+      internalID: -783100200509552758
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: eJzyda_27
+      rect:
+        serializedVersion: 2
+        x: 362
+        y: 1012
+        width: 74
+        height: 86
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 18f954af3afb2dd70800000000000000
+      internalID: 9066519710849671041
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: eJzyda_28
+      rect:
+        serializedVersion: 2
+        x: 470
+        y: 1012
+        width: 74
+        height: 86
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: efa873e6dbae3f6e0800000000000000
+      internalID: -1804840926326584578
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: eJzyda_29
+      rect:
+        serializedVersion: 2
+        x: 698
+        y: 1015
+        width: 74
+        height: 86
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a5ff1bce338b0eb10800000000000000
+      internalID: 2008807966961172314
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: eJzyda_30
+      rect:
+        serializedVersion: 2
+        x: 806
+        y: 1015
+        width: 74
+        height: 86
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4d7af05fd37345930800000000000000
+      internalID: 4130987497449564116
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: eJzyda_31
+      rect:
+        serializedVersion: 2
+        x: 914
+        y: 1015
+        width: 74
+        height: 86
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 307040c7221dfc2d0800000000000000
+      internalID: -3256154059525847293
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: eJzyda_32
+      rect:
+        serializedVersion: 2
+        x: 1022
+        y: 1015
+        width: 74
+        height: 86
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 519814b5fef3ee570800000000000000
+      internalID: 8497799844155459861
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: eJzyda_33
+      rect:
+        serializedVersion: 2
+        x: 1130
+        y: 1015
+        width: 74
+        height: 86
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 56ac0fc056547fee0800000000000000
+      internalID: -1227436073124050331
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: eJzyda_34
+      rect:
+        serializedVersion: 2
+        x: 32
+        y: 898
+        width: 86
+        height: 98
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 99ff01b72ef350a50800000000000000
+      internalID: 6486661080256937881
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: eJzyda_35
+      rect:
+        serializedVersion: 2
+        x: 140
+        y: 898
+        width: 86
+        height: 98
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 20ba672534e681c40800000000000000
+      internalID: 5483253781748951810
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: eJzyda_36
+      rect:
+        serializedVersion: 2
+        x: 248
+        y: 898
+        width: 86
+        height: 98
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: fd5625df0ad20db90800000000000000
+      internalID: -7219220033206852129
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: eJzyda_37
+      rect:
+        serializedVersion: 2
+        x: 356
+        y: 898
+        width: 86
+        height: 98
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 26ec07e69332973e0800000000000000
+      internalID: -2055573025344926110
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: eJzyda_38
+      rect:
+        serializedVersion: 2
+        x: 464
+        y: 898
+        width: 86
+        height: 98
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: cebf549576eda4bc0800000000000000
+      internalID: -3797978800272835604
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: eJzyda_39
+      rect:
+        serializedVersion: 2
+        x: 572
+        y: 898
+        width: 86
+        height: 98
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 98bd3f11b3833b430800000000000000
+      internalID: 3797440737158880137
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: eJzyda_40
+      rect:
+        serializedVersion: 2
+        x: 692
+        y: 907
+        width: 86
+        height: 74
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 32fca9fd379258e60800000000000000
+      internalID: 7963817093724032803
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: eJzyda_41
+      rect:
+        serializedVersion: 2
+        x: 800
+        y: 907
+        width: 86
+        height: 74
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 25a8b6f6055ca4590800000000000000
+      internalID: -7689116464524326318
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: eJzyda_42
+      rect:
+        serializedVersion: 2
+        x: 908
+        y: 907
+        width: 86
+        height: 74
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: da6fef09cd12650d0800000000000000
+      internalID: -3434520434614274387
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: eJzyda_43
+      rect:
+        serializedVersion: 2
+        x: 1016
+        y: 907
+        width: 86
+        height: 74
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 43230295ac1b09500800000000000000
+      internalID: 401015849472766516
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: eJzyda_44
+      rect:
+        serializedVersion: 2
+        x: 1124
+        y: 907
+        width: 86
+        height: 74
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: fe451e1b661dcab80800000000000000
+      internalID: -8382094567442131729
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: eJzyda_45
+      rect:
+        serializedVersion: 2
+        x: 1232
+        y: 907
+        width: 86
+        height: 74
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 81a7d4ab6a7edc0b0800000000000000
+      internalID: -5706650449532323304
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: eJzyda_46
+      rect:
+        serializedVersion: 2
+        x: 32
+        y: 790
+        width: 86
+        height: 98
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4b8b0ea0b3709b970800000000000000
+      internalID: 8771049699447716020
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: eJzyda_47
+      rect:
+        serializedVersion: 2
+        x: 140
+        y: 790
+        width: 86
+        height: 98
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: cbcfda9feb4f80fb0800000000000000
+      internalID: -4681222711581737796
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: eJzyda_48
+      rect:
+        serializedVersion: 2
+        x: 248
+        y: 790
+        width: 86
+        height: 98
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b76184e4789e7b210800000000000000
+      internalID: 1348803380763956859
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: eJzyda_49
+      rect:
+        serializedVersion: 2
+        x: 356
+        y: 790
+        width: 86
+        height: 98
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8295af3eca0a04a40800000000000000
+      internalID: 5350453021735803176
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: eJzyda_50
+      rect:
+        serializedVersion: 2
+        x: 464
+        y: 790
+        width: 86
+        height: 98
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 527bb73c7a7421720800000000000000
+      internalID: 2815391502924756773
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: eJzyda_51
+      rect:
+        serializedVersion: 2
+        x: 572
+        y: 790
+        width: 86
+        height: 98
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e85da0b2e8f1afea0800000000000000
+      internalID: -5838319271464479346
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: eJzyda_52
+      rect:
+        serializedVersion: 2
+        x: 692
+        y: 799
+        width: 86
+        height: 74
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6a7786bc3808c3190800000000000000
+      internalID: -7981363136065669210
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: eJzyda_53
+      rect:
+        serializedVersion: 2
+        x: 800
+        y: 799
+        width: 86
+        height: 74
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 84826fa169d24cbc0800000000000000
+      internalID: -3763833265854207928
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: eJzyda_54
+      rect:
+        serializedVersion: 2
+        x: 908
+        y: 799
+        width: 86
+        height: 74
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ea49c5e5b6a966b80800000000000000
+      internalID: -8401858268877777746
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: eJzyda_55
+      rect:
+        serializedVersion: 2
+        x: 1016
+        y: 799
+        width: 86
+        height: 74
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 109e5503c74051ab0800000000000000
+      internalID: -5038115676710639359
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: eJzyda_56
+      rect:
+        serializedVersion: 2
+        x: 1124
+        y: 799
+        width: 86
+        height: 74
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3dcacb5c43df0c440800000000000000
+      internalID: 4954237993205148883
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: eJzyda_57
+      rect:
+        serializedVersion: 2
+        x: 1232
+        y: 799
+        width: 86
+        height: 74
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2c1835ddd5a3538e0800000000000000
+      internalID: -1714399908324998718
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: eJzyda_58
+      rect:
+        serializedVersion: 2
+        x: 32
+        y: 682
+        width: 86
+        height: 98
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6dde5714c1d30fb80800000000000000
+      internalID: -8363117316460384810
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: eJzyda_59
+      rect:
+        serializedVersion: 2
+        x: 140
+        y: 682
+        width: 86
+        height: 98
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 998b866e6bc576eb0800000000000000
+      internalID: -4726707343282620263
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: eJzyda_60
+      rect:
+        serializedVersion: 2
+        x: 248
+        y: 682
+        width: 86
+        height: 98
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 31b5be2b6a317aac0800000000000000
+      internalID: -3844082150250161389
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: eJzyda_61
+      rect:
+        serializedVersion: 2
+        x: 356
+        y: 682
+        width: 86
+        height: 98
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6c918c5dba31b1dd0800000000000000
+      internalID: -2514394338209293882
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: eJzyda_62
+      rect:
+        serializedVersion: 2
+        x: 464
+        y: 682
+        width: 86
+        height: 98
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 87a12cc921994ebe0800000000000000
+      internalID: -1448864874888029576
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: eJzyda_63
+      rect:
+        serializedVersion: 2
+        x: 692
+        y: 691
+        width: 86
+        height: 74
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: bb5fe9daad88855a0800000000000000
+      internalID: -6532320786703780421
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: eJzyda_64
+      rect:
+        serializedVersion: 2
+        x: 800
+        y: 691
+        width: 86
+        height: 74
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 834d5e9a1c82c3530800000000000000
+      internalID: 3835985794857030712
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: eJzyda_65
+      rect:
+        serializedVersion: 2
+        x: 908
+        y: 691
+        width: 86
+        height: 74
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: affdcd652867fe910800000000000000
+      internalID: 1868842672557187066
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: eJzyda_66
+      rect:
+        serializedVersion: 2
+        x: 1016
+        y: 691
+        width: 86
+        height: 74
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d3069b2220959fc20800000000000000
+      internalID: 3240719272577163325
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: eJzyda_67
+      rect:
+        serializedVersion: 2
+        x: 1124
+        y: 691
+        width: 86
+        height: 74
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f4b9ac33625efc6e0800000000000000
+      internalID: -1814980172566586545
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: eJzyda_68
+      rect:
+        serializedVersion: 2
+        x: 32
+        y: 580
+        width: 86
+        height: 86
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 897d2577e284941f0800000000000000
+      internalID: -1060236872861427816
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: eJzyda_69
+      rect:
+        serializedVersion: 2
+        x: 140
+        y: 580
+        width: 86
+        height: 86
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8b2e2149c4bb61270800000000000000
+      internalID: 8220964107387593400
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: eJzyda_70
+      rect:
+        serializedVersion: 2
+        x: 248
+        y: 580
+        width: 86
+        height: 86
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ce031bbe6db60fcd0800000000000000
+      internalID: -2526400820133416724
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: eJzyda_71
+      rect:
+        serializedVersion: 2
+        x: 356
+        y: 580
+        width: 86
+        height: 86
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3fc8b064f9f73b220800000000000000
+      internalID: 2500482540172446963
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: eJzyda_72
+      rect:
+        serializedVersion: 2
+        x: 464
+        y: 580
+        width: 86
+        height: 86
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 76d3e7d61938e3060800000000000000
+      internalID: 6935125136827628903
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: eJzyda_73
+      rect:
+        serializedVersion: 2
+        x: 572
+        y: 580
+        width: 86
+        height: 86
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c3225337091f0dbc0800000000000000
+      internalID: -3760240086143917508
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: eJzyda_74
+      rect:
+        serializedVersion: 2
+        x: 692
+        y: 589
+        width: 86
+        height: 80
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e8ddcdb056a151de0800000000000000
+      internalID: -1363154290916663922
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: eJzyda_75
+      rect:
+        serializedVersion: 2
+        x: 800
+        y: 589
+        width: 86
+        height: 80
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 54e237f40b6635cb0800000000000000
+      internalID: -4876441064078889403
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: eJzyda_76
+      rect:
+        serializedVersion: 2
+        x: 908
+        y: 589
+        width: 86
+        height: 80
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7cdbf31d7e5eeea80800000000000000
+      internalID: -8435552268207538745
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: eJzyda_77
+      rect:
+        serializedVersion: 2
+        x: 1016
+        y: 589
+        width: 86
+        height: 80
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f015adc758cf1b6a0800000000000000
+      internalID: -6435084742280195825
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: eJzyda_78
+      rect:
+        serializedVersion: 2
+        x: 1124
+        y: 589
+        width: 86
+        height: 80
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 48cdd109327c67bd0800000000000000
+      internalID: -2632697976595817340
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: eJzyda_79
+      rect:
+        serializedVersion: 2
+        x: 1232
+        y: 589
+        width: 86
+        height: 80
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6236925437c6d00e0800000000000000
+      internalID: -2302064592179076314
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: eJzyda_80
+      rect:
+        serializedVersion: 2
+        x: 32
+        y: 472
+        width: 86
+        height: 86
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 386dac7e675c24940800000000000000
+      internalID: 5278998827717285507
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: eJzyda_81
+      rect:
+        serializedVersion: 2
+        x: 140
+        y: 472
+        width: 86
+        height: 86
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c93e7a012e4bb8df0800000000000000
+      internalID: -176848877315955812
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: eJzyda_82
+      rect:
+        serializedVersion: 2
+        x: 248
+        y: 472
+        width: 86
+        height: 86
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6ab9f8bc71606d670800000000000000
+      internalID: 8563038440760777638
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: eJzyda_83
+      rect:
+        serializedVersion: 2
+        x: 356
+        y: 472
+        width: 86
+        height: 86
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b3aaf9f93da88ab10800000000000000
+      internalID: 1992995476632218171
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: eJzyda_84
+      rect:
+        serializedVersion: 2
+        x: 464
+        y: 472
+        width: 86
+        height: 86
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6cb45aa98d386dd10800000000000000
+      internalID: 2150050838446689222
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: eJzyda_85
+      rect:
+        serializedVersion: 2
+        x: 572
+        y: 472
+        width: 86
+        height: 86
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ce838ae22f7213350800000000000000
+      internalID: 5994616500125186284
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: eJzyda_86
+      rect:
+        serializedVersion: 2
+        x: 692
+        y: 481
+        width: 86
+        height: 80
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: cf087567fb50dbe20800000000000000
+      internalID: 3367854416225337596
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: eJzyda_87
+      rect:
+        serializedVersion: 2
+        x: 800
+        y: 481
+        width: 86
+        height: 80
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: abb8036468a463010800000000000000
+      internalID: 1168203093912882106
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: eJzyda_88
+      rect:
+        serializedVersion: 2
+        x: 908
+        y: 481
+        width: 86
+        height: 80
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b72fe51c0f8c29830800000000000000
+      internalID: 4076541549085651579
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: eJzyda_89
+      rect:
+        serializedVersion: 2
+        x: 1016
+        y: 481
+        width: 86
+        height: 80
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 790949ed30b6ad4c0800000000000000
+      internalID: -4261976432989400937
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: eJzyda_90
+      rect:
+        serializedVersion: 2
+        x: 1124
+        y: 481
+        width: 86
+        height: 80
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6b4066ae658ab6800800000000000000
+      internalID: 606763666064671926
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: eJzyda_91
+      rect:
+        serializedVersion: 2
+        x: 1232
+        y: 481
+        width: 86
+        height: 80
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ebf706ec83f1597b0800000000000000
+      internalID: -5218230264397791298
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: eJzyda_92
+      rect:
+        serializedVersion: 2
+        x: 32
+        y: 364
+        width: 86
+        height: 86
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d9edf0676ed401be0800000000000000
+      internalID: -1508620222950547811
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: eJzyda_93
+      rect:
+        serializedVersion: 2
+        x: 140
+        y: 364
+        width: 86
+        height: 86
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 422b2367b70297600800000000000000
+      internalID: 466439751045657124
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: eJzyda_94
+      rect:
+        serializedVersion: 2
+        x: 248
+        y: 364
+        width: 86
+        height: 86
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0252aa21d21ceb780800000000000000
+      internalID: -8665276233683426016
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: eJzyda_95
+      rect:
+        serializedVersion: 2
+        x: 356
+        y: 364
+        width: 86
+        height: 86
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7c66c85a8d4e9e250800000000000000
+      internalID: 5974557999825184455
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: eJzyda_96
+      rect:
+        serializedVersion: 2
+        x: 464
+        y: 364
+        width: 86
+        height: 86
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 020ffaf36e604d220800000000000000
+      internalID: 2509638478332948512
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: eJzyda_97
+      rect:
+        serializedVersion: 2
+        x: 692
+        y: 373
+        width: 86
+        height: 80
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: bf44a652d7d65f9e0800000000000000
+      internalID: -1588242909312170757
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: eJzyda_98
+      rect:
+        serializedVersion: 2
+        x: 800
+        y: 373
+        width: 86
+        height: 80
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4976c595428c2b370800000000000000
+      internalID: 8336945918659815316
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: eJzyda_99
+      rect:
+        serializedVersion: 2
+        x: 908
+        y: 373
+        width: 86
+        height: 80
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 560b32c5be2f845c0800000000000000
+      internalID: -4230864757237501851
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: eJzyda_100
+      rect:
+        serializedVersion: 2
+        x: 1016
+        y: 373
+        width: 86
+        height: 80
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 50e9d82dfd5aef5a0800000000000000
+      internalID: -6485564032638149115
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: eJzyda_101
+      rect:
+        serializedVersion: 2
+        x: 1124
+        y: 373
+        width: 86
+        height: 80
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3752a82ab56f33f80800000000000000
+      internalID: -8127882029044193933
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: eJzyda_102
+      rect:
+        serializedVersion: 2
+        x: 378
+        y: 258
+        width: 68
+        height: 86
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d2f10e2462feb34c0800000000000000
+      internalID: -4306585671039967443
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: eJzyda_103
+      rect:
+        serializedVersion: 2
+        x: 486
+        y: 258
+        width: 68
+        height: 86
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ede50ea162b489d70800000000000000
+      internalID: 9050066078232764126
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: eJzyda_104
+      rect:
+        serializedVersion: 2
+        x: 594
+        y: 258
+        width: 68
+        height: 86
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 114fe983c608245a0800000000000000
+      internalID: -6538522506693774319
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: eJzyda_105
+      rect:
+        serializedVersion: 2
+        x: 702
+        y: 258
+        width: 68
+        height: 86
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4c03a35784990c170800000000000000
+      internalID: 8196719858297745604
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: eJzyda_106
+      rect:
+        serializedVersion: 2
+        x: 810
+        y: 258
+        width: 68
+        height: 86
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ce1fd3e8724b2e560800000000000000
+      internalID: 7341628424550478316
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: eJzyda_107
+      rect:
+        serializedVersion: 2
+        x: 918
+        y: 258
+        width: 68
+        height: 86
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: dad075ed2c762c770800000000000000
+      internalID: 8629573922646855085
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: eJzyda_108
+      rect:
+        serializedVersion: 2
+        x: 378
+        y: 150
+        width: 68
+        height: 86
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ff64cb12bdd6eea10800000000000000
+      internalID: 1940609277374514943
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: eJzyda_109
+      rect:
+        serializedVersion: 2
+        x: 486
+        y: 150
+        width: 68
+        height: 86
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6e94372b6e4242010800000000000000
+      internalID: 1163095177023408614
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: eJzyda_110
+      rect:
+        serializedVersion: 2
+        x: 594
+        y: 150
+        width: 68
+        height: 86
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 52a00a1a0625f64d0800000000000000
+      internalID: -3139199840271988187
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: eJzyda_111
+      rect:
+        serializedVersion: 2
+        x: 702
+        y: 150
+        width: 68
+        height: 86
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b5ae84c49ddde85d0800000000000000
+      internalID: -3058263171580499365
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: eJzyda_112
+      rect:
+        serializedVersion: 2
+        x: 810
+        y: 150
+        width: 68
+        height: 86
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0fed09806ff0e45f0800000000000000
+      internalID: -770660936853692688
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: eJzyda_113
+      rect:
+        serializedVersion: 2
+        x: 918
+        y: 150
+        width: 68
+        height: 86
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a3e7adf95a0b56d30800000000000000
+      internalID: 4424136434359369274
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: eJzyda_114
+      rect:
+        serializedVersion: 2
+        x: 378
+        y: 42
+        width: 68
+        height: 86
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 741ecd00c7f335860800000000000000
+      internalID: 7517422004834459975
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: eJzyda_115
+      rect:
+        serializedVersion: 2
+        x: 486
+        y: 42
+        width: 68
+        height: 86
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b9f91c8dab379d2d0800000000000000
+      internalID: -3253442009460793445
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: eJzyda_116
+      rect:
+        serializedVersion: 2
+        x: 594
+        y: 42
+        width: 68
+        height: 86
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2fc2ae1ee12b85200800000000000000
+      internalID: 169080831735377138
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: eJzyda_117
+      rect:
+        serializedVersion: 2
+        x: 702
+        y: 42
+        width: 68
+        height: 86
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d82dccd3f083b4f00800000000000000
+      internalID: 1102036171934716557
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: eJzyda_118
+      rect:
+        serializedVersion: 2
+        x: 810
+        y: 42
+        width: 68
+        height: 86
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5740809da61f1a3d0800000000000000
+      internalID: -3197008819246332811
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    customData: 
+    physicsShape: []
+    bones: []
+    spriteID: 
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    spriteCustomMetadata:
+      entries: []
+    nameFileIdTable:
+      eJzyda_0: 4552054323822679361
+      eJzyda_1: -6949931692566186416
+      eJzyda_10: -8767808404076291546
+      eJzyda_100: -6485564032638149115
+      eJzyda_101: -8127882029044193933
+      eJzyda_102: -4306585671039967443
+      eJzyda_103: 9050066078232764126
+      eJzyda_104: -6538522506693774319
+      eJzyda_105: 8196719858297745604
+      eJzyda_106: 7341628424550478316
+      eJzyda_107: 8629573922646855085
+      eJzyda_108: 1940609277374514943
+      eJzyda_109: 1163095177023408614
+      eJzyda_11: -6049679864164541900
+      eJzyda_110: -3139199840271988187
+      eJzyda_111: -3058263171580499365
+      eJzyda_112: -770660936853692688
+      eJzyda_113: 4424136434359369274
+      eJzyda_114: 7517422004834459975
+      eJzyda_115: -3253442009460793445
+      eJzyda_116: 169080831735377138
+      eJzyda_117: 1102036171934716557
+      eJzyda_118: -3197008819246332811
+      eJzyda_12: 4572226124825196657
+      eJzyda_13: -4470048928384721524
+      eJzyda_14: -4402003570701138068
+      eJzyda_15: -6705697377953382940
+      eJzyda_16: -3326594382033501725
+      eJzyda_17: -8131916043365758031
+      eJzyda_18: 7604435510436482119
+      eJzyda_19: -3106514601257134153
+      eJzyda_2: 2754449055506273110
+      eJzyda_20: -714080700807235667
+      eJzyda_21: 341885530991506348
+      eJzyda_22: 2590549246851241636
+      eJzyda_23: 778454932283362151
+      eJzyda_24: 2936565670512626089
+      eJzyda_25: 6963771844612275421
+      eJzyda_26: -783100200509552758
+      eJzyda_27: 9066519710849671041
+      eJzyda_28: -1804840926326584578
+      eJzyda_29: 2008807966961172314
+      eJzyda_3: -8539663770661927619
+      eJzyda_30: 4130987497449564116
+      eJzyda_31: -3256154059525847293
+      eJzyda_32: 8497799844155459861
+      eJzyda_33: -1227436073124050331
+      eJzyda_34: 6486661080256937881
+      eJzyda_35: 5483253781748951810
+      eJzyda_36: -7219220033206852129
+      eJzyda_37: -2055573025344926110
+      eJzyda_38: -3797978800272835604
+      eJzyda_39: 3797440737158880137
+      eJzyda_4: -7547505814186221997
+      eJzyda_40: 7963817093724032803
+      eJzyda_41: -7689116464524326318
+      eJzyda_42: -3434520434614274387
+      eJzyda_43: 401015849472766516
+      eJzyda_44: -8382094567442131729
+      eJzyda_45: -5706650449532323304
+      eJzyda_46: 8771049699447716020
+      eJzyda_47: -4681222711581737796
+      eJzyda_48: 1348803380763956859
+      eJzyda_49: 5350453021735803176
+      eJzyda_5: 7005171215861774547
+      eJzyda_50: 2815391502924756773
+      eJzyda_51: -5838319271464479346
+      eJzyda_52: -7981363136065669210
+      eJzyda_53: -3763833265854207928
+      eJzyda_54: -8401858268877777746
+      eJzyda_55: -5038115676710639359
+      eJzyda_56: 4954237993205148883
+      eJzyda_57: -1714399908324998718
+      eJzyda_58: -8363117316460384810
+      eJzyda_59: -4726707343282620263
+      eJzyda_6: 1865817804293945924
+      eJzyda_60: -3844082150250161389
+      eJzyda_61: -2514394338209293882
+      eJzyda_62: -1448864874888029576
+      eJzyda_63: -6532320786703780421
+      eJzyda_64: 3835985794857030712
+      eJzyda_65: 1868842672557187066
+      eJzyda_66: 3240719272577163325
+      eJzyda_67: -1814980172566586545
+      eJzyda_68: -1060236872861427816
+      eJzyda_69: 8220964107387593400
+      eJzyda_7: 6581213839801762611
+      eJzyda_70: -2526400820133416724
+      eJzyda_71: 2500482540172446963
+      eJzyda_72: 6935125136827628903
+      eJzyda_73: -3760240086143917508
+      eJzyda_74: -1363154290916663922
+      eJzyda_75: -4876441064078889403
+      eJzyda_76: -8435552268207538745
+      eJzyda_77: -6435084742280195825
+      eJzyda_78: -2632697976595817340
+      eJzyda_79: -2302064592179076314
+      eJzyda_8: -2004627034913905121
+      eJzyda_80: 5278998827717285507
+      eJzyda_81: -176848877315955812
+      eJzyda_82: 8563038440760777638
+      eJzyda_83: 1992995476632218171
+      eJzyda_84: 2150050838446689222
+      eJzyda_85: 5994616500125186284
+      eJzyda_86: 3367854416225337596
+      eJzyda_87: 1168203093912882106
+      eJzyda_88: 4076541549085651579
+      eJzyda_89: -4261976432989400937
+      eJzyda_9: 1561973786906999263
+      eJzyda_90: 606763666064671926
+      eJzyda_91: -5218230264397791298
+      eJzyda_92: -1508620222950547811
+      eJzyda_93: 466439751045657124
+      eJzyda_94: -8665276233683426016
+      eJzyda_95: 5974557999825184455
+      eJzyda_96: 2509638478332948512
+      eJzyda_97: -1588242909312170757
+      eJzyda_98: 8336945918659815316
+      eJzyda_99: -4230864757237501851
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

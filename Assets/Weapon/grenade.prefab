@@ -172,4 +172,4 @@ MonoBehaviour:
   _boomPrefab: {fileID: 8355299529488773628, guid: 33dab244624fc0a409af092af46d15a8, type: 3}
   _boomLayer:
     serializedVersion: 2
-    m_Bits: 192
+    m_Bits: 4160

@@ -99,7 +99,7 @@ namespace Player
             var instance = Instantiate(MineralPrefab, gameObject.transform.position, gameObject.transform.rotation);
             instance.Cost = mineral.Cost;
             instance.Size = mineral.Size;
-            instance.transform.localScale = new Vector3(mineral.Size, mineral.Size, 1);
+            // instance.transform.localScale = new Vector3(mineral.Size, mineral.Size, 1);
         }
 
         private void Update()

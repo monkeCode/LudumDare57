@@ -9,13 +9,13 @@ namespace Enemies
 {
     public class Flier : MonoBehaviour, IEnemy
     {
-        [SerializeField] private uint health = 50;
+        [SerializeField] private int health = 50;
         [SerializeField] private uint damage = 5;
         [SerializeField] private float attackRange = 1f;
         [SerializeField] private float engageRange = 10f;
         [SerializeField] private float attackDelay = 3f;
         [SerializeField] private float engageDelay = 1f;
-        private float lastAttackTime;
+        private float currentDelay;
         private bool engaging;
         
         [SerializeField] private float speed = 5f;
@@ -48,6 +48,7 @@ namespace Enemies
 
         private void Update()
         {
+            currentDelay -= Time.deltaTime;
             if (!CanAttack())
             {
                 FlyAway();    
@@ -78,7 +79,7 @@ namespace Enemies
         {
             if (!NearTarget(attackRange) || !CanAttack())
                 return;
-            lastAttackTime = Time.time;
+            currentDelay = attackDelay;
             targetDamageable.TakeDamage(damage);
             engaging = false;
         }
@@ -102,10 +103,10 @@ namespace Enemies
             navMeshAgent.SetDestination(normalized);
         }
         
-        public bool CanAttack() => Time.time - lastAttackTime > attackDelay || Time.time < attackDelay;
+        public bool CanAttack() => currentDelay < 0;
         public void TakeDamage(uint damage)
         {
-            health -= damage;
+            health -= (int) damage;
             if (health <= 0)
                 Kill();
         }

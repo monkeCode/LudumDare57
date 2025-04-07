@@ -48,6 +48,8 @@ public class Turret : MonoBehaviour, IInteractable
     private Coroutine _targetingCoroutine;
     private CurrencyStorage _currencyStorage;
     private AudioSource _audio;
+    [SerializeField] private AudioSource _upgradable;
+
     public bool TryUpgrade(TurretUpgradeRequest upgradeRequest)
     {
         if(!_currencyStorage.TrySpendCurrency(upgradeRequest.Price))
@@ -67,6 +69,7 @@ public class Turret : MonoBehaviour, IInteractable
         if (TryUpgrade(upgradeRequest))
         {
             Debug.Log("Upgrade successful");
+            _upgradable.Play();
             return;
         }
         Debug.Log("Upgrade failed");

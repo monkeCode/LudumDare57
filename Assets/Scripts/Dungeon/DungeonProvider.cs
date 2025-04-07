@@ -6,15 +6,13 @@ public class DungeonProvider : MonoBehaviour
 {
     [SerializeField] private DungeonGenerator generator;
     [SerializeField] private float objectSpawnProtectRadius = 10f;
-    [SerializeField] private int weaponsCount = 2;
-    [SerializeField] private int mineralCount = 10;
 
     public DungeonCellType[,] GenerateCave()
     {
         return generator.GenerateCave();
     }
 
-    public Vector3[] GetWeaponSpawnPoints()
+    public Vector3[] GetWeaponSpawnPoints(int weaponsCount)
     {
         var cave = generator.CaveCells;
         var caveWidth = cave.GetLength(0);
@@ -49,7 +47,7 @@ public class DungeonProvider : MonoBehaviour
         return furthest.Select(p => parentPosition + new Vector3(p.x + 1, p.y + 1, -1)).ToArray();
     }
 
-    public Vector3[] GetMineralSpawnPoints()
+    public Vector3[] GetMineralSpawnPoints(int mineralCount)
     {
         var cave = generator.CaveCells;
         var caveWidth = cave.GetLength(0);

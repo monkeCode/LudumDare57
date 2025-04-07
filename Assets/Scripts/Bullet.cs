@@ -17,7 +17,7 @@ namespace Weapons
             Destroy(gameObject, 10);
         }
 
-        void OnTriggerEnter2D(Collider2D other)
+        protected virtual void OnTriggerEnter2D(Collider2D other)
         {
             if (other.TryGetComponent<IDamageable>(out var damageable))
             {
