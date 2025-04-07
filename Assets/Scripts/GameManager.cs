@@ -1,3 +1,5 @@
+using System;
+using System.Collections;
 using System.Collections.Generic;
 using System.Linq;
 using Dungeon;
@@ -55,11 +57,28 @@ public class GameManager : MonoBehaviour
         }
     }
 
+    IEnumerator SpawnEntities(float time, FightStage stage)
+    {
+        foreach(var option in stage.entities )
+        {
+            for(int i = 0; i < option.count; i++)
+            {
+                Instantiate(option.entity, Platform.Instance.transform.position + Vector3.up * 30, Quaternion.identity);
+            }
+            yield return new WaitForSeconds((time-5)/stage.entities.Length);
+        }
+    }
+
+
     void IncrementStage(Stage stage)
     {
         if (stage == Stage.Clill && CountStage < stages.Length)
         {
             CountStage += 1;
+        }
+        else if (stage == Stage.Fight)
+        {
+            StartCoroutine(SpawnEntities(Timer.instance.timeForFighting, FightStages[Math.Clamp(CountStage-1,0,10)]));
         }
     }
 

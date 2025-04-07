@@ -13,9 +13,9 @@ MonoBehaviour:
   m_Name: Machine gun
   m_EditorClassIdentifier: 
   <BaseName>k__BackingField: Machine gun
-  _bulletSpeed: 300
+  _bulletSpeed: 400
   _shootFreq: 10
-  _damage: 5
+  _damage: 20
   _bullet: {fileID: 6819654811208041759, guid: 1446355baf09fb6f1b347af132bc6e09, type: 3}
   _sprite: {fileID: -3391257396490946495, guid: 6d9d020d2326f7906b68de9015a67180, type: 3}
   _magazineSize: 30

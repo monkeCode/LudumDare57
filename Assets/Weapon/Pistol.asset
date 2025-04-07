@@ -15,7 +15,7 @@ MonoBehaviour:
   <BaseName>k__BackingField: Pistol
   _bulletSpeed: 350
   _shootFreq: 2
-  _damage: 5
+  _damage: 60
   _bullet: {fileID: 6819654811208041759, guid: 1446355baf09fb6f1b347af132bc6e09, type: 3}
   _sprite: {fileID: -3753849593638114588, guid: 6d9d020d2326f7906b68de9015a67180, type: 3}
   _magazineSize: 7
@@ -26,4 +26,4 @@ MonoBehaviour:
   _reloadClipEnd: {fileID: 8300000, guid: b5d25cc7a6aac953981d40ea92046620, type: 3}
   _noAmmoClip: {fileID: 8300000, guid: b953488ce9d38d4838eb6cf0e96fabaf, type: 3}
   <Rarity>k__BackingField: 0
-  _spreadAngle: 2
+  _spreadAngle: 5

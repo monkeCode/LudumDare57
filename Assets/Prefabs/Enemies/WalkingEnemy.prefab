@@ -96,8 +96,8 @@ SpriteRenderer:
   m_AutoUVMaxDistance: 0.5
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
-  m_SortingLayerID: 0
-  m_SortingLayer: 0
+  m_SortingLayerID: 1878128517
+  m_SortingLayer: 3
   m_SortingOrder: 10
   m_Sprite: {fileID: 4035959289877228764, guid: d039d072dced87b48b9693fe26f46c8b, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
@@ -280,7 +280,7 @@ MonoBehaviour:
     m_Bits: 0
   groundCheck: {fileID: 867399752337475244}
   wallCheck: {fileID: 363437695520630147}
-  playerTargetChance: 100
+  playerTargetChance: 70
   isPlayerTarget: 0
   animator: {fileID: 6617365107917301206}
 --- !u!1 &6425746196005492010

@@ -840,7 +840,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6245315708411125149, guid: 2251eb5906bd6504a9e590289f5b6776, type: 3}
       propertyPath: m_AnchoredPosition.y
-      value: -1.0664368
+      value: -1.0664673
       objectReference: {fileID: 0}
     - target: {fileID: 6763335422757351925, guid: 2251eb5906bd6504a9e590289f5b6776, type: 3}
       propertyPath: m_Pivot.x
@@ -1446,31 +1446,83 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8253540889581264914, guid: 69930a1a270287347a06164f16cff0ab, type: 3}
       propertyPath: <FightStages>k__BackingField.Array.size
-      value: 1
+      value: 2
       objectReference: {fileID: 0}
     - target: {fileID: 8253540889581264914, guid: 69930a1a270287347a06164f16cff0ab, type: 3}
       propertyPath: dungeonEntities.Array.data[0].entities.Array.size
-      value: 1
+      value: 3
       objectReference: {fileID: 0}
     - target: {fileID: 8253540889581264914, guid: 69930a1a270287347a06164f16cff0ab, type: 3}
       propertyPath: dungeonEntities.Array.data[1].entities.Array.size
-      value: 1
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 8253540889581264914, guid: 69930a1a270287347a06164f16cff0ab, type: 3}
+      propertyPath: dungeonEntities.Array.data[2].entities.Array.size
+      value: 3
       objectReference: {fileID: 0}
     - target: {fileID: 8253540889581264914, guid: 69930a1a270287347a06164f16cff0ab, type: 3}
       propertyPath: dungeonEntities.Array.data[0].entities.Array.data[0].entity
       value: 
-      objectReference: {fileID: 7594072819204984069, guid: 4de4b4d41e8281941a8b0b9b3c21c499, type: 3}
+      objectReference: {fileID: 2510532243733549023, guid: 684c44f80bbe55de7aa519ebea9b69f6, type: 3}
+    - target: {fileID: 8253540889581264914, guid: 69930a1a270287347a06164f16cff0ab, type: 3}
+      propertyPath: dungeonEntities.Array.data[0].entities.Array.data[1].entity
+      value: 
+      objectReference: {fileID: 8156286706078324215, guid: 9a219283b4851a8dca080e6c8dab6ab8, type: 3}
+    - target: {fileID: 8253540889581264914, guid: 69930a1a270287347a06164f16cff0ab, type: 3}
+      propertyPath: dungeonEntities.Array.data[0].entities.Array.data[2].entity
+      value: 
+      objectReference: {fileID: 3407279644793651471, guid: a3070d711fbad0e8ca091355d489d97b, type: 3}
     - target: {fileID: 8253540889581264914, guid: 69930a1a270287347a06164f16cff0ab, type: 3}
       propertyPath: dungeonEntities.Array.data[1].entities.Array.data[0].entity
       value: 
-      objectReference: {fileID: 7594072819204984069, guid: 4de4b4d41e8281941a8b0b9b3c21c499, type: 3}
+      objectReference: {fileID: 3407279644793651471, guid: a3070d711fbad0e8ca091355d489d97b, type: 3}
+    - target: {fileID: 8253540889581264914, guid: 69930a1a270287347a06164f16cff0ab, type: 3}
+      propertyPath: dungeonEntities.Array.data[1].entities.Array.data[1].entity
+      value: 
+      objectReference: {fileID: 3407279644793651471, guid: a3070d711fbad0e8ca091355d489d97b, type: 3}
+    - target: {fileID: 8253540889581264914, guid: 69930a1a270287347a06164f16cff0ab, type: 3}
+      propertyPath: dungeonEntities.Array.data[1].entities.Array.data[2].entity
+      value: 
+      objectReference: {fileID: 3407279644793651471, guid: a3070d711fbad0e8ca091355d489d97b, type: 3}
+    - target: {fileID: 8253540889581264914, guid: 69930a1a270287347a06164f16cff0ab, type: 3}
+      propertyPath: dungeonEntities.Array.data[2].entities.Array.data[0].entity
+      value: 
+      objectReference: {fileID: 2510532243733549023, guid: 684c44f80bbe55de7aa519ebea9b69f6, type: 3}
+    - target: {fileID: 8253540889581264914, guid: 69930a1a270287347a06164f16cff0ab, type: 3}
+      propertyPath: dungeonEntities.Array.data[2].entities.Array.data[1].entity
+      value: 
+      objectReference: {fileID: 3407279644793651471, guid: a3070d711fbad0e8ca091355d489d97b, type: 3}
+    - target: {fileID: 8253540889581264914, guid: 69930a1a270287347a06164f16cff0ab, type: 3}
+      propertyPath: dungeonEntities.Array.data[2].entities.Array.data[2].entity
+      value: 
+      objectReference: {fileID: 8156286706078324215, guid: 9a219283b4851a8dca080e6c8dab6ab8, type: 3}
+    - target: {fileID: 8253540889581264914, guid: 69930a1a270287347a06164f16cff0ab, type: 3}
+      propertyPath: <FightStages>k__BackingField.Array.data[0].entities.Array.size
+      value: 3
+      objectReference: {fileID: 0}
     - target: {fileID: 8253540889581264914, guid: 69930a1a270287347a06164f16cff0ab, type: 3}
       propertyPath: dungeonEntities.Array.data[0].entities.Array.data[0].maxCountPoint
-      value: 5
+      value: 2
       objectReference: {fileID: 0}
     - target: {fileID: 8253540889581264914, guid: 69930a1a270287347a06164f16cff0ab, type: 3}
       propertyPath: dungeonEntities.Array.data[0].entities.Array.data[0].minCountPoint
-      value: 1
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8253540889581264914, guid: 69930a1a270287347a06164f16cff0ab, type: 3}
+      propertyPath: dungeonEntities.Array.data[0].entities.Array.data[1].maxCountPoint
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 8253540889581264914, guid: 69930a1a270287347a06164f16cff0ab, type: 3}
+      propertyPath: dungeonEntities.Array.data[0].entities.Array.data[1].minCountPoint
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8253540889581264914, guid: 69930a1a270287347a06164f16cff0ab, type: 3}
+      propertyPath: dungeonEntities.Array.data[0].entities.Array.data[2].maxCountPoint
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 8253540889581264914, guid: 69930a1a270287347a06164f16cff0ab, type: 3}
+      propertyPath: dungeonEntities.Array.data[0].entities.Array.data[2].minCountPoint
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 8253540889581264914, guid: 69930a1a270287347a06164f16cff0ab, type: 3}
       propertyPath: dungeonEntities.Array.data[1].entities.Array.data[0].maxCountPoint
@@ -1478,8 +1530,60 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8253540889581264914, guid: 69930a1a270287347a06164f16cff0ab, type: 3}
       propertyPath: dungeonEntities.Array.data[1].entities.Array.data[0].minCountPoint
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 8253540889581264914, guid: 69930a1a270287347a06164f16cff0ab, type: 3}
+      propertyPath: dungeonEntities.Array.data[1].entities.Array.data[1].maxCountPoint
+      value: 5
+      objectReference: {fileID: 0}
+    - target: {fileID: 8253540889581264914, guid: 69930a1a270287347a06164f16cff0ab, type: 3}
+      propertyPath: dungeonEntities.Array.data[1].entities.Array.data[1].minCountPoint
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8253540889581264914, guid: 69930a1a270287347a06164f16cff0ab, type: 3}
+      propertyPath: dungeonEntities.Array.data[1].entities.Array.data[2].maxCountPoint
+      value: 5
+      objectReference: {fileID: 0}
+    - target: {fileID: 8253540889581264914, guid: 69930a1a270287347a06164f16cff0ab, type: 3}
+      propertyPath: dungeonEntities.Array.data[1].entities.Array.data[2].minCountPoint
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8253540889581264914, guid: 69930a1a270287347a06164f16cff0ab, type: 3}
+      propertyPath: dungeonEntities.Array.data[2].entities.Array.data[0].maxCountPoint
+      value: 6
+      objectReference: {fileID: 0}
+    - target: {fileID: 8253540889581264914, guid: 69930a1a270287347a06164f16cff0ab, type: 3}
+      propertyPath: dungeonEntities.Array.data[2].entities.Array.data[1].maxCountPoint
+      value: 6
+      objectReference: {fileID: 0}
+    - target: {fileID: 8253540889581264914, guid: 69930a1a270287347a06164f16cff0ab, type: 3}
+      propertyPath: dungeonEntities.Array.data[2].entities.Array.data[2].maxCountPoint
+      value: 6
+      objectReference: {fileID: 0}
+    - target: {fileID: 8253540889581264914, guid: 69930a1a270287347a06164f16cff0ab, type: 3}
+      propertyPath: <FightStages>k__BackingField.Array.data[0].entities.Array.data[0].count
+      value: 5
+      objectReference: {fileID: 0}
+    - target: {fileID: 8253540889581264914, guid: 69930a1a270287347a06164f16cff0ab, type: 3}
+      propertyPath: <FightStages>k__BackingField.Array.data[0].entities.Array.data[1].count
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 8253540889581264914, guid: 69930a1a270287347a06164f16cff0ab, type: 3}
+      propertyPath: <FightStages>k__BackingField.Array.data[0].entities.Array.data[2].count
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 8253540889581264914, guid: 69930a1a270287347a06164f16cff0ab, type: 3}
+      propertyPath: <FightStages>k__BackingField.Array.data[0].entities.Array.data[0].entity
+      value: 
+      objectReference: {fileID: 7594072819204984069, guid: b7e519829f3791d43961b6555e9816c6, type: 3}
+    - target: {fileID: 8253540889581264914, guid: 69930a1a270287347a06164f16cff0ab, type: 3}
+      propertyPath: <FightStages>k__BackingField.Array.data[0].entities.Array.data[1].entity
+      value: 
+      objectReference: {fileID: 7594072819204984069, guid: b7e519829f3791d43961b6555e9816c6, type: 3}
+    - target: {fileID: 8253540889581264914, guid: 69930a1a270287347a06164f16cff0ab, type: 3}
+      propertyPath: <FightStages>k__BackingField.Array.data[0].entities.Array.data[2].entity
+      value: 
+      objectReference: {fileID: 172052261745782221, guid: f6568b796fe23e44ca27b0d7e0c6b94b, type: 3}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []

@@ -18,7 +18,7 @@ namespace UI.PauseMenu
 
         public bool Paused => pauseMenuCanvas.activeSelf;
 
-        
+
 
         void Awake()
         {
@@ -41,13 +41,11 @@ namespace UI.PauseMenu
             if (pauseMenuCanvas.activeSelf)
             {
                 Close();
-                Player.Player.Instance.Inputs.Player.Enable();
 
             }
             else
             {
                 Open();
-                Player.Player.Instance.Inputs.Player.Disable();
             }
         }
 
@@ -55,6 +53,8 @@ namespace UI.PauseMenu
         {
             Time.timeScale = 0;
             pauseMenuCanvas.SetActive(true);
+            Player.Player.Instance.Inputs.Player.Disable();
+
         }
 
 
@@ -62,6 +62,8 @@ namespace UI.PauseMenu
         {
             Time.timeScale = 1;
             pauseMenuCanvas.SetActive(false);
+            Player.Player.Instance.Inputs.Player.Enable();
+
         }
 
         public void ToMainMenu()
