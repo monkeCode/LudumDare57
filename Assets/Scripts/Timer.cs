@@ -18,11 +18,15 @@ public class Timer : MonoBehaviour
 
     public float timeForFighting = 45f;
 
+    public float timeIntial = 2f;
+
     private IEnumerator coroutine;
 
     public float leftTime { get; private set; } = 0;
 
     public float elapsedTime;
+
+    public int lenStages = 3;
 
     public float getLeftTime()
     {
@@ -31,7 +35,7 @@ public class Timer : MonoBehaviour
 
     public event Action<Stage> StageChanged;
 
-    public Stage CurrentStage { get; private set; } = Stage.Clill;
+    public Stage CurrentStage { get; private set; } = Stage.Fight;
 
     void Awake()
     {
@@ -52,8 +56,9 @@ public class Timer : MonoBehaviour
 
     private IEnumerator StartTimer(float timeChill, float timeFight)
     {
-        leftTime = timeChill;
+        leftTime = timeIntial;
         elapsedTime = 0;
+        int numberStages = 0;
         while (true)
         {
             yield return null;
@@ -69,6 +74,16 @@ public class Timer : MonoBehaviour
                 };
 
                 StageChanged?.Invoke(CurrentStage);
+
+                if (CurrentStage == Stage.Fight)
+                {
+                    numberStages += 1;
+                    if (numberStages >= lenStages)
+                    {
+                        leftTime = 0;
+                        break;
+                    }
+                }
 
                 leftTime = CurrentStage == Stage.Fight ? timeFight : timeChill;
             }

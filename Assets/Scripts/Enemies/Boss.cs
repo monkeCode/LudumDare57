@@ -1,6 +1,8 @@
+using System.Collections;
 using Enemies;
 using Interfaces;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class Boss : MonoBehaviour, IEnemy
 {
@@ -83,7 +85,7 @@ public class Boss : MonoBehaviour, IEnemy
     void Atk()
     {
         float distance = Vector2.Distance(transform.position, _target.position);
-        if(distance > DamageRadius * 3)
+        if (distance > DamageRadius * 3)
         {
             _abilityPerformed = true;
         }
@@ -91,7 +93,7 @@ public class Boss : MonoBehaviour, IEnemy
         {
             MoveTo(_target.position);
         }
-        else if(!_abilityStarted)
+        else if (!_abilityStarted)
         {
             _abilityStarted = true;
             _animator.SetTrigger("Attack");
@@ -113,7 +115,7 @@ public class Boss : MonoBehaviour, IEnemy
     {
         Vector2 randomDirection = Random.insideUnitCircle.normalized;
         Vector2 teleportPosition = (Vector2)_playerTransform.position + randomDirection * TeleportRange;
-        int i = 0 ;
+        int i = 0;
         while (Physics2D.OverlapCircle(teleportPosition, 1f, LayerMask.GetMask("Ground")) != null && i < 100)
         {
             randomDirection = Random.insideUnitCircle.normalized;
@@ -127,7 +129,7 @@ public class Boss : MonoBehaviour, IEnemy
 
     void Teleport()
     {
-        if (Time.time > (_lastTeleportTime + _teleportCooldown) && Vector2.Distance(_platformTransform.position, transform.position) > TargetRadius/2 && !_abilityStarted)
+        if (Time.time > (_lastTeleportTime + _teleportCooldown) && Vector2.Distance(_platformTransform.position, transform.position) > TargetRadius / 2 && !_abilityStarted)
         {
             _abilityStarted = true;
             _animator.SetTrigger("Teleport");
@@ -147,8 +149,8 @@ public class Boss : MonoBehaviour, IEnemy
             _animator.SetTrigger("Summon");
             _lastBallTime = Time.time;
         }
-        else if(!_abilityStarted)
-        _abilityPerformed = true;
+        else if (!_abilityStarted)
+            _abilityPerformed = true;
     }
 
     public void SpawnBallsAnim()
@@ -166,9 +168,9 @@ public class Boss : MonoBehaviour, IEnemy
 
     void Burst()
     {
-        if(_target == _platformTransform)
-            _target =_playerTransform;
-        else if(_target == _playerTransform)
+        if (_target == _platformTransform)
+            _target = _playerTransform;
+        else if (_target == _playerTransform)
             _target = _platformTransform;
         _abilityPerformed = true;
     }
@@ -187,7 +189,7 @@ public class Boss : MonoBehaviour, IEnemy
     void Die()
     {
         _animator.SetTrigger("Die");
-        Destroy(gameObject, 3f);
+        StartCoroutine(Victory());
     }
 
     public void TakeDamage(uint damage)
@@ -213,7 +215,7 @@ public class Boss : MonoBehaviour, IEnemy
     {
         var dist = Vector2.Distance(_target.position, transform.position);
 
-        if(dist < DamageRadius)
+        if (dist < DamageRadius)
         {
             _state = BossState.Atk;
         }
@@ -224,7 +226,7 @@ public class Boss : MonoBehaviour, IEnemy
         {
             _state = BossState.Ability1;
         }
-        else if (random < (_tpProbability + _ballsProbability) &&  dist < TargetRadius)
+        else if (random < (_tpProbability + _ballsProbability) && dist < TargetRadius)
         {
             _state = BossState.Ability2;
         }
@@ -283,5 +285,11 @@ public class Boss : MonoBehaviour, IEnemy
         Gizmos.color = Color.yellow;
         Gizmos.DrawWireSphere(transform.position, TargetRadius);
         Gizmos.color = Color.blue;
+    }
+
+    IEnumerator Victory()
+    {
+        yield return new WaitForSeconds(3f);
+        SceneManager.LoadScene("VictoryScreen");
     }
 }
