@@ -12,6 +12,11 @@ public class DungeonProvider : MonoBehaviour
         return generator.GenerateCave();
     }
 
+    public Vector2 GetEnter()
+    {
+        return new Vector2(generator.startPosX, generator.startPosY);
+    }
+
     public Vector3[] GetWeaponSpawnPoints(int weaponsCount)
     {
         var cave = generator.CaveCells;
@@ -25,6 +30,7 @@ public class DungeonProvider : MonoBehaviour
             var x = Random.Range(0, caveWidth);
             var y = Random.Range(0, caveHeight);
             
+
             if (cave[x, y] != DungeonCellType.Empty)
                 continue;
 

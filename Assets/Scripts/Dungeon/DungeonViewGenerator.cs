@@ -24,6 +24,7 @@ namespace Dungeon
 
         public readonly List<List<GameObject>> equipment = new();
 
+        public List<Vector2> starts = new();
 
         public void Update()
         {
@@ -45,10 +46,16 @@ namespace Dungeon
             {
                 (var result, var stageItems) = GeterateSide(new Vector2Int(_platformWidth/2, offsetY), stage);
                 GeterateSide(new Vector2Int(_platformWidth/2+1, offsetY), stage, true);
-
+                var enter = dungeonProvider.GetEnter();
+                enter.x = 0;
+                enter.y += offsetY;
+                starts.Add(enter);
+                
                 offsetY -= result.GetLength(1);
                 equipment.Add(stageItems);
             }
+
+   
 
             return equipment;
         }
@@ -71,7 +78,6 @@ namespace Dungeon
                     }
                 }
             }
-
 
             foreach (var mineralSpawnPoint in dungeonProvider.GetMineralSpawnPoints(stage.MineralsCount))
             {

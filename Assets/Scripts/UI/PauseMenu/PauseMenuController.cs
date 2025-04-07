@@ -1,6 +1,7 @@
 using UnityEngine;
+using UnityEngine.Audio;
 using UnityEngine.SceneManagement;
-using UnityEngine.UIElements;
+using UnityEngine.UI;
 
 namespace UI.PauseMenu
 {
@@ -8,6 +9,8 @@ namespace UI.PauseMenu
     {
         [SerializeField] private Slider sfxSlider;
         [SerializeField] private Slider soundSlider;
+
+        [SerializeField] private AudioMixer _mixer;
 
         public GameObject pauseMenuCanvas;
 
@@ -68,12 +71,16 @@ namespace UI.PauseMenu
 
         public void SoundChanged()
         {
-
+            float volume = sfxSlider.value > 0.01f ? 20f * Mathf.Log10(sfxSlider.value) : -80f;
+            _mixer.SetFloat("music", volume);
         }
 
         public void SfxChanged()
         {
-            
+            float volume = sfxSlider.value > 0.01f ? 20f * Mathf.Log10(sfxSlider.value) : -80f;
+            _mixer.SetFloat("sound", volume);
         }
     }
 }
+
+
