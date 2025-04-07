@@ -44,7 +44,7 @@ public class Timer : MonoBehaviour
             Destroy(gameObject);
         }
 
-        DontDestroyOnLoad(gameObject);
+        //DontDestroyOnLoad(gameObject);
 
         coroutine = StartTimer(timeForLooting, timeForFighting);
         StartCoroutine(coroutine);
