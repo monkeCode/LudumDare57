@@ -139,7 +139,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!212 &31609701
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -1202,11 +1202,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 7860887919287497563, guid: 2ce8a8e4f99f16a7d9158f320ee3565e, type: 3}
       propertyPath: m_LocalPosition.x
-      value: -8.45
+      value: -9.24
       objectReference: {fileID: 0}
     - target: {fileID: 7860887919287497563, guid: 2ce8a8e4f99f16a7d9158f320ee3565e, type: 3}
       propertyPath: m_LocalPosition.y
-      value: -1.64
+      value: 8.92
       objectReference: {fileID: 0}
     - target: {fileID: 7860887919287497563, guid: 2ce8a8e4f99f16a7d9158f320ee3565e, type: 3}
       propertyPath: m_LocalPosition.z
@@ -1264,7 +1264,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!212 &1266696178
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -1427,15 +1427,19 @@ MonoBehaviour:
   attackRange: 1
   platformAttackRangeModifier: 8
   attackDelay: 3
+  swingTime: 0.5
   speed: 5
   jumpHeight: 8
   groundCheckRadius: 0.1
   groundLayer:
     serializedVersion: 2
     m_Bits: 1280
+  wallLayer:
+    serializedVersion: 2
+    m_Bits: 256
   groundCheck: {fileID: 1457426228}
   wallCheck: {fileID: 488999212}
-  playerTargetChance: 30
+  playerTargetChance: 100
   isPlayerTarget: 0
 --- !u!1 &1404568256
 GameObject:
