@@ -9,7 +9,7 @@ namespace Weapons
 
         public static WeaponGenerator Instance {get;private set;}
 
-        void Start()
+        void Awake()
         {
             if(Instance == null)
                 Instance = this;
